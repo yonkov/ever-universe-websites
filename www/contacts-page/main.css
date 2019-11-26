@@ -177,20 +177,44 @@ h1, h2, h3 {
   .navbar .right .links a:hover {
     color: #66DED1;
   }
-  .navbar .right .hire-btn {
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    margin: 1em;
-    padding: 0 1.4em;
-    background: transparent;
-    color: #FF3564;
-    border: 1px solid #606C84;
-  }
-  .navbar .right .hire-btn:hover {
-    background: #FF3564;
-    color: #fff;
-    cursor: pointer;
-  }
+}
+
+.navbar .hire-btn {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  margin: 1em;
+  padding: 0 1.4em;
+  background: transparent;
+  color: #FF3564;
+  border: 1px solid #606C84;
+}
+
+.navbar .hire-btn:hover {
+  background: #FF3564;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hidden-menu {
+  background: #1F1F27;
+  position: absolute;
+  width: 100%;
+  -webkit-transform: translate(0, -400px);
+          transform: translate(0, -400px);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.hidden-menu .col a {
+  cursor: pointer;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  margin: 0.2em auto;
+  text-decoration: none;
+  border-bottom: 1px solid #66DED1;
+  width: 50%;
+  padding: 0.2em;
 }
 
 @media screen and (max-width: 700px) {
@@ -198,7 +222,7 @@ h1, h2, h3 {
     display: block;
     margin: 0 1em 0 0;
   }
-  .right {
+  .links {
     display: none;
   }
 }
