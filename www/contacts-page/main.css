@@ -217,6 +217,10 @@ h1, h2, h3 {
   padding: 0.2em;
 }
 
+.hidden-menu .col a:nth-child(5) {
+  margin-bottom: 1em;
+}
+
 @media screen and (max-width: 700px) {
   #mini-menu {
     display: block;
@@ -631,6 +635,26 @@ h1, h2, h3 {
   border-bottom: 1px solid #E0E0E0;
   margin: 0 0 1em 0;
   padding: 0.5em 0;
+}
+
+.third .row .t-form form input[type=file] {
+  -webkit-transform: translate(26em, -2em);
+          transform: translate(26em, -2em);
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.third .row .t-form form .i-file {
+  margin: 1em 0;
+}
+
+.third .row .t-form form .file-descr {
+  font-weight: 100;
+  padding: 0.4em;
+  font-size: 0.8em;
+  color: #757575;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .third .row .t-form form svg {

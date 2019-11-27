@@ -1,4 +1,4 @@
-@import './global';
+@import '../styles/global';
 
 .navbar {
     width: 100%;
@@ -80,6 +80,9 @@
             border-bottom: 1px solid $secondary-color;
             width: 50%;
             padding: 0.2em;
+            &:nth-child(5){
+                margin-bottom: 1em;
+            }
         }
     }
 }

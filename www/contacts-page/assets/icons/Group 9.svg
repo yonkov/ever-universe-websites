@@ -1,9 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="648" height="592" viewBox="0 0 648 592">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="Rectangle_Copy_16" data-name="Rectangle Copy 16" width="648" height="592" fill="#fff"/>
-    </clipPath>
-  </defs>
+
   <g id="Group_9" data-name="Group 9" clip-path="url(#clip-path)">
     <g id="Group_3" data-name="Group 3" transform="translate(80 58)">
       <text id="Your_name" data-name="Your name" fill="#2a2c39" font-size="21" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="22">Your name</tspan></text>
