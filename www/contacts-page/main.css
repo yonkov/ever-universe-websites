@@ -1,28 +1,28 @@
+@font-face {
+  font-family: 'barow-regular';
+  src: url("./assets/fonts/barlow-semi-condensed.regular.ttf") format("truetype"), url("./assets/fonts/barlow-semi-condensed.regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'barow-bold';
+  src: url("./assets/fonts/barlow-semi-condensed.bold.ttf") format("truetype"), url("./assets/fonts/barlow-semi-condensed.bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype"), url("./assets/fonts/Roboto-Bold_1.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("./assets/fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("./assets/fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+
 * {
   padding: 0;
   margin: 0;
   font-family: 'roboto-regular', sans-serif;
   outline: none;
-}
-
-@font-face {
-  font-family: 'barow-regular';
-  src: url("./assets/fonts/barlow-semi-condensed.regular.ttf");
-}
-
-@font-face {
-  font-family: 'barow-bold';
-  src: url("./assets/fonts/barlow-semi-condensed.bold.ttf");
-}
-
-@font-face {
-  font-family: 'roboto-bold';
-  src: url("./assets/fonts/RobotoCondensed-Bold.ttf");
-}
-
-@font-face {
-  font-family: 'roboto-regular';
-  src: url("./assets/fonts/RobotoCondensed-Regular.ttf");
 }
 
 button {
@@ -62,31 +62,35 @@ h1, h2, h3 {
   }
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: 'barow-regular';
+  src: url("./assets/fonts/barlow-semi-condensed.regular.ttf") format("truetype"), url("./assets/fonts/barlow-semi-condensed.regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'barow-bold';
+  src: url("./assets/fonts/barlow-semi-condensed.bold.ttf") format("truetype"), url("./assets/fonts/barlow-semi-condensed.bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype"), url("./assets/fonts/Roboto-Bold_1.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("./assets/fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("./assets/fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+
 * {
   padding: 0;
   margin: 0;
   font-family: 'roboto-regular', sans-serif;
   outline: none;
-}
-
-@font-face {
-  font-family: 'barow-regular';
-  src: url("./assets/fonts/barlow-semi-condensed.regular.ttf");
-}
-
-@font-face {
-  font-family: 'barow-bold';
-  src: url("./assets/fonts/barlow-semi-condensed.bold.ttf");
-}
-
-@font-face {
-  font-family: 'roboto-bold';
-  src: url("./assets/fonts/RobotoCondensed-Bold.ttf");
-}
-
-@font-face {
-  font-family: 'roboto-regular';
-  src: url("./assets/fonts/RobotoCondensed-Regular.ttf");
 }
 
 button {
@@ -124,6 +128,10 @@ h1, h2, h3 {
         -ms-flex-flow: column;
             flex-flow: column;
   }
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .navbar {
@@ -199,8 +207,8 @@ h1, h2, h3 {
   background: #1F1F27;
   position: absolute;
   width: 100%;
-  -webkit-transform: translate(0, -400px);
-          transform: translate(0, -400px);
+  -webkit-transform: translate(0, -120%);
+          transform: translate(0, -120%);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -231,6 +239,74 @@ h1, h2, h3 {
   }
 }
 
+@font-face {
+  font-family: 'barow-regular';
+  src: url("./assets/fonts/barlow-semi-condensed.regular.ttf") format("truetype"), url("./assets/fonts/barlow-semi-condensed.regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'barow-bold';
+  src: url("./assets/fonts/barlow-semi-condensed.bold.ttf") format("truetype"), url("./assets/fonts/barlow-semi-condensed.bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype"), url("./assets/fonts/Roboto-Bold_1.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("./assets/fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("./assets/fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'roboto-regular', sans-serif;
+  outline: none;
+}
+
+button {
+  font-family: 'roboto-bold', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'barow-bold', sans-serif;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .first {
   background: #2C2D34 url("./assets/images/background.png");
   background-size: cover;
@@ -239,7 +315,7 @@ h1, h2, h3 {
 
 .first .f-title {
   width: 60%;
-  padding: 1em;
+  padding: 2em 0;
   color: #ffffff;
 }
 
@@ -376,31 +452,31 @@ h1, h2, h3 {
   }
 }
 
+@font-face {
+  font-family: 'barow-regular';
+  src: url("./assets/fonts/barlow-semi-condensed.regular.ttf") format("truetype"), url("./assets/fonts/barlow-semi-condensed.regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'barow-bold';
+  src: url("./assets/fonts/barlow-semi-condensed.bold.ttf") format("truetype"), url("./assets/fonts/barlow-semi-condensed.bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype"), url("./assets/fonts/Roboto-Bold_1.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("./assets/fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("./assets/fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+
 * {
   padding: 0;
   margin: 0;
   font-family: 'roboto-regular', sans-serif;
   outline: none;
-}
-
-@font-face {
-  font-family: 'barow-regular';
-  src: url("./assets/fonts/barlow-semi-condensed.regular.ttf");
-}
-
-@font-face {
-  font-family: 'barow-bold';
-  src: url("./assets/fonts/barlow-semi-condensed.bold.ttf");
-}
-
-@font-face {
-  font-family: 'roboto-bold';
-  src: url("./assets/fonts/RobotoCondensed-Bold.ttf");
-}
-
-@font-face {
-  font-family: 'roboto-regular';
-  src: url("./assets/fonts/RobotoCondensed-Regular.ttf");
 }
 
 button {
@@ -438,6 +514,10 @@ h1, h2, h3 {
         -ms-flex-flow: column;
             flex-flow: column;
   }
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .second {
@@ -509,31 +589,31 @@ h1, h2, h3 {
   }
 }
 
+@font-face {
+  font-family: 'barow-regular';
+  src: url("./assets/fonts/barlow-semi-condensed.regular.ttf") format("truetype"), url("./assets/fonts/barlow-semi-condensed.regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'barow-bold';
+  src: url("./assets/fonts/barlow-semi-condensed.bold.ttf") format("truetype"), url("./assets/fonts/barlow-semi-condensed.bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype"), url("./assets/fonts/Roboto-Bold_1.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("./assets/fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("./assets/fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+
 * {
   padding: 0;
   margin: 0;
   font-family: 'roboto-regular', sans-serif;
   outline: none;
-}
-
-@font-face {
-  font-family: 'barow-regular';
-  src: url("./assets/fonts/barlow-semi-condensed.regular.ttf");
-}
-
-@font-face {
-  font-family: 'barow-bold';
-  src: url("./assets/fonts/barlow-semi-condensed.bold.ttf");
-}
-
-@font-face {
-  font-family: 'roboto-bold';
-  src: url("./assets/fonts/RobotoCondensed-Bold.ttf");
-}
-
-@font-face {
-  font-family: 'roboto-regular';
-  src: url("./assets/fonts/RobotoCondensed-Regular.ttf");
 }
 
 button {
@@ -571,6 +651,10 @@ h1, h2, h3 {
         -ms-flex-flow: column;
             flex-flow: column;
   }
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .third {
@@ -712,31 +796,31 @@ h1, h2, h3 {
   }
 }
 
+@font-face {
+  font-family: 'barow-regular';
+  src: url("./assets/fonts/barlow-semi-condensed.regular.ttf") format("truetype"), url("./assets/fonts/barlow-semi-condensed.regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'barow-bold';
+  src: url("./assets/fonts/barlow-semi-condensed.bold.ttf") format("truetype"), url("./assets/fonts/barlow-semi-condensed.bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype"), url("./assets/fonts/Roboto-Bold_1.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("./assets/fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("./assets/fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+
 * {
   padding: 0;
   margin: 0;
   font-family: 'roboto-regular', sans-serif;
   outline: none;
-}
-
-@font-face {
-  font-family: 'barow-regular';
-  src: url("./assets/fonts/barlow-semi-condensed.regular.ttf");
-}
-
-@font-face {
-  font-family: 'barow-bold';
-  src: url("./assets/fonts/barlow-semi-condensed.bold.ttf");
-}
-
-@font-face {
-  font-family: 'roboto-bold';
-  src: url("./assets/fonts/RobotoCondensed-Bold.ttf");
-}
-
-@font-face {
-  font-family: 'roboto-regular';
-  src: url("./assets/fonts/RobotoCondensed-Regular.ttf");
 }
 
 button {
@@ -774,6 +858,10 @@ h1, h2, h3 {
         -ms-flex-flow: column;
             flex-flow: column;
   }
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 footer {

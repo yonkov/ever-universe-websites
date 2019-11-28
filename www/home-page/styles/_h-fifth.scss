@@ -1,0 +1,32 @@
+@import '../../global/global';
+
+.h-fifth {
+    .h-titles-w-b {
+        width: 40%;
+        margin: 0 auto 2em;
+    }
+    div {
+        color: #ffffff;
+        section {
+            .fifth-txt-containers {
+                div {
+                    svg {
+                        align-self: flex-end;
+                    }
+                    h3 {
+                        font-family: 'roboto-bold';
+                        font-size: 1.2em;
+                        text-transform: uppercase;
+                    }
+                }
+                p {
+                    width: 65%;
+                    padding: 2em;
+                }
+            }
+        }
+    }
+    #fifth-svg{
+        margin: auto;
+    }
+}
