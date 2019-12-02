@@ -670,7 +670,7 @@ button:hover {
 
 .third .row .t-description {
   color: #ffffff;
-  margin: 2em;
+  margin: 1em 0;
 }
 
 @media screen and (min-width: 698px) {
@@ -722,11 +722,16 @@ button:hover {
 }
 
 .third .row .t-form form input[type=file] {
-  -webkit-transform: translate(26em, -2em);
-          transform: translate(26em, -2em);
   opacity: 0;
   cursor: pointer;
   z-index: 1;
+}
+
+@media screen and (min-width: 1280px) {
+  .third .row .t-form form input[type=file] {
+    -webkit-transform: translate(26em, -2em);
+            transform: translate(26em, -2em);
+  }
 }
 
 .third .row .t-form form .i-file {
@@ -742,9 +747,14 @@ button:hover {
 }
 
 .third .row .t-form form svg {
-  -webkit-transform: translate(24em, -3em) rotate(45deg);
-          transform: translate(24em, -3em) rotate(45deg);
   cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
+  .third .row .t-form form svg {
+    -webkit-transform: translate(24em, -3em) rotate(45deg);
+            transform: translate(24em, -3em) rotate(45deg);
+  }
 }
 
 .third .row .t-form form textarea {
@@ -780,9 +790,19 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .third .row form input[type=file] {
+    display: none;
+  }
+  .third .row form svg {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 698px) {
   .t-description {
     width: 80%;
+    margin: 0;
   }
   .t-form {
     margin: none;
