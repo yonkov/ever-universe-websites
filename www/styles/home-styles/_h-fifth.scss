@@ -1,0 +1,63 @@
+@import "../global/global";
+
+
+.h-fifth {
+  .h-titles-w-b {
+    @media screen and (min-width: 600px) {
+      width: 40%;
+    }
+    margin: 0 auto 2em;
+  }
+  div {
+    color: #ffffff;
+    section {
+      .fifth-txt-containers {
+        div {
+          svg {
+            align-self: flex-end;
+          }
+          h3 {
+            font-family: "roboto-bold";
+            font-size: 1.2em;
+            text-transform: uppercase;
+          }
+        }
+        p {
+          width: 65%;
+          @media screen and (min-width: 600px) {
+            padding: 2em;
+          }
+        }
+      }
+    }
+  }
+  #fifth-svg {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .h-fifth {
+    .h-titles-w-b {
+      width: 90%;
+      text-align: left;
+      hr {
+        margin: 1em 0;
+      }
+    }
+    div {
+      section {
+        .fifth-txt-containers {
+          div {
+            flex-flow: wrap-reverse;
+          }
+          p {
+            width: 80%;
+            margin: 2em auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "../global/global";
+
+
+.h-third {
+    @media screen and (min-width: 800px) {
+        margin: 6em 0 1em;
+    }
+    .nums{
+        color: #ffffff;
+        @media screen and (min-width: 1280px) {
+            margin: 0 0 2em;
+        }
+        font-size: 2em;
+        justify-content: space-evenly;
+        font-family: 'barow-bold';
+    }
+    .e-com{
+       
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .h-third{
+        .nums{
+            h2{
+                margin: 0.5em auto;
+            }
+        }
+    }
+  }
+  
