@@ -34,42 +34,6 @@
           margin: 0 1em 2em 0;
         }
 
-        .github-rate {
-          @media screen and (min-width: 600px) {
-            width: 15%;
-          }
-          background: #1f1f27;
-
-          .gh-dets {
-            @media screen and (min-width: 600px) {
-              width: 80%;
-              margin: 0 auto;
-              padding: 1em 0;
-            }
-
-            h4 {
-              @media screen and (min-width: 600px) {
-                margin: 0.4em 0 0 0;
-              }
-              font-size: 1.5em;
-              font-weight: 100;
-              text-align: center;
-            }
-
-            p {
-              color: #8f8f93;
-              text-align: center;
-              font-size: 0.7em;
-            }
-
-            &:nth-child(1) {
-              @media screen and (min-width: 600px) {
-                border-bottom: 2px solid #8f8f93;
-              }
-            }
-          }
-        }
-
         .project-descr {
           h4 {
             padding: 0.4em 0;
@@ -118,7 +82,6 @@
 
   a {
     margin: 1em auto 0.4em;
-    text-decoration: none;
     color: #fff;
     font-size: 1.6em;
   }

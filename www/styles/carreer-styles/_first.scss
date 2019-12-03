@@ -4,14 +4,14 @@
     background: #2C2D34 url('./assets/images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
+    color: #ffffff;
    
     .f-title {
-        @media screen and (min-width: 1025px) {
-            margin: auto;
+        @media screen and (min-width: 600px) {
+        margin: auto ;
         }
         width: 60%;
         padding: 2em 0;
-        color: #ffffff;
 
         h1 {
             font-size: 4em;
@@ -31,10 +31,6 @@
     
 
     .f-container {
-        // border: 1px solid #fff;
-        // padding: 2em 0 0 0;
-        // width: 95%;
-        // margin: auto;
 
         .picture-container {
             margin: auto;
@@ -50,7 +46,9 @@
 
                 .pic-1,
                 .pic-2 {
+                    @media screen and (min-width: 1280px) {
                     height: 40vh;
+                    }
                 }
 
                 .pic-3,
@@ -75,10 +73,8 @@
             padding: 2em;
 
             section {
-                color: #ffffff;
                 text-align: center;
                 margin: 0.5em;
-                // width: 30%;
                 h3 {
                     font-size: 1.8em;
                 }
@@ -91,10 +87,13 @@
         }
     }
 }
-@media screen and (max-width:1024x) {
+@media screen and (max-width:1280px) {
     .pic-1,
     .pic-2 {
-        height: auto;
+        height: 20vh;
+    }
+    .pic-3{
+        height: 10vh;
     }
 }
 
@@ -138,8 +137,9 @@
 }
 
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 600px) {
     .f-title {
-        margin: none;
+        margin: 0 1em;
     }
 }

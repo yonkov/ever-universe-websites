@@ -8,7 +8,7 @@ miniMenu.addEventListener("click", function (e) {
     if(isHidden){
         hiddenMenu.style.transform = "translate(0,0)";
     }else{
-        hiddenMenu.style.transform = "translate(0,-400px)";
+        hiddenMenu.style.transform = "translate(0,-500px)";
     }
     
     isHidden = !isHidden;
@@ -17,5 +17,5 @@ miniMenu.addEventListener("click", function (e) {
 hiddenMenu.addEventListener('click', function(e){
     e.preventDefault();
     e.stopPropagation();
-    hiddenMenu.style.transform = "translate(0,-400px)";
+    hiddenMenu.style.transform = "translate(0,-500px)";
 })

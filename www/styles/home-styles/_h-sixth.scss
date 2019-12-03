@@ -19,22 +19,9 @@
   }
 
   .list-wrapper {
-    margin: 1em 1em 0;
     @media screen and (min-width: 1280px) {
     justify-content: space-between;
     }
-    .list-columns {
-      h5 {
-        color: $secondary-color;
-        text-transform: uppercase;
-        font-size: 1em;
-      }
-
-      ul {
-        list-style-type: none;
-        margin: 1em 0;
-      }
-
       &:nth-child(1) {
         ul {
           &:nth-child(2) {
@@ -47,7 +34,7 @@
     img {
       width: 35%;
     }
-  }
+  
   p {
     font-style: italic;
   }
@@ -65,6 +52,7 @@
     justify-content: center;
   }
 }
+
 
 @media screen and (max-width: 1280px) {
   .h-sixth {
@@ -105,7 +93,7 @@
         }
     }
     .list-wrapper {
-    flex-flow: wrap;
+      
     img {
       margin: auto;
       width: 80%;
