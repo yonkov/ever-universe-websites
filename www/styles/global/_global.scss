@@ -31,7 +31,7 @@
 }
 $secondary-color: #66ded1;
 $primary-background: #2a2c39;
-main{
+main {
   background: $primary-background;
 }
 button {
@@ -106,14 +106,25 @@ a {
   }
 }
 // in works,
-.yellow-link {
+.yellow-link,
+.red-link {
   align-self: center;
-  color: #d2bd2e;
-  @media screen and(min-width:600px){
+  @media screen and(min-width:600px) {
     font-size: 2em;
   }
   svg {
     margin: 0 0 0.1em 0;
+  }
+}
+.yellow-link {
+  color: #d2bd2e;
+}
+.red-link {
+  color: #dd0d3d;
+  svg {
+    #link-arrow {
+      fill: #dd0d3d;
+    }
   }
 }
 
@@ -145,7 +156,14 @@ a {
     border: 2px solid $secondary-color;
     width: 40%;
   }
-
+  .yellow-hr{
+    background: #d2bd2e;
+    border-color: #d2bd2e;
+  }
+  .red-hr{
+    background: #dd0d3d;
+    border-color: #dd0d3d;
+  }
   p {
     font-size: 1.1em;
     margin: 1em 0 0.6em;
@@ -170,7 +188,7 @@ a {
       margin: 1em 0;
     }
   }
-  @media screen and(max-width:600px){
+  @media screen and(max-width:600px) {
     flex-flow: wrap;
   }
 }

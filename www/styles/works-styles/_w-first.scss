@@ -46,7 +46,7 @@ main{
       }
     }
   }
-  img {
+  picture {
     width: 90%;
     margin: auto;
   }
@@ -88,8 +88,14 @@ main{
       }
       
       .client-feedback-arrows {
-        @media screen and (min-width: 600px) {
+        @media screen and (min-width: 1000px) {
         margin: 0 -5em;
+        width: 20%;
+        }
+        @media screen and (max-width: 1000px) and (min-width:600px) {
+          width: 30%;
+          margin: 0 -5em;
+
         }
         background: #ffffff;
         svg {
@@ -150,7 +156,7 @@ main{
     .image-w-arrows{
       .client-feedback-arrows{
         width: 35%;
-        margin: -4em 0 0;
+        margin: -3em 0 0;
       }
     }
   }
@@ -165,7 +171,7 @@ main{
       text-align: center;
     }
   }
-  .yellow-link{
+  .yellow-link, .red-link{
     font-size: 1.5em;
   }
 }

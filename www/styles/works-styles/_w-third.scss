@@ -18,7 +18,7 @@
         }
       }
     }
-    .yellow-link{
+    .yellow-link, .red-link{
       align-self: baseline;
 
     }
@@ -42,10 +42,7 @@
         h2{
             margin: 0 0 0.4em;
         }
-        hr{
-            border-color: #d2bd2e;
-            background: #d2bd2e;
-        }
+      
     
       }
       .paragraph-txt{
@@ -87,6 +84,7 @@
       &:nth-child(5){
         a{
           padding:1em;
+          margin: auto;
         }
       }
       div{
@@ -103,7 +101,7 @@
         p{
           margin: 1em 0;
         }
-        .yellow-link{
+        .yellow-link, .red-link{
           align-self: baseline;
         }
         #mobile-need-app{
