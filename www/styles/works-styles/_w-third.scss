@@ -32,9 +32,7 @@
     }
     div {
         width: 40%;
-        @media screen and (min-width: 600px) {
-        margin: 3em auto 0;
-        }
+        margin: 3em auto 1em;
       .h-titles-w-b{
         @media screen and (min-width: 600px) {
           width: 65%;
@@ -93,7 +91,6 @@
       }
       div{
         width: 90%;
-        margin: 3em auto 1em;
         .h-titles-w-b{
           width: 100%;
           h2{

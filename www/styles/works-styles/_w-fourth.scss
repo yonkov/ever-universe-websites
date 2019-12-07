@@ -13,9 +13,10 @@
     }
   }
   .icons {
-    justify-content: space-evenly;
+    justify-content:center;
     .icon {
       color: #ffffff;
+      margin: 0 1em;
       @media screen and(min-width:600px) {
         background: #1e202a;
         border: 1px solid #707070;
@@ -162,7 +163,7 @@
       border: 1px solid #707070;
       .icon {
         height: auto;
-        width: 15%;
+        width: 12%;
         img {
           margin: auto;
           width: 50%;

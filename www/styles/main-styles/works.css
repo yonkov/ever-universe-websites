@@ -799,6 +799,10 @@ a:hover {
   text-transform: uppercase;
 }
 
+main {
+  padding: 1em 0 0 0;
+}
+
 .back {
   padding: 1em 2em;
 }
@@ -1260,6 +1264,20 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 600px) and (-ms-high-contrast: active), screen and (min-width: 600px) and (-ms-high-contrast: none) {
+  .w-second .list-wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 600px) and (min-width: 600px) {
+  .w-second .list-wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .w-second .list-wrapper .list-columns ul {
   margin: 1em auto;
   list-style-type: disc;
@@ -1583,12 +1601,7 @@ a:hover {
 
 .w-third section div {
   width: 40%;
-}
-
-@media screen and (min-width: 600px) {
-  .w-third section div {
-    margin: 3em auto 0;
-  }
+  margin: 3em auto 1em;
 }
 
 .w-third section div .h-titles-w-b {
@@ -1655,7 +1668,6 @@ a:hover {
   }
   .w-third section div {
     width: 90%;
-    margin: 3em auto 1em;
   }
   .w-third section div .h-titles-w-b {
     width: 100%;
@@ -1933,13 +1945,14 @@ a:hover {
 }
 
 .w-fourth .icons {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .w-fourth .icons .icon {
   color: #ffffff;
+  margin: 0 1em;
   text-align: center;
 }
 
@@ -2099,7 +2112,7 @@ a:hover {
   }
   .w-fourth .icons .icon {
     height: auto;
-    width: 15%;
+    width: 12%;
   }
   .w-fourth .icons .icon img {
     margin: auto;

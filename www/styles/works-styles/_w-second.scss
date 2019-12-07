@@ -1,5 +1,5 @@
 @import "../global/global";
-
+@import "../global/ie-mixin";
 .w-second {
   color: #ffffff;
   width: 95%;
@@ -19,7 +19,11 @@
     }
   }
   .list-wrapper {
+   
     @media screen and (min-width: 600px) {
+      @include ie{
+        justify-content: space-around;
+      }
       justify-content: space-evenly;
     }
     .list-columns {
