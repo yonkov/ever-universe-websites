@@ -8,11 +8,21 @@
   section {
     &:nth-child(5){
       @media screen and(min-width:600px){
-        .yellow-link{
+        #mobile-need-app{
+          display: none;
+        }
+      }
+      @media screen and(max-width:600px){
+        #need-app{
           display: none;
         }
       }
     }
+    .yellow-link{
+      align-self: baseline;
+
+    }
+
     img {
       background: $primary-background;
       @media screen and (min-width: 600px) {
@@ -22,7 +32,9 @@
     }
     div {
         width: 40%;
-        margin: 1em auto;
+        @media screen and (min-width: 600px) {
+        margin: 3em auto 0;
+        }
       .h-titles-w-b{
         @media screen and (min-width: 600px) {
           width: 65%;
@@ -38,24 +50,29 @@
         }
     
       }
+      .paragraph-txt{
+        width: 100%;
+        margin: 2em 0;
+      }
+      
       p{
         @media screen and (min-width: 600px) {
-        margin: 2em 0;
+        margin: 1em 0;
+        width: 90%;
         }
-        font-size: 0.8em;
+        font-size:1em;
     }
 
     .mobile-icons{
+      width: 80%;
         margin: 0;
         div{
             width: 90%;
             svg{
-                margin: 0 1em;
+                margin: 0 1em 0 0;
             }
         }
-        p{
-            margin: 0 0 1em;
-        }
+        
     }
     }
 
@@ -76,6 +93,7 @@
       }
       div{
         width: 90%;
+        margin: 3em auto 1em;
         .h-titles-w-b{
           width: 100%;
           h2{
@@ -90,6 +108,9 @@
         }
         .yellow-link{
           align-self: baseline;
+        }
+        #mobile-need-app{
+          margin: auto;
         }
       }
       .mobile-icons{

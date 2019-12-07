@@ -5,7 +5,9 @@ footer {
 
     .e-t {
         color: #82848F;
+        @media screen and (min-width: 1000px) {
         padding: 0 0 0 10em;
+        }
     }
 
     .network-buttons {

@@ -835,11 +835,11 @@ a:hover {
 .w-first .top h1 {
   font-weight: 100;
   margin: 1em;
-  font-size: 3em;
 }
 
 @media screen and (min-width: 600px) {
   .w-first .top h1 {
+    font-size: 3em;
     width: 30%;
   }
 }
@@ -847,7 +847,14 @@ a:hover {
 @media screen and (min-width: 600px) {
   .w-first .top .github-rate {
     width: 5%;
-    margin: 1em 0;
+    margin: 2em 0;
+  }
+  .w-first .top .github-rate .gh-dets h4 {
+    margin: -0.5em 0 0 0;
+    font-size: 1em;
+  }
+  .w-first .top .github-rate .gh-dets p {
+    font-size: 0.5em;
   }
 }
 
@@ -953,6 +960,13 @@ a:hover {
     padding-right: 1em;
     border-right: 2px solid #4c4c52;
   }
+  .w-first picture {
+    width: 95%;
+    margin: auto;
+  }
+  .w-first picture img {
+    width: 100%;
+  }
   .w-first .top-descr .top-descr-txt {
     width: 90%;
   }
@@ -961,6 +975,7 @@ a:hover {
   }
   .w-first h1 {
     width: 75%;
+    font-size: 2em;
   }
   .w-first .image-w-arrows .client-feedback-arrows {
     width: 35%;
@@ -1246,7 +1261,12 @@ a:hover {
 }
 
 .w-second .list-wrapper .list-columns ul {
+  margin: 1em auto;
   list-style-type: disc;
+}
+
+.w-second .list-wrapper .list-columns:nth-child(1) ul:nth-child(2) {
+  list-style-type: none;
 }
 
 @media screen and (min-width: 1280px) {
@@ -1290,6 +1310,7 @@ a:hover {
   }
   .w-second .list-wrapper .list-columns ul {
     list-style-type: none;
+    margin: 1em 0;
   }
   .w-second .list-wrapper img {
     width: 100%;
@@ -1533,9 +1554,20 @@ a:hover {
 }
 
 @media screen and (min-width: 600px) {
-  .w-third section:nth-child(5) .yellow-link {
+  .w-third section:nth-child(5) #mobile-need-app {
     display: none;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .w-third section:nth-child(5) #need-app {
+    display: none;
+  }
+}
+
+.w-third section .yellow-link {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
 }
 
 .w-third section img {
@@ -1551,7 +1583,12 @@ a:hover {
 
 .w-third section div {
   width: 40%;
-  margin: 1em auto;
+}
+
+@media screen and (min-width: 600px) {
+  .w-third section div {
+    margin: 3em auto 0;
+  }
 }
 
 .w-third section div .h-titles-w-b {
@@ -1574,17 +1611,24 @@ a:hover {
   background: #d2bd2e;
 }
 
+.w-third section div .paragraph-txt {
+  width: 100%;
+  margin: 2em 0;
+}
+
 .w-third section div p {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 @media screen and (min-width: 600px) {
   .w-third section div p {
-    margin: 2em 0;
+    margin: 1em 0;
+    width: 90%;
   }
 }
 
 .w-third section div .mobile-icons {
+  width: 80%;
   margin: 0;
 }
 
@@ -1593,11 +1637,7 @@ a:hover {
 }
 
 .w-third section div .mobile-icons div svg {
-  margin: 0 1em;
-}
-
-.w-third section div .mobile-icons p {
-  margin: 0 0 1em;
+  margin: 0 1em 0 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -1615,6 +1655,7 @@ a:hover {
   }
   .w-third section div {
     width: 90%;
+    margin: 3em auto 1em;
   }
   .w-third section div .h-titles-w-b {
     width: 100%;
@@ -1631,6 +1672,9 @@ a:hover {
   .w-third section div .yellow-link {
     -ms-flex-item-align: baseline;
         align-self: baseline;
+  }
+  .w-third section div #mobile-need-app {
+    margin: auto;
   }
   .w-third section .mobile-icons div {
     margin: 0;
@@ -1943,7 +1987,7 @@ a:hover {
   margin: 0 1em;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .w-fourth div .person-card {
     width: 10%;
   }
@@ -2010,7 +2054,26 @@ a:hover {
     font-size: 0.5em;
   }
   .w-fourth .icons .icon .num {
-    font-size: 0.8em;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .w-fourth .people-cont {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .w-fourth .people-cont .person-card {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .w-fourth .people-cont .person-card {
+    width: 25%;
+  }
+  .w-fourth .icons .icon {
+    width: 12%;
   }
 }
 
@@ -2019,10 +2082,15 @@ a:hover {
     margin: 2em auto;
     width: 80%;
   }
+  .w-fourth .h-titles-w-b h2 {
+    font-size: 1.5em;
+  }
   .w-fourth .h-titles-w-b hr {
     width: 80%;
   }
   .w-fourth .icons {
+    width: 95%;
+    margin: auto;
     padding: 1em 0;
     -ms-flex-flow: wrap;
         flex-flow: wrap;
@@ -2031,10 +2099,11 @@ a:hover {
   }
   .w-fourth .icons .icon {
     height: auto;
-    width: 10%;
+    width: 15%;
   }
   .w-fourth .icons .icon img {
     margin: auto;
+    width: 50%;
   }
   .w-fourth .icons .icon .num {
     font-size: 1.5em;
@@ -2062,12 +2131,19 @@ a:hover {
   }
   .w-fourth .people-cont .person-card {
     width: 40%;
+    margin: 1em auto;
   }
   .w-fourth .people-cont .person-card .person-icons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .w-fourth .people-cont .person-card .person-icons a {
+    margin: 0 0.5em 0 0;
   }
   .w-fourth .hire-us-btn {
     width: 40%;
@@ -2710,7 +2786,12 @@ footer {
 
 footer .e-t {
   color: #82848F;
-  padding: 0 0 0 10em;
+}
+
+@media screen and (min-width: 1000px) {
+  footer .e-t {
+    padding: 0 0 0 10em;
+  }
 }
 
 footer .network-buttons {
