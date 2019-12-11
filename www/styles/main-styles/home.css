@@ -1426,6 +1426,7 @@ main .h-first a {
 }
 
 .e-com .info-cloud .cloud-descr .more-ifo-p {
+  display: block;
   margin: auto;
   color: #ffffff;
   font-size: 0.8em;
