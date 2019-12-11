@@ -1355,6 +1355,12 @@ main .h-first a {
   margin: auto;
 }
 
+@media screen and (min-width: 1280px) {
+  .e-com {
+    height: 65vh;
+  }
+}
+
 .e-com .cloud-descr {
   margin: 0 0 0 1em;
 }

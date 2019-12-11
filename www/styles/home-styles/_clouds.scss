@@ -1,6 +1,9 @@
 .e-com {
   width: 90%;
   margin: auto;
+  @media screen and(min-width: 1280px){
+    height: 65vh;
+  };
   .cloud-descr {
     .close{
       display: none;
