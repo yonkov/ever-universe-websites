@@ -40,6 +40,8 @@
   }
 
   .people {
+    width: 90%;
+    margin: auto;
     .person-card {
       @media screen and (max-width: 600px) {
         width: 20%;
@@ -51,7 +53,8 @@
     }
   }
   .btns {
-    margin: 1em 0;
+    width: 90%;
+    margin: auto;
     .join-btn,
     .hire-us-btn {
       @media screen and(min-width: 800px) {
@@ -64,7 +67,11 @@
   }
 }
 
+
 @media screen and(max-width: 800px) {
+  .people{
+    flex-flow: wrap;
+  }
   .btns {
       flex-flow: row;
       justify-content: center;
@@ -96,9 +103,14 @@
         }
       }
     }
-    .people {
-      flex-flow: row;
-    }
+   .people{
+     .person-card{
+       width: 40%;
+     }
+     .icons{
+       flex-flow: row;
+     }
+   }
     .btns{
         flex-flow: row;
     }

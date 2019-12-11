@@ -11,6 +11,12 @@
     margin: auto;
     font-size: 1.2em;
   }
+  .h-titles-w-b{
+    margin: auto;
+    hr{
+      margin: 1em auto;
+    }
+  }
 
   .clients-feedback {
     @media screen and (min-width: 1000px) {

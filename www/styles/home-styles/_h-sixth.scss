@@ -2,8 +2,8 @@
 
 .h-sixth {
   color: #ffffff;
-  padding: 1em 9em;
-
+  width: 90%;
+  margin: auto;
   .h-titles-w-b {
     margin: 0;
 
@@ -20,6 +20,9 @@
   .list-wrapper {
     @media screen and (min-width: 1280px) {
     justify-content: space-between;
+    }
+    .list-columns{
+      width: 15%;
     }
       &:nth-child(1) {
         ul {
@@ -55,7 +58,6 @@
 
 @media screen and (max-width: 1280px) {
   .h-sixth {
-    padding: 1em 3em;
     .list-wrapper {
       .list-columns {
         margin: 1em;
@@ -69,10 +71,13 @@
 
 @media screen and (max-width: 1000px) {
   .h-sixth {
-    padding: 0;
     .list-wrapper {
       margin: 0;
       flex-flow: wrap;
+      .list-columns{
+        width: 10%;
+        margin: 0 auto;
+      }
       img {
         width: 30%;
       }
@@ -92,7 +97,9 @@
         }
     }
     .list-wrapper {
-      
+      .list-columns{
+        width: 35%;
+      }
     img {
       margin: auto;
       width: 80%;
