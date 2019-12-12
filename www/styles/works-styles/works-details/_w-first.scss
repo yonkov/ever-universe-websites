@@ -123,6 +123,7 @@ main{
   .w-first {
     .top {
       .github-rate {
+        width: fit-content;
         flex-flow: row;
         .gh-dets {
           margin: 1em;

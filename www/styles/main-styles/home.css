@@ -121,6 +121,22 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .github-rate {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+  .github-rate .gh-dets {
+    margin: 1em;
+  }
+  .github-rate .gh-dets:nth-child(1) {
+    padding-right: 1em;
+    border-right: 2px solid #4c4c52;
+  }
+}
+
 .yellow-link,
 .red-link {
   -ms-flex-item-align: center;
@@ -239,8 +255,8 @@ a:hover {
   padding: 1em 0 0.4em;
 }
 
-.person-card .icons a svg {
-  margin: 1em 1em 1em 0;
+.person-card .icons a {
+  margin: 1em 1em 0 0;
 }
 
 .hire-us-btn {

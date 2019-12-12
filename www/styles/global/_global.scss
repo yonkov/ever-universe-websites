@@ -105,6 +105,19 @@ a {
     }
   }
 }
+
+@media screen and(max-width: 600px){
+  .github-rate {
+    flex-flow: row;
+    .gh-dets {
+      margin: 1em;
+      &:nth-child(1) {
+        padding-right: 1em;
+        border-right: 2px solid #4c4c52;
+      }
+    }
+  }
+}
 // in works,
 .yellow-link,
 .red-link {
@@ -206,9 +219,7 @@ a {
 
   .icons {
     a {
-      svg {
-        margin: 1em 1em 1em 0;
-      }
+        margin: 1em 1em 0 0;
     }
   }
 }
@@ -221,3 +232,5 @@ a {
   border-radius: 2px;
   text-transform: uppercase;
 }
+
+
