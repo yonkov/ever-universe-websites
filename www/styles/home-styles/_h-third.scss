@@ -1,6 +1,13 @@
 
 
 .h-third {
+    .h-titles-w-b{
+        width: fit-content;
+        margin: 3em auto 0;
+        hr{
+            margin: auto;
+        }
+    }
     @media screen and (min-width: 800px) {
         margin: 6em 0 1em;
     }
@@ -12,9 +19,6 @@
         font-size: 2em;
         justify-content: space-evenly;
         font-family: 'barow-bold';
-    }
-    .e-com{
-        // margin: auto; 
     }
 }
 

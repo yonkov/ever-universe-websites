@@ -9,7 +9,9 @@ main {
    }
     background-repeat: no-repeat;
     width: 100%;
+    @media screen and (min-width: 1280px) {
     height: 100vh;
+    }
     .h-f-title {
       color: #ffffff;
       margin:  auto;
@@ -89,6 +91,7 @@ main {
   .h-first{
     background-size: cover;
    background-position: center;
+   margin: 0 0 3em;
     .h-f-title{
       padding: 8em 0 0 0;
       h1{

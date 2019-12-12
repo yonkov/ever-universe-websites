@@ -1,140 +1,181 @@
-
 footer {
-    background: $primary-background;
+  background: $primary-background;
 
-    .e-t {
-        color: #82848F;
-        @media screen and (min-width: 1000px) {
-        padding: 0 0 0 10em;
-        }
+  .e-t {
+    color: #82848f;
+    @media screen and (min-width: 1000px) {
+      padding: 0 0 0 10em;
     }
+  }
 
-    .network-buttons {
-        justify-content: space-around;
-        border: 1px solid #40414C;
-        padding: 3em;
-        margin: 2em 0;
+  .network-buttons {
+    justify-content: space-around;
+    border: 1px solid #40414c;
+    padding: 3em;
+    margin: 2em 0;
 
-        .link-buttons {
-            color: #ffffff;
-            padding: 1em;
-            display: flex;
-            @media screen and (min-width: 698px) {
-                width: 10%;
-                margin: 1em;
-            }
-            border-radius: 5px;
-
-            svg {
-                padding: 0 0.5em 0 0;
-            }
-
-            p {
-                margin: auto;
-            }
-        }
-    }
-
-    .footer-menu {
-        justify-content: space-around;
-        color: #ffffff;
-        border-bottom: 1px solid #40414C;
+    .link-buttons {
+      color: #ffffff;
+      padding: 1em;
+      display: flex;
+      @media screen and (min-width: 698px) {
+        width: 10%;
         margin: 1em;
+      }
+      border-radius: 5px;
 
-        div {
-            a {
-                color: #D4D4D7;
-                margin: 1em;
-                font-size: 1.5em;
+      svg {
+        padding: 0 0.5em 0 0;
+      }
 
-            }
-
-            ul {
-                padding: 1em;
-                color: #A9AAAF;
-            }
-        }
+      p {
+        margin: auto;
+      }
     }
+  }
 
-    .bottom {
-        justify-content: space-around;
+  .footer-menu {
+    justify-content: space-around;
+    color: #ffffff;
+    border-bottom: 1px solid #40414c;
+    margin: 1em;
+
+    div {
+      a {
+        color: #d4d4d7;
+        margin: 0 0 0.4em;
+        font-size: 1.2em;
+      }
+
+      ul {
         padding: 1em;
-
-        h5,
-        a {
-            color: #82848F;
-            font-size: 1em;
-        }
+        color: #a9aaaf;
+      }
     }
+    .sub-logos {
+      .switch-field {
+        width: fit-content;
+        border: 1px solid #2d3545;
+        border-radius: 25px;
+        label {
+          svg {
+            border-radius: 50%;
+          }
+        }
+        input[type="radio"] {
+          display: none;
+          &:checked + label {
+            svg {
+              background: #9ba4b7;
+              path {
+                fill: #1f1f27;
+              }
+            }
+          }
+        }
+      }
+      .extra-logos {
+        margin: 1em 0 0;
+          border-top: 1px solid #40414C;
+        img {
+          width: 26%;
+          margin: 1em;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    justify-content: center;
+    padding: 1em;
+    color: #82848f;
+    svg{
+        margin: auto;
+    }
+    div {
+      width: 60%;
+      margin: 0 auto;
+      h5,
+      a {
+        color: #82848f;
+        font-size: 1em;
+      }
+      h5 {
+        margin: 0 0 1em;
+      }
+      p {
+        font-size: 0.8em;
+      }
+    }
+  }
 }
 
 .github,
 .twitter {
-    background: #55ABEE;
+  background: #55abee;
 }
 
 .facebook {
-    background: #3B5997;
+  background: #3b5997;
 }
 
 .up {
-    background: #00E034;
+  background: #00e034;
 }
 
 .linkedin {
-    background: #2967B2;
+  background: #2967b2;
 }
 
 @media screen and(max-width:1000px) {
-    .network-buttons {
-
-        .link-buttons {
-            svg {
-                margin: auto;
-            }
-            p {
-                display: none;
-            }
-        }
+  .network-buttons {
+    .link-buttons {
+      svg {
+        margin: auto;
+      }
+      p {
+        display: none;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .e-t {
-        padding: 1em 0 0 0px;
-        text-align: center;
-        text-transform: uppercase;
-    }
+  .e-t {
+    padding: 1em 0 0 0px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-    .network-buttons {
-        flex-flow: row;
-        flex-wrap: wrap;
+  .network-buttons {
+    flex-flow: row;
+    flex-wrap: wrap;
 
-        .link-buttons {
-            width: 15%;
-            margin: 0.4em;
+    .link-buttons {
+      width: 15%;
+      margin: 0.4em;
 
-            svg {
-                margin: auto;
-            }
-        }
+      svg {
+        margin: auto;
+      }
     }
-    .footer-menu{
-        ul{
-            list-style-type: none;
-        }
-        div{
-            margin: auto;
-            text-align: center;
-        }
+  }
+  .footer-menu {
+    ul {
+      list-style-type: none;
     }
-    .bottom{
-        h5{
-            margin: auto;
-        }
-        svg{
-            margin: auto;
-             padding: 1em;
-        }
+    div {
+      margin: 0 auto;
+      text-align: center;
     }
+  }
+  .bottom {
+    h5 {
+      margin: auto;
+    }
+    svg {
+      margin: auto;
+      padding: 1em;
+    }
+  }
 }
