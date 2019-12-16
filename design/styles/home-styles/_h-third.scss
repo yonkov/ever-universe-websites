@@ -1,0 +1,35 @@
+
+
+.h-third {
+    .h-titles-w-b{
+        width: fit-content;
+        margin: 3em auto 0;
+        hr{
+            margin: auto;
+        }
+    }
+    @media screen and (min-width: 800px) {
+        margin: 6em 0 1em;
+    }
+    .nums{
+        color: #ffffff;
+        @media screen and (min-width: 1280px) {
+            margin: 0 0 2em;
+        }
+        font-size: 2em;
+        justify-content: space-evenly;
+        font-family: 'barow-bold';
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .h-third{
+        .nums{
+            h2{
+                margin: 0.5em auto;
+            }
+        }
+    }
+  }
+  

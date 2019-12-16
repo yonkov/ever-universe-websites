@@ -1,0 +1,236 @@
+// fonts
+
+@font-face {
+  font-family: "barow-regular";
+  src: url("../../assets/fonts/barlow-semi-condensed.regular.ttf")
+      format("truetype"),
+    url("../../assets/fonts/barlow-semi-condensed.regular.woff") format("woff");
+}
+@font-face {
+  font-family: "barow-bold";
+  src: url("../../assets/fonts/barlow-semi-condensed.bold.ttf")
+      format("truetype"),
+    url("../../assets/fonts/barlow-semi-condensed.bold.woff") format("woff");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../../assets/fonts/Roboto-Bold.ttf") format("truetype"),
+    url("../../assets/fonts/Roboto-Bold_1.woff") format("woff");
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../../assets/fonts/RobotoCondensed-Regular.ttf") format("truetype"),
+    url("../../assets/fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "roboto-regular", sans-serif;
+  outline: none;
+}
+$secondary-color: #66ded1;
+$primary-background: #2a2c39;
+main {
+  background: $primary-background;
+}
+button {
+  font-family: "roboto-bold", sans-serif;
+}
+img {
+  width: 100%;
+}
+h1,
+h2,
+h3 {
+  font-family: "roboto-regular", sans-serif;
+}
+.row {
+  display: flex;
+  // if wrap add widht 100% to section on _first
+  // flex-wrap: wrap;
+}
+.col {
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and(max-width:600px) {
+  .row {
+    flex-flow: column;
+  }
+}
+
+button,
+a {
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+// IN HOME, WORKS
+.github-rate {
+  color: #fff;
+  @media screen and (min-width: 600px) {
+    width: 15%;
+  }
+  background: #1f1f27;
+
+  .gh-dets {
+    @media screen and (min-width: 600px) {
+      width: 80%;
+      margin: 0 auto;
+      padding: 1em 0;
+    }
+
+    h4 {
+      @media screen and (min-width: 600px) {
+        margin: 0.4em 0 0 0;
+      }
+      font-size: 1.5em;
+      font-weight: 100;
+      text-align: center;
+    }
+
+    p {
+      color: #8f8f93;
+      text-align: center;
+      font-size: 0.7em;
+    }
+
+    &:nth-child(1) {
+      @media screen and (min-width: 600px) {
+        border-bottom: 2px solid #8f8f93;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 600px){
+  .github-rate {
+    flex-flow: row;
+    .gh-dets {
+      margin: 1em;
+      &:nth-child(1) {
+        padding-right: 1em;
+        border-right: 2px solid #4c4c52;
+      }
+    }
+  }
+}
+// in works,
+.yellow-link,
+.red-link {
+  align-self: center;
+  @media screen and(min-width:600px) {
+    font-size: 2em;
+  }
+  svg {
+    margin: 0 0 0.1em 0;
+  }
+}
+.yellow-link {
+  color: #d2bd2e;
+}
+.red-link {
+  color: #dd0d3d;
+  svg {
+    #link-arrow {
+      fill: #dd0d3d;
+    }
+  }
+}
+
+// ARROWS
+
+.client-feedback-arrows {
+  width: 4em;
+  height: 10vh;
+  width: 15%;
+  align-self: flex-end;
+  margin: 0 0 0 10em;
+  display: flex;
+  justify-content: space-around;
+  svg {
+    margin: 2em 0;
+  }
+}
+
+.h-titles-w-b {
+  color: #fff;
+
+  h2 {
+    font-weight: lighter;
+    font-size: 2.5em;
+  }
+
+  hr {
+    background: $secondary-color;
+    border: 2px solid $secondary-color;
+    width: 40%;
+  }
+  .yellow-hr{
+    background: #d2bd2e;
+    border-color: #d2bd2e;
+  }
+  .red-hr{
+    background: #dd0d3d;
+    border-color: #dd0d3d;
+  }
+  p {
+    font-size: 1.1em;
+    margin: 1em 0 0.6em;
+  }
+
+  span {
+    color: $secondary-color;
+  }
+}
+
+.list-wrapper {
+  margin: 1em 1em 0;
+  .list-columns {
+    h5 {
+      color: $secondary-color;
+      text-transform: uppercase;
+      font-size: 1em;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 1em 0;
+    }
+  }
+  @media screen and(max-width:600px) {
+    flex-flow: wrap;
+  }
+}
+
+.person-card {
+  margin: 1em;
+  h4,
+  h5 {
+    font-weight: 100;
+  }
+
+  h4 {
+    padding: 1em 0 0.4em;
+  }
+
+  .icons {
+    a {
+        margin: 1em 1em 0 0;
+    }
+  }
+}
+
+.hire-us-btn {
+  background: #dd0d3d;
+  color: #ffffff;
+  padding: 1em;
+  border: 1px solid #dd0d3d;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+

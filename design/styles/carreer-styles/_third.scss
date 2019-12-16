@@ -1,0 +1,135 @@
+.third{
+    background: $primary-background;
+    .row{
+        margin: auto;
+        width: 90%;
+        justify-content: space-around;
+        .t-description{
+            @media screen and (min-width: 698px) {
+                width: 21%;
+            }
+            color: #ffffff;
+            margin: 1em 0;
+            h2{
+                font-size: 2em;
+                margin: 0.5em 0;
+            }
+            p{
+                font-size: 0.8em;
+            }
+        }
+        .t-form{
+            @media screen and (min-width: 698px) {
+                margin: 1em;
+                width: 40%;
+               
+            }
+         
+            background: #ffffff;
+            form{
+                font-weight: bold;
+                @media screen and (min-width: 698px) {
+                    padding: 4em;
+                }
+                label{
+                    font-size: 1.4em;
+                }
+                input[type=text]{
+                    border: none;
+                    font-size: 0.8em;
+                    border-bottom: 1px solid #E0E0E0;
+                    margin: 0 0 1em 0 ;
+                    padding: 0.5em 0;
+                }
+                
+                input[type=file]{
+                    @media screen and (min-width: 1280px) {
+                        transform: translate(26em, -2em);
+                        }
+                    opacity: 0;
+                    cursor: pointer;
+                    z-index: 1;
+               }
+               .i-file{
+                   margin: 1em 0 ;
+              
+               }
+               .file-descr{
+                   font-weight: 100;
+                   padding: 0.4em;
+                   font-size: 0.8em;
+                   color:#757575 ;
+                   border-bottom: 1px solid #e0e0e0;
+               }
+               
+                svg{
+                    @media screen and (min-width: 1280px) {
+                    transform: translate(24em, -3em) rotate(45deg);
+                    }
+                    cursor: pointer;
+            }
+            textarea{
+                border: 1px dashed #CACACA;
+                resize: none;
+                overflow: auto;
+                background: url('./assets/icons/Group\ 4.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                &:focus{
+                    background: none;
+                }
+            }
+            .join-btn{
+                @media screen and (min-width: 698px) {
+                    width: 70%;
+                }
+                margin: 1em 0 0;
+                align-self: flex-end;
+                text-transform: uppercase;
+                color: #fff;
+                background: $secondary-color;
+                font-size: 1.4em;
+                padding: 1em;
+                border: 1px solid;
+                border-radius: 15px;
+                cursor: pointer;
+            }
+            }
+        }
+       
+    }
+}
+@media screen and (max-width: 1280px) {
+   .third{
+       .row{
+        
+           form{
+            input[type=file]{
+                display: none;
+              }
+              svg{
+                  display: none;
+              }
+           }
+       }
+   }
+  
+}
+@media screen and (max-width: 698px) {
+   .t-description{
+       width: 80%;
+       margin: 0;
+   }
+   .t-form{
+       margin: none;
+       width: 100%;
+       form{
+           padding: 1em;
+       }
+   }
+
+   .join-btn{
+       width: 100%;
+   }
+   
+}               

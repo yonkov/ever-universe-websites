@@ -1,0 +1,99 @@
+
+.h-seventh {
+  justify-content: space-around;
+  @media screen and (min-width: 1000px) {
+    padding: 3em;
+  }
+  .seventh-txt-container {
+    color: #ffffff;
+    @media screen and (min-width: 1000px) {
+      width: 35%;
+    }
+    .h-titles-w-b {
+      @media screen and (min-width: 600px) {
+        margin: 2em 0;
+      }
+      h2 {
+        text-align: left;
+      }
+      hr {
+        margin: 0;
+        @media screen and (min-width: 600px) {
+          width: 30%;
+        }
+        margin: 1em 0 0 0;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    .join-btn {
+      @media screen and (min-width: 600px) {
+        margin: 1em 0 0 0;
+      }
+    }
+  }
+}
+
+.join-btn {
+  width: 40%;
+  padding: 1em;
+  text-transform: uppercase;
+  background: $secondary-color;
+  border: 1px solid $secondary-color;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+  .core-values-svg {
+    width: 40%;
+    svg {
+      width: 100%;
+    }
+  }
+  .seventh-txt-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .h-seventh {
+    flex-flow: column;
+  }
+  .core-values-svg {
+    margin: auto;
+    width: 80%;
+    svg {
+      width: 100%;
+    }
+  }
+  .seventh-txt-container {
+    width: 90%;
+    margin: 1em auto 3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .h-seventh {
+    flex-flow: column;
+  }
+  .core-values-svg {
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .seventh-txt-container {
+    .h-titles-w-b {
+      margin: 0.5em auto;
+      hr {
+        width: 100%;
+      }
+    }
+  }
+  .join-btn{
+        margin: 1em auto;
+        width: 50%;
+        font-size: 1em;
+  }
+}
