@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body{
     background-color: #2a2c39;
+    color: #fff;
 }
 
 a {
@@ -101,6 +102,14 @@ a {
 button:hover,
 a:hover {
   cursor: pointer;
+}
+/* Change parent theme styles*/
+.entry-title a {
+    color: #f5f5f5;
+}
+.nav-links a {
+    color: 
+    #d1d1d1;
 }
 
 .github-rate {
@@ -1204,6 +1213,10 @@ a:hover {
   }
 }
 
+.feedback-txt p {
+  color: #333;
+}
+
 @media screen and (max-width: 600px) {
   .h-fourth .clients-feedback img {
     width: 100px;
@@ -1946,6 +1959,10 @@ a:hover {
 }
 
 /* Footer */
+/* Remove parent theme styles */
+.entry-footer {
+    border-top: unset;
+}
 
 footer {
     background: #2a2c39;
