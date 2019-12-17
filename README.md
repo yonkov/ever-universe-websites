@@ -39,7 +39,7 @@ The website uses the following plugins:
 - [Milena Dimova](https://www.linkedin.com/in/dimova-milena-31010414) (UI/UX Designer)
 - [Ruslan Konviser](https://github.com/evereq) - Idea / Business / Content
 
-View full list of our [contributors](https://github.com/ever-co/ever/graphs/contributors).
+View full list of our [contributors](https://github.com/ever-co/ever-website/graphs/contributors).
 
 ## Contact Us
 
