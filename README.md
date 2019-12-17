@@ -9,8 +9,8 @@ The code that powers "Ever Universe" websites:
 
 ### Theme
 
-This website uses the Ever theme, developed by Atanas Yonkov in 2019. The Ever theme is a child theme of the [Scaffold theme](https://wordpress.org/themes/scaffold/), lightweight WordPress theme issued under the GPL License.
-The theme code is available under  `services_ever_co/themes` folder. The two main  theme's files are functions.php and style.css (as per wp docs, nothing exciting here).
+This website is powered by [WordPress](https://wordpress.org/download/) and uses the Ever theme, developed by Atanas Yonkov in 2019. The Ever theme is a child theme of the [Scaffold theme](https://wordpress.org/themes/scaffold/), lightweight theme issued under the GPL License.
+The theme code is available under  `services_ever_co/themes` folder. The two main files in the Ever theme are functions.php and style.css (the way it is shown in the [WordPress documentation](https://developer.wordpress.org/themes/advanced-topics/child-themes/).
 
 ### Plugins
 
