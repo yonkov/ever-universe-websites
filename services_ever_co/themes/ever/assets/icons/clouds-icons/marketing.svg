@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51.873" height="57.101" viewBox="0 0 51.873 57.101">
+  <g id="Group_18" data-name="Group 18" transform="translate(1 60.776) rotate(-90)">
+    <path id="Oval" d="M22.5,45A22.5,22.5,0,1,0,0,22.5" transform="translate(10)" fill="none" stroke="#8f9bb3" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Oval-2" data-name="Oval" d="M13.5,27A13.5,13.5,0,1,0,0,13.5" transform="translate(18.5 9)" fill="none" stroke="#8f9bb3" stroke-miterlimit="10" stroke-width="2"/>
+    <circle id="Oval-3" data-name="Oval" cx="5.5" cy="5.5" r="5.5" transform="translate(26.5 17)" fill="#2a2c39"/>
+    <g id="Group_8" data-name="Group 8" transform="translate(22.839 22.919) rotate(45)">
+      <path id="Triangle" d="M7,0l7,20H0Z" transform="translate(0.576 0.079)" fill="#2a2c39"/>
+      <rect id="Rectangle" width="4" height="14" transform="translate(4.87 16.662)" fill="#2a2c39"/>
+    </g>
+    <path id="Line_13" data-name="Line 13" d="M.175.313h6.6" transform="translate(53 22)" fill="none" stroke="#8f9bb3" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Line_13-2" data-name="Line 13" d="M.175.313h6.6" transform="translate(4.5 22)" fill="none" stroke="#8f9bb3" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>
