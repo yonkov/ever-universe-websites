@@ -1,6 +1,6 @@
 
 
-.h-sixth {
+.tech-we-use{
   color: #ffffff;
   width: 90%;
   margin: auto;
@@ -57,7 +57,7 @@
 
 
 @media screen and (max-width: 1280px) {
-  .h-sixth {
+  .tech-we-use {
     .list-wrapper {
       .list-columns {
         margin: 1em;
@@ -70,7 +70,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .h-sixth {
+  .tech-we-use {
     .list-wrapper {
       margin: 0;
       flex-flow: wrap;
@@ -88,7 +88,7 @@
 
 
 @media screen and (max-width: 600px) {
-  .h-sixth {
+  .tech-we-use {
     width: 95%;
     margin: auto;
     .h-titles-w-b{

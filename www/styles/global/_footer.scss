@@ -53,6 +53,7 @@ footer {
       }
     }
     .sub-logos {
+      width: 30%;
       .switch-field {
         width: fit-content;
         border: 1px solid #2d3545;
@@ -160,6 +161,7 @@ footer {
       }
     }
   }
+  footer{
   .footer-menu {
     ul {
       list-style-type: none;
@@ -168,7 +170,11 @@ footer {
       margin: 0 auto;
       text-align: center;
     }
+    .sub-logos{
+      width: 100%;
+    }
   }
+}
   .bottom {
     h5 {
       margin: auto;

@@ -47,8 +47,6 @@ h3 {
 }
 .row {
   display: flex;
-  // if wrap add widht 100% to section on _first
-  // flex-wrap: wrap;
 }
 .col {
   display: flex;
@@ -155,7 +153,7 @@ a {
     margin: 2em 0;
   }
 }
-
+// Global title-container
 .h-titles-w-b {
   color: #fff;
 
@@ -233,4 +231,94 @@ a {
   text-transform: uppercase;
 }
 
+// global header
+header{
+  color: #ffffff;
+  width: 80%;
+  margin: auto;
+  padding: 2em 0;
+  border-bottom: 1px solid #979797;
+  h1{
+      font-weight: 100;
+      font-size: 3em;
+      font-family: 'barow-regular';
+  }
+  p{
+      margin: auto 1em;
+      font-size: 1.3em;
+      text-transform: uppercase;
+  }
+}
+@media screen and(max-width:600px){
+  header{
+    width: 100%;
+    h1{
+        margin: 0 0.5em 1em;
+        font-size: 2em;
+    }
+    p{
+        margin: auto 1em;
+        font-size: 1em;
+    }
+}
+}
 
+
+// White cards - in case studies and expertise
+
+.projects-container{
+    width: 90%;
+    margin: 2em auto;
+    h5{
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    article{
+        background: #ffffff;
+        margin: 1em 0;
+      
+        section{
+            padding: 4em;
+            margin: auto;
+            width: 45%;
+            h3,p{
+                margin: 1em 0;
+            }
+            p{
+                font-size: 0.8em;
+            }
+          
+        }
+     
+    }
+}
+
+@media screen and(max-width:1024px){
+    .projects-container{
+        article{
+        section{
+            padding: 1em;
+        }
+    }
+}
+}
+
+@media screen and(max-width:600px){
+   
+    .projects-container{
+        h5{
+            font-size: 1.4em;
+            text-align: center;
+        }
+        article{
+            img{
+                width: 100%;
+            }
+            section{
+                width: 80%;
+            }
+    }
+    }
+
+}

@@ -1,0 +1,26 @@
+.solid-products{
+    background: #ffffff;
+    width: 90%;
+    margin: 2em auto;
+    h2{
+        text-align: center;
+        padding: 2em 0 0;
+    }
+    div.row{
+        justify-content: space-around;
+        .solid-pr-description{
+            padding: 15em 0 2em;
+            align-self: flex-end;
+        }
+    }
+}
+
+@media screen and(max-width:600px){
+    .solid-products{
+        div.row{
+            .solid-pr-description{
+                align-self: center;
+            }
+        }
+    }
+}

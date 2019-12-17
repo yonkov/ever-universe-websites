@@ -1,7 +1,27 @@
 @import "../global/global";
 
 @import "../global/navbar";
-@import "../carreer-styles/first";
-@import "../carreer-styles/second";
-@import "../carreer-styles/third";
+@import "../carreer-styles/careers-container";
+@import "../carreer-styles/job-offers";
+@import "../carreer-styles/steps";
+@import "../carreer-styles/solid-product";
+@import "../global/tech-we-use";
+@media screen and(max-width:600px) {
+  .tech-we-use {
+    .h-titles-w-b {
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
+@import "../global/small-form";
+@media screen and(max-width:600px) {
+  .small-form {
+    .t-description {
+      width: 90%;
+      margin: 1em auto;
+    }
+  }
+}
+
 @import "../global/footer";

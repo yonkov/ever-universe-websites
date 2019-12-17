@@ -1,0 +1,92 @@
+.projects-container {
+  article {
+    img {
+      width: 50%;
+      margin: 2em 0 0;
+    }
+    section {
+      width: 30%;
+      .h-titles-w-b {
+        margin: 0 0 2em;
+        h2 {
+          font-size: 1.4em;
+          color: black;
+          margin: 0.3em 0;
+        }
+        hr {
+          background: #dd0d3d;
+          border: 1px solid #dd0d3d;
+        }
+      }
+      p {
+        // font-size: 1em;
+        // width: 74%;
+      }
+      .red-link {
+        align-self: baseline;
+        font-size: 1.4em;
+        margin: 1em 0;
+      }
+    }
+  }
+ 
+}
+
+.small-form {
+    .t-description{
+        width: 30%;
+        margin: 5em 0 0;
+    }
+        form {
+            select{
+                margin: 0.2em 0 0 0;
+                 border: none;
+                 border-bottom: 1px solid #e0e0e0;
+                 color: #757575;
+            }
+          .join-btn {
+            background: #dd0d3d;
+            font-size: 1em;
+            width: 50%;
+          }
+        }
+  }
+  @media screen and(max-width:1024px) {
+      .small-form{
+          form{
+            padding: 2em;
+            width: 21em;
+          }
+      }
+  }
+
+@media screen and(max-width:600px) {
+  .projects-container {
+    article {
+      flex-flow: column-reverse;
+      img {
+        width: 100%;
+      }
+      section {
+        width: 80%;
+        margin: auto;
+        .red-link {
+          margin: 1em 0 0;
+          font-size: 1.6em;
+        }
+      }
+    }
+  }
+  .small-form{
+      width: 100%;
+      .t-description{
+        width: 90%;
+        margin: 0 auto 1em;
+      }
+      form{
+          padding: 1em;
+          margin: auto;
+          width: 90%;
+      }
+  }
+}

@@ -1,33 +1,27 @@
-
-.second{
-    background: $primary-background;
-    padding: 1em;
-    .s-container{
+    .job-offers{
         width: 90%;
         background: #fff;
-        margin: auto;
-        .s-title{
-            text-align: center;
-            padding: 1em;
-            h3{
-                font-size: 2.5em;
-                margin: auto;
+        margin: 1em auto;
+        .h-titles-w-b{
+            margin: auto;
+            padding: 1em 0 0;
+            width: fit-content;
+            h2, p{
+                color: black;
+            }
+            h2{
+                margin: 0.4em 0;
             }
             hr{
-                border: 1px solid $secondary-color;
-                background: $secondary-color;
-                width: 10%;
-                margin: 2em auto;
+                margin: auto;
             }
         }
+        
             .row{
+                padding: 1em 0;
                 justify-content: space-around;
-                padding: 1em;
            section.col{
-               @media screen and (min-width: 698px) {
                 width: 47%;
-               
-            }
                div{
                    transition: 0.3s ease-out;
                    padding: 2em;
@@ -39,7 +33,7 @@
                    }
                    .location{
                        &::before{
-                           content: url('./assets/icons/Shape.svg');
+                           content: url('../../assets/icons/career-icons/location.svg');
                        }
                    }
                    &:hover{
@@ -51,12 +45,20 @@
     
         }
     }
-}
 
-@media screen and (max-width: 700px) {
-    section.col{
+@media screen and (max-width: 600px) {
+    .job-offers{
+        .h-titles-w-b{
+            text-align: center;
+            margin: 1em auto;
+        }
+        .row{
+            section.col{
 
-        width: 100%;
+                width: 100%;
+            }
+        }
     }
+    
    
 }

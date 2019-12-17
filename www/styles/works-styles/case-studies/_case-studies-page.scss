@@ -1,42 +1,20 @@
 @import '../../global/global';
 
-header{
-    color: #ffffff;
-    width: 80%;
-    margin: auto;
-    padding: 2em 0;
-    border-bottom: 1px solid #979797;
-    h1{
-        font-weight: 100;
-        font-size: 3em;
-        font-family: 'barow-regular';
-    }
-    p{
-        margin: auto 1em;
-        font-size: 1.3em;
-        text-transform: uppercase;
-    }
-}
+
 
 .projects-container{
-    width: 90%;
     margin: 2em auto 4em;
-    h5{
-        color: #ffffff;
-        text-transform: uppercase;
-        font-weight: 100;
-    }
+  
     article{
         border: 1px solid #979797;
-        background: #ffffff;
-        margin: 1em 0;
+       
         img{
             width: 35%;
         }
         section{
-            padding: 4em;
-            margin: auto;
-            width: 45%;
+            // padding: 4em;
+            // margin: auto;
+            // width: 45%;
             .project-icons{
                 margin: 1em 0 ;
                 width: 60%;
@@ -44,13 +22,6 @@ header{
                     width: 1em;
                 }
             }
-            h3,p{
-                margin: 1em 0;
-            }
-            p{
-                font-size: 0.8em;
-            }
-          
         }
         .github-rate{
             height: fit-content;
@@ -68,28 +39,9 @@ header{
     }
 }
 
-@media screen and(max-width:1024px){
-    .projects-container{
-        article{
-        section{
-            padding: 1em;
-        }
-    }
-}
-}
 
 @media screen and(max-width:600px){
-    header{
-        width: 100%;
-        h1{
-            margin: 0 0.5em 1em;
-            font-size: 2em;
-        }
-        p{
-            margin: auto 1em;
-            font-size: 1em;
-        }
-    }
+   
     .projects-container{
         h5{
             font-size: 1.4em;

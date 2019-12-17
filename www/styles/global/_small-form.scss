@@ -1,0 +1,115 @@
+.small-form {
+  background: $primary-background;
+  margin: auto;
+  width: 90%;
+  justify-content: space-around;
+
+  .t-description {
+    width: 40%;
+    color: #ffffff;
+    margin: 1em 0;
+    h2 {
+      font-size: 2em;
+      margin: 0.5em 0;
+    }
+    p {
+      font-size: 0.8em;
+    }
+  }
+  div{
+      width: 40%;
+  }
+
+  form {
+    background: #ffffff;
+    font-weight: bold;
+    padding: 4em;
+    width: 27em;
+    label {
+      font-size: 1.4em;
+    }
+    input[type=text] {
+      border: none;
+      font-size: 0.8em;
+      border-bottom: 1px solid #e0e0e0;
+      margin: 0 0 1em 0;
+      padding: 0.5em 0;
+    }
+
+    input[type=file] {
+      opacity: 0;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .i-file {
+      margin: 1em 0;
+    }
+    .file-descr {
+      font-weight: 100;
+      padding: 0.4em;
+      font-size: 0.8em;
+      color: #757575;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    svg {
+        transform: translate(24em, -3em) rotate(45deg);
+      cursor: pointer;
+    }
+    textarea {
+      border: 1px dashed #cacaca;
+      resize: none;
+      overflow: auto;
+      background: url("./assets/icons/Group\ 4.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      &:focus {
+        background: none;
+      }
+    }
+    .join-btn {
+        width: 70%;
+      margin: 1em 0 0;
+      align-self: flex-end;
+      text-transform: uppercase;
+      color: #fff;
+      background: $secondary-color;
+      font-size: 1.4em;
+      padding: 1em;
+      border: 1px solid;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+  @media screen and (max-width: 1024px) {
+      .small-form{
+          
+          form{
+              svg{
+                  display: none;
+              }
+          }
+      }
+  }
+  @media screen and (max-width: 600px) {
+    .t-description {
+      width: 80%;
+      margin: 0;
+    }
+    
+    .small-form{
+      form {
+        width: 80%;
+        margin: auto;
+        padding: 1em;
+        .join-btn {
+          width: 100%;
+          font-size: 1em;
+        }
+      }
+   
+  
+  }
+}
