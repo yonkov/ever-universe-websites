@@ -15,6 +15,7 @@ The theme code is available under  `services_ever_co/themes` folder. The two mai
 * projects 
 * testimonials
 * team members
+  
 It uses shortcodes to display the custom post types on the homepage. The theme also supports the option to upload logo and to customize the primary menu from the WordPress dashboard. 
 
 ### Plugins
