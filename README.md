@@ -1,11 +1,11 @@
-# ever-website
+# Ever Universe Websites
 
 The code that powers "Ever Universe" websites:
 - https://ever.co
 - https://services.ever.co
 - ...
 
-## Services-Ever-Co
+## WP Website services.ever.co
 
 ### Theme
 
@@ -31,3 +31,31 @@ The website uses the following plugins:
 * Polylang - the plugin that makes it possible to have pages on different languages. To set this plugin up, you need to assign a language to each page and then add translations to it. You basically have to create different page for each language and Polylang takes care for the rest. Check their extensive [docs](https://polylang.wordpress.com/documentation/) for further guidance.
 * Simple Job Board - This plugin creates custom post types Jobs and lets the admin post a new job. It is very easy to use, you just create a new Job from the admin, as if you are creating a page or a post.
 * WP-Optimize - Clean, Compress, Cache - This is my favourite lightweight plugin. It empowers the user to clean up the database from unnecessary rows, expired transient options, etc., without having to write manual SQL queries. Safe, efficient and fast. With this plugin, you can also compress images that have already been uploaded to the WordPress `uploads` folder.
+
+## Contributors
+
+- [Atanas Yonkov](https://github.com/yonkov) - Wordpress Themes
+- [Dimana Tsvetkova](https://github.com/DimanaTsvetkova) - HTML/CSS/JS
+- [Milena Dimova](https://www.linkedin.com/in/dimova-milena-31010414) (UI/UX Designer)
+- [Ruslan Konviser](https://github.com/evereq) - Idea / Business / Content
+
+View full list of our [contributors](https://github.com/ever-co/ever/graphs/contributors).
+
+## Contact Us
+
+-   For business inquiries: <mailto:ever@ever.co>
+-   Please report security vulnerabilities to <mailto:security@ever.co>
+
+## Trademarks
+
+**Ever**® is a registered trademark of [Ever Co. LTD](https://ever.co).
+
+**Ever® Platform™**, **Ever® Platform Community™**, **Ever® Platform Small Business™** and **Ever® Platform Enterprise™** are all trademarks of [Ever Co. LTD](https://ever.co).
+
+**Gauzy™** is a trademark of [Ever Co. LTD](https://ever.co).
+
+The trademarks may only be used with the written permission of Ever Co. LTD. and may not be used to promote or otherwise market competitive products or services.
+
+All other brand and product names are trademarks, registered trademarks or service marks of their respective holders.
+
+#### Copyright © 2019-present, Ever Co. LTD. All rights reserved.
