@@ -1,6 +1,6 @@
+@import '../global/clouds';
 
-
-.h-third {
+.e-commerce-container{
     .h-titles-w-b{
         width: fit-content;
         margin: 3em auto 0;
@@ -23,8 +23,17 @@
 }
 
 
+.e-com{
+    .e-com-img{
+        @media screen and(min-width:1280px){
+            width: 30em;
+            
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
-    .h-third{
+    .e-commerce-container{
         .nums{
             h2{
                 margin: 0.5em auto;
@@ -32,4 +41,5 @@
         }
     }
   }
+  
   

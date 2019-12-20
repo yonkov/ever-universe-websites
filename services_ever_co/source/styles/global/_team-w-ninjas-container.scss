@@ -1,7 +1,7 @@
-.h-eight {
+.team-w-ninjas-container {
   color: #ffffff;
   width: 95%;
-  margin: auto;
+  margin: 1em auto;
 
   h3 {
     margin: 0 2em 1em 5em;
@@ -75,6 +75,7 @@
 @media screen and(max-width: 800px) {
   .people{
     flex-flow: wrap;
+    justify-content: space-around;
   }
   .btns {
       flex-flow: row;
@@ -89,7 +90,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .h-eight {
+  .team-w-ninjas-container {
     width: 95%;
     margin: auto;
     padding: 0;
@@ -109,7 +110,7 @@
     }
    .people{
      .person-card{
-       width: 40%;
+       width: 35%;
      }
      .icons{
        flex-flow: row;
@@ -117,6 +118,11 @@
    }
     .btns{
         flex-flow: row;
+        .join-btn,
+        .hire-us-btn {
+          width: 50%;
+        
+        }
     }
   }
 }

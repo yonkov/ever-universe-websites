@@ -1,10 +1,11 @@
 
-.h-seventh {
+.core-values-container {
   justify-content: space-around;
   @media screen and (min-width: 1000px) {
-    padding: 3em;
+    width: 90%;
+    margin: 1em auto;
   }
-  .seventh-txt-container {
+  .core-values-txt-container {
     color: #ffffff;
     @media screen and (min-width: 1000px) {
       width: 35%;
@@ -36,7 +37,7 @@
 }
 
 .join-btn {
-  width: 40%;
+  width: 80%;
   padding: 1em;
   text-transform: uppercase;
   background: $secondary-color;
@@ -51,13 +52,13 @@
       width: 100%;
     }
   }
-  .seventh-txt-container {
+  .core-values-txt-container {
     width: 60%;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .h-seventh {
+  .core-values-container {
     flex-flow: column;
   }
   .core-values-svg {
@@ -67,14 +68,14 @@
       width: 100%;
     }
   }
-  .seventh-txt-container {
+  .core-values-txt-container {
     width: 90%;
     margin: 1em auto 3em;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .h-seventh {
+  .core-values-container {
     flex-flow: column;
   }
   .core-values-svg {
@@ -83,7 +84,7 @@
       height: auto;
     }
   }
-  .seventh-txt-container {
+  .core-values-txt-container {
     .h-titles-w-b {
       margin: 0.5em auto;
       hr {

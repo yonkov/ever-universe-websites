@@ -1,0 +1,89 @@
+@import "../global/team-w-ninjas-container";
+
+.team-w-ninjas-container {
+  margin: 3em auto;
+  background: #1f1f27;
+  .people {
+    justify-content: space-around;
+    flex-flow: wrap;
+    .person-card {
+      width: 15%;
+      margin: 0 1em 1em;
+    }
+  }
+  h3 {
+    padding: 1em 0;
+  }
+  .ninjas {
+    .ninja {
+      width: 15%;
+      .num {
+        @media screen and(min-width:1024px) {
+          h3 {
+            font-size: 1em;
+            padding: 0 0 0.5em;
+          }
+          p {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+  .client-feedback-arrows{
+    display: none;
+  }
+  .btns {
+    margin: 2em auto;
+  }
+}
+
+@media screen and(max-width:600px) {
+  .team-w-ninjas-container {
+    h3 {
+        margin: 0;
+      text-align: center;
+      font-size: 1.6em;
+    }
+    .people {
+      flex-flow: row;
+      .person-card {
+        display: none;
+        &:nth-child(1),
+        &:nth-child(2) {
+          display: block;
+          width: 40%;
+        }
+      }
+    }
+    .ninjas {
+      .ninja {
+        width: 25%;
+        img {
+          width: 3em;
+        }
+        .num{
+            margin: 1em auto;
+            h3{
+            padding: 0 0 0.4em;
+            }
+        }
+      }
+    }
+    .client-feedback-arrows{
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+    .btns {
+      flex-flow: column;
+      justify-content: center;
+      .join-btn,
+      .hire-us-btn {
+        width: 80%;
+        margin: 1em 0;
+        align-self: center;
+      }
+    }
+  }
+}
