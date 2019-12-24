@@ -1,0 +1,99 @@
+$servces-articles-colors:(
+  1:#66DED1,
+  2:#6E56C5,
+  3: #D55A76,
+  4: #FFC27B,
+  5: #329EFF
+);
+header {
+  border: none;
+}
+
+.background-container {
+  background: url("../../../assets/images/approach/approach-background.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: right;
+  .services-icons-container {
+    width: 90%;
+    max-width: 100em;
+    margin: 1em auto 3em;
+    justify-content: space-around;
+    padding: 3em;
+    border: 1px solid #979797;
+    .services-icon {
+      width: 10em;
+      align-items: center;
+      @each $article-num, $color in $servces-articles-colors {
+        &:nth-child(#{$article-num}) {
+         .hexagon {
+            background: $color;
+          }
+        }
+      }
+      .hexagon {
+        clip-path: polygon(
+          50% 0%,
+          100% 25%,
+          100% 75%,
+          50% 100%,
+          0% 75%,
+          0% 25%
+        );
+        background: red;
+        display: inherit;
+        width: 10em;
+        height: 12em;
+        img {
+          margin: auto;
+          width: 35%;
+        }
+      }
+      .services-icon-title {
+        text-align: center;
+        h3 {
+          text-transform: uppercase;
+          color: #ffffff;
+          text-align: center;
+          margin: 1.5em auto 1em;
+        }
+        a {
+          img {
+              display: inline-block;
+            transform: translate(0, 0);
+            width: 2em;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+              transform: translate(0, 10px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:1000px){
+  .background-container{
+  .services-icons-container{
+    padding: 2em 0;
+    .services-icon{
+      .hexagon{
+        width: 7em;
+        height: 8em;
+      }
+    }
+  }
+}
+}
+
+@media screen and(max-width: 600px){
+  header{
+    padding: 1em 0;
+  }
+    .background-container{
+      .services-icons-container{
+        flex-flow: wrap;
+      }
+    }
+}

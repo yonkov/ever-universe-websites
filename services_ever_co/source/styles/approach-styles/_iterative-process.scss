@@ -1,0 +1,38 @@
+.iterative-process {
+  font-size: 100%;
+  background: #ffffff;
+  section {
+    width: 35%;
+    margin: auto;
+    color: black;
+    .h-titles-w-b {
+      margin: 2em;
+      color: black;
+      hr {
+        background: #d55a76;
+        border: 1px solid #d55a76;
+      }
+    }
+    img {
+      margin: 0 0 1em;
+    }
+    .approach-articles-descr {
+      margin: 1.5em 0;
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .iterative-process {
+    section {
+      width: 90%;
+      .h-titles-w-b {
+        margin: 1em 0;
+      }
+      .approach-articles-descr {
+          width: 95%;
+      }
+    }
+  }
+}

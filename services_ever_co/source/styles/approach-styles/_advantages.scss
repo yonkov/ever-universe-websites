@@ -1,0 +1,160 @@
+@import "../global/global";
+
+header {
+  border: none;
+}
+.background-container {
+  background: url("../../assets/images/approach/approach-background.png");
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: 110% 19%;
+}
+.advantages {
+  width: 85%;
+  max-width: 85em;
+  margin: auto;
+  .adv-title {
+    color: #ffffff;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    h2 {
+      letter-spacing: 2px;
+      width: 50%;
+      margin: 1em auto;
+    }
+  }
+  div {
+    margin: 1em 0;
+    justify-content: space-around;
+    section {
+      width: 20%;
+      align-items: center;
+      @each $article-num, $color in $article-colors {
+        &:nth-child(#{$article-num}) {
+          div.advantages-icon {
+            background: $color;
+          }
+        }
+      }
+      .advantages-icon {
+        width: 8em;
+        height: 8em;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 0 -4.5em;
+        z-index: 2;
+        img {
+          width: 50%;
+          margin: 1em auto;
+        }
+      }
+
+      .hexagon {
+        clip-path: polygon(
+          50% 0%,
+          100% 25%,
+          100% 75%,
+          50% 100%,
+          0% 75%,
+          0% 25%
+        );
+        text-align: center;
+        background: #ffffff;
+        min-height: 18em;
+        min-width: 12em;
+        .hex-descr {
+          width: 70%;
+          margin: 3em auto 0;
+          max-height: 10em;
+          h3 {
+            text-transform: uppercase;
+            margin: 1em 0 0;
+          }
+          p {
+            margin: 2em 0;
+            font-size: 0.7em;
+            overflow: hidden;
+          }
+        }
+        a {
+          text-decoration: underline;
+          color: #cc5671;
+        }
+        img {
+          align-self: center;
+          width: 1em;
+          margin: 1em 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .advantages {
+    width: 95%;
+    .adv-title {
+      width: 50%;
+    }
+    div {
+      section {
+        width: 24%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .advantages {
+    div {
+      align-items: center;
+      margin: auto;
+      width: 80%;
+      flex-flow: column;
+      section {
+        width: 80%;
+        margin: 2em auto;
+        .hexagon {
+          font-size: 130%;
+          width: 80%;
+          .hex-descr {
+            p {
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .background-container {
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: 68% 19%;
+  }
+  .advantages {
+    width: 90%;
+    .adv-title {
+      width: 90%;
+      h2 {
+        width: 100%;
+      }
+    }
+    div {
+      width: 100%;
+      section {
+        width: 100%;
+        .hexagon {
+          width: 100%;
+          .hex-descr {
+            p {
+              font-size: 0.6em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
