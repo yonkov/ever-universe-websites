@@ -100,10 +100,18 @@
     }
     
     .small-form{
+      .t-description{
+        width: 90%;
+        margin: 1em auto;
+        p{
+          line-height: 2em;
+        }
+      }
       form {
         width: 80%;
         margin: auto;
-        padding: 1em;
+        padding: 2em;
+
         .join-btn {
           width: 100%;
           font-size: 1em;

@@ -330,3 +330,19 @@ $article-colors: (
   4: #9bcc13
 );
 
+// BACK
+
+.back {
+  color: #ffffff;
+  padding: 1em 2em;
+  svg {
+    margin: 0 1em;
+  }
+}
+
+//    location
+.location{
+  &::before{
+    content: url('../../../assets/icons/career-icons/location.svg');
+}
+}

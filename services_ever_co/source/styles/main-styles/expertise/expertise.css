@@ -351,6 +351,19 @@ header p {
   }
 }
 
+.back {
+  color: #ffffff;
+  padding: 1em 2em;
+}
+
+.back svg {
+  margin: 0 1em;
+}
+
+.location::before {
+  content: url("../../../assets/icons/career-icons/location.svg");
+}
+
 .navbar {
   width: 100%;
   display: -webkit-box;
@@ -578,10 +591,17 @@ header p {
     width: 80%;
     margin: 0;
   }
+  .small-form .t-description {
+    width: 90%;
+    margin: 1em auto;
+  }
+  .small-form .t-description p {
+    line-height: 2em;
+  }
   .small-form form {
     width: 80%;
     margin: auto;
-    padding: 1em;
+    padding: 2em;
   }
   .small-form form .join-btn {
     width: 100%;

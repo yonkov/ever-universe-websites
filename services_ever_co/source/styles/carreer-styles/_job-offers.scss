@@ -31,11 +31,7 @@
                    p{
                     padding: 1em 0;
                    }
-                   .location{
-                       &::before{
-                           content: url('../../assets/icons/career-icons/location.svg');
-                       }
-                   }
+                
                    &:hover{
                     box-shadow: -1px 5px 14px 7px rgba(0,0,0,0.44);
                    }

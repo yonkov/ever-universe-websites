@@ -351,6 +351,19 @@ header p {
   }
 }
 
+.back {
+  color: #ffffff;
+  padding: 1em 2em;
+}
+
+.back svg {
+  margin: 0 1em;
+}
+
+.location::before {
+  content: url("../../../assets/icons/career-icons/location.svg");
+}
+
 .navbar {
   width: 100%;
   display: -webkit-box;
@@ -471,18 +484,6 @@ header p {
 
 main {
   padding: 1em 0 0 0;
-}
-
-.back {
-  padding: 1em 2em;
-}
-
-.back svg {
-  margin: 0 1em;
-}
-
-.back {
-  color: #ffffff;
 }
 
 .w-first {
