@@ -271,6 +271,7 @@ a:hover {
 header {
   color: #ffffff;
   width: 80%;
+  max-width: 100em;
   margin: auto;
   padding: 2em 0;
   border-bottom: 1px solid #979797;
@@ -304,6 +305,7 @@ header p {
 
 .projects-container {
   width: 90%;
+  max-width: 100em;
   margin: 2em auto;
 }
 
@@ -755,6 +757,7 @@ a:hover {
 header {
   color: #ffffff;
   width: 80%;
+  max-width: 100em;
   margin: auto;
   padding: 2em 0;
   border-bottom: 1px solid #979797;
@@ -788,6 +791,7 @@ header p {
 
 .projects-container {
   width: 90%;
+  max-width: 100em;
   margin: 2em auto;
 }
 
@@ -851,6 +855,7 @@ header p {
 .current-position-container {
   background: #ffffff;
   width: 90%;
+  max-width: 100em;
   margin: 0 auto 3em;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -1011,6 +1016,7 @@ header p {
   background: #2a2c39;
   margin: auto;
   width: 90%;
+  max-width: 100em;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }

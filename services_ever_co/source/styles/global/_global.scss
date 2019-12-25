@@ -235,6 +235,7 @@ a {
 header{
   color: #ffffff;
   width: 80%;
+  max-width: 100em;
   margin: auto;
   padding: 2em 0;
   border-bottom: 1px solid #979797;
@@ -268,6 +269,7 @@ header{
 
 .projects-container{
     width: 90%;
+    max-width: 100em;
     margin: 2em auto;
     h5{
         color: #ffffff;

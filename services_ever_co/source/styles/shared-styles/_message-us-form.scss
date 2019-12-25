@@ -1,11 +1,11 @@
 .message-us {
+  max-width: 100em;
   color: #ffffff;
   @media screen and (min-width: 1280px) {
     padding: 0 0 0 10em;
   }
 
   .message-us-txt-container {
-    max-width: 90%;
     padding: 2em;
     background: #474b5e;
     @media screen and (min-width: 600px) {
@@ -83,8 +83,10 @@
 }
 @media screen and(min-width:1900px) {
   .message-us {
+    margin: auto;
+    padding: 0;
     .contact-form {
-      margin: -28em 0 0 71em;
+      margin: -30em 0 0 60em;
     }
   }
 }

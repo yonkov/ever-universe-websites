@@ -271,6 +271,7 @@ a:hover {
 header {
   color: #ffffff;
   width: 80%;
+  max-width: 100em;
   margin: auto;
   padding: 2em 0;
   border-bottom: 1px solid #979797;
@@ -304,6 +305,7 @@ header p {
 
 .projects-container {
   width: 90%;
+  max-width: 100em;
   margin: 2em auto;
 }
 
@@ -797,6 +799,7 @@ header {
 }
 
 .message-us {
+  max-width: 100em;
   color: #ffffff;
 }
 
@@ -807,7 +810,6 @@ header {
 }
 
 .message-us .message-us-txt-container {
-  max-width: 90%;
   padding: 2em;
   background: #474b5e;
 }
@@ -919,8 +921,12 @@ header {
 }
 
 @media screen and (min-width: 1900px) {
+  .message-us {
+    margin: auto;
+    padding: 0;
+  }
   .message-us .contact-form {
-    margin: -28em 0 0 71em;
+    margin: -30em 0 0 60em;
   }
 }
 
