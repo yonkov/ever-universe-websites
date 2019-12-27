@@ -31,7 +31,7 @@
 }
 $secondary-color: #66ded1;
 $primary-background: #2a2c39;
-main {
+html {
   background: $primary-background;
 }
 button {
@@ -238,7 +238,7 @@ header{
   max-width: 100em;
   margin: auto;
   padding: 2em 0;
-  border-bottom: 1px solid #979797;
+  // border-bottom: 1px solid #979797;
   h1{
       font-weight: 100;
       font-size: 3em;

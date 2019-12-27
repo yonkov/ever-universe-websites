@@ -25,7 +25,7 @@
   outline: none;
 }
 
-main {
+html {
   background: #2a2c39;
 }
 
@@ -274,7 +274,6 @@ header {
   max-width: 100em;
   margin: auto;
   padding: 2em 0;
-  border-bottom: 1px solid #979797;
 }
 
 header h1 {
@@ -440,6 +439,7 @@ header p {
 }
 
 .hidden-menu {
+  z-index: 100;
   background: #1F1F27;
   position: absolute;
   width: 100%;
@@ -486,11 +486,13 @@ header p {
 
 header {
   border: none;
+  max-width: 90em;
 }
 
 .careers-container {
   border: 1px solid #979797;
   width: 90%;
+  max-width: 90em;
   margin: auto;
 }
 
@@ -547,14 +549,13 @@ header {
       align-self: flex-end;
 }
 
-@media screen and (max-width: 1280px) {
-  .pic-1,
-  .pic-2 {
-    height: 40vh;
-  }
-  .pic-3 {
-    height: 20vh;
-  }
+.pic-1,
+.pic-2 {
+  height: 40vh;
+}
+
+.pic-3 {
+  height: 20vh;
 }
 
 @media screen and (max-width: 868px) {
@@ -628,6 +629,7 @@ header {
 
 .job-offers {
   width: 90%;
+  max-width: 90em;
   background: #fff;
   margin: 1em auto;
 }
@@ -662,14 +664,18 @@ header {
   width: 47%;
 }
 
+.job-offers .row section.col a {
+  color: black;
+}
+
 .job-offers .row section.col div {
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
   padding: 2em;
   border-left: 7px solid #66ded1;
   margin: 0.5em;
-  -webkit-box-shadow: -1px 5px 14px -4px rgba(0, 0, 0, 0.82);
-          box-shadow: -1px 5px 14px -4px rgba(0, 0, 0, 0.82);
+  -webkit-box-shadow: -11px -3px 21px -6px rgba(0, 0, 0, 0.75);
+          box-shadow: -11px -3px 21px -6px rgba(0, 0, 0, 0.75);
 }
 
 .job-offers .row section.col div p {
@@ -677,8 +683,9 @@ header {
 }
 
 .job-offers .row section.col div:hover {
-  -webkit-box-shadow: -1px 5px 14px 7px rgba(0, 0, 0, 0.44);
-          box-shadow: -1px 5px 14px 7px rgba(0, 0, 0, 0.44);
+  cursor: pointer;
+  -webkit-box-shadow: -3px -1px 7px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: -3px -1px 7px 1px rgba(0, 0, 0, 0.75);
 }
 
 @media screen and (max-width: 600px) {
@@ -700,6 +707,7 @@ header {
 
 .steps {
   width: 90%;
+  max-width: 90em;
   margin: auto;
   color: #ffffff;
   border: 1px solid #979797;
@@ -769,6 +777,7 @@ header {
 .solid-products {
   background: #ffffff;
   width: 90%;
+  max-width: 90em;
   margin: 2em auto;
 }
 
@@ -798,8 +807,9 @@ header {
 
 .tech-we-use {
   color: #ffffff;
-  width: 90%;
-  margin: auto;
+  width: 80%;
+  max-width: 90em;
+  margin: 5em auto;
 }
 
 .tech-we-use .h-titles-w-b {
@@ -919,17 +929,18 @@ header {
 
 .small-form {
   background: #2a2c39;
-  margin: auto;
+  margin: 5em auto;
   width: 90%;
   max-width: 100em;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border: 1px solid #979797;
 }
 
 .small-form .t-description {
   width: 40%;
   color: #ffffff;
-  margin: 1em 0;
+  margin: auto auto 17em;
 }
 
 .small-form .t-description h2 {
@@ -948,8 +959,9 @@ header {
 .small-form form {
   background: #ffffff;
   font-weight: bold;
-  padding: 4em;
+  padding: 3em;
   width: 27em;
+  margin: 2em 2em -5em;
 }
 
 .small-form form label {
@@ -1027,6 +1039,9 @@ header {
     width: 80%;
     margin: 0;
   }
+  .small-form {
+    border: none;
+  }
   .small-form .t-description {
     width: 90%;
     margin: 1em auto;
@@ -1054,10 +1069,14 @@ header {
 
 footer {
   background: #2a2c39;
+  max-width: 100em;
+  margin: auto;
 }
 
 footer .e-t {
   color: #82848f;
+  max-width: 100em;
+  margin: auto;
 }
 
 @media screen and (min-width: 1000px) {
@@ -1070,6 +1089,8 @@ footer .network-buttons {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border: 1px solid #40414c;
+  border-left: none;
+  border-right: none;
   padding: 3em;
   margin: 2em 0;
 }
@@ -1106,69 +1127,48 @@ footer .footer-menu {
   margin: 1em;
 }
 
+footer .footer-menu div {
+  margin: 0 auto;
+}
+
 footer .footer-menu div a {
   color: #d4d4d7;
+  letter-spacing: 1px;
   margin: 0 0 0.4em;
-  font-size: 1.2em;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 footer .footer-menu div ul {
-  padding: 1em;
+  padding: 0.5em;
   color: #a9aaaf;
 }
 
-footer .footer-menu .sub-logos {
-  width: 30%;
+footer .footer-menu .extra-logos {
+  width: 5em;
+  margin: 0 auto 1em;
 }
 
-footer .footer-menu .sub-logos .switch-field {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border: 1px solid #2d3545;
-  border-radius: 25px;
-}
-
-footer .footer-menu .sub-logos .switch-field label svg {
-  border-radius: 50%;
-}
-
-footer .footer-menu .sub-logos .switch-field input[type="radio"] {
-  display: none;
-}
-
-footer .footer-menu .sub-logos .switch-field input[type="radio"]:checked + label svg {
-  background: #9ba4b7;
-}
-
-footer .footer-menu .sub-logos .switch-field input[type="radio"]:checked + label svg path {
-  fill: #1f1f27;
-}
-
-footer .footer-menu .sub-logos .extra-logos {
-  margin: 1em 0 0;
-  border-top: 1px solid #40414C;
-}
-
-footer .footer-menu .sub-logos .extra-logos img {
-  width: 26%;
+footer .footer-menu .extra-logos img {
   margin: 1em;
 }
 
 footer .bottom {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 1em;
   color: #82848f;
+  width: 90%;
+  margin: auto;
 }
 
 footer .bottom svg {
-  margin: auto;
+  margin: auto 0;
 }
 
 footer .bottom div {
   width: 60%;
+  max-width: 50em;
   margin: 0 auto;
 }
 
@@ -1184,6 +1184,30 @@ footer .bottom div h5 {
 
 footer .bottom div p {
   font-size: 0.8em;
+}
+
+footer .bottom .switch-field {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #2d3545;
+  border-radius: 25px;
+}
+
+footer .bottom .switch-field label svg {
+  border-radius: 50%;
+}
+
+footer .bottom .switch-field input[type="radio"] {
+  display: none;
+}
+
+footer .bottom .switch-field input[type="radio"]:checked + label svg {
+  background: #9ba4b7;
+}
+
+footer .bottom .switch-field input[type="radio"]:checked + label svg path {
+  fill: #1f1f27;
 }
 
 .github,
@@ -1243,17 +1267,17 @@ footer .bottom div p {
   footer .footer-menu .sub-logos {
     width: 100%;
   }
-  .bottom h5 {
+  footer .bottom h5 {
     margin: auto;
   }
-  .bottom svg {
+  footer .bottom svg {
     margin: auto;
     padding: 1em;
   }
-  .bottom div {
+  footer .bottom div {
     text-align: center;
   }
-  .bottom div p {
+  footer .bottom div p {
     display: none;
   }
 }

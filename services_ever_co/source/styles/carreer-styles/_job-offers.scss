@@ -1,5 +1,6 @@
     .job-offers{
         width: 90%;
+        max-width: 90em;
         background: #fff;
         margin: 1em auto;
         .h-titles-w-b{
@@ -22,18 +23,22 @@
                 justify-content: space-around;
            section.col{
                 width: 47%;
+                a{
+                    color: black;
+                }
                div{
                    transition: 0.3s ease-out;
                    padding: 2em;
                    border-left: 7px solid $secondary-color;
                    margin: 0.5em;
-                   box-shadow: -1px 5px 14px -4px rgba(0,0,0,0.82);
+                   box-shadow: -11px -3px 21px -6px rgba(0,0,0,0.75);
                    p{
                     padding: 1em 0;
                    }
                 
                    &:hover{
-                    box-shadow: -1px 5px 14px 7px rgba(0,0,0,0.44);
+                       cursor: pointer;
+                    box-shadow: -3px -1px 7px 1px rgba(0,0,0,0.75);
                    }
                }
            

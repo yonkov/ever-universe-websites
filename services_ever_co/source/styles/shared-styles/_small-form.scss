@@ -1,14 +1,14 @@
 .small-form {
   background: $primary-background;
-  margin: auto;
+  margin: 5em auto;
   width: 90%;
   max-width: 100em;
   justify-content: space-around;
-
+  border:1px solid #979797;
   .t-description {
     width: 40%;
     color: #ffffff;
-    margin: 1em 0;
+    margin: auto auto 17em;
     h2 {
       font-size: 2em;
       margin: 0.5em 0;
@@ -24,8 +24,9 @@
   form {
     background: #ffffff;
     font-weight: bold;
-    padding: 4em;
+    padding: 3em;
     width: 27em;
+    margin: 2em 2em -5em;
     label {
       font-size: 1.4em;
     }
@@ -101,6 +102,7 @@
     }
     
     .small-form{
+      border: none;
       .t-description{
         width: 90%;
         margin: 1em auto;

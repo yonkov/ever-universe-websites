@@ -1,8 +1,11 @@
 footer {
   background: $primary-background;
-
+  max-width: 100em;
+  margin: auto;
   .e-t {
     color: #82848f;
+    max-width: 100em;
+    margin: auto;
     @media screen and (min-width: 1000px) {
       padding: 0 0 0 10em;
     }
@@ -11,6 +14,8 @@ footer {
   .network-buttons {
     justify-content: space-around;
     border: 1px solid #40414c;
+    border-left: none;
+    border-right: none;
     padding: 3em;
     margin: 2em 0;
 
@@ -41,60 +46,42 @@ footer {
     margin: 1em;
 
     div {
+      margin: 0 auto;
       a {
         color: #d4d4d7;
+        letter-spacing: 1px;
         margin: 0 0 0.4em;
-        font-size: 1.2em;
+        font-size: 1em;
+        text-transform: uppercase;
       }
 
       ul {
-        padding: 1em;
+        padding: 0.5em;
         color: #a9aaaf;
       }
     }
-    .sub-logos {
-      width: 30%;
-      .switch-field {
-        width: fit-content;
-        border: 1px solid #2d3545;
-        border-radius: 25px;
-        label {
-          svg {
-            border-radius: 50%;
-          }
-        }
-        input[type="radio"] {
-          display: none;
-          &:checked + label {
-            svg {
-              background: #9ba4b7;
-              path {
-                fill: #1f1f27;
-              }
-            }
-          }
-        }
-      }
+      
       .extra-logos {
-        margin: 1em 0 0;
-          border-top: 1px solid #40414C;
+        width: 5em;
+        margin: 0 auto 1em;
         img {
-          width: 26%;
           margin: 1em;
         }
-      }
     }
   }
 
   .bottom {
-    justify-content: center;
+    justify-content: space-around;
     padding: 1em;
     color: #82848f;
+    width: 90%;
+    margin: auto;
     svg{
-        margin: auto;
+        margin: auto 0;
     }
     div {
       width: 60%;
+      max-width: 50em;
       margin: 0 auto;
       h5,
       a {
@@ -106,6 +93,27 @@ footer {
       }
       p {
         font-size: 0.8em;
+      }
+    }
+    .switch-field {
+      width: fit-content;
+      border: 1px solid #2d3545;
+      border-radius: 25px;
+      label {
+        svg {
+          border-radius: 50%;
+        }
+      }
+      input[type="radio"] {
+        display: none;
+        &:checked + label {
+          svg {
+            background: #9ba4b7;
+            path {
+              fill: #1f1f27;
+            }
+          }
+        }
       }
     }
   }
@@ -174,7 +182,6 @@ footer {
       width: 100%;
     }
   }
-}
   .bottom {
     h5 {
       margin: auto;
@@ -191,4 +198,6 @@ footer {
       }
     }
   }
+}
+
 }

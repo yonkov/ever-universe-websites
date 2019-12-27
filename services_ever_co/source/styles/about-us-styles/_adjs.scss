@@ -5,3 +5,21 @@
     margin: 5em auto;
 }
 
+.team-w-ninjas-container{
+    .ninjas{
+        width: 90%;
+        margin: 1em auto 4em;
+        .ninja{
+            img{
+                width: 20%;
+            }
+       
+        }
+    }
+    .people{
+        justify-content: center;
+        .person-card{
+            width: 15%;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 .team-w-ninjas-container {
   color: #ffffff;
-  width: 95%;
+width: 80%;
+  max-width: 95em;
   margin: 1em auto;
 
   h3 {
@@ -18,7 +19,7 @@
       }
 
       img {
-        width: 30%;
+        width: 20%;
         padding: 0.5em 1em;
       }
 
@@ -70,9 +71,21 @@
     
   }
 }
+@media screen and(max-width: 1024px) {
 
+  .team-w-ninjas-container{
+    .ninjas{
+      
+      .ninja{
+      font-size: 0.7em;
+        width: fit-content;
+      }
+    }
+  }
+}
 
 @media screen and(max-width: 800px) {
+
   .people{
     flex-flow: wrap;
     justify-content: space-around;

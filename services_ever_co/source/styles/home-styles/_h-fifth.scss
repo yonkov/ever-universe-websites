@@ -1,5 +1,8 @@
 
 .h-fifth {
+  width: 90%;
+  margin: auto;
+  max-width: 90em;
   .h-titles-w-b {
     @media screen and (min-width: 600px) {
       width: 40%;
@@ -62,4 +65,11 @@
       }
     }
   }
+}
+
+
+// TEAM WITH NINJAS
+.team-w-ninjas-container{
+  margin: 5em auto;
+  width: 90%;
 }

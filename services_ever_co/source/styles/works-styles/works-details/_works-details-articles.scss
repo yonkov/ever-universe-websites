@@ -1,5 +1,6 @@
-.w-third {
-  width: 90%;
+.works-details-articles {
+  width: 80%;
+  max-width: 90em;
   margin: auto;
   background: #ffffff;
 
@@ -25,11 +26,12 @@
       background: $primary-background;
       @media screen and (min-width: 600px) {
       width: 45%;
-      margin: 2em 0;
+      margin: auto;
+
       }
     }
     div {
-        width: 40%;
+        width: 50%;
         margin: 3em auto 1em;
       .h-titles-w-b{
         @media screen and (min-width: 600px) {
@@ -63,6 +65,7 @@
             width: 90%;
             svg{
                 margin: 0 1em 0 0;
+                width: 1.8em;
             }
         }
         
@@ -71,10 +74,27 @@
 
   }
 }
+@media screen and(max-width:1025px){
+  .works-details-articles{
+    section{
+      div{
+        .h-titles-w-b{
+          font-size: 0.7em;
+          width: 100%;
+        }
+      }
 
+      .mobile-icons{
+        div{
+          width: 40%;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 600px) {
-  .w-third{
+  .works-details-articles{
     section{
       &:nth-child(1), &:nth-child(3), &:nth-child(5){
       flex-flow: column-reverse;

@@ -1,8 +1,16 @@
 @import "../global/global";
+h3{
+  width: 75%;
+  max-width: 79em;
+  margin: auto;
+  a{
+  color: #ffffff;
+  }
+}
 .current-position-container {
   background: #ffffff;
-  width: 90%;
-  max-width: 100em;
+  width: 75%;
+  max-width: 90em;
   margin: 0 auto 3em;
   justify-content: space-around;
   section {
@@ -35,6 +43,7 @@
         margin: 2em auto;
         h3 {
           margin: 1em 0;
+          
         }
         li {
           margin: 0.3em;

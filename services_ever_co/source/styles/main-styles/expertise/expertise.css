@@ -25,7 +25,7 @@
   outline: none;
 }
 
-main {
+html {
   background: #2a2c39;
 }
 
@@ -274,7 +274,6 @@ header {
   max-width: 100em;
   margin: auto;
   padding: 2em 0;
-  border-bottom: 1px solid #979797;
 }
 
 header h1 {
@@ -440,6 +439,7 @@ header p {
 }
 
 .hidden-menu {
+  z-index: 100;
   background: #1F1F27;
   position: absolute;
   width: 100%;
@@ -486,17 +486,18 @@ header p {
 
 .small-form {
   background: #2a2c39;
-  margin: auto;
+  margin: 5em auto;
   width: 90%;
   max-width: 100em;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border: 1px solid #979797;
 }
 
 .small-form .t-description {
   width: 40%;
   color: #ffffff;
-  margin: 1em 0;
+  margin: auto auto 17em;
 }
 
 .small-form .t-description h2 {
@@ -515,8 +516,9 @@ header p {
 .small-form form {
   background: #ffffff;
   font-weight: bold;
-  padding: 4em;
+  padding: 3em;
   width: 27em;
+  margin: 2em 2em -5em;
 }
 
 .small-form form label {
@@ -594,6 +596,9 @@ header p {
     width: 80%;
     margin: 0;
   }
+  .small-form {
+    border: none;
+  }
   .small-form .t-description {
     width: 90%;
     margin: 1em auto;
@@ -618,6 +623,10 @@ header {
 
 header p {
   width: 20em;
+}
+
+.projects-container {
+  width: 80%;
 }
 
 .projects-container article img {
@@ -653,7 +662,7 @@ header p {
 
 .small-form .t-description {
   width: 30%;
-  margin: 5em 0 0;
+  font-size: 1.2em;
 }
 
 .small-form form select {
@@ -710,10 +719,14 @@ header p {
 
 footer {
   background: #2a2c39;
+  max-width: 100em;
+  margin: auto;
 }
 
 footer .e-t {
   color: #82848f;
+  max-width: 100em;
+  margin: auto;
 }
 
 @media screen and (min-width: 1000px) {
@@ -726,6 +739,8 @@ footer .network-buttons {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border: 1px solid #40414c;
+  border-left: none;
+  border-right: none;
   padding: 3em;
   margin: 2em 0;
 }
@@ -762,69 +777,48 @@ footer .footer-menu {
   margin: 1em;
 }
 
+footer .footer-menu div {
+  margin: 0 auto;
+}
+
 footer .footer-menu div a {
   color: #d4d4d7;
+  letter-spacing: 1px;
   margin: 0 0 0.4em;
-  font-size: 1.2em;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 footer .footer-menu div ul {
-  padding: 1em;
+  padding: 0.5em;
   color: #a9aaaf;
 }
 
-footer .footer-menu .sub-logos {
-  width: 30%;
+footer .footer-menu .extra-logos {
+  width: 5em;
+  margin: 0 auto 1em;
 }
 
-footer .footer-menu .sub-logos .switch-field {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border: 1px solid #2d3545;
-  border-radius: 25px;
-}
-
-footer .footer-menu .sub-logos .switch-field label svg {
-  border-radius: 50%;
-}
-
-footer .footer-menu .sub-logos .switch-field input[type="radio"] {
-  display: none;
-}
-
-footer .footer-menu .sub-logos .switch-field input[type="radio"]:checked + label svg {
-  background: #9ba4b7;
-}
-
-footer .footer-menu .sub-logos .switch-field input[type="radio"]:checked + label svg path {
-  fill: #1f1f27;
-}
-
-footer .footer-menu .sub-logos .extra-logos {
-  margin: 1em 0 0;
-  border-top: 1px solid #40414C;
-}
-
-footer .footer-menu .sub-logos .extra-logos img {
-  width: 26%;
+footer .footer-menu .extra-logos img {
   margin: 1em;
 }
 
 footer .bottom {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 1em;
   color: #82848f;
+  width: 90%;
+  margin: auto;
 }
 
 footer .bottom svg {
-  margin: auto;
+  margin: auto 0;
 }
 
 footer .bottom div {
   width: 60%;
+  max-width: 50em;
   margin: 0 auto;
 }
 
@@ -840,6 +834,30 @@ footer .bottom div h5 {
 
 footer .bottom div p {
   font-size: 0.8em;
+}
+
+footer .bottom .switch-field {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #2d3545;
+  border-radius: 25px;
+}
+
+footer .bottom .switch-field label svg {
+  border-radius: 50%;
+}
+
+footer .bottom .switch-field input[type="radio"] {
+  display: none;
+}
+
+footer .bottom .switch-field input[type="radio"]:checked + label svg {
+  background: #9ba4b7;
+}
+
+footer .bottom .switch-field input[type="radio"]:checked + label svg path {
+  fill: #1f1f27;
 }
 
 .github,
@@ -899,17 +917,17 @@ footer .bottom div p {
   footer .footer-menu .sub-logos {
     width: 100%;
   }
-  .bottom h5 {
+  footer .bottom h5 {
     margin: auto;
   }
-  .bottom svg {
+  footer .bottom svg {
     margin: auto;
     padding: 1em;
   }
-  .bottom div {
+  footer .bottom div {
     text-align: center;
   }
-  .bottom div p {
+  footer .bottom div p {
     display: none;
   }
 }

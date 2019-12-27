@@ -1,15 +1,17 @@
 @import "../../mixins/ie-mixin";
-.w-second {
+.tech-stack {
   color: #ffffff;
-  width: 95%;
-  margin: 2em auto;
+  width: 80%;
+  max-width: 80em;
+  margin: 8em auto;
+  font-size: 1.1em;
   .h-titles-w-b {
     @media screen and (min-width: 1280px) {
-      margin: 4em 10em;
+      margin: 4em 2em;
     }
     h2 {
       @media screen and (min-width: 1280px) {
-        font-size: 3.5em;
+        font-size: 2.5em;
       }
       padding: 0 0 0.5em;
     }
@@ -25,19 +27,7 @@
       }
       justify-content: space-evenly;
     }
-    .list-columns {
-      ul {
-        margin: 1em auto;
-        list-style-type: disc;
-      }
-      &:nth-child(1) {
-        ul {
-          &:nth-child(2) {
-            list-style-type: none;
-          }
-        }
-      }
-    }
+  
     img {
       @media screen and (min-width: 1280px) {
         width: 40%;
@@ -50,7 +40,7 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .w-second {
+  .tech-stack {
     .h-titles-w-b {
       margin: 4em 4em 0 4em;
       h2 {
@@ -60,6 +50,7 @@
 
     .list-wrapper {
       img {
+        margin: auto;
         width: 50%;
       }
     }
@@ -67,7 +58,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .w-second {
+  .tech-stack {
     .h-titles-w-b {
       margin: 0;
       h2 {

@@ -14,3 +14,11 @@ miniMenu.addEventListener("click", function (e) {
     isHidden = !isHidden;
 })
 
+document.addEventListener("click", function(e){
+    if(hiddenMenu !==e.target){
+        hiddenMenu.style.transform = "translate(0,-500px)";
+
+    }
+    console.log("here")
+})
+
