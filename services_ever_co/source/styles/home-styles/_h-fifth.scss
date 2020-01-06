@@ -72,4 +72,11 @@
 .team-w-ninjas-container{
   margin: 5em auto;
   width: 90%;
+  .ninjas{
+    margin: 4em auto;
+    .ninja{
+      width: 15%;
+      font-size: 1.3em;
+    }
+  }
 }

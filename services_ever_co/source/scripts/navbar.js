@@ -19,6 +19,5 @@ document.addEventListener("click", function(e){
         hiddenMenu.style.transform = "translate(0,-500px)";
 
     }
-    console.log("here")
 })
 
