@@ -1,3 +1,5 @@
+@import '../mixins/ie-mixin';
+
 $servces-articles-colors:(
   1:#66DED1,
   2:#6E56C5,
@@ -32,6 +34,7 @@ header {
         }
       }
       .hexagon {
+
         clip-path: polygon(
           50% 0%,
           100% 25%,
@@ -40,7 +43,6 @@ header {
           0% 75%,
           0% 25%
         );
-        background: red;
         display: inherit;
         width: 10em;
         height: 12em;

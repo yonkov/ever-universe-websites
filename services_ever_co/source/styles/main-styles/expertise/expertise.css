@@ -422,8 +422,8 @@ header p {
   transition: all 0.2s ease-out;
   margin: 1em;
   background: transparent;
-  color: #FF3564;
   border: 1px solid #606C84;
+  color: #FF3564;
 }
 
 @media screen and (min-width: 800px) {
@@ -436,6 +436,15 @@ header p {
   background: #FF3564;
   color: #fff;
   cursor: pointer;
+}
+
+.navbar .hire-btn a {
+  font-weight: bold;
+  color: #FF3564;
+}
+
+.navbar .hire-btn:hover a {
+  color: #fff;
 }
 
 .hidden-menu {
@@ -561,7 +570,6 @@ header p {
   border: 1px dashed #cacaca;
   resize: none;
   overflow: auto;
-  background: url("./assets/icons/Group 4.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -842,6 +850,27 @@ footer .bottom .switch-field {
   width: fit-content;
   border: 1px solid #2d3545;
   border-radius: 25px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  footer .bottom .switch-field {
+    margin: auto;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 600px), screen\9 {
+  footer .bottom .switch-field {
+    margin: auto;
+    width: auto;
+  }
+}
+
+@media \0screen {
+  footer .bottom .switch-field {
+    margin: auto;
+    width: auto;
+  }
 }
 
 footer .bottom .switch-field label svg {

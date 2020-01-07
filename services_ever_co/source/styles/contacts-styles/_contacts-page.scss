@@ -3,6 +3,13 @@
 header{
     border: none;
 }
+.team-w-ninjas-container{
+    .ninjas{
+        .ninja{
+            width: 20%;
+        }
+    }
+}
 
 .projects-container {
     margin: 0 auto 4em;
@@ -131,6 +138,15 @@ header{
     }
 
     @media screen and(max-width:600px){
+        .team-w-ninjas-container{
+            .ninjas{
+                .ninja{
+                   img{
+                       width: 30%;
+                   }
+                }
+            }
+        }
         .projects-container{
             article{
                 flex-flow: column-reverse;

@@ -3,8 +3,11 @@
   margin: 5em auto 4em;
   max-width: 90em;
   .map {
+    display: flex;
     #map-container {
-      width: 100%;
+      margin: auto;
+      width: 80%;
+      max-width: 40em;
     }
   }
 
