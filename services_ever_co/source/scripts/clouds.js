@@ -11,7 +11,7 @@ clouds.forEach(cloud => {
     cloud.addEventListener("click", function (e) {
         e.preventDefault();
         e.stopPropagation();
-        let descriptionDiv
+        let descriptionDiv;
         if (/Edge/.test(navigator.userAgent)) {
             descriptionDiv = Array.from(this.children)[1].children;
 
@@ -20,13 +20,23 @@ clouds.forEach(cloud => {
 
         }
         let close = descriptionDiv[0];
+      
         close.addEventListener("click", (e) => {
             e.preventDefault();
             e.stopPropagation();
-            this.setAttribute("class", "cloud")
 
+            this.classList.remove("show-info-cloud");
+            this.offsetWidth;
+            this.classList.add("hide-info-cloud");
         })
-        this.setAttribute("class", "info-cloud");
+        this.classList.remove("hide-info-cloud");
+        this.offsetWidth;
+        this.classList.add("show-info-cloud");
+     
+        setTimeout(()=>{
+            this.style.height = "fit-content";
+         
+        },3000)
 
     })
 });

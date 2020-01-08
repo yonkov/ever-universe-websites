@@ -18,13 +18,13 @@ header {
   background-position: right;
   .services-icons-container {
     width: 80%;
-    max-width: 90em;
+    max-width: 85em;
     margin: 1em auto 3em;
     justify-content: space-around;
     padding: 3em;
     border: 1px solid #979797;
     .services-icon {
-      width: 10em;
+      width: 7em;
       align-items: center;
       @each $article-num, $color in $servces-articles-colors {
         &:nth-child(#{$article-num}) {

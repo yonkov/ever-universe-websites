@@ -268,6 +268,10 @@ a:hover {
   text-transform: uppercase;
 }
 
+.hire-us-btn a {
+  color: #fff;
+}
+
 header {
   color: #ffffff;
   width: 80%;
@@ -304,7 +308,7 @@ header p {
 
 .projects-container {
   width: 90%;
-  max-width: 100em;
+  max-width: 90em;
   margin: 2em auto;
 }
 
@@ -373,8 +377,8 @@ header p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #1F1F27;
-  font-family: 'roboto-bold', sans-serif;
+  background: #1f1f27;
+  font-family: "roboto-bold", sans-serif;
   font-weight: bold;
   font-size: 1em;
   border-bottom: 1px solid #66ded1;
@@ -387,10 +391,8 @@ header p {
   display: flex;
 }
 
-@media screen and (min-width: 800px) {
-  .navbar .left #mini-menu {
-    display: none;
-  }
+.navbar .left #mini-menu {
+  display: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -422,8 +424,8 @@ header p {
   transition: all 0.2s ease-out;
   margin: 1em;
   background: transparent;
-  border: 1px solid #606C84;
-  color: #FF3564;
+  border: 1px solid #606c84;
+  color: #ff3564;
 }
 
 @media screen and (min-width: 800px) {
@@ -433,14 +435,14 @@ header p {
 }
 
 .navbar .hire-btn:hover {
-  background: #FF3564;
+  background: #ff3564;
   color: #fff;
   cursor: pointer;
 }
 
 .navbar .hire-btn a {
   font-weight: bold;
-  color: #FF3564;
+  color: #ff3564;
 }
 
 .navbar .hire-btn:hover a {
@@ -449,7 +451,7 @@ header p {
 
 .hidden-menu {
   z-index: 100;
-  background: #1F1F27;
+  background: #1f1f27;
   position: absolute;
   width: 100%;
   -webkit-transform: translate(0, -120%);
@@ -474,14 +476,54 @@ header p {
 }
 
 @media screen and (max-width: 800px) {
-  #mini-menu {
+  .navbar .left #mini-menu {
     display: block;
     margin: 0 1em 0 0;
   }
-  .hire-btn {
+  @supports (-ms-ime-align: auto) {
+    .navbar .left #mini-menu {
+      margin: auto 1em auto;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) and (-ms-high-contrast: active), screen and (max-width: 800px) and (-ms-high-contrast: none) {
+  .navbar .left #mini-menu {
+    margin: auto 1em auto;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .navbar .left #mini-menu {
+    margin: auto 1em auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  @supports (-ms-ime-align: auto) {
+    .navbar .left a {
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) and (-ms-high-contrast: active), screen and (max-width: 800px) and (-ms-high-contrast: none) {
+  .navbar .left a {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .navbar .left a {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar .hire-btn {
     padding: 1em 1.4em;
   }
-  .links {
+  .navbar .links {
     display: none;
   }
 }
@@ -567,7 +609,6 @@ header p {
 
 .message-us .message-us-txt-container h1,
 .message-us .message-us-txt-container h3 {
-  font-family: "roboto";
   font-weight: 500;
 }
 
@@ -728,6 +769,9 @@ footer .network-buttons .link-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 5px;
 }
 
@@ -739,6 +783,8 @@ footer .network-buttons .link-buttons {
 }
 
 footer .network-buttons .link-buttons svg {
+  min-width: 2em;
+  margin: auto;
   padding: 0 0.5em 0 0;
 }
 
@@ -821,6 +867,13 @@ footer .bottom .switch-field {
   border-radius: 25px;
 }
 
+@supports (-ms-ime-align: auto) {
+  footer .bottom .switch-field {
+    margin: auto;
+    width: auto;
+  }
+}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   footer .bottom .switch-field {
     margin: auto;
@@ -890,20 +943,25 @@ footer .bottom .switch-field input[type="radio"]:checked + label svg path {
     text-align: center;
     text-transform: uppercase;
   }
-  .network-buttons {
+  footer .network-buttons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .network-buttons .link-buttons {
+  footer .network-buttons .link-buttons {
     width: 15%;
     margin: 0.4em;
+    padding: 0;
   }
-  .network-buttons .link-buttons svg {
+  footer .network-buttons .link-buttons svg {
     margin: auto;
+    padding: 0.5em;
   }
   footer .footer-menu ul {
     list-style-type: none;
@@ -914,6 +972,9 @@ footer .bottom .switch-field input[type="radio"]:checked + label svg path {
   }
   footer .footer-menu .sub-logos {
     width: 100%;
+  }
+  footer .bottom .switch-field svg {
+    padding: 0;
   }
   footer .bottom h5 {
     margin: auto;

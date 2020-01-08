@@ -133,9 +133,15 @@ main{
   }
   .works-descr-top-container {
     .top {
+      flex-flow: column;
+      h1{
+        font-size: 1.8em;
+        width: 85%;
+      }
       .github-rate {
         width: fit-content;
         flex-flow: row;
+        margin: 0;
         .gh-dets {
           margin: 1em;
           &:nth-child(1) {
@@ -159,17 +165,23 @@ main{
           font-size: 1em;
         }
       }
-    }
     h1 {
       width: 75%;
       font-size: 2em;
     }
     .image-w-arrows{
+      width: 100%;
+      margin: auto;
+      img{
+        width: 90%;
+        margin: auto;
+      }
       .client-feedback-arrows{
         width: 35%;
         margin: -3em 0 0;
       }
     }
+  }
   }
 
   .gh-icon-top{

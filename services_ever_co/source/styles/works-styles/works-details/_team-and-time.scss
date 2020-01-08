@@ -1,5 +1,5 @@
 .team-and-time-container {
-  margin: 5em auto;
+  margin: 5em auto 0;
   .h-titles-w-b {
     margin: 2em 0;
     h2 {
@@ -56,10 +56,7 @@
       }
     }
   }
-  .hire-us-btn {
-      width: 30%;
-      margin: 3em auto 1em;
-  }
+ 
   a {
     color: $secondary-color;
     margin: 1em auto 2em;
@@ -86,6 +83,13 @@
       }
     }
   }
+  .hire-us-btn {
+    width: 30%;
+    margin: 3em auto 1em;
+    a{
+      color: #ffffff;
+    }
+}
 }
 
 @media screen and (max-width: 1280px) {
@@ -151,11 +155,12 @@
       background: #1e202a;
       border: 1px solid #707070;
       .icon {
+        border: none;
         height: auto;
-        width: 12%;
+        width: 10%;
         img {
           margin: auto;
-          width: 50%;
+          width: 60%;
         }
         .num {
           font-size: 1.5em;

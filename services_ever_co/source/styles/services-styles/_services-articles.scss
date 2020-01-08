@@ -9,7 +9,7 @@ $servces-articles-hr-colors: (
 
 .services-articles-container {
   width: 90%;
-  max-width: 100em;
+  max-width: 90em;
   margin: 2em auto;
   article {
     width: 90%;
@@ -101,7 +101,8 @@ $servces-articles-hr-colors: (
             margin: auto;
           }
         }
-      }
+
+      
       .hex-row {
         justify-content: center;
         margin: 2em auto 3em;
@@ -110,6 +111,7 @@ $servces-articles-hr-colors: (
           width: 90%;
           margin: auto;
         }
+
         // .hex {
         //   width: 5em;
         //   height: 6em;
@@ -125,7 +127,7 @@ $servces-articles-hr-colors: (
         //   margin: 0 1em;
         // }
       }
-
+    
       .link {
         font-size: 1.4em;
         text-decoration: none;
@@ -143,13 +145,19 @@ $servces-articles-hr-colors: (
         margin: 2em auto;
         &:hover {
           cursor: pointer;
+          #ex{
+            transition: fill .8s ;
+            fill: red;
+          }
         }
+       
       }
     }
     #content {
       background: #329eff;
     }
   }
+}
 }
 
 @media screen and(max-width:600px) {

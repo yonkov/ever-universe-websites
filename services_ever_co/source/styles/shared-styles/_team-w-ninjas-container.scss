@@ -1,7 +1,7 @@
 .team-w-ninjas-container {
   color: #ffffff;
 width: 80%;
-  max-width: 95em;
+  max-width: 90em;
   margin: 1em auto;
 
   h3 {
@@ -11,17 +11,17 @@ width: 80%;
   .ninjas {
     margin: 1em 0 4em;
     justify-content: space-around;
-
     .ninja {
-
+      width: 25%;
       background: #1e202a;
       @media screen and (min-width: 600px) {
+        min-width: 7em;
         border: 1px solid #707070;
       }
 
       img {
         width: 20%;
-        padding: 0.5em 1em;
+        margin: auto;
       }
 
       .num {
@@ -51,6 +51,7 @@ width: 80%;
       .icons{
         a{
           margin: 1em 1em 0 0;
+          min-width: 1em;
         }
       }
     }
@@ -72,18 +73,18 @@ width: 80%;
     
   }
 }
-@media screen and(max-width: 1024px) {
+// @media screen and(max-width: 1024px) {
 
-  .team-w-ninjas-container{
-    .ninjas{
+//   .team-w-ninjas-container{
+//     .ninjas{
       
-      .ninja{
-      font-size: 0.7em;
-        width: fit-content;
-      }
-    }
-  }
-}
+//       .ninja{
+//       font-size: 0.7em;
+//         width: fit-content;
+//       }
+//     }
+//   }
+// }
 
 @media screen and(max-width: 800px) {
 
@@ -113,12 +114,14 @@ width: 80%;
     padding: 0;
     .ninjas {
       border: 1px solid #707070;
+      background: #1e202a;
       flex-flow: row;
-      justify-content: center;
+      justify-content: space-around;
       .ninja {
+        text-align: center;
         width: 25%;
         img {
-          width: 35%;
+          width: 45%;
           height: 8vh;
           padding: 0;
           margin: 0.5em auto;
