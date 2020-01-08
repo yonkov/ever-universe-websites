@@ -2,13 +2,13 @@
   @supports (-ms-ime-align:auto) {
     @content
   };
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-      @content;
-    }
-    @media screen and (min-width: 600px), screen\9 {
-      @content;
-    }
-    @media \0screen {
-      @content;
-    }
+  // @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  //     @content;
+  //   }
+  //   @media screen and (min-width: 600px), screen\9 {
+  //     @content;
+  //   }
+  //   @media \0screen {
+  //     @content;
+  //   }
 }

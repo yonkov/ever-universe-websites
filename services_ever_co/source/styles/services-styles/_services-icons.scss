@@ -43,6 +43,10 @@ header {
           0% 75%,
           0% 25%
         );
+        @include ie{
+          border-radius: 35px;
+          height: 10em;
+        }
         display: inherit;
         width: 10em;
         height: 12em;

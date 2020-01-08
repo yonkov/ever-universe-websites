@@ -4,6 +4,7 @@
         background: #fff;
         margin: 1em auto;
         .h-titles-w-b{
+            text-align: center;
             margin: auto;
             padding: 1em 0 0;
             width: fit-content;
@@ -15,6 +16,9 @@
             }
             hr{
                 margin: auto;
+                @include ie{
+                    width: 3em;
+                }
             }
         }
         

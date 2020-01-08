@@ -1,5 +1,5 @@
 @import "./clouds";
-
+@import '../mixins/ie-mixin';
 .e-commerce-container {
   width: 90%;
   margin: auto;
@@ -18,6 +18,9 @@
     }
     font-size: 2em;
     justify-content: space-evenly;
+    @include ie{
+      justify-content: space-around;
+    }
     font-family: "barow-bold";
   }
 }

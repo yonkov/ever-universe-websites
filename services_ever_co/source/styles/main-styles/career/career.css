@@ -201,6 +201,12 @@ a:hover {
   width: 40%;
 }
 
+@supports (-ms-ime-align: auto) {
+  .h-titles-w-b hr {
+    display: none;
+  }
+}
+
 .h-titles-w-b .yellow-hr {
   background: #d2bd2e;
   border-color: #d2bd2e;
@@ -485,41 +491,11 @@ header p {
       margin: auto 1em auto;
     }
   }
-}
-
-@media screen and (max-width: 800px) and (-ms-high-contrast: active), screen and (max-width: 800px) and (-ms-high-contrast: none) {
-  .navbar .left #mini-menu {
-    margin: auto 1em auto;
-  }
-}
-
-@media screen and (max-width: 800px) and (min-width: 600px) {
-  .navbar .left #mini-menu {
-    margin: auto 1em auto;
-  }
-}
-
-@media screen and (max-width: 800px) {
   @supports (-ms-ime-align: auto) {
     .navbar .left a {
       margin: auto;
     }
   }
-}
-
-@media screen and (max-width: 800px) and (-ms-high-contrast: active), screen and (max-width: 800px) and (-ms-high-contrast: none) {
-  .navbar .left a {
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 800px) and (min-width: 600px) {
-  .navbar .left a {
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 800px) {
   .navbar .hire-btn {
     padding: 1em 1.4em;
   }
@@ -577,6 +553,14 @@ header {
   display: grid;
 }
 
+@supports (-ms-ime-align: auto) {
+  .careers-container .picture-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .careers-container .picture-container {
   width: 95%;
   margin: 0 auto 2em;
@@ -586,6 +570,16 @@ header {
       grid-template-rows: repeat(1, 2fr);
 }
 
+@supports (-ms-ime-align: auto) {
+  .careers-container .picture-container {
+    width: 100%;
+  }
+  .careers-container .picture-container img {
+    width: 25%;
+    height: 100%;
+  }
+}
+
 .careers-container .picture-container .pic-3,
 .careers-container .picture-container .pic-4 {
   -ms-grid-column: 3;
@@ -593,6 +587,13 @@ header {
   height: 20vh;
   -ms-grid-row: 1;
   grid-row: 1;
+}
+
+@supports (-ms-ime-align: auto) {
+  .careers-container .picture-container .pic-3,
+  .careers-container .picture-container .pic-4 {
+    height: 40vh;
+  }
 }
 
 .careers-container .picture-container .pic-4 {
@@ -686,6 +687,7 @@ header {
 }
 
 .job-offers .h-titles-w-b {
+  text-align: center;
   margin: auto;
   padding: 1em 0 0;
   width: -webkit-fit-content;
@@ -703,6 +705,12 @@ header {
 
 .job-offers .h-titles-w-b hr {
   margin: auto;
+}
+
+@supports (-ms-ime-align: auto) {
+  .job-offers .h-titles-w-b hr {
+    width: 3em;
+  }
 }
 
 .job-offers .row {
@@ -1251,27 +1259,6 @@ footer .bottom .switch-field {
 }
 
 @supports (-ms-ime-align: auto) {
-  footer .bottom .switch-field {
-    margin: auto;
-    width: auto;
-  }
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  footer .bottom .switch-field {
-    margin: auto;
-    width: auto;
-  }
-}
-
-@media screen and (min-width: 600px), screen\9 {
-  footer .bottom .switch-field {
-    margin: auto;
-    width: auto;
-  }
-}
-
-@media \0screen {
   footer .bottom .switch-field {
     margin: auto;
     width: auto;

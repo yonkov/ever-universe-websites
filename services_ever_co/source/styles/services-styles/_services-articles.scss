@@ -63,7 +63,12 @@ $servces-articles-hr-colors: (
       }
       img {
         width: 50%;
+      
       }
+      #content {
+        background: #329eff;
+      }
+      
     }
     .show {
       margin: 2em auto 0;
@@ -111,21 +116,6 @@ $servces-articles-hr-colors: (
           width: 90%;
           margin: auto;
         }
-
-        // .hex {
-        //   width: 5em;
-        //   height: 6em;
-        //   clip-path: polygon(
-        //     50% 0%,
-        //     100% 25%,
-        //     100% 75%,
-        //     50% 100%,
-        //     0% 75%,
-        //     0% 25%
-        //   );
-        //   background: #d0d4de;
-        //   margin: 0 1em;
-        // }
       }
     
       .link {
@@ -153,9 +143,7 @@ $servces-articles-hr-colors: (
        
       }
     }
-    #content {
-      background: #329eff;
-    }
+ 
   }
 }
 }

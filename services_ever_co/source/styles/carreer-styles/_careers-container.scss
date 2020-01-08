@@ -1,3 +1,4 @@
+@import '../mixins/ie-mixin';
 header {
   border: none;
   max-width: 90em;
@@ -29,8 +30,20 @@ header {
   .picture-container {
     margin: auto;
     display: grid;
+    @include ie{
+      display: flex;
+
+    }
   }
     .picture-container {
+      @include ie{
+        width: 100%;
+        img{
+          width: 25%;
+          height: 100%;
+        }
+        
+      }
       width: 95%;
         margin: 0 auto 2em;
       grid-template-columns: repeat(3, 1fr);
@@ -40,6 +53,9 @@ header {
         grid-column: 3;
         height: 20vh;
         grid-row: 1;
+        @include ie{
+          height: 40vh;
+        }
       }
 
       .pic-4 {
