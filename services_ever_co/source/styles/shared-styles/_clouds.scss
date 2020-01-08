@@ -2,122 +2,122 @@
   width: 90%;
   max-width: 90em;
   margin: auto;
-  @media screen and(min-width: 1280px){
+  @media screen and(min-width: 1280px) {
     height: 65vh;
-  };
+  }
 }
+.cloud-descr {
+  margin: auto 1em;
+  width: 60%;
+  overflow: hidden;
+  .close {
+    width: 0;
+    height: 0;
+    float: right;
+    // margin: 1em;
+  }
+
+  margin: 0 0 0 1em;
+  h3 {
+    color: #dd0d3d;
+    text-transform: uppercase;
+  }
+  ul {
+    transform-origin: bottom;
+    list-style-type: none;
+  }
+}
+.e-com-img {
+  width: 25em;
+}
+
+.cloud {
+  transition: all 1s ease;
+
+  img {
+    width: 15%;
+    align-self: baseline;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  background: #ffffff;
+  width: 57%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+.left-clouds {
+  width: 30%;
+  margin: auto;
+}
+#left-up-cloud {
+  width: 15em;
+  border-radius: 84px 90px 159px 170px;
+  margin: 0 0 1em 3em;
+  min-height: 7em;
   .cloud-descr {
-    margin: auto 1em;
-    width: 60%;
-    overflow: hidden;
-    .close{
-      width: 0;
-      height: 0;
-      float: right;
-      // margin: 1em;
-    }
-  
-    margin: 0 0 0 1em;
-    h3 {
-      color: #dd0d3d;
-      text-transform: uppercase;  
-    }
-    ul {
-      transform-origin: bottom;
-      list-style-type: none;
+    .close {
+      align-self: flex-end;
+      position: absolute;
+      z-index: 50;
     }
   }
-  .e-com-img {
-    width: 25em;
+}
+#left-down-cloud {
+  width: 14em;
+  border-radius: 175px 227px 321px 346px;
+  padding: 2em 2em 4em;
+  img {
+    width: 20%;
   }
- 
-  .cloud {
-    transition: all 1s ease;
-    
-    img {
-      width: 15%;
-      align-self: baseline;
+  ul {
+    li {
+      margin: 0.4em 0;
+      font-size: 0.9em;
     }
-    &:hover {
-      cursor: pointer;
-    }
-    background: #ffffff;
-    width: 57%;
-    display: flex;
-    justify-content: space-around;
-    padding: 2em;
   }
-  .left-clouds {
+}
+.right-clouds {
+  width: 30%;
+  margin: auto;
+}
+#up-right-cloud {
+  width: 14em;
+  margin: 0 0 0 7em;
+  border-radius: 50% 65% 78% 100%;
+  img {
+    width: 22%;
+  }
+  ul {
+    li {
+      margin: 0.5em 0;
+    }
+  }
+}
+#middle-right-cloud {
+  width: 7em;
+  margin: -3em 0 0 0;
+  border-radius: 50% 36% 40% 50%;
+  img {
+    width: 35%;
+  }
+}
+#down-right-cloud {
+  width: 10em;
+  margin: 0 0 0 6em;
+  border-radius: 34% 50% 45%;
+  img {
     width: 30%;
-    margin: auto;
   }
-    #left-up-cloud {
-      width: 15em;
-      border-radius: 84px 90px 159px 170px;
-      margin: 0 0 1em 3em;
-      min-height: 7em;
-      .cloud-descr{
-        .close{
-          align-self: flex-end;
-          position: absolute;
-          z-index: 50;
-        }
-      }
-    }
-    #left-down-cloud {
-      width: 14em;
-      border-radius: 175px 227px 321px 346px;
-      padding: 2em 2em 4em;
-      img {
-        width: 20%;
-      }
-      ul {
-        li {
-          margin: 0.4em 0;
-          font-size: 0.9em;
-        }
-      }
-    }
-  .right-clouds {
-    width: 30%;
-    margin: auto;
-  }
-    #up-right-cloud {
-      width: 14em;
-      margin: 0 0 0 7em;
-      border-radius: 50% 65% 78% 100%;
-      img {
-        width: 22%;
-      }
-      ul {
-        li {
-          margin: 0.5em 0;
-        }
-      }
-    }
-    #middle-right-cloud {
-      width: 7em;
-      margin: -3em 0 0 0;
-      border-radius: 50% 36% 40% 50%;
-      img {
-        width: 35%;
-      }
-    }
-    #down-right-cloud {
-      width: 10em;
-      margin: 0 0 0 6em;
-      border-radius: 34% 50% 45% ;
-      img {
-        width: 30%;
-      }
-  }
+}
 @media screen and(min-width: 1600px) {
   .e-com {
     margin: auto;
     .left-clouds {
       width: 25%;
     }
-    .e-com-img{
+    .e-com-img {
       width: 45em;
     }
   }
@@ -131,10 +131,6 @@
   .e-com {
     flex-flow: column;
     margin: 3em auto 2em;
-    .cloud {
-      // height: auto !important;
-     
-    }
     .right-clouds {
       width: 90%;
       justify-content: space-around;
@@ -143,32 +139,29 @@
       #up-right-cloud {
         margin: 0;
         padding: 1em;
-        // max-height:13em ;
       }
       #middle-right-cloud {
         width: 10em;
         align-self: flex-end;
-        padding: 2em
+        padding: 2em;
       }
       #down-right-cloud {
         height: 8vh;
         padding: 3em;
         margin: 0;
-        // max-height: 5em;
       }
     }
     .left-clouds {
       flex-flow: row;
       width: 100%;
       justify-content: space-around;
-      #left-up-cloud{
+      #left-up-cloud {
         padding: 2em;
-        .cloud-descr{
-        h3{
-          margin: 0 auto;
-          
+        .cloud-descr {
+          h3 {
+            margin: 0 auto;
+          }
         }
-      }
       }
       #left-down-cloud,
       #left-up-cloud {
@@ -179,7 +172,7 @@
           width: 30%;
         }
         height: 12em;
-        padding: 2em ;
+        padding: 2em;
       }
     }
 
@@ -191,68 +184,69 @@
 }
 
 @media screen and(max-width:600px) {
-  .e-com{
-    .info-cloud{
+  .e-com {
+    .info-cloud {
       width: 15em !important;
     }
-    .e-com-img{
+    .e-com-img {
       width: 90%;
       height: 40vh;
     }
-  .show-info-cloud{
-     .cloud-icon{
-      position: absolute;
-      width: 1em;
-    }
-  }
-  .cloud{
-    flex-flow: column;
-    padding: 0;
-    ul{
-      display: none;
-    }
-    img{
-      margin: 0 auto;
-    }
-    h3{
-      margin: auto;
-      width: 35%;
-      font-size: 1em;
-    }
-  }
-  .left-clouds, .right-clouds{
-    flex-flow: column;
-  }
-
-  .left-clouds{
-    #left-up-cloud{
-      padding: 1em;
-      margin: 0 0 1em;
-      h3{
-        margin: -2em auto 0 auto;
+    .show-info-cloud {
+      .cloud-icon {
+        position: absolute;
+        width: 1em;
       }
     }
-    #left-down-cloud{
-      align-self: flex-end;
-      padding: 2em 0em 1em;
-      height: 10em;
+    .cloud {
+      flex-flow: column;
+      padding: 0;
+      ul {
+        display: none;
+      }
+      img {
+        margin: 0 auto;
+      }
+      h3 {
+        margin: auto;
+        width: 35%;
+        font-size: 1em;
+      }
+    }
+    .left-clouds,
+    .right-clouds {
+      flex-flow: column;
+    }
+
+    .left-clouds {
+      #left-up-cloud {
+        padding: 1em;
+        margin: 0 0 1em;
+        h3 {
+          margin: -2em auto 0 auto;
+        }
+      }
+      #left-down-cloud {
+        align-self: flex-end;
+        padding: 2em 0em 1em;
+        height: 10em;
+      }
+    }
+    .right-clouds {
+      margin: 2em 0 0;
+      width: 100%;
+      #up-right-cloud {
+        padding: 1em;
+      }
+      #middle-right-cloud {
+        margin: 0;
+      }
+      #down-right-cloud {
+        margin: 0;
+        padding: 1em;
+      }
     }
   }
-  .right-clouds{
-    margin: 2em 0 0;
-    width: 100%;
-    #up-right-cloud{
-     padding: 1em;
-    }
-    #middle-right-cloud{
-      margin: 0;
-    }
-    #down-right-cloud{
-      margin: 0;
-      padding: 1em;
-    }
-  }
-}
 }
 
 .cloud-icon {
@@ -260,154 +254,140 @@
   width: 2em;
 }
 
-.more-ifo-p{
-  transform-origin:center ;
+.more-ifo-p {
+  transform-origin: center;
   transform: scale(0);
   height: 0;
   color: #ffffff;
+}
 
+.show-info-cloud {
+  z-index: 15;
+  overflow: hidden;
+  .cloud-descr {
+    width: 100%;
+    transition: all 1s;
   }
-
-    .show-info-cloud{
-      z-index: 15;
-      overflow: hidden;
-      .cloud-descr{
-        width: 100%;
-        transition: all 1s;
-      }
-      .cloud-icon{
-        animation: hide-pic .5s  0s 1 ease-in forwards;
-      
-      }
-      .cloud-descr{
-      h3{
-        animation: h-anim 3s 0.5s 1 ease-out forwards;
-      }
-      ul{
-        margin: auto;
-        animation:hide-ul 0.5s  .5s 1 ease-in forwards;
-      }
-        .more-ifo-p{
-          animation: show-p 1s  1s 1 ease-out forwards;
-      }
-      .close{
-        animation: show-ex 1s 1s 1 ease-out forwards;
-      }
+  .cloud-icon {
+    animation: hide-pic 0.5s 0s 1 ease-in forwards;
+  }
+  .cloud-descr {
+    h3 {
+      animation: h-anim 3s 0.5s 1 ease-out forwards;
     }
-     
-      
-      &{
-
-        animation: show-info 1s 0s 1 ease-out forwards;
-      }
+    ul {
+      margin: auto;
+      animation: hide-ul 0.5s 0.5s 1 ease-in forwards;
     }
-
-    .hide-info-cloud{
-     transition: all 2s;
-      .cloud-icon{
-        animation: hide-pic .5s  0s 1 ease-in forwards reverse;
-      }
+    .more-ifo-p {
+      animation: show-p 1s 1s 1 ease-out forwards;
     }
+    .close {
+      animation: show-ex 1s 1s 1 ease-out forwards;
+    }
+  }
+  & {
+    animation: show-info 1s 0s 1 ease-out forwards;
+  }
+}
 
-@keyframes hide-pic{
-  0%{
+.hide-info-cloud {
+  transition: all 2s;
+  .cloud-icon {
+    animation: hide-pic 0.5s 0s 1 ease-in forwards reverse;
+  }
+}
+
+@keyframes hide-pic {
+  0% {
     width: 20%;
   }
-  100%{
-   
+  100% {
     width: 0%;
   }
 }
-@keyframes show-pic{
-  0%{
+@keyframes show-pic {
+  0% {
     width: 0%;
   }
-  100%{
+  100% {
     width: 25%;
   }
 }
 
-@keyframes hide-ul{
-  from{
+@keyframes hide-ul {
+  from {
     color: black;
     transform: rotate3d(0, 0, 0, 45deg);
   }
-  to{
+  to {
     color: #ffffff;
     transform: rotate3d(1, 0, 0, 90deg);
     height: 0em;
   }
-
 }
 
-@keyframes show-p{
-  from{
-
+@keyframes show-p {
+  from {
     transform: scale(0);
     height: fit-content;
   }
-  to{
+  to {
     color: #ffffff;
     transform: scale(1);
     height: auto;
   }
 }
 
-@keyframes show-info{
-  0%{
+@keyframes show-info {
+  0% {
     background: #ffffff;
     padding: 4em;
     height: 8em;
   }
 
- 100%{
-  height: 15em;
-   padding: 1em;
-   width: 15em;
-   border-radius: 20%;
-   background: #dd0d3d;
- }
+  100% {
+    height: 15em;
+    padding: 1em;
+    width: 15em;
+    border-radius: 20%;
+    background: #dd0d3d;
+  }
 }
 
-
-@keyframes h-anim{
-  0%{
-    width:100%;
+@keyframes h-anim {
+  0% {
+    width: 100%;
     margin: 0;
   }
-  15%{
-    width:80%;
+  15% {
+    width: 80%;
 
     color: #ffffff;
-    margin: 1em ;
-    
+    margin: 1em;
   }
-  40%{
+  40% {
     margin: 1em 0.5em 2em;
-
   }
-  70%{
+  70% {
     margin: 1em 0.5em 0em;
-
   }
-  100%{
+  100% {
     width: 80%;
     color: #ffffff;
     margin: 1em 0 1em 0;
   }
 }
 
-@keyframes show-ex{
-  from{
+@keyframes show-ex {
+  from {
     width: 0;
     height: 0;
     margin: 0;
   }
-  to{
+  to {
     width: 1em;
     height: 1em;
     margin: 1em 1em 0 0;
   }
 }
-
-

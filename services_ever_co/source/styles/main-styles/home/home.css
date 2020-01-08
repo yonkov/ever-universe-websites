@@ -1221,7 +1221,8 @@ main .h-first a {
     width: 35%;
     font-size: 1em;
   }
-  .e-com .left-clouds, .e-com .right-clouds {
+  .e-com .left-clouds,
+  .e-com .right-clouds {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
@@ -1282,8 +1283,8 @@ main .h-first a {
 }
 
 .show-info-cloud .cloud-icon {
-  -webkit-animation: hide-pic .5s  0s 1 ease-in forwards;
-          animation: hide-pic .5s  0s 1 ease-in forwards;
+  -webkit-animation: hide-pic 0.5s 0s 1 ease-in forwards;
+          animation: hide-pic 0.5s 0s 1 ease-in forwards;
 }
 
 .show-info-cloud .cloud-descr h3 {
@@ -1293,13 +1294,13 @@ main .h-first a {
 
 .show-info-cloud .cloud-descr ul {
   margin: auto;
-  -webkit-animation: hide-ul 0.5s  .5s 1 ease-in forwards;
-          animation: hide-ul 0.5s  .5s 1 ease-in forwards;
+  -webkit-animation: hide-ul 0.5s 0.5s 1 ease-in forwards;
+          animation: hide-ul 0.5s 0.5s 1 ease-in forwards;
 }
 
 .show-info-cloud .cloud-descr .more-ifo-p {
-  -webkit-animation: show-p 1s  1s 1 ease-out forwards;
-          animation: show-p 1s  1s 1 ease-out forwards;
+  -webkit-animation: show-p 1s 1s 1 ease-out forwards;
+          animation: show-p 1s 1s 1 ease-out forwards;
 }
 
 .show-info-cloud .cloud-descr .close {
@@ -1318,7 +1319,7 @@ main .h-first a {
 }
 
 .hide-info-cloud .cloud-icon {
-  animation: hide-pic .5s  0s 1 ease-in forwards reverse;
+  animation: hide-pic 0.5s 0s 1 ease-in forwards reverse;
 }
 
 @-webkit-keyframes hide-pic {
