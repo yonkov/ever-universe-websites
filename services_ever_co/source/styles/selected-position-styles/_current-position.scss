@@ -1,5 +1,11 @@
 @import "../global/global";
-h3{
+.back {
+  font-weight: 500;
+  color: #ffffff;
+  padding: 1em 2em;
+  svg {
+    margin: 0 1em;
+  }
   width: 75%;
   max-width: 79em;
   margin: auto;
@@ -7,6 +13,7 @@ h3{
   color: #ffffff;
   }
 }
+
 .current-position-container {
   background: #ffffff;
   width: 75%;
@@ -23,7 +30,7 @@ h3{
         border-left: 3px solid $secondary-color;
         padding: 0 0 0 1em;
         h1 {
-          font-size: 2em;
+          font-size: 2rem;
           font-weight: 500;
           letter-spacing: 2px;
           margin: 0 0 0.4em 0;
@@ -33,7 +40,7 @@ h3{
           letter-spacing: 1px;
         }
         .location {
-          font-size: 0.7em;
+          font-size: 0.7rem;
           color: #8f9bb3;
         }
       }
@@ -47,7 +54,7 @@ h3{
         }
         li {
           margin: 0.3em;
-          font-size: 0.9em;
+          font-size: 0.9rem;
         }
       }
       .position-logos {

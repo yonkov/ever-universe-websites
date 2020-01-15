@@ -1,4 +1,4 @@
-@import '../mixins/ie-mixin';
+@import "../mixins/ie-mixin";
 
 .navbar {
   width: 100%;
@@ -7,9 +7,8 @@
   background: #1f1f27;
   font-family: "roboto-bold", sans-serif;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1rem;
   border-bottom: 1px solid $secondary-color;
-
   .left {
     margin: 0.5em 1.2em;
     display: flex;
@@ -22,13 +21,11 @@
   @media screen and (min-width: 800px) {
     .right {
       display: flex;
-
       .links {
         text-transform: uppercase;
-
         display: flex;
         list-style-type: none;
-
+        font-weight: 500;
         a {
           margin: auto 1em;
           color: #fff;
@@ -79,7 +76,7 @@
     a {
       cursor: pointer;
       color: #fff;
-      font-size: 2em;
+      font-size: 2rem;
       text-align: center;
       margin: 0.2em auto;
       border-bottom: 1px solid $secondary-color;
@@ -93,31 +90,28 @@
 }
 
 @media screen and (max-width: 800px) {
-    .navbar{
-      
-        .left{
-            #mini-menu {
-                display: block;
-                margin: 0 1em 0 0;
-                @include ie{
-                    margin: auto 1em auto ;
-                }
-              }
-              a{
-                @include ie{
-                margin: auto;
-                }
-            }
+  .navbar {
+    .left {
+      #mini-menu {
+        display: block;
+        margin: 0 1em 0 0;
+        @include ie {
+          margin: auto 1em auto;
         }
-        .hire-btn {
-            padding: 1em 1.4em;
-          }
-          .links {
-            display: none;
-          }
+      }
+      a {
+        @include ie {
+          margin: auto;
+        }
+      }
     }
-
- 
+    .hire-btn {
+      padding: 1em 1.4em;
+    }
+    .links {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {

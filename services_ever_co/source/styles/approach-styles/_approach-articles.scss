@@ -1,5 +1,7 @@
 @import '../global/global';
 
+$article-colors:(1:#D55A76,2: #66DED1, 3:#329EFF, 4:#9BCC13);
+
 .approach-articles {
   width: 90%;
   max-width: 90em;
@@ -60,7 +62,7 @@
         color: #ffffff;
         list-style-type: none;
         margin: 6em 2.2em 0;
-        font-size: 1.1em;
+        font-size: 1.1rem;
 
         &:nth-child(2){
           li{
@@ -108,7 +110,7 @@
       width: 90%;
       .approach-articles-descr{
         h4{
-          font-size: 1.5em;
+          font-size: 1.5rem;
         }
         p{
           margin: 1em 0;
@@ -120,7 +122,7 @@
      ul{
        margin: 2em 1em 1em;
        h4{
-        font-size: 1.5em;
+        font-size: 1.5rem;
        }
      }
    }

@@ -1,18 +1,23 @@
-.border-container{
-     width: 80%;
-     max-width: 100em;
-    padding: 3em;
-    border: 1px solid #979797;
-    margin: 0 auto 2em;
-    @media screen and (max-height:700px){
-      margin: 0 auto 15em;
-      height: 60vh;
-    }
-    @media screen and(min-height:700px)and (max-height:1100px){
-      margin: 0 auto 15em;
-      height: 50vh;
-    }
-  
+$article-colors: (
+  1: #d55a76,
+  2: #66ded1,
+  3: #329eff,
+  4: #9bcc13
+);
+.border-container {
+  width: 80%;
+  max-width: 100em;
+  padding: 3em;
+  border: 1px solid #979797;
+  margin: 0 auto 2em;
+  @media screen and (max-height: 700px) {
+    margin: 0 auto 15em;
+    height: 60vh;
+  }
+  @media screen and(min-height:700px) and (max-height: 1100px) {
+    margin: 0 auto 15em;
+    height: 50vh;
+  }
 }
 .background-container {
   background: url("../../../assets/images/approach/approach-background.png");
@@ -84,7 +89,7 @@
           }
           p {
             margin: 2em 0;
-            font-size: 0.7em;
+            font-size: 0.7rem;
             overflow: hidden;
           }
         }
@@ -116,7 +121,7 @@
   }
 }
 @media screen and (max-width: 800px) {
-  .border-container{
+  .border-container {
     height: auto;
     margin: 1em auto;
     padding: 0;
@@ -167,7 +172,7 @@
           width: 100%;
           .hex-descr {
             p {
-              font-size: 0.6em;
+              font-size: 0.6rem;
             }
           }
         }
@@ -175,6 +180,3 @@
     }
   }
 }
-
-
-

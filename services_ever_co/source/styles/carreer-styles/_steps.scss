@@ -1,20 +1,26 @@
-.additional-info{
-    text-transform: uppercase;
-    color: #ffffff;
-    text-align: center;
-    margin: 2em 0;
+.additional-info {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  width: 73%;
+  margin: 2em auto;
+  max-width: 75em;
+  border: 1px dashed rgba(142, 154, 178, 0.2);
+  padding: 1em;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 100;
 }
 .steps {
   width: 90%;
   max-width: 90em;
   margin: auto;
   color: #ffffff;
-  border: 1px solid #979797;
   .h-titles-w-b {
     width: fit-content;
     margin: auto;
     text-align: center;
-    margin: 2em auto ;
+    margin: 2em auto;
   }
 
   div {
@@ -24,7 +30,7 @@
         align-self: center;
         text-align: center;
         width: 6em;
-        border: 1px solid #3F435A;
+        border: 1px solid #3f435a;
         padding: 1.5em 0;
         border-radius: 50%;
         font-weight: 100;
@@ -33,7 +39,6 @@
         width: 50%;
         margin: 1em auto;
         text-align: center;
-       
       }
     }
   }
@@ -44,25 +49,42 @@
     background: $secondary-color;
   }
   h5 {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     text-align: center;
     font-weight: 100;
     margin: 0 0 2em;
   }
 }
 
-@media screen and(max-width:600px){
-  .additional-info{
+@media screen and(max-width:1024px) {
+  .additional-info {
     width: 90%;
   }
-  .steps{
-    div{
-      div.col{
+  .steps {
+   
+    h5{
+      font-size: 1.8rem;
+
+    }
+    hr{
+      width: 70%;
+    }
+    .h-titles-w-b{
+      p{
+        font-size: 1.4rem;
+      }
+    }
+    div {
+      flex-flow: column;
+      div.col {
         width: 90%;
         margin: 1em auto;
-        .steps-description{
+        .circle-steps {
+          font-size: 1.5rem;
+        }
+        .steps-description {
           width: 85%;
-          p{
+          p {
             margin: 1em auto 0;
           }
         }
@@ -70,4 +92,3 @@
     }
   }
 }
-

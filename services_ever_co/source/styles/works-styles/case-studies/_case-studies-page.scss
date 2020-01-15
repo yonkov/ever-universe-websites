@@ -1,7 +1,12 @@
 
 
-
-.projects-container{
+header{
+    p{
+        margin: 1em;
+        font-size: 1.5rem;
+    }
+}
+.case-studies-container{
     margin: 2em auto 4em;
     
     article{
@@ -15,7 +20,8 @@
                 margin: 1em 0 ;
                 width: 60%;
                 img{
-                    width: 1em;
+                    width: 1.2em;
+                    margin: 0 .5em 0 0;
                 }
             }
         }
@@ -28,7 +34,7 @@
                     width: 1em;
                 }
                 h4{
-                    font-size: 1em;
+                    font-size: 1rem;
                 }
             }
         }
@@ -38,9 +44,9 @@
 
 @media screen and(max-width:600px){
    
-    .projects-container{
+    .case-studies-container{
         h5{
-            font-size: 1.4em;
+            font-size: 1.4rem;
             text-align: center;
         }
         article{

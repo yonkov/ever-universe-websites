@@ -1,0 +1,49 @@
+.github-rate {
+  color: #fff;
+  @media screen and (min-width: 600px) {
+    width: 15%;
+  }
+  background: #1f1f27;
+
+  .gh-dets {
+    @media screen and (min-width: 600px) {
+      width: 80%;
+      margin: 0 auto;
+      padding: 1em 0;
+    }
+
+    h4 {
+      @media screen and (min-width: 600px) {
+        margin: 0.4em 0 0 0;
+      }
+      font-size: 1.5rem;
+      font-weight: 100;
+      text-align: center;
+    }
+
+    p {
+      color: #8f8f93;
+      text-align: center;
+      font-size: 0.7rem;
+    }
+
+    &:nth-child(1) {
+      @media screen and (min-width: 600px) {
+        border-bottom: 2px solid #8f8f93;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 600px) {
+  .github-rate {
+    flex-flow: row;
+    .gh-dets {
+      margin: 1em;
+      &:nth-child(1) {
+        padding-right: 1em;
+        border-right: 2px solid #4c4c52;
+      }
+    }
+  }
+}

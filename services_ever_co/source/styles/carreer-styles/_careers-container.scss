@@ -1,102 +1,109 @@
-@import '../mixins/ie-mixin';
+@import "../mixins/ie-mixin";
 header {
   border: none;
   max-width: 90em;
+  font-size: 1.2rem;
 }
 
 .careers-container {
-    border: 1px solid #979797;
-    width: 90% ;
-    max-width: 90em;
-    margin: auto;
-    .career-icons{
-        justify-content: space-between;
-        width: 75%;
-        margin: 2em auto;
-        color: #ffffff;
-        .career-i{
-            width: 15%;
-            img{
-                margin: 0 auto 1em;
-                width: 70%;
-            }
-            h4{
-                text-transform: uppercase;
-                text-align: center;
-                font-weight: 100;
-            }
-        }
+  border: 1px solid #979797;
+  width: 90%;
+  max-width: 90em;
+  margin: auto;
+  .career-icons {
+    justify-content: space-between;
+    width: 75%;
+    margin: 2em auto;
+    color: #ffffff;
+    .career-i {
+      width: 15%;
+      img {
+        margin: 0 auto 1em;
+        width: 70%;
+      }
+      h4 {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 100;
+      }
     }
+  }
   .picture-container {
     margin: auto;
     display: grid;
-    @include ie{
+    @include ie {
       display: flex;
-
     }
   }
-    .picture-container {
-      @include ie{
-        width: 100%;
-        img{
-          width: 25%;
-          height: 100%;
-        }
-        
-      }
-      width: 95%;
-        margin: 0 auto 2em;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(1, 2fr);
-      .pic-3,
-      .pic-4 {
-        grid-column: 3;
-        height: 20vh;
-        grid-row: 1;
-        @include ie{
-          height: 40vh;
-        }
-      }
-
-      .pic-4 {
-        align-self: flex-end;
+  .picture-container {
+    @include ie {
+      width: 100%;
+      img {
+        width: 25%;
+        height: 100%;
       }
     }
+    width: 95%;
+    margin: 0 auto 2em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    .pic-3,
+    .pic-4 {
+      grid-column: 3;
+      height: 20vh;
+      grid-row: 1;
+      @include ie {
+        height: 40vh;
+      }
+    }
+    .pic-3 {
+      height: auto;
+    }
+
+    .pic-4 {
+      align-self: flex-end;
+    }
+  }
 }
-  .pic-1,
-  .pic-2 {
-    height: 40vh;
+.pic-1,
+.pic-2 {
+  height: 40vh;
+}
+.pic-3 {
+  height: 20vh;
+}
+
+@media screen and (max-width: 1280px) {
+  .careers-container {
+    .picture-container {
+      .pic-1,
+      .pic-2,
+      .pic-4 {
+        height: 23vh;
+      }
+    }
   }
-  .pic-3 {
-    height: 20vh;
 }
 
 @media screen and (max-width: 868px) {
-  .careers-container  {
+  .careers-container {
     .picture-container {
-      width: 100%;
+      width: 95%;
+      margin: 0 auto 1em;
       display: grid;
       grid-template-columns: repeat(2, 50%);
-      grid-template-rows: repeat(2, 1fr);
 
       .pic-1 {
         grid-column: 1/2;
-        grid-row: 1/2;
       }
 
       .pic-2 {
         grid-column: 2/2;
-        grid-row: 1/2;
       }
 
-      .pic-3 {
-        grid-column: 1/2;
-        grid-row: 2/2;
-      }
-
+      .pic-3,
       .pic-4 {
-        grid-column: 2/2;
-        grid-row: 2/2;
+        display: none;
       }
 
       .pic-1,
@@ -110,24 +117,50 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  .pic-1,
-  .pic-2, .pic-3, .pic-4{
-    height: auto;
-  }
- 
+
+
   .f-title {
     margin: 0 1em;
   }
-  header{
-    text-align: center;
+  header {
+    text-align: left;
   }
   .careers-container {
-    .career-icons{
+    width: 95%;
+    .picture-container{
+      .pic-1,
+      .pic-2,
+      .pic-3,
+      .pic-4 {
+        display: block;
+      }
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(2,50%);
+        .pic-1 {
+          grid-column: 1/2;
+          grid-row: 1/2;
+        }
+    
+        .pic-2 {
+          grid-column: 2/2;
+          grid-row: 1/2;
+        }
+        .pic-3{
+          grid-column: 1/2;
+          grid-row: 2/2;
+        }
+        .pic-4{
+          grid-column: 2/2;
+          grid-row: 2/2;
+        }
+    }
+
+    .career-icons {
       width: 90%;
-      .career-i{
+      .career-i {
         width: 90%;
         margin: 1.5em auto;
-        img{
+        img {
           width: 25%;
         }
       }

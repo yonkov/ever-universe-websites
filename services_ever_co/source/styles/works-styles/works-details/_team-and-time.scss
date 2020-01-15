@@ -60,7 +60,7 @@
   a {
     color: $secondary-color;
     margin: 1em auto 2em;
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
   .more-projects {
     background: #1f1f27;
@@ -100,9 +100,9 @@
         height: 5vh;
         padding: 1em;
         .num {
-          font-size: 1.5em;
+          font-size: 1.5rem;
         }
-        font-size: 0.5em;
+        font-size: 0.5rem;
       }
     }
   }
@@ -140,7 +140,7 @@
       margin: 2em auto;
       width: 80%;
       h2 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
       }
       hr {
         width: 80%;
@@ -163,7 +163,7 @@
           width: 60%;
         }
         .num {
-          font-size: 1.5em;
+          font-size: 1.5rem;
         }
 
         &:nth-child(2) {
@@ -172,7 +172,7 @@
         &:nth-child(6) {
           width: 50%;
           margin: 1em;
-          font-size: 1.5em;
+          font-size: 1.5rem;
         }
       }
     }
@@ -197,7 +197,7 @@
 
     .hire-us-btn {
       width: 40%;
-      font-size: 1.1em;
+      font-size: 1.1rem;
       margin: 1em auto;
     }
     .more-projects {

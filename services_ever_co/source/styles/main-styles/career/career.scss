@@ -1,27 +1,13 @@
 @import "../../global/global";
 
 @import "../../global/navbar";
+@import "../../global/footer";
+
+@import "../../shared-styles/tech-we-use";
+@import "../../shared-styles/small-form";
+@import '../../shared-styles/core-values';
+
 @import "../../carreer-styles/careers-container";
 @import "../../carreer-styles/job-offers";
 @import "../../carreer-styles/steps";
-@import "../../carreer-styles/solid-product";
-@import "../../shared-styles/tech-we-use";
-@media screen and(max-width:600px) {
-  .tech-we-use {
-    .h-titles-w-b {
-      width: 90%;
-      margin: auto;
-    }
-  }
-}
-@import "../../shared-styles/small-form";
-@media screen and(max-width:600px) {
-  .small-form {
-    .t-description {
-      width: 90%;
-      margin: 1em auto;
-    }
-  }
-}
 
-@import "../../global/footer";

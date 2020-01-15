@@ -57,7 +57,7 @@ footer {
         color: #d4d4d7;
         letter-spacing: 1px;
         margin: 0 0 0.4em;
-        font-size: 1em;
+        font-size: 1rem;
         text-transform: uppercase;
       }
 
@@ -92,19 +92,20 @@ footer {
       h5,
       a {
         color: #82848f;
-        font-size: 1em;
+        font-size: 1rem;
       }
       h5 {
         margin: 0 0 1em;
       }
       p {
-        font-size: 0.8em;
+        font-size: 0.8rem;
       }
     }
     .switch-field {
       width: fit-content;
       border: 1px solid #2d3545;
       border-radius: 25px;
+      height: min-content;
       @include ie{
         margin: auto;
         width: auto;
@@ -186,11 +187,16 @@ footer {
       list-style-type: none;
     }
     div {
-      margin: 0 auto;
+      margin: 1em auto;
       text-align: center;
     }
     .sub-logos{
       width: 100%;
+    }
+    .extra-logos{
+      width: auto;
+      display: flex;
+      
     }
   }
   .bottom {
