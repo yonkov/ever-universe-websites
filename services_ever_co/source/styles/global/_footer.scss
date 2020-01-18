@@ -1,127 +1,137 @@
-@import '../mixins/ie-mixin';
+@import "../mixins/ie-mixin";
 
 footer {
   background: $primary-background;
-  max-width: 100em;
   margin: auto;
   .e-t {
+    width: 90%;
+    max-width: 90em;
     color: #82848f;
-    max-width: 100em;
     margin: auto;
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1024px) {
       padding: 0 0 0 10em;
     }
   }
-
+  .footer-menu-wrapper,
+  .network-buttons-wrapper,
+  .bottom-wrapper {
+    max-width: 90em;
+    width: 90%;
+  }
   .network-buttons {
-    justify-content: space-around;
     border: 1px solid #40414c;
     border-left: none;
     border-right: none;
-    padding: 3em;
-    margin: 2em 0;
+    .network-buttons-wrapper {
+      justify-content: space-around;
+      margin: 2em auto;
 
-    .link-buttons {
-      color: #ffffff;
-      padding: 1em;
-      display: flex;
-      justify-content: center;
+      .link-buttons {
+        color: #ffffff;
+        padding: 1em;
+        display: flex;
+        justify-content: center;
 
-      @media screen and (min-width: 698px) {
-        width: 10%;
-        margin: 1em;
-      }
-      border-radius: 5px;
+        @media screen and (min-width: 698px) {
+          width: 10%;
+          margin: 1em;
+        }
+        border-radius: 5px;
 
-      svg {
-        min-width: 2em;
-        margin: auto;
-        padding: 0 0.5em 0 0;
-      }
+        svg {
+          min-width: 2em;
+          margin: auto;
+          padding: 0 0.5em 0 0;
+        }
 
-      p {
-        margin: auto;
+        p {
+          margin: auto;
+        }
       }
     }
   }
 
   .footer-menu {
-    justify-content: space-around;
-    color: #ffffff;
     border-bottom: 1px solid #40414c;
-    margin: 1em;
+    .footer-menu-wrapper {
+      justify-content: space-around;
+      color: #ffffff;
+      margin: 1em auto;
+      div {
+        margin: 0 auto;
+        a {
+          color: #d4d4d7;
+          letter-spacing: 1px;
+          margin: 0 0 0.4em;
+          font-size: 1rem;
+          text-transform: uppercase;
+        }
 
-    div {
-      margin: 0 auto;
-      a {
-        color: #d4d4d7;
-        letter-spacing: 1px;
-        margin: 0 0 0.4em;
-        font-size: 1rem;
-        text-transform: uppercase;
+        ul {
+          padding: 0.5em;
+          color: #a9aaaf;
+        }
       }
 
-      ul {
-        padding: 0.5em;
-        color: #a9aaaf;
-      }
-    }
-      
       .extra-logos {
         width: 5em;
         margin: 0 auto 1em;
         img {
           margin: 1em;
+          max-width: 5em;
         }
+      }
     }
   }
 
   .bottom {
-    justify-content: space-around;
-    padding: 1em;
-    color: #82848f;
-    width: 90%;
-    margin: auto;
-    svg{
+    .bottom-wrapper {
+      justify-content: space-around;
+      padding: 1em;
+      color: #82848f;
+      width: 90%;
+      align-items: center;
+      margin: auto;
+      svg {
         margin: auto 0;
-    }
-    div {
-      width: 60%;
-      max-width: 50em;
-      margin: 0 auto;
-      h5,
-      a {
-        color: #82848f;
-        font-size: 1rem;
       }
-      h5 {
-        margin: 0 0 1em;
-      }
-      p {
-        font-size: 0.8rem;
-      }
-    }
-    .switch-field {
-      width: fit-content;
-      border: 1px solid #2d3545;
-      border-radius: 25px;
-      height: min-content;
-      @include ie{
-        margin: auto;
-        width: auto;
-      }
-      label {
-        svg {
-          border-radius: 50%;
+      div {
+        width: 60%;
+        max-width: 50em;
+        h5,
+        a {
+          color: #82848f;
+          font-size: 1rem;
+        }
+        h5 {
+          margin: 0 0 1em;
+        }
+        p {
+          font-size: 0.8rem;
         }
       }
-      input[type="radio"] {
-        display: none;
-        &:checked + label {
+      .switch-field {
+        width: fit-content;
+        border: 1px solid #2d3545;
+        border-radius: 25px;
+        height: min-content;
+        @include ie {
+          margin: auto;
+          width: auto;
+        }
+        label {
           svg {
-            background: #9ba4b7;
-            path {
-              fill: #1f1f27;
+            border-radius: 50%;
+          }
+        }
+        input[type="radio"] {
+          display: none;
+          &:checked + label {
+            svg {
+              background: #9ba4b7;
+              path {
+                fill: #1f1f27;
+              }
             }
           }
         }
@@ -147,14 +157,16 @@ footer {
   background: #2967b2;
 }
 
-@media screen and(max-width:1000px) {
+@media screen and(max-width:1024px) {
   .network-buttons {
-    .link-buttons {
-      svg {
-        margin: auto;
-      }
-      p {
-        display: none;
+    .network-buttons-wrapper {
+      .link-buttons {
+        svg {
+          margin: auto;
+        }
+        p {
+          display: none;
+        }
       }
     }
   }
@@ -167,63 +179,64 @@ footer {
     text-transform: uppercase;
   }
 
-  footer{
+  footer {
     .network-buttons {
-      flex-flow: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      .link-buttons {
-        width: 15%;
-        margin: 0.4em;
-        padding: 0;
-        svg {
-          margin: auto;
-          padding: 0.5em;
+      .network-buttons-wrapper {
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .link-buttons {
+          width: 15%;
+          margin: 0.4em;
+          padding: 0;
+          svg {
+            margin: auto;
+            padding: 0.5em;
+          }
         }
       }
     }
-  .footer-menu {
-    ul {
-      list-style-type: none;
-    }
-    div {
-      margin: 1em auto;
-      text-align: center;
-    }
-    .sub-logos{
-      width: 100%;
-    }
-    .extra-logos{
-      width: auto;
-      display: flex;
-      
-    }
-  }
-  .bottom {
-    .switch-field{
-      svg{
-        padding: 0;
-
+    .footer-menu {
+      .footer-menu-wrapper {
+        ul {
+          list-style-type: none;
+        }
+        div {
+          margin: 1em auto;
+          text-align: center;
+        }
+        .sub-logos {
+          width: 100%;
+        }
+        .extra-logos {
+          width: auto;
+          display: flex;
+          flex-flow: wrap;
+        }
       }
-
     }
-    h5 {
-      margin: auto;
-    }
-    svg {
-      margin: auto;
-      padding: 1em;
-    }
-    div{
-      text-align: center;
-      p{
-        display: none;
-
+    .bottom {
+      .bottom-wrapper {
+        align-items: center;
+        .switch-field {
+          svg {
+            padding: 0;
+          }
+        }
+        h5 {
+          margin: auto;
+        }
+        svg {
+          margin: auto;
+          padding: 1em;
+        }
+        div {
+          text-align: center;
+          p {
+            display: none;
+          }
+        }
       }
     }
   }
 }
-
-}
-
-

@@ -14,7 +14,7 @@ width: 80%;
     margin: 1em 0 4em;
     justify-content: space-around;
     .ninja {
-      width: 25%;
+      width: 15%;
       background: #1e202a;
       @media screen and (min-width: 600px) {
         min-width: 7em;
@@ -47,6 +47,7 @@ width: 80%;
     width: 90%;
     margin: auto;
     .person-card {
+      display: block;
       margin: 1em;
       h4,
       h5 {
@@ -83,18 +84,7 @@ width: 80%;
     
   }
 }
-// @media screen and(max-width: 1024px) {
 
-//   .team-w-ninjas-container{
-//     .ninjas{
-      
-//       .ninja{
-//       font-size: 0.7em;
-//         width: fit-content;
-//       }
-//     }
-//   }
-// }
 
 @media screen and(max-width: 800px) {
 
@@ -102,6 +92,7 @@ width: 80%;
     flex-flow: wrap;
     justify-content: space-between;
     .person-card{
+      display: block;
       width: 25%;
     }
   }
@@ -130,6 +121,9 @@ width: 80%;
       .ninja {
         text-align: center;
         width: 25%;
+        .num{
+          font-size: 1.4rem;
+        }
         img {
           width: 45%;
           height: 8vh;

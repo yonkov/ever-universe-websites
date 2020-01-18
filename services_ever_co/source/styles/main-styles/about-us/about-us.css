@@ -434,7 +434,7 @@ header {
 }
 
 .team-w-ninjas-container .ninjas .ninja {
-  width: 25%;
+  width: 15%;
   background: #1e202a;
 }
 
@@ -472,6 +472,7 @@ header {
 }
 
 .team-w-ninjas-container .people .person-card {
+  display: block;
   margin: 1em;
 }
 
@@ -526,6 +527,7 @@ header {
             justify-content: space-between;
   }
   .people .person-card {
+    display: block;
     width: 25%;
   }
   .btns {
@@ -563,6 +565,9 @@ header {
   .team-w-ninjas-container .ninjas .ninja {
     text-align: center;
     width: 25%;
+  }
+  .team-w-ninjas-container .ninjas .ninja .num {
+    font-size: 1.4rem;
   }
   .team-w-ninjas-container .ninjas .ninja img {
     width: 45%;
@@ -1080,7 +1085,12 @@ header h1 {
   .e-com .cloud img {
     margin: 0 auto;
   }
-  .e-com .cloud h3 {
+  .e-com .cloud .cloud-descr {
+    margin: 0;
+    width: 100%;
+    overflow: inherit;
+  }
+  .e-com .cloud .cloud-descr h3 {
     margin: auto;
     width: 35%;
     font-size: 1rem;
@@ -1622,7 +1632,7 @@ header h1 {
   width: 90%;
   max-width: 90em;
   margin: 3em auto;
-  border: 1px solid #474B5E;
+  border: 1px solid #474b5e;
 }
 
 .message-us .message-us-txt-container {
@@ -1728,7 +1738,7 @@ header h1 {
     width: 100%;
   }
   .message-us .message-us-txt-container {
-    width: 95%;
+    width: 90%;
     margin: 2em auto;
   }
   .message-us .message-us-txt-container h3:nth-child(3) {
@@ -1773,33 +1783,42 @@ header h1 {
 
 footer {
   background: #2a2c39;
-  max-width: 100em;
   margin: auto;
 }
 
 footer .e-t {
+  width: 90%;
+  max-width: 90em;
   color: #82848f;
-  max-width: 100em;
   margin: auto;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   footer .e-t {
     padding: 0 0 0 10em;
   }
 }
 
+footer .footer-menu-wrapper,
+footer .network-buttons-wrapper,
+footer .bottom-wrapper {
+  max-width: 90em;
+  width: 90%;
+}
+
 footer .network-buttons {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   border: 1px solid #40414c;
   border-left: none;
   border-right: none;
-  padding: 3em;
-  margin: 2em 0;
 }
 
-footer .network-buttons .link-buttons {
+footer .network-buttons .network-buttons-wrapper {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2em auto;
+}
+
+footer .network-buttons .network-buttons-wrapper .link-buttons {
   color: #ffffff;
   padding: 1em;
   display: -webkit-box;
@@ -1812,35 +1831,38 @@ footer .network-buttons .link-buttons {
 }
 
 @media screen and (min-width: 698px) {
-  footer .network-buttons .link-buttons {
+  footer .network-buttons .network-buttons-wrapper .link-buttons {
     width: 10%;
     margin: 1em;
   }
 }
 
-footer .network-buttons .link-buttons svg {
+footer .network-buttons .network-buttons-wrapper .link-buttons svg {
   min-width: 2em;
   margin: auto;
   padding: 0 0.5em 0 0;
 }
 
-footer .network-buttons .link-buttons p {
+footer .network-buttons .network-buttons-wrapper .link-buttons p {
   margin: auto;
 }
 
 footer .footer-menu {
+  border-bottom: 1px solid #40414c;
+}
+
+footer .footer-menu .footer-menu-wrapper {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: #ffffff;
-  border-bottom: 1px solid #40414c;
-  margin: 1em;
+  margin: 1em auto;
 }
 
-footer .footer-menu div {
+footer .footer-menu .footer-menu-wrapper div {
   margin: 0 auto;
 }
 
-footer .footer-menu div a {
+footer .footer-menu .footer-menu-wrapper div a {
   color: #d4d4d7;
   letter-spacing: 1px;
   margin: 0 0 0.4em;
@@ -1848,54 +1870,57 @@ footer .footer-menu div a {
   text-transform: uppercase;
 }
 
-footer .footer-menu div ul {
+footer .footer-menu .footer-menu-wrapper div ul {
   padding: 0.5em;
   color: #a9aaaf;
 }
 
-footer .footer-menu .extra-logos {
+footer .footer-menu .footer-menu-wrapper .extra-logos {
   width: 5em;
   margin: 0 auto 1em;
 }
 
-footer .footer-menu .extra-logos img {
+footer .footer-menu .footer-menu-wrapper .extra-logos img {
   margin: 1em;
+  max-width: 5em;
 }
 
-footer .bottom {
+footer .bottom .bottom-wrapper {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 1em;
   color: #82848f;
   width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
 }
 
-footer .bottom svg {
+footer .bottom .bottom-wrapper svg {
   margin: auto 0;
 }
 
-footer .bottom div {
+footer .bottom .bottom-wrapper div {
   width: 60%;
   max-width: 50em;
-  margin: 0 auto;
 }
 
-footer .bottom div h5,
-footer .bottom div a {
+footer .bottom .bottom-wrapper div h5,
+footer .bottom .bottom-wrapper div a {
   color: #82848f;
   font-size: 1rem;
 }
 
-footer .bottom div h5 {
+footer .bottom .bottom-wrapper div h5 {
   margin: 0 0 1em;
 }
 
-footer .bottom div p {
+footer .bottom .bottom-wrapper div p {
   font-size: 0.8rem;
 }
 
-footer .bottom .switch-field {
+footer .bottom .bottom-wrapper .switch-field {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1907,25 +1932,25 @@ footer .bottom .switch-field {
 }
 
 @supports (-ms-ime-align: auto) {
-  footer .bottom .switch-field {
+  footer .bottom .bottom-wrapper .switch-field {
     margin: auto;
     width: auto;
   }
 }
 
-footer .bottom .switch-field label svg {
+footer .bottom .bottom-wrapper .switch-field label svg {
   border-radius: 50%;
 }
 
-footer .bottom .switch-field input[type="radio"] {
+footer .bottom .bottom-wrapper .switch-field input[type="radio"] {
   display: none;
 }
 
-footer .bottom .switch-field input[type="radio"]:checked + label svg {
+footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label svg {
   background: #9ba4b7;
 }
 
-footer .bottom .switch-field input[type="radio"]:checked + label svg path {
+footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label svg path {
   fill: #1f1f27;
 }
 
@@ -1946,11 +1971,11 @@ footer .bottom .switch-field input[type="radio"]:checked + label svg path {
   background: #2967b2;
 }
 
-@media screen and (max-width: 1000px) {
-  .network-buttons .link-buttons svg {
+@media screen and (max-width: 1024px) {
+  .network-buttons .network-buttons-wrapper .link-buttons svg {
     margin: auto;
   }
-  .network-buttons .link-buttons p {
+  .network-buttons .network-buttons-wrapper .link-buttons p {
     display: none;
   }
 }
@@ -1961,7 +1986,7 @@ footer .bottom .switch-field input[type="radio"]:checked + label svg path {
     text-align: center;
     text-transform: uppercase;
   }
-  footer .network-buttons {
+  footer .network-buttons .network-buttons-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
@@ -1972,45 +1997,52 @@ footer .bottom .switch-field input[type="radio"]:checked + label svg path {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer .network-buttons .link-buttons {
+  footer .network-buttons .network-buttons-wrapper .link-buttons {
     width: 15%;
     margin: 0.4em;
     padding: 0;
   }
-  footer .network-buttons .link-buttons svg {
+  footer .network-buttons .network-buttons-wrapper .link-buttons svg {
     margin: auto;
     padding: 0.5em;
   }
-  footer .footer-menu ul {
+  footer .footer-menu .footer-menu-wrapper ul {
     list-style-type: none;
   }
-  footer .footer-menu div {
+  footer .footer-menu .footer-menu-wrapper div {
     margin: 1em auto;
     text-align: center;
   }
-  footer .footer-menu .sub-logos {
+  footer .footer-menu .footer-menu-wrapper .sub-logos {
     width: 100%;
   }
-  footer .footer-menu .extra-logos {
+  footer .footer-menu .footer-menu-wrapper .extra-logos {
     width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
   }
-  footer .bottom .switch-field svg {
+  footer .bottom .bottom-wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .bottom .bottom-wrapper .switch-field svg {
     padding: 0;
   }
-  footer .bottom h5 {
+  footer .bottom .bottom-wrapper h5 {
     margin: auto;
   }
-  footer .bottom svg {
+  footer .bottom .bottom-wrapper svg {
     margin: auto;
     padding: 1em;
   }
-  footer .bottom div {
+  footer .bottom .bottom-wrapper div {
     text-align: center;
   }
-  footer .bottom div p {
+  footer .bottom .bottom-wrapper div p {
     display: none;
   }
 }

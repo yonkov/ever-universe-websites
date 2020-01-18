@@ -1,13 +1,13 @@
 .message-us {
   color: #ffffff;
-  background: url('../../../assets/images/map-form.png');
-    background-size: contain;
-    background-position: center;
-  .message-us-container{
+  background: url("../../../assets/images/map-form.png");
+  background-size: contain;
+  background-position: center;
+  .message-us-container {
     width: 90%;
     max-width: 90em;
     margin: 3em auto;
-    border: 1px solid #474B5E;
+    border: 1px solid #474b5e;
   }
   .message-us-txt-container {
     width: 50%;
@@ -71,21 +71,21 @@
   }
 }
 
-@media screen and(max-width:1280px){
-  .message-us{
-    .message-us-txt-container{
+@media screen and(max-width:1280px) {
+  .message-us {
+    .message-us-txt-container {
       margin: auto 0 auto 2em;
     }
-    .contact-form{
+    .contact-form {
       width: 40%;
     }
   }
 }
-@media screen and(max-width:800px){
-  .message-us{
-    .contact-form{
+@media screen and(max-width:800px) {
+  .message-us {
+    .contact-form {
       width: 50%;
-       margin: 1em 1em -3em 0;
+      margin: 1em 1em -3em 0;
     }
   }
 }
@@ -93,12 +93,12 @@
   .message-us {
     width: 95%;
     margin: auto;
-    .message-us-container{
+    .message-us-container {
       border: none;
       width: 100%;
     }
     .message-us-txt-container {
-      width:95%;
+      width: 90%;
       margin: 2em auto;
       h3:nth-child(3) {
         width: 50%;
