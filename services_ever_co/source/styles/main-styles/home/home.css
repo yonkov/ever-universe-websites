@@ -2286,6 +2286,10 @@ main .h-first a {
   width: 80%;
 }
 
+.team-w-ninjas-container .people .arrow #left-arr {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .team-w-ninjas-container {
     width: 95%;
@@ -2339,10 +2343,19 @@ main .h-first a {
   }
   .team-w-ninjas-container .people .person-card:first-child, .team-w-ninjas-container .people .person-card:nth-child(2) {
     display: block;
+    width: 45%;
   }
   .team-w-ninjas-container .people .arrow {
-    width: 50%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin: 2em auto;
+  }
+  .team-w-ninjas-container .people .arrow svg {
+    margin: 0 1em;
+  }
+  .team-w-ninjas-container .people .arrow #left-arr {
+    display: block;
   }
   .team-w-ninjas-container .btns {
     -webkit-box-orient: vertical;

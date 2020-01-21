@@ -40,6 +40,15 @@
     width: 80%;
   }
 }
+    .team-w-ninjas-container{
+      .people{
+        .arrow{
+          #left-arr{
+            display: none;
+          }
+        }
+      }
+    }
 
 @media screen and (max-width:1024px){
   .team-w-ninjas-container{
@@ -91,11 +100,18 @@
         &:first-child,
         &:nth-child(2) {
           display: block;
+          width: 45%;
         }
       }
       .arrow {
-        width: 50%;
+        width: fit-content;
         margin: 2em auto;
+        svg{
+          margin: 0 1em;
+        }
+        #left-arr{
+          display: block;
+        }
       }
     }
     .btns {
