@@ -41,9 +41,27 @@
   }
 }
 
+@media screen and (max-width:1024px){
+  .team-w-ninjas-container{
+    width: 95%;
+    .people{
+      flex-flow: row;
+      .person-card{
+        margin: .5em;
+      }
+    }
+    .btns{
+      justify-content: left;
+    }
+  }
+}
 
 @media screen and (max-width: 600px) {
   .h-fifth {
+    width: 100%;
+    #fifth-svg{
+      width: 100%;
+    }
     .h-titles-w-b {
       width: 90%;
       text-align: left;

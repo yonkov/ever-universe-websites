@@ -8,9 +8,6 @@ footer {
     max-width: 90em;
     color: #82848f;
     margin: auto;
-    @media screen and (min-width: 1024px) {
-      padding: 0 0 0 10em;
-    }
   }
   .footer-menu-wrapper,
   .network-buttons-wrapper,
@@ -92,8 +89,9 @@ footer {
       width: 90%;
       align-items: center;
       margin: auto;
-      svg {
+      .ever-bottom-logo {
         margin: auto 0;
+        width: 10em;
       }
       div {
         width: 60%;
@@ -158,18 +156,28 @@ footer {
 }
 
 @media screen and(max-width:1024px) {
-  .network-buttons {
-    .network-buttons-wrapper {
-      .link-buttons {
-        svg {
-          margin: auto;
+  footer{
+    .network-buttons {
+      .network-buttons-wrapper {
+        .link-buttons {
+          svg {
+            margin: auto;
+          }
+          p {
+            display: none;
+          }
         }
-        p {
-          display: none;
+      }
+    }
+    .bottom{
+      .bottom-wrapper{
+        .ever-bottom-logo{
+          width: 6em;
         }
       }
     }
   }
+ 
 }
 
 @media screen and (max-width: 700px) {
@@ -226,7 +234,7 @@ footer {
         h5 {
           margin: auto;
         }
-        svg {
+        .ever-bottom-logo {
           margin: auto;
           padding: 1em;
         }

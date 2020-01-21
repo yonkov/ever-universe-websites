@@ -301,12 +301,6 @@ footer .e-t {
   margin: auto;
 }
 
-@media screen and (min-width: 1024px) {
-  footer .e-t {
-    padding: 0 0 0 10em;
-  }
-}
-
 footer .footer-menu-wrapper,
 footer .network-buttons-wrapper,
 footer .bottom-wrapper {
@@ -405,8 +399,9 @@ footer .bottom .bottom-wrapper {
   margin: auto;
 }
 
-footer .bottom .bottom-wrapper svg {
+footer .bottom .bottom-wrapper .ever-bottom-logo {
   margin: auto 0;
+  width: 10em;
 }
 
 footer .bottom .bottom-wrapper div {
@@ -480,11 +475,14 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
 }
 
 @media screen and (max-width: 1024px) {
-  .network-buttons .network-buttons-wrapper .link-buttons svg {
+  footer .network-buttons .network-buttons-wrapper .link-buttons svg {
     margin: auto;
   }
-  .network-buttons .network-buttons-wrapper .link-buttons p {
+  footer .network-buttons .network-buttons-wrapper .link-buttons p {
     display: none;
+  }
+  footer .bottom .bottom-wrapper .ever-bottom-logo {
+    width: 6em;
   }
 }
 
@@ -543,7 +541,7 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
   footer .bottom .bottom-wrapper h5 {
     margin: auto;
   }
-  footer .bottom .bottom-wrapper svg {
+  footer .bottom .bottom-wrapper .ever-bottom-logo {
     margin: auto;
     padding: 1em;
   }
@@ -691,7 +689,7 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
     width: 70%;
   }
   .tech-we-use .tech-wrapper .list-wrapper {
-    width: 80%;
+    width: 95%;
   }
   .tech-we-use .tech-wrapper .list-wrapper .list-columns {
     width: 35%;
@@ -903,18 +901,9 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
 }
 
 @media screen and (max-width: 1024px) {
-  .core-values-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: column-reverse;
-            flex-flow: column-reverse;
-  }
   .core-values-container .core-values-svg {
     margin: auto;
-    width: 90%;
-  }
-  .core-values-container .core-values-svg img {
-    width: 100%;
+    width: 45%;
   }
   .core-values-container .core-values-txt-container {
     text-align: center;
@@ -924,12 +913,18 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
     width: 90%;
     margin: 1em auto 3em;
   }
+  .core-values-container .core-values-txt-container .h-titles-w-b {
+    font-size: 0.4rem;
+  }
+  .core-values-container .core-values-txt-container .h-titles-w-b h2 {
+    font-size: 1.5rem;
+  }
   .core-values-container .core-values-txt-container .h-titles-w-b hr {
     margin: 1em auto;
   }
   .core-values-container .core-values-txt-container ul {
+    font-size: 0.8rem;
     width: 80%;
-    line-height: 30px;
   }
 }
 
@@ -940,9 +935,8 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
         -ms-flex-flow: column-reverse;
             flex-flow: column-reverse;
   }
-  .core-values-container .core-values-svg svg {
+  .core-values-container .core-values-svg {
     width: 100%;
-    height: auto;
   }
   .core-values-container .core-values-txt-container .h-titles-w-b {
     margin: 0.5em auto;
@@ -1169,7 +1163,7 @@ header {
 }
 
 .location::before {
-  content: url("../../../assets/icons/career-icons/location.svg");
+  content: url("../../../assets/icons/shared-icons/location.svg");
 }
 
 .job-offers {

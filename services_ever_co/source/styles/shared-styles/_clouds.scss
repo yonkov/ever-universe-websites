@@ -14,7 +14,6 @@
     width: 0;
     height: 0;
     float: right;
-    // margin: 1em;
   }
 
   margin: 0 0 0 1em;
@@ -35,7 +34,7 @@
   transition: all 1s ease;
 
   img {
-    width: 15%;
+    width: 3em;
     align-self: baseline;
   }
   &:hover {
@@ -68,9 +67,7 @@
   width: 14em;
   border-radius: 175px 227px 321px 346px;
   padding: 2em 2em 4em;
-  img {
-    width: 20%;
-  }
+
   ul {
     li {
       margin: 0.4em 0;
@@ -86,9 +83,7 @@
   width: 14em;
   margin: 0 0 0 7em;
   border-radius: 50% 65% 78% 100%;
-  img {
-    width: 22%;
-  }
+
   ul {
     li {
       margin: 0.5em 0;
@@ -99,17 +94,13 @@
   width: 7em;
   margin: -3em 0 0 0;
   border-radius: 50% 36% 40% 50%;
-  img {
-    width: 35%;
-  }
+
 }
 #down-right-cloud {
   width: 10em;
   margin: 0 0 0 6em;
   border-radius: 34% 50% 45%;
-  img {
-    width: 30%;
-  }
+ height: fit-content;
 }
 @media screen and(min-width: 1600px) {
   .e-com {
@@ -206,7 +197,7 @@
       }
       img {
         margin: 0 auto;
-      }
+        }
       .cloud-descr{
         margin: 0;
         width: 100%;
@@ -305,18 +296,10 @@
 
 @keyframes hide-pic {
   0% {
-    width: 20%;
+    width: 3em;
   }
   100% {
-    width: 0%;
-  }
-}
-@keyframes show-pic {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 25%;
+    width: 0;
   }
 }
 
@@ -391,7 +374,7 @@
     margin: 0;
   }
   to {
-    width: 1em;
+    width: 1em; 
     height: 1em;
     margin: 1em 1em 0 0;
   }

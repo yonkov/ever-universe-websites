@@ -1,13 +1,17 @@
 @import "../../mixins/ie-mixin";
+@import "../../global/global";
 .tech-stack {
   color: #ffffff;
   width: 80%;
-  max-width: 80em;
-  margin: 8em auto;
+  max-width: 70em;
+  margin: 2em auto;
   font-size: 1.1rem;
+  padding: 1em;
+  border: 1px solid rgba(142, 154, 178, 0.2);
+
   .h-titles-w-b {
     @media screen and (min-width: 1280px) {
-      margin: 4em 2em;
+      margin: 1em 2em;
     }
     h2 {
       @media screen and (min-width: 1280px) {
@@ -20,20 +24,35 @@
     }
   }
   .list-wrapper {
-   
     @media screen and (min-width: 600px) {
-      @include ie{
+      @include ie {
         justify-content: space-around;
       }
       justify-content: space-evenly;
     }
-  
+
     img {
       @media screen and (min-width: 1280px) {
-        width: 40%;
+        width: 50%;
       }
       @media screen and (min-width: 600px) {
-        margin: -8em 0 0 0;
+        margin: -9em 0 0 -6em;
+      }
+    }
+    .list-columns {
+      h5 {
+        color: $secondary-color;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+      ul {
+        margin: 1em;
+      }
+      &:first-child {
+        ul:nth-child(2) {
+          list-style-type: none;
+        }
       }
     }
   }
@@ -42,7 +61,7 @@
 @media screen and (max-width: 1280px) {
   .tech-stack {
     .h-titles-w-b {
-      margin: 4em 4em 0 4em;
+      margin: 1em 0 2em 2em;
       h2 {
         font-size: 2.5rem;
       }
@@ -50,8 +69,8 @@
 
     .list-wrapper {
       img {
-        margin: auto;
-        width: 50%;
+        margin: 4em 0 00 -15em;
+        width: 40%;
       }
     }
   }
@@ -59,8 +78,10 @@
 
 @media screen and (max-width: 600px) {
   .tech-stack {
+    width: 95%;
+    padding: 0;
     .h-titles-w-b {
-      margin: 0;
+      margin: 1em;
       h2 {
         font-size: 2rem;
       }
@@ -69,8 +90,11 @@
       }
     }
     .list-wrapper {
-      justify-content: space-between;
+      flex-flow: wrap;
+      // justify-content: space-around;
       .list-columns {
+        margin: 1em;
+        width: 35%;
         ul {
           list-style-type: none;
           margin: 1em 0;
@@ -78,6 +102,7 @@
       }
       img {
         width: 100%;
+        margin: 0;
       }
     }
   }

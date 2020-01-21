@@ -301,12 +301,6 @@ footer .e-t {
   margin: auto;
 }
 
-@media screen and (min-width: 1024px) {
-  footer .e-t {
-    padding: 0 0 0 10em;
-  }
-}
-
 footer .footer-menu-wrapper,
 footer .network-buttons-wrapper,
 footer .bottom-wrapper {
@@ -405,8 +399,9 @@ footer .bottom .bottom-wrapper {
   margin: auto;
 }
 
-footer .bottom .bottom-wrapper svg {
+footer .bottom .bottom-wrapper .ever-bottom-logo {
   margin: auto 0;
+  width: 10em;
 }
 
 footer .bottom .bottom-wrapper div {
@@ -480,11 +475,14 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
 }
 
 @media screen and (max-width: 1024px) {
-  .network-buttons .network-buttons-wrapper .link-buttons svg {
+  footer .network-buttons .network-buttons-wrapper .link-buttons svg {
     margin: auto;
   }
-  .network-buttons .network-buttons-wrapper .link-buttons p {
+  footer .network-buttons .network-buttons-wrapper .link-buttons p {
     display: none;
+  }
+  footer .bottom .bottom-wrapper .ever-bottom-logo {
+    width: 6em;
   }
 }
 
@@ -543,7 +541,7 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
   footer .bottom .bottom-wrapper h5 {
     margin: auto;
   }
-  footer .bottom .bottom-wrapper svg {
+  footer .bottom .bottom-wrapper .ever-bottom-logo {
     margin: auto;
     padding: 1em;
   }
@@ -745,6 +743,10 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
   }
 }
 
+.github-rate .gh-dets img {
+  width: 1em;
+}
+
 @media screen and (max-width: 600px) {
   .github-rate {
     -webkit-box-orient: horizontal;
@@ -873,11 +875,7 @@ header p {
   height: -moz-fit-content;
   height: fit-content;
   width: 5%;
-  margin: 2em 0;
-}
-
-.case-studies-container article .github-rate .gh-dets img {
-  width: 1em;
+  margin: auto -1px;
 }
 
 .case-studies-container article .github-rate .gh-dets h4 {

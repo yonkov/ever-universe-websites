@@ -95,6 +95,7 @@
 
 @media screen and (max-width: 600px) {
   .works-details-articles{
+    width: 95%;
     section{
       &:nth-child(1), &:nth-child(3), &:nth-child(5){
       flex-flow: column-reverse;

@@ -4,7 +4,7 @@
   max-width: 90em;
   margin: 5em auto;
   padding: 1em;
-  border: 1px dashed rgba(142, 154, 178, 0.2);;
+  border: 1px dashed rgba(142, 154, 178, 0.2);
   .core-values-txt-container {
     color: #ffffff;
     width: 35%;
@@ -49,16 +49,16 @@
 
 @media screen and (max-width: 1024px) {
   .core-values-container {
-    flex-flow: column-reverse;
     .core-values-svg {
       margin: auto;
-      width: 90%;
-      img {
-        width: 100%;
-      }
+      width: 45%;
     }
     .core-values-txt-container {
       .h-titles-w-b {
+        font-size: 0.4rem;
+        h2 {
+          font-size: 1.5rem;
+        }
         hr {
           margin: 1em auto;
         }
@@ -67,9 +67,9 @@
       align-items: center;
       width: 90%;
       margin: 1em auto 3em;
-      ul{
+      ul {
+        font-size: 0.8rem;
         width: 80%;
-        line-height: 30px;
       }
     }
   }
@@ -80,22 +80,19 @@
     flex-flow: column-reverse;
 
     .core-values-svg {
-      svg {
         width: 100%;
-        height: auto;
-      }
     }
     .core-values-txt-container {
       .h-titles-w-b {
         margin: 0.5em auto;
-        h2{
-        text-align: center;
+        h2 {
+          text-align: center;
         }
         hr {
           width: 100%;
         }
       }
-      ul{
+      ul {
         list-style-type: none;
         width: 100%;
       }

@@ -13,10 +13,8 @@
     }
   }
   .nums {
+    margin: 2em 0 0;
     color: #ffffff;
-    @media screen and (min-width: 1280px) {
-      margin: 0 0 2em;
-    }
     font-size: 2rem;
     justify-content: space-evenly;
     @include ie {
@@ -44,12 +42,13 @@
   }
 }
 
+
 @media screen and (max-width: 600px) {
   .e-commerce-container {
+    width: 100%;
     .nums {
-      font-size: 0.8rem;
-      flex-flow: row;
-      h2 {
+      margin: 0;
+      .num{
         margin: 0.5em auto;
       }
     }

@@ -1,4 +1,3 @@
-
 .h-fourth {
   margin: 5em auto 4em;
   max-width: 90em;
@@ -15,12 +14,14 @@
     color: #fff;
     margin: auto;
     font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
   }
-  .h-titles-w-b{
+  .h-titles-w-b {
     margin: auto;
     text-align: center;
 
-    hr{
+    hr {
       margin: 1em auto;
     }
   }
@@ -33,11 +34,9 @@
     margin: 1.2em auto;
 
     img {
-      @media screen and (min-width: 600px) {
         height: 13vh;
         width: 10%;
         margin: 5em;
-      }
     }
     .feedback-txt {
       @media screen and (min-width: 600px) {
@@ -46,19 +45,19 @@
       }
       p {
         font-style: italic;
-        @media screen and (min-width: 600px) {
-          margin: 6em 0;
-        }
+        margin: 5em 0;
+        font-size: 1.1rem;
       }
     }
     .row {
       .feedback-company-name {
-        @media screen and (min-width: 600px) {
-            margin: 0 0 3em;
-        }
+        margin: 0 0 3em;
         color: #94959c;
         h5 {
           color: #94959c;
+        }
+        span {
+          text-transform: uppercase;
         }
       }
     }
@@ -68,8 +67,7 @@
   }
 }
 
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .clients-feedback {
     width: 90%;
   }
@@ -82,15 +80,30 @@
 
 @media screen and (max-width: 600px) {
   .h-fourth {
-  
+    .map {
+      overflow: hidden;
+      #map-container {
+        width: 115%;
+        position: relative;
+        right: 1em;
+      }
+    }
     .clients-feedback {
+      width: 95%;
       img {
         width: 25%;
+        height: auto;
         margin: 2em;
       }
-      .row {
-        .feedback-company-name {
-          margin: 1em;
+      .feedback-txt {
+        p {
+          width: 90%;
+          margin: auto;
+        }
+        .row {
+          .feedback-company-name {
+            margin: 1em;
+          }
         }
       }
     }

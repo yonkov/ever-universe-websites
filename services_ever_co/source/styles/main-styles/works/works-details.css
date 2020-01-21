@@ -301,12 +301,6 @@ footer .e-t {
   margin: auto;
 }
 
-@media screen and (min-width: 1024px) {
-  footer .e-t {
-    padding: 0 0 0 10em;
-  }
-}
-
 footer .footer-menu-wrapper,
 footer .network-buttons-wrapper,
 footer .bottom-wrapper {
@@ -405,8 +399,9 @@ footer .bottom .bottom-wrapper {
   margin: auto;
 }
 
-footer .bottom .bottom-wrapper svg {
+footer .bottom .bottom-wrapper .ever-bottom-logo {
   margin: auto 0;
+  width: 10em;
 }
 
 footer .bottom .bottom-wrapper div {
@@ -480,11 +475,14 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
 }
 
 @media screen and (max-width: 1024px) {
-  .network-buttons .network-buttons-wrapper .link-buttons svg {
+  footer .network-buttons .network-buttons-wrapper .link-buttons svg {
     margin: auto;
   }
-  .network-buttons .network-buttons-wrapper .link-buttons p {
+  footer .network-buttons .network-buttons-wrapper .link-buttons p {
     display: none;
+  }
+  footer .bottom .bottom-wrapper .ever-bottom-logo {
+    width: 6em;
   }
 }
 
@@ -543,7 +541,7 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
   footer .bottom .bottom-wrapper h5 {
     margin: auto;
   }
-  footer .bottom .bottom-wrapper svg {
+  footer .bottom .bottom-wrapper .ever-bottom-logo {
     margin: auto;
     padding: 1em;
   }
@@ -743,6 +741,10 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
   .github-rate .gh-dets:nth-child(1) {
     border-bottom: 2px solid #8f8f93;
   }
+}
+
+.github-rate .gh-dets img {
+  width: 1em;
 }
 
 @media screen and (max-width: 600px) {
@@ -971,6 +973,9 @@ main {
   .back {
     display: none;
   }
+  .works-descr-top-container {
+    width: 95%;
+  }
   .works-descr-top-container .top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1032,7 +1037,7 @@ main {
   }
   .gh-icon-top svg {
     width: 15%;
-    margin: 3em auto 0;
+    margin: 0 auto;
   }
   .gh-icon-top a {
     text-align: center;
@@ -1042,17 +1047,173 @@ main {
   }
 }
 
-.tech-stack {
+@font-face {
+  font-family: "barow-regular";
+  src: url("../../../assets/fonts/barlow-semi-condensed.regular.ttf") format("truetype"), url("../../../assets/fonts/barlow-semi-condensed.regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "barow-bold";
+  src: url("../../../assets/fonts/barlow-semi-condensed.bold.ttf") format("truetype"), url("../../../assets/fonts/barlow-semi-condensed.bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../../../assets/fonts/Roboto-Bold.ttf") format("truetype"), url("../../../assets/fonts/Roboto-Bold_1.woff") format("woff");
+}
+
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../../../assets/fonts/RobotoCondensed-Regular.ttf") format("truetype"), url("../../../assets/fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "roboto-regular", sans-serif;
+  outline: none;
+}
+
+html {
+  background: #2a2c39;
+}
+
+button {
+  font-family: "roboto-bold", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "roboto-regular", sans-serif;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+button,
+a {
+  text-decoration: none;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+.h-titles-w-b {
+  color: #fff;
+}
+
+.h-titles-w-b h2 {
+  font-weight: lighter;
+  font-size: 2.5rem;
+}
+
+.h-titles-w-b hr {
+  background: #66ded1;
+  border: 2px solid #66ded1;
+  width: 40%;
+}
+
+@supports (-ms-ime-align: auto) {
+  .h-titles-w-b hr {
+    display: none;
+  }
+}
+
+.h-titles-w-b .yellow-hr {
+  background: #d2bd2e;
+  border-color: #d2bd2e;
+}
+
+.h-titles-w-b .red-hr {
+  background: #dd0d3d;
+  border-color: #dd0d3d;
+}
+
+.h-titles-w-b p {
+  font-size: 1.1rem;
+  margin: 1em 0 0.6em;
+}
+
+.h-titles-w-b span {
+  color: #66ded1;
+}
+
+header {
   color: #ffffff;
   width: 80%;
   max-width: 80em;
-  margin: 8em auto;
+  margin: auto;
+  padding: 2em 0;
+}
+
+header h1 {
+  font-weight: 100;
+  font-size: 3rem;
+  font-family: "barow-regular";
+}
+
+header p {
+  margin: auto 1em;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    width: 100%;
+  }
+  header h1 {
+    margin: 0 0.5em 1em;
+    font-size: 2rem;
+  }
+  header p {
+    margin: auto 1em;
+    font-size: 1rem;
+  }
+}
+
+.tech-stack {
+  color: #ffffff;
+  width: 80%;
+  max-width: 70em;
+  margin: 2em auto;
   font-size: 1.1rem;
+  padding: 1em;
+  border: 1px solid rgba(142, 154, 178, 0.2);
 }
 
 @media screen and (min-width: 1280px) {
   .tech-stack .h-titles-w-b {
-    margin: 4em 2em;
+    margin: 1em 2em;
   }
 }
 
@@ -1086,32 +1247,51 @@ main {
 
 @media screen and (min-width: 1280px) {
   .tech-stack .list-wrapper img {
-    width: 40%;
+    width: 50%;
   }
 }
 
 @media screen and (min-width: 600px) {
   .tech-stack .list-wrapper img {
-    margin: -8em 0 0 0;
+    margin: -9em 0 0 -6em;
   }
+}
+
+.tech-stack .list-wrapper .list-columns h5 {
+  color: #66ded1;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.tech-stack .list-wrapper .list-columns ul {
+  margin: 1em;
+}
+
+.tech-stack .list-wrapper .list-columns:first-child ul:nth-child(2) {
+  list-style-type: none;
 }
 
 @media screen and (max-width: 1280px) {
   .tech-stack .h-titles-w-b {
-    margin: 4em 4em 0 4em;
+    margin: 1em 0 2em 2em;
   }
   .tech-stack .h-titles-w-b h2 {
     font-size: 2.5rem;
   }
   .tech-stack .list-wrapper img {
-    margin: auto;
-    width: 50%;
+    margin: 4em 0 00 -15em;
+    width: 40%;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .tech-stack {
+    width: 95%;
+    padding: 0;
+  }
   .tech-stack .h-titles-w-b {
-    margin: 0;
+    margin: 1em;
   }
   .tech-stack .h-titles-w-b h2 {
     font-size: 2rem;
@@ -1120,9 +1300,12 @@ main {
     width: 50%;
   }
   .tech-stack .list-wrapper {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .tech-stack .list-wrapper .list-columns {
+    margin: 1em;
+    width: 35%;
   }
   .tech-stack .list-wrapper .list-columns ul {
     list-style-type: none;
@@ -1130,6 +1313,7 @@ main {
   }
   .tech-stack .list-wrapper img {
     width: 100%;
+    margin: 0;
   }
 }
 
@@ -1229,6 +1413,9 @@ main {
 }
 
 @media screen and (max-width: 600px) {
+  .works-details-articles {
+    width: 95%;
+  }
   .works-details-articles section {
     width: 100%;
   }
@@ -1278,10 +1465,12 @@ main {
 
 .team-and-time-container {
   margin: 5em auto 0;
+  color: #ffffff;
 }
 
 .team-and-time-container .h-titles-w-b {
-  margin: 2em 0;
+  width: 90%;
+  margin: 2em auto;
 }
 
 .team-and-time-container .h-titles-w-b h2 {
@@ -1294,207 +1483,244 @@ main {
   width: 15%;
 }
 
-.team-and-time-container .icons {
+.team-and-time-container .time-icons {
+  width: 90%;
+  max-width: 90em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.team-and-time-container .icons .icon {
-  color: #ffffff;
-  margin: 0 1em;
-  background: #1e202a;
-  border: 1px solid #707070;
-  width: 10%;
-  height: 10vh;
-  text-align: center;
-}
-
-.team-and-time-container .icons .icon img {
-  width: 45%;
-  margin: 1em auto;
-}
-
-.team-and-time-container .icons .icon .num {
   margin: auto;
 }
 
-.team-and-time-container div .h-titles-w-b hr {
-  background: #6a7388;
-  border-color: #6a7388;
+.team-and-time-container .time-icons .time-icon {
+  background: #1e202a;
+  border: 1px solid #707070;
+  margin: auto 1em;
+  width: 12em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 6em;
 }
 
-.team-and-time-container div {
-  color: #ffffff;
+.team-and-time-container .time-icons .time-icon .num {
+  width: 50%;
+  text-align: center;
+}
+
+.team-and-time-container .time-icons .time-icon .num h3 {
+  font-size: 3rem;
+}
+
+.team-and-time-container .time-icons .time-icon .num p {
+  font-size: 1.1rem;
+}
+
+.team-and-time-container .time-icons .time-icon img {
+  margin: auto 1em;
+  width: 3em;
+}
+
+.team-and-time-container .time-icons .time-icon:last-child {
+  background: transparent;
+}
+
+.team-and-time-container .time-icons .time-icon .time-descr-block {
+  text-align: center;
+  margin: auto 1em;
+}
+
+.team-and-time-container .time-icons .time-icon .time-descr-block h3 {
+  font-size: 1.5rem;
+}
+
+.team-and-time-container .time-icons .time-icon .time-descr-block p {
+  font-size: 1rem;
+}
+
+.team-and-time-container .team {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 90em;
+  margin: auto;
+}
+
+.team-and-time-container .team .team-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.team-and-time-container div .person-card {
-  width: 10%;
-  margin: 0 1em;
+.team-and-time-container .team .team-container .person-card {
+  width: 30%;
+  margin: 0 2em;
 }
 
-.team-and-time-container div .person-card .icons {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.team-and-time-container .team .team-container .person-card h4,
+.team-and-time-container .team .team-container .person-card h5 {
+  font-weight: 500;
 }
 
-.team-and-time-container div .person-card .icons a {
-  margin: 0;
+.team-and-time-container .team .team-container .person-card h4 {
+  margin: 0.5em 0 0;
 }
 
-.team-and-time-container div .person-card .icons a svg {
-  margin: 0.4em 0.3em 0.2em 0;
+.team-and-time-container .team .team-container .person-card .person-icons {
+  margin: 0.8em 0 0;
+}
+
+.team-and-time-container .team .team-container .person-card .person-icons a {
+  margin: 0 0.5em 0 0;
+}
+
+.team-and-time-container .team .developers .person-card {
+  margin: 0 0.5em;
+}
+
+.team-and-time-container .hire-us-btn {
+  margin: 4em auto 1em;
+  width: 15em;
+  font-size: 1.2rem;
 }
 
 .team-and-time-container a {
   color: #66ded1;
-  margin: 1em auto 2em;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
 }
 
 .team-and-time-container .more-projects {
-  background: #1f1f27;
+  background: #1e202a;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 2em 0;
 }
 
-.team-and-time-container .more-projects .project-more img {
-  width: 50%;
-  height: 25vh;
+.team-and-time-container .more-projects .project-more {
+  width: 40%;
 }
 
 .team-and-time-container .more-projects .project-more .project-descr {
+  width: 80%;
   margin: auto 2em;
 }
 
 .team-and-time-container .more-projects .project-more .project-descr h4 {
-  margin: -1em 0 1em;
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 
-.team-and-time-container .more-projects .project-more .project-descr .project-icons {
-  width: 40%;
-  height: auto;
-  padding: 0.4em 0 0 1em;
-}
-
-.team-and-time-container .hire-us-btn {
-  width: 30%;
-  margin: 3em auto 1em;
-}
-
-.team-and-time-container .hire-us-btn a {
-  color: #ffffff;
+.team-and-time-container .more-projects .project-more .project-descr .project-icons img {
+  width: 2em;
+  margin: 1em 0.5em 0 0;
 }
 
 @media screen and (max-width: 1280px) {
-  .team-and-time-container .icons .icon {
-    width: 8%;
-    height: 5vh;
-    padding: 1em;
-    font-size: 0.5rem;
+  .team-and-time-container .time-icons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .team-and-time-container .icons .icon .num {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .team-and-time-container .people-cont {
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
-  }
-  .team-and-time-container .people-cont .person-card {
-    width: 15%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .team-and-time-container .people-cont .person-card {
+  .team-and-time-container .time-icons .time-icon {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 25%;
+    margin: 1em;
+    font-size: 1.8rem;
+    min-height: 4em;
   }
-  .team-and-time-container .icons .icon {
-    width: 12%;
+  .team-and-time-container .time-icons .time-icon img {
+    width: 20%;
+    margin: 0.5em;
+  }
+  .team-and-time-container .time-icons .time-icon .num {
+    margin: 0;
+  }
+  .team-and-time-container .team {
+    width: 95%;
+  }
+  .team-and-time-container .team .team-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .team-and-time-container .team .developers .person-card {
+    width: 20%;
+    margin: 1em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .team-and-time-container .time-icons {
+    width: 95%;
+  }
+  .team-and-time-container .time-icons .time-icon {
+    width: 30%;
+    margin: 0.2em;
+  }
+  .team-and-time-container .more-projects .project-more {
+    width: 40%;
+  }
+  .team-and-time-container .more-projects .project-more img {
+    width: 45%;
+  }
+  .team-and-time-container .more-projects .project-more .project-descr {
+    margin: auto 1em;
+    font-size: 0.8rem;
+  }
+  .team-and-time-container .more-projects .project-more .project-descr h4 {
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .team-and-time-container .h-titles-w-b {
-    margin: 2em auto;
-    width: 80%;
-  }
-  .team-and-time-container .h-titles-w-b h2 {
-    font-size: 1.5rem;
-  }
-  .team-and-time-container .h-titles-w-b hr {
-    width: 80%;
-  }
-  .team-and-time-container .icons {
-    width: 95%;
-    margin: auto;
-    padding: 1em 0;
+  .team-and-time-container .time-icons {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
     background: #1e202a;
     border: 1px solid #707070;
   }
-  .team-and-time-container .icons .icon {
+  .team-and-time-container .time-icons .time-icon {
     border: none;
-    height: auto;
-    width: 10%;
+    width: 20%;
+    margin: 0;
   }
-  .team-and-time-container .icons .icon img {
-    margin: auto;
-    width: 60%;
-  }
-  .team-and-time-container .icons .icon .num {
-    font-size: 1.5rem;
-  }
-  .team-and-time-container .icons .icon:nth-child(2) {
-    margin: -0.3em 0 0 0;
-  }
-  .team-and-time-container .icons .icon:nth-child(6) {
+  .team-and-time-container .time-icons .time-icon img {
     width: 50%;
-    margin: 1em;
-    font-size: 1.5rem;
+    margin: auto;
   }
-  .team-and-time-container .people-cont {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+  .team-and-time-container .time-icons .time-icon .num {
+    margin: 0 0 0.5em;
   }
-  .team-and-time-container .people-cont:nth-child(4) {
+  .team-and-time-container .time-icons .time-icon .num h3 {
+    font-size: 1rem;
+  }
+  .team-and-time-container .time-icons .time-icon .num p {
+    font-size: 0.5rem;
+  }
+  .team-and-time-container .time-icons .time-icon:last-child {
+    width: 100%;
+  }
+  .team-and-time-container .team .team-container {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-  .team-and-time-container .people-cont .person-card {
+  .team-and-time-container .team .team-container .person-card {
     width: 40%;
-    margin: 1em auto;
+    margin: 1em 0;
   }
-  .team-and-time-container .people-cont .person-card .person-icons {
+  .team-and-time-container .team .team-container .person-card h4 {
+    width: 105%;
+  }
+  .team-and-time-container .team .team-container .person-card .person-icons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .team-and-time-container .people-cont .person-card .person-icons a {
-    margin: 0 0.5em 0 0;
-  }
-  .team-and-time-container .hire-us-btn {
-    width: 40%;
-    font-size: 1.1rem;
-    margin: 1em auto;
   }
   .team-and-time-container .more-projects {
     display: none;

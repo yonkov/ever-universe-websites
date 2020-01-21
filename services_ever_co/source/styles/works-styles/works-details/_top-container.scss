@@ -142,6 +142,7 @@ main{
     display: none;
   }
   .works-descr-top-container {
+    width: 95%;
     .top {
       flex-flow: column;
       h1{
@@ -198,7 +199,7 @@ main{
     width: 100%;
     svg{
       width: 15%;
-      margin: 3em auto 0;
+      margin: 0 auto;
     }
     a{
       text-align: center;
