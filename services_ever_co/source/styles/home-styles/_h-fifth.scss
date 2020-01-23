@@ -3,7 +3,7 @@
   margin: auto;
   max-width: 90em;
   .h-titles-w-b {
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1280px) {
       width: 40%;
     }
     margin: 0 auto 2em;
@@ -56,7 +56,7 @@
     .people{
       flex-flow: row;
       .person-card{
-        margin: .5em;
+        margin: .2em;
       }
     }
     .btns{

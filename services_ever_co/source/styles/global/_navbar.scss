@@ -9,6 +9,7 @@
   font-weight: bold;
   font-size: 1rem;
   border-bottom: 1px solid $secondary-color;
+  align-items: center;
   .left {
     margin: 0.5em 1.2em;
     display: flex;
@@ -42,9 +43,7 @@
   .hire-btn {
     transition: all 0.2s ease-out;
     margin: 1em;
-    @media screen and (min-width: 800px) {
-      padding: 0 1.4em;
-    }
+    padding: 1em 1.4em;
     background: transparent;
     border: 1px solid #606c84;
     color: #ff3564;
@@ -94,7 +93,7 @@
     .left {
       #mini-menu {
         display: block;
-        margin: 0 1em 0 0;
+        margin: 0 .5em 0 .5em;
         @include ie {
           margin: auto 1em auto;
         }
@@ -105,9 +104,7 @@
         }
       }
     }
-    .hire-btn {
-      padding: 1em 1.4em;
-    }
+
     .links {
       display: none;
     }

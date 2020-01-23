@@ -2,7 +2,7 @@
 .back {
   font-weight: 500;
   color: #ffffff;
-  padding: 1em 2em;
+  padding: 1em 0;
   svg {
     margin: 0 1em;
   }
@@ -91,16 +91,21 @@
         justify-content: space-between;
         img {
           width: 45%;
+          max-height: 15em;
         }
       }
     }
   }
 }
 
-@media screen and(max-width:1000px) {
+@media screen and(max-width:1024px) {
+  .back{
+    width: 90%;
+  }
   .current-position-container {
+    width: 90%;
     section {
-      margin: 8em 1em 5em;
+      margin: 1em;
       &:nth-child(odd) {
         width: 70%;
         .position-logos {

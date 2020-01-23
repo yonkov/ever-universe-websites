@@ -148,6 +148,29 @@ $servces-articles-hr-colors: (
 }
 }
 
+@media screen and (max-width:1024px){
+  .services-articles-container{
+    article{
+      section{
+        .services-article-descr{
+          div.col{
+          .h-titles-w-b{
+            margin: 0 0 1em;
+            h2{
+              font-size: 2rem;
+              margin: .2em auto;
+            }
+          }
+          p{
+            margin: 0 0 1em;
+          }
+        }
+        }
+      }
+    }
+  }
+}
+
 @media screen and(max-width:600px) {
   .services-articles-container {
     article {

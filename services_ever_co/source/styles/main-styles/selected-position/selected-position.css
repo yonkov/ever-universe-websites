@@ -138,17 +138,27 @@ header p {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   header {
-    width: 100%;
+    width: 80%;
+    padding: 2em 0 0;
   }
   header h1 {
-    margin: 0 0.5em 1em;
+    margin: auto;
     font-size: 2rem;
   }
   header p {
     margin: auto 1em;
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    margin: 0;
+  }
+  header h1 {
+    margin: .5em;
   }
 }
 
@@ -165,6 +175,9 @@ header p {
   font-weight: bold;
   font-size: 1rem;
   border-bottom: 1px solid #66ded1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar .left {
@@ -207,15 +220,10 @@ header p {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   margin: 1em;
+  padding: 1em 1.4em;
   background: transparent;
   border: 1px solid #606c84;
   color: #ff3564;
-}
-
-@media screen and (min-width: 800px) {
-  .navbar .hire-btn {
-    padding: 0 1.4em;
-  }
 }
 
 .navbar .hire-btn:hover {
@@ -262,7 +270,7 @@ header p {
 @media screen and (max-width: 800px) {
   .navbar .left #mini-menu {
     display: block;
-    margin: 0 1em 0 0;
+    margin: 0 .5em 0 .5em;
   }
   @supports (-ms-ime-align: auto) {
     .navbar .left #mini-menu {
@@ -273,9 +281,6 @@ header p {
     .navbar .left a {
       margin: auto;
     }
-  }
-  .navbar .hire-btn {
-    padding: 1em 1.4em;
   }
   .navbar .links {
     display: none;
@@ -429,12 +434,13 @@ header p {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   header {
-    width: 100%;
+    width: 80%;
+    padding: 2em 0 0;
   }
   header h1 {
-    margin: 0 0.5em 1em;
+    margin: auto;
     font-size: 2rem;
   }
   header p {
@@ -443,10 +449,19 @@ header p {
   }
 }
 
+@media screen and (max-width: 600px) {
+  header {
+    margin: 0;
+  }
+  header h1 {
+    margin: .5em;
+  }
+}
+
 .back {
   font-weight: 500;
   color: #ffffff;
-  padding: 1em 2em;
+  padding: 1em 0;
   width: 75%;
   max-width: 79em;
   margin: auto;
@@ -561,11 +576,18 @@ header p {
 
 .current-position-container section:nth-child(even) div img {
   width: 45%;
+  max-height: 15em;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
+  .back {
+    width: 90%;
+  }
+  .current-position-container {
+    width: 90%;
+  }
   .current-position-container section {
-    margin: 8em 1em 5em;
+    margin: 1em;
   }
   .current-position-container section:nth-child(odd) {
     width: 70%;
@@ -729,6 +751,7 @@ header p {
 
 @media screen and (max-width: 600px) {
   .small-form {
+    padding: 0;
     border: none;
   }
   .small-form .t-description {

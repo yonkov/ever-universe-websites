@@ -138,17 +138,27 @@ header p {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   header {
-    width: 100%;
+    width: 80%;
+    padding: 2em 0 0;
   }
   header h1 {
-    margin: 0 0.5em 1em;
+    margin: auto;
     font-size: 2rem;
   }
   header p {
     margin: auto 1em;
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    margin: 0;
+  }
+  header h1 {
+    margin: .5em;
   }
 }
 
@@ -165,6 +175,9 @@ header p {
   font-weight: bold;
   font-size: 1rem;
   border-bottom: 1px solid #66ded1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar .left {
@@ -207,15 +220,10 @@ header p {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   margin: 1em;
+  padding: 1em 1.4em;
   background: transparent;
   border: 1px solid #606c84;
   color: #ff3564;
-}
-
-@media screen and (min-width: 800px) {
-  .navbar .hire-btn {
-    padding: 0 1.4em;
-  }
 }
 
 .navbar .hire-btn:hover {
@@ -262,7 +270,7 @@ header p {
 @media screen and (max-width: 800px) {
   .navbar .left #mini-menu {
     display: block;
-    margin: 0 1em 0 0;
+    margin: 0 .5em 0 .5em;
   }
   @supports (-ms-ime-align: auto) {
     .navbar .left #mini-menu {
@@ -273,9 +281,6 @@ header p {
     .navbar .left a {
       margin: auto;
     }
-  }
-  .navbar .hire-btn {
-    padding: 1em 1.4em;
   }
   .navbar .links {
     display: none;
@@ -939,17 +944,27 @@ header p {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   header {
-    width: 100%;
+    width: 80%;
+    padding: 2em 0 0;
   }
   header h1 {
-    margin: 0 0.5em 1em;
+    margin: auto;
     font-size: 2rem;
   }
   header p {
     margin: auto 1em;
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    margin: 0;
+  }
+  header h1 {
+    margin: .5em;
   }
 }
 
@@ -1131,6 +1146,10 @@ header p {
   font-size: 2rem;
 }
 
+.message-us .message-us-txt-container .red-contact a {
+  color: #dd0d3d;
+}
+
 .message-us .message-us-txt-container h3:nth-child(3) {
   border-bottom: 2px solid #8f9bb3;
   width: 5%;
@@ -1152,6 +1171,7 @@ header p {
 
 .message-us .contact-form select,
 .message-us .contact-form input {
+  -webkit-appearance: none;
   color: #a9aaaf;
   border: none;
   border-bottom: 1px solid #e0e0e0;

@@ -14,13 +14,15 @@
     margin: auto;
     h1,
     h3 {
-      // font-family: "roboto";
       font-weight: 500;
     }
 
     .red-contact {
       color: #dd0d3d;
       font-size: 2rem;
+      a{
+      color: #dd0d3d;
+      }
     }
 
     h3:nth-child(3) {
@@ -43,6 +45,7 @@
 
     select,
     input {
+      -webkit-appearance:none;
       color: #a9aaaf;
       border: none;
       border-bottom: 1px solid #e0e0e0;

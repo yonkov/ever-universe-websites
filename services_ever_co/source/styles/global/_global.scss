@@ -122,16 +122,28 @@ header {
     text-transform: uppercase;
   }
 }
-@media screen and(max-width:600px) {
+@media screen and(max-width:1024px) {
   header {
-    width: 100%;
+    width: 80%;
+    padding: 2em 0 0;
     h1 {
-      margin: 0 0.5em 1em;
+      margin: auto;
       font-size: 2rem;
     }
     p {
       margin: auto 1em;
       font-size: 1rem;
     }
+
   }
+}
+
+@media screen and(max-width:600px) {
+  header{
+    margin: 0;
+    h1{
+      margin: .5em;
+    }
+  }
+
 }
