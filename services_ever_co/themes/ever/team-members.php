@@ -30,9 +30,7 @@ function ever_team_members_custom_post_type() {
 		'has_archive'         => true,
 		'can_export'          => true,
 		'exclude_from_search' => false,
-	        'yarpp_support'       => true,
-            //Allow for taxonomies categories and tags
-		'taxonomies' 	      => array('post_tag', 'category'),
+	    'yarpp_support'       => true,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page'
 );

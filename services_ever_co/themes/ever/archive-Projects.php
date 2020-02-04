@@ -10,38 +10,63 @@
  */
 
 get_header(); ?>
+<header class="row">
+    <h1>Case studies</h1>
+    <p>We create high-quality software with high ambitions</p>
+</header>
+	<div class="projects-container">
+    
+    <?php //Get the categories
+    global $post;
+    $cat_args = array(
+        'include' => '2,3, 48, 50, 52, 54',
+        'post_type' => 'Projects',
+        'orderby' => 'id'
+    ); 
+    $categories = get_categories( $cat_args );
+    //Loop through categories open-source and customers
+        foreach ($categories as $category){
+            
+        echo "<h5>Our $category->name projects";
 
-	<div class="content-area">
+        $catPosts = new WP_Query( array ( 'post_type' => 'Projects', 'category_name' => $category->slug, 'orderby' => 'date' ) ); 
 
-		<?php if ( have_posts() ) : ?>
+        if ( $catPosts->have_posts() ){
 
-			<header class="archive-header">
-				<?php
-					the_archive_title( '<h1 class="archive-title">', '</h1>' );
-					the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+            while ( $catPosts->have_posts() ) :
 
-			<?php
-			while ( have_posts() ) :
-
-				the_post();
+				$catPosts->the_post();
 
 				get_template_part( 'template-parts/content', 'archive' );
 
 			endwhile;
+            scaffold_the_posts_navigation();
 
-			scaffold_the_posts_navigation();
+        }//end if
+        else{
+            get_template_part( 'template-parts/content', 'none' ); 
+        }
 
-		else :
+        } //end foreach
 
-			get_template_part( 'template-parts/content', 'none' );
+    ?>
+    </div><!-- .projects-container -->
 
-		endif;
-		?>
-
-	</div><!-- .content-area -->
+    <div class="message-us ">
+            <div class="message-us-container row">
+            <div class="message-us-txt-container col">
+                <h1>Need something? <br>
+                    Let’s talk</h1>
+                <span>Write us quick</span>
+                <h3 class="red-contact">
+                    ever@ever.co
+                </h3>
+                <span>Call us, it’s realy quick </span>
+                <h3 class="red-contact"> +359 879 000 000 </h3>
+            </div>
+            <?php echo do_shortcode('[contact-form-7 id="1047" title="Contact Form Home" html_class="contact-form col"]'); ?>
+    </div>
+</div>
 
 <?php
-get_sidebar();
 get_footer();

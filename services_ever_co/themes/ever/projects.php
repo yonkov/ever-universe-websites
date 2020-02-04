@@ -35,8 +35,10 @@ function ever_projects_custom_post_type() {
             //Allow for taxonomies categories and tags
 		'taxonomies' 	      => array('post_tag', 'category'),
 		'publicly_queryable'  => true,
-		'capability_type'     => 'page'
-);
+		'capability_type'     => 'page',
+        'show_in_rest' => true,
+        'supports' => array( 'title', 'editor', 'revisions', 'custom-fields' ),
+    );
 	register_post_type( 'Projects', $args );
 }
 add_action( 'init', 'ever_projects_custom_post_type', 0 );
@@ -88,44 +90,48 @@ foreach ($categories as $category) {
                 $stats = json_decode(get_post_meta($post->ID, 'statistics', true));
                 //Get all meta fields
                 $meta = get_post_meta($post->ID);
-                ?>
-                
-          <div class="project col">
-              <a class="row" href="<?php the_permalink(); ?>">
-                  <?php /* If there is a featured image, display it */
-      if ( has_post_thumbnail() ) {
-          the_post_thumbnail('medium'); 
-      }?>
-              </a>
-              <a class="project-descr" href="<?php the_permalink(); ?>">
-                  <?php //Display the statistics
-                  if (isset($stats)) { 
-                     foreach($stats as $stat) { ?>
-                        <span class="ever-meta"><?php echo $stat->name;?> </span> 
-                        <?php echo '<img src="'.$stat->imgUrl.'">';
-                    } 
-                  }?>
-                  <h4><?php /*Get project title*/ the_title(); ?></h4>
-                  <span><i><?php /*Get the excerpt content*/ the_excerpt(); ?></i></span>
-                    <?php $post_tags = get_the_tags();
-                    if ( $post_tags ) { ?> 
-                    <div> <?php //Display all project tags
-                        foreach( $post_tags as $tag ) {?>
-                            <span class="ever-meta"><?php echo $tag->name;?>, </span> <?php
-                        }
-                    } ?>
-                    </div>
-
-                <?php //Display other post meta
-                    foreach($meta as $key=>$val){
-                        if ($key!=='statistics' && $key!=='_edit_lock'&& $key!=='_edit_last' && $key!=='_thumbnail_id' && $key!=='_wp_old_slug' && $key!=='_wp_old_slug_thumbnail_id'){
-                            foreach($val as $vals){
-                                echo '<img src="'.$vals.'">';
-                            }
-                        }  
+                ?>   
+              <div class="project col">
+                <a class="row project-card" href="<?php the_permalink(); ?>">
+                    <div class="github-rate col">
+                    <?php //Display the statistics
+                    if (isset($stats)) {
+                        foreach($stats as $stat) {?>
+                            <div class="gh-dets">
+                              <?php echo '<img src="'.$stat->imgUrl.'">'; ?> 
+                              <p><?php echo $stat->name; ?></p>
+                            </div> <?php
+                        } 
                     }?>
-              </a>
-          </div>
+                    </div>
+                    <?php /* If there is a featured image, display it */
+                    if ( has_post_thumbnail() ) {
+                        the_post_thumbnail('full', ['class' => 'project-img']); 
+                    }?>
+                </a>
+                <div class="project-descr">
+                  <h4><?php /*Get project title*/ the_title(); ?></h4>
+                    <span><i><?php /*Get the excerpt content*/ the_excerpt(); ?></i></span>
+                      <?php $post_tags = get_the_tags();
+                      if ( $post_tags ) { ?> 
+                      <div class="project-type row"> <?php //Display all project tags
+                          foreach( $post_tags as $tag ) {?>
+                              <span class="ever-meta"><?php echo $tag->name;?> </span> <?php
+                          }
+                      } ?>
+                      </div>
+                  <div class="project-icons row">
+                  <?php //Display other post meta
+                      foreach($meta as $key=>$val){
+                          if ($key!=='statistics' && $key!=='_edit_lock'&& $key!=='_edit_last' && $key!=='_thumbnail_id' && $key!=='_wp_old_slug' && $key!=='_wp_old_slug_thumbnail_id'){
+                              foreach($val as $vals){
+                                  echo '<img src="'.$vals.'">';
+                              }
+                          }  
+                      }?>
+                  </div>
+                </div>
+              </div>
 
           <?php endwhile; wp_reset_postdata(); ?>
       </section>

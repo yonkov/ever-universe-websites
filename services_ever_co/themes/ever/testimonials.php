@@ -29,9 +29,7 @@ function ever_testimonials_custom_post_type() {
 		'has_archive'         => true,
 		'can_export'          => true,
 		'exclude_from_search' => false,
-	        'yarpp_support'       => true,
-            //Allow for taxonomies categories and tags
-		'taxonomies' 	      => array('post_tag', 'category'),
+	    'yarpp_support'       => true,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page'
 );
@@ -57,7 +55,7 @@ function ever_testimonials(){
                 }
             ?>
             <div class="feedback-txt">
-                <p><?php the_excerpt(); ?></p>
+                <p><?php the_content(); ?></p>
                 <div class="row">
                     <div class="feedback-company-name">
                 <h5><?php the_title(); ?></h5>
@@ -73,6 +71,15 @@ function ever_testimonials(){
             </div>
         </div>
         <?php endwhile; wp_reset_postdata(); ?>
+    </div>
+    <!--Slider Arrows -->
+    <div class="client-feedback-arrows">
+        <svg class="prev" xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+            <path id="arrow" data-name="arrow" transform="translate(16 15) rotate(180)" d="M1,8H12.865L9.232,12.36a1,1,0,0,0,1.537,1.28l5-6a.936.936,0,0,0,.087-.154.947.947,0,0,0,.071-.124A.986.986,0,0,0,16,7V7a.986.986,0,0,0-.072-.358.947.947,0,0,0-.071-.124.936.936,0,0,0-.087-.154l-5-6A1,1,0,0,0,9.232,1.64L12.865,6H1A1,1,0,0,0,1,8" fill="#fff"></path>
+        </svg>
+        <svg class="next" xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+            <path id="arrow" data-name="arrow" d="M1,8H12.865L9.232,12.36a1,1,0,0,0,1.537,1.28l5-6a.936.936,0,0,0,.087-.154.947.947,0,0,0,.071-.124A.986.986,0,0,0,16,7V7a.986.986,0,0,0-.072-.358.947.947,0,0,0-.071-.124.936.936,0,0,0-.087-.154l-5-6A1,1,0,0,0,9.232,1.64L12.865,6H1A1,1,0,0,0,1,8" fill="#fff"></path>
+        </svg>
     </div>
     <?php return ob_get_clean(); 
 }

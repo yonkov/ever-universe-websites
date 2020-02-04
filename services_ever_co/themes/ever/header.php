@@ -33,4 +33,5 @@
 	</header><!-- .site-header -->
 
 	<div class="site-content">
-		<div class="ever-wrapper wrapper">
+
+		<div class="<?php echo ( is_front_page() || is_archive() || is_page() ) ?  '' : 'wrapper'; ?>">
