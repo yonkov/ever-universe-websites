@@ -20,7 +20,8 @@
     margin: auto;
     .time-icon {
       background: #1e202a;
-      border: 1px solid #707070;
+      border: 1px solid ;
+      border-image: linear-gradient(90deg, rgb(207, 197, 24), rgb(102, 223, 210)) 1;
       margin: auto 1em;
       width: 12em;
       align-items: center;

@@ -446,7 +446,10 @@ header {
 @media screen and (min-width: 600px) {
   .team-w-ninjas-container .ninjas .ninja {
     min-width: 7em;
-    border: 1px solid #707070;
+    border: 1px solid;
+    -o-border-image: linear-gradient(90deg, #cfc518, #66dfd2) 1;
+       border-image: -webkit-gradient(linear, left top, right top, from(#cfc518), to(#66dfd2)) 1;
+       border-image: linear-gradient(90deg, #cfc518, #66dfd2) 1;
   }
 }
 

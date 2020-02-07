@@ -1515,7 +1515,10 @@ header p {
 
 .team-and-time-container .time-icons .time-icon {
   background: #1e202a;
-  border: 1px solid #707070;
+  border: 1px solid;
+  -o-border-image: linear-gradient(90deg, #cfc518, #66dfd2) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(#cfc518), to(#66dfd2)) 1;
+     border-image: linear-gradient(90deg, #cfc518, #66dfd2) 1;
   margin: auto 1em;
   width: 12em;
   -webkit-box-align: center;
