@@ -967,20 +967,201 @@ main {
 }
 
 .works-descr-top-container .gh-icon-top {
-  width: 80%;
-  margin: -4em auto 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: -8em 8em 8em;
+}
+
+.works-descr-top-container .gh-icon-top h5 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: auto 1em auto 0.2em;
 }
 
 .works-descr-top-container .gh-icon-top svg {
-  width: 3em;
-}
-
-.works-descr-top-container .gh-icon-top a {
   margin: 1em 0;
+  background: #ffffff;
+  width: 12em;
+  margin: 1em;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.works-descr-top-container .gh-icon-top a svg {
-  width: auto;
+.works-descr-top-container .gh-icon-top svg #github-icon {
+  -webkit-transform: translate(190px, 0);
+          transform: translate(190px, 0);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.works-descr-top-container .gh-icon-top svg #visit-txt {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  -webkit-transform: translate(150px, 0);
+          transform: translate(150px, 0);
+}
+
+.works-descr-top-container .gh-icon-top svg #first-git-arrow,
+.works-descr-top-container .gh-icon-top svg #second-git-arrow,
+.works-descr-top-container .gh-icon-top svg #third-git-arrow {
+  -webkit-transform: scale(0.28) translate(310px, 22px);
+          transform: scale(0.28) translate(310px, 22px);
+  -webkit-transition: -webkit-transform 1.3s;
+  transition: -webkit-transform 1.3s;
+  transition: transform 1.3s;
+  transition: transform 1.3s, -webkit-transform 1.3s;
+  opacity: 0;
+}
+
+.works-descr-top-container .gh-icon-top svg:hover #github-icon {
+  -webkit-animation: git-bounce 1s 1 ease-out forwards;
+          animation: git-bounce 1s 1 ease-out forwards;
+  -webkit-transform: translate(585px, 0);
+          transform: translate(585px, 0);
+}
+
+.works-descr-top-container .gh-icon-top svg:hover #visit-txt {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translate(900px, 0);
+          transform: translate(900px, 0);
+}
+
+.works-descr-top-container .gh-icon-top svg:hover #first-git-arrow {
+  -webkit-transform: scale(0.28) translate(1400px, 0);
+          transform: scale(0.28) translate(1400px, 0);
+}
+
+.works-descr-top-container .gh-icon-top svg:hover #second-git-arrow {
+  -webkit-transform: scale(0.2) translate(2200px, 80px);
+          transform: scale(0.2) translate(2200px, 80px);
+}
+
+.works-descr-top-container .gh-icon-top svg:hover #third-git-arrow {
+  -webkit-transform: scale(0.15) translate(3200px, 200px);
+          transform: scale(0.15) translate(3200px, 200px);
+}
+
+.works-descr-top-container .gh-icon-top svg:hover #first-git-arrow,
+.works-descr-top-container .gh-icon-top svg:hover #second-git-arrow,
+.works-descr-top-container .gh-icon-top svg:hover #third-git-arrow {
+  opacity: 1;
+}
+
+.works-descr-top-container .gh-icon-top:hover ~ #underline {
+  -webkit-animation: none;
+          animation: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.works-descr-top-container #underline {
+  opacity: 1;
+  width: 6em;
+  margin: -10em 0 9em 13em;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+.works-descr-top-container .yellow {
+  border: 1px solid #d2bd2e;
+  background-color: #d2bd2e;
+}
+
+.works-descr-top-container .red {
+  border: 1px solid #DD0D3D;
+  background-color: #DD0D3D;
+}
+
+@-webkit-keyframes git-bounce {
+  0% {
+    -webkit-transform: translate(190px, 0);
+            transform: translate(190px, 0);
+  }
+  10% {
+    -webkit-transform: translate(290px, 0);
+            transform: translate(290px, 0);
+  }
+  20% {
+    -webkit-transform: translate(390px, 0);
+            transform: translate(390px, 0);
+  }
+  30% {
+    -webkit-transform: translate(490px, 0);
+            transform: translate(490px, 0);
+  }
+  40% {
+    -webkit-transform: translate(585px, 0) scale(1.1);
+            transform: translate(585px, 0) scale(1.1);
+  }
+  60% {
+    -webkit-transform: translate(520px, 0);
+            transform: translate(520px, 0);
+  }
+  70% {
+    -webkit-transform: translate(585px, 0);
+            transform: translate(585px, 0);
+  }
+  80% {
+    -webkit-transform: translate(560px, 0) scale(1.2);
+            transform: translate(560px, 0) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translate(585px, 0);
+            transform: translate(585px, 0);
+  }
+}
+
+@keyframes git-bounce {
+  0% {
+    -webkit-transform: translate(190px, 0);
+            transform: translate(190px, 0);
+  }
+  10% {
+    -webkit-transform: translate(290px, 0);
+            transform: translate(290px, 0);
+  }
+  20% {
+    -webkit-transform: translate(390px, 0);
+            transform: translate(390px, 0);
+  }
+  30% {
+    -webkit-transform: translate(490px, 0);
+            transform: translate(490px, 0);
+  }
+  40% {
+    -webkit-transform: translate(585px, 0) scale(1.1);
+            transform: translate(585px, 0) scale(1.1);
+  }
+  60% {
+    -webkit-transform: translate(520px, 0);
+            transform: translate(520px, 0);
+  }
+  70% {
+    -webkit-transform: translate(585px, 0);
+            transform: translate(585px, 0);
+  }
+  80% {
+    -webkit-transform: translate(560px, 0) scale(1.2);
+            transform: translate(560px, 0) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translate(585px, 0);
+            transform: translate(585px, 0);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .works-descr-top-container .gh-icon-top {
+    margin: -4em 8em 4em;
+  }
+  .works-descr-top-container #underline {
+    margin: -6em 0 9em 12.5em;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -989,6 +1170,12 @@ main {
   }
   .works-descr-top-container .top-descr .image-w-arrows .client-feedback-arrows {
     margin: auto -5em 0;
+  }
+  .gh-icon-top {
+    margin: -2em 4em 0em;
+  }
+  #underline {
+    margin: -2em 0 2em 8.5em;
   }
 }
 
@@ -1061,17 +1248,17 @@ main {
     width: 35%;
     margin: -3em 0 0;
   }
-  .gh-icon-top {
-    width: 100%;
+  .works-descr-top-container .gh-icon-top {
+    margin: -8em 4em 0em;
   }
-  .gh-icon-top svg {
-    width: 15%;
-    margin: 0 auto;
+  .works-descr-top-container .gh-icon-top svg {
+    width: 25em;
   }
-  .gh-icon-top a {
-    text-align: center;
+  .works-descr-top-container #underline {
+    display: none;
   }
-  .yellow-link, .red-link {
+  .yellow-link,
+  .red-link {
     font-size: 1.5rem;
   }
 }

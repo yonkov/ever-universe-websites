@@ -12,7 +12,7 @@ window.addEventListener('load', (e) => {
         if(isHidden){
             hiddenMenu.style.transform = "translate(0,0)";
         }else{
-            hiddenMenu.style.transform = "translate(0,-500px)";
+            hiddenMenu.style.transform = "translate(0,-120%)";
         }
         
         isHidden = !isHidden;
@@ -20,8 +20,10 @@ window.addEventListener('load', (e) => {
     
     document.addEventListener("click", function(e){
         if(hiddenMenu !==e.target){
-            hiddenMenu.style.transform = "translate(0,-500px)";
+            hiddenMenu.style.transform = "translate(0,-120%)";
     
         }
     })
   });
+
+
