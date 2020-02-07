@@ -50,14 +50,6 @@
     .list-columns{
       width: fit-content;
     }
-      &:nth-child(1) {
-        ul {
-          &:nth-child(2) {
-            border-bottom: 1px solid $secondary-color;
-            padding: 0 0 1em;
-          }
-        }
-      }
     }
 }
   p {

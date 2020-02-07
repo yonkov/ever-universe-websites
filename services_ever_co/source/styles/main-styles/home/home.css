@@ -1410,11 +1410,6 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
   width: fit-content;
 }
 
-.tech-we-use .tech-wrapper .list-wrapper:nth-child(1) ul:nth-child(2) {
-  border-bottom: 1px solid #66ded1;
-  padding: 0 0 1em;
-}
-
 .tech-we-use p {
   font-style: italic;
 }
