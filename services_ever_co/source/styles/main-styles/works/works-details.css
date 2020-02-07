@@ -1530,7 +1530,7 @@ header p {
 }
 
 .team-and-time-container .time-icons .time-icon .num h3 {
-  font-size: 3rem;
+  font-size: 1.3rem;
 }
 
 .team-and-time-container .time-icons .time-icon .num p {
@@ -1715,7 +1715,7 @@ header p {
     margin: 0 0 0.5em;
   }
   .team-and-time-container .time-icons .time-icon .num h3 {
-    font-size: 1rem;
+    margin: 0 0 .5em;
   }
   .team-and-time-container .time-icons .time-icon .num p {
     font-size: 0.5rem;
