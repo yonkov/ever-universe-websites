@@ -51,12 +51,12 @@ main {
       .d-arr {
         width: 2em;
         margin: 1em auto 0;
-        animation: pointing .8s infinite linear;
+        animation: pointing 0.8s infinite linear;
         animation-play-state: running;
         transition: 1s linear;
       }
-      &:hover .d-arr{
-        animation:pointing-on-hover 0.2s 1;
+      &:hover .d-arr {
+        animation: pointing-on-hover 0.2s 1;
       }
     }
   }
@@ -68,7 +68,7 @@ main {
   fill: #4f515d;
 }
 
-@keyframes  pointing-on-hover{
+@keyframes pointing-on-hover {
   from {
     transform: translate3d(0, 0, 0);
   }
@@ -142,6 +142,10 @@ main {
       }
       a {
         font-size: 2rem;
+        .d-arr {
+          width: 1.5em;
+          margin: .5em auto 0;
+        }
       }
     }
   }

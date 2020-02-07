@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "barow-regular";
   src: url("../../../assets/fonts/barlow-semi-condensed.regular.ttf") format("truetype"), url("../../../assets/fonts/barlow-semi-condensed.regular.woff") format("woff");
@@ -863,9 +864,9 @@ footer .network-buttons .network-buttons-wrapper .link-buttons {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 698px) {
+@media screen and (min-width: 1500px) {
   footer .network-buttons .network-buttons-wrapper .link-buttons {
-    width: 10%;
+    width: 10em;
     margin: 1em;
   }
 }
@@ -906,6 +907,13 @@ footer .footer-menu .footer-menu-wrapper div a {
 footer .footer-menu .footer-menu-wrapper div ul {
   padding: 0.5em;
   color: #a9aaaf;
+  list-style-type: none;
+}
+
+footer .footer-menu .footer-menu-wrapper div ul li::before {
+  content: "•";
+  display: inline;
+  margin: 0 .4em;
 }
 
 footer .footer-menu .footer-menu-wrapper .extra-logos {
@@ -1003,6 +1011,16 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
 
 .linkedin {
   background: #2967b2;
+}
+
+@media screen and (max-width: 1500px) {
+  footer .network-buttons .network-buttons-wrapper {
+    width: 95%;
+  }
+  footer .network-buttons .network-buttons-wrapper .link-buttons {
+    margin: .5em;
+    width: 12em;
+  }
 }
 
 @media screen and (max-width: 1024px) {

@@ -29,8 +29,8 @@ footer {
         display: flex;
         justify-content: center;
 
-        @media screen and (min-width: 698px) {
-          width: 10%;
+        @media screen and (min-width: 1500px) {
+          width: 10em;
           margin: 1em;
         }
         border-radius: 5px;
@@ -67,6 +67,14 @@ footer {
         ul {
           padding: 0.5em;
           color: #a9aaaf;
+          list-style-type: none;
+          li{
+            &::before{
+              content: "•";
+              display: inline;
+              margin: 0 .4em;
+            }
+          }
         }
       }
 
@@ -153,6 +161,19 @@ footer {
 
 .linkedin {
   background: #2967b2;
+}
+@media screen and(max-width:1500px){
+  footer{
+    .network-buttons{
+      .network-buttons-wrapper{
+        width: 95%;
+        .link-buttons{
+          margin: .5em;
+          width: 12em;
+        }
+      }
+    }
+  }
 }
 
 @media screen and(max-width:1024px) {
