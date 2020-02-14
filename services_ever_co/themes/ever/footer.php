@@ -7,7 +7,7 @@
  * @link       https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package    ever
- * @copyright  Copyright (c) 2019, Ever Co
+ * @copyright  Copyright (c) 2019-2020, Ever Co
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
