@@ -48,9 +48,8 @@ $stats = json_decode(get_post_meta($post->ID, 'statistics', true));
                     foreach($stats as $stat) {?>
                 <div class="gh-dets">
                     <?php echo '<img src="'.$stat->imgUrl.'">'; ?>
-                        <p>
-                            <?php echo $stat->name; ?>
-                        </p>
+                        <strong> <?php echo $stat->value; ?> </strong>
+                        <p> <?php echo $stat->name; ?> </p>
                 </div>
                 <?php
                     } 

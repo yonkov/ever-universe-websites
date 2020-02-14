@@ -62,7 +62,7 @@ $cat_args = array(
 	'orderby' => 'id',
 	'order' => 'ASC'
 ); ?>
-<div class="h-second col">
+<div id="h-second" class="h-second col">
   <div class="row">
 <?php $categories = get_categories( $cat_args );
 // Loop through these two specific categories and deliver the projects
@@ -98,7 +98,8 @@ foreach ($categories as $category) {
                     if (isset($stats)) {
                         foreach($stats as $stat) {?>
                             <div class="gh-dets">
-                              <?php echo '<img src="'.$stat->imgUrl.'">'; ?> 
+                              <?php echo '<img src="'.$stat->imgUrl.'">'; ?>
+                              <strong><?php echo $stat->value; ?></strong>
                               <p><?php echo $stat->name; ?></p>
                             </div> <?php
                         } 

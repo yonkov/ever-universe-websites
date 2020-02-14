@@ -286,3 +286,47 @@ function showHideMoreInfo(element, {
 
     });
 };
+
+/* SWITCH TO LIGHT or DARK MODE */
+
+jQuery(function($) {
+    
+    //Check if user has chosen light mode
+    var lightMode = localStorage.getItem('lightMode') || 0;
+    //Click on light mode icon. Store user preference through sessions
+    $('.switch-field input[value="day"]').click(function(){
+        $('body').addClass('light-mode');
+        //Save user preference
+        localStorage.setItem('lightMode', 1);
+    })
+
+    //Click on dark mode icon. Store user preference through sessions
+    $('.switch-field input[value="night"]').click(function(){
+        $('body').removeClass('light-mode');
+        //Save user preference
+        localStorage.setItem('lightMode', 0);
+        console.log(lightMode);
+    })
+    
+    // If user has set up light mode, display light theme  
+    if(localStorage.getItem("lightMode")==1){
+        console.log('light mode user preference');
+        $('body').addClass('light-mode');
+    }
+
+});
+
+/* APPEND COUNTER BOX */
+
+jQuery(function($){
+    $('.wpsm_row:first-child').append('<div class="wpsm_col-md-3 wpsm_col-sm-6"> \
+        <div class="wpsm_counterbox"> \
+            <div class="wpsm_number" style="#ffffff"> \
+            <span class="counter">2015</span> \
+            <div id="ever-line">line</div> \
+            </div> \
+            <h3 class="wpsm_count-title" #ffffff=""> Since</h3> \
+        </div> \
+    </div>'
+    )
+})
