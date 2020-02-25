@@ -43,6 +43,7 @@
 .ever-wrapper {
     margin-left: auto;
     margin-right: auto;
+    display: flex;
 }
 
 .entry-header, .site-branding {
@@ -97,8 +98,18 @@ body {
   font-size: 16px;
 }
 
+@media (max-width:600px){
+	.menu-1 a {
+		border-top: none;
+	}	
+}
+
 .site-content {
   padding-bottom: 30px;
+}
+/* Hide site title */
+.site-title {
+    display: none;
 }
 
 @media only screen and (min-width: 800px) and (max-width: 900px){
@@ -137,7 +148,7 @@ body {
 .gh-dets strong {
   display: block;
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 /*=====================
@@ -224,6 +235,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .github-rate {
+    width: 15%;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .github-rate .gh-dets {
     width: 100%;
@@ -273,6 +290,17 @@ a {
       -ms-grid-row-align: center;
       align-self: center;
 }
+
+.yellow-link:hover{
+	opacity: .8;
+	color: #d2bd2e;
+}
+
+.red-link:hover{
+	opacity: .8;
+	color: #dd0d3d;
+}
+
 
 @media screen and (min-width: 600px) {
   .yellow-link,
@@ -347,7 +375,11 @@ a {
 
 .h-titles-w-b p {
   font-size: 1.1em;
-  margin: 1em 0 0.6em;
+  margin: 0 auto;
+}
+/* Target Chrome */
+.h-titles-w-b p:not(*:root) {
+  width: 60%;
 }
 
 .h-titles-w-b span {
@@ -608,7 +640,7 @@ a {
 @media screen and (min-width: 1280px) {
    .h-first {
     background-size: 100%;
-    background-position-y: 20%;
+    background-position-y: 17%;
     background-position-x: 2.2vh;
   }
   .h-first .h-f-title {
@@ -642,6 +674,9 @@ a {
 @media screen and (min-width: 600px) {
   .h-first .h-f-title h1 {
     font-size: 6rem;
+    line-height: 1;
+    padding-bottom: 1.5rem;
+    letter-spacing: 0px
   }
    .h-first .h-f-title h4 {
     width: 60%;
@@ -649,7 +684,8 @@ a {
   }
 
    .h-first .h-f-title h4 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
   }
 }
 
@@ -664,7 +700,7 @@ a {
  .h-first a {
   margin: auto;
   color: #66ded1;
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 
 /* Arrow animation */
@@ -913,10 +949,16 @@ a {
         justify-content: center;
     }
 }
+@media (min-width: 1080px){
+    /* Target chrome only */
+    .project-descr:not(*:root) {
+        margin-left: -2em;
+    }   
+}
 
 @media screen and (min-width: 800px) {
   .h-second .row section {
-    width: 45%;
+    width: 46%;
     padding: 2em;
     -webkit-padding-start: 4em;
     -webkit-padding-end: 4em;
@@ -926,6 +968,9 @@ a {
 .h-second .row section h3 {
   text-transform: uppercase;
   margin: 1em 1em 0;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: .95rem;
 }
 
 @media screen and (max-width: 1100px) {
@@ -943,12 +988,6 @@ a {
 @media screen and (min-width: 600px) {
   .h-second .row section:nth-child(1) h3 {
     text-align: right;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .h-second .row section .project {
-    padding: 0 1em 1em;
   }
 }
 
@@ -1007,6 +1046,13 @@ a {
   font-size: 1.6em;
 }
 
+@media (max-width: 1280px){
+    .h-second a {
+        font-size: 1.3em;
+    }
+}
+
+
 .h-second #line {
   width: 13em;
   margin: auto;
@@ -1049,6 +1095,9 @@ a {
     width: 20%;
     margin: 10px auto;
     border-right: 2px solid #4C4C52;
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   }
   .h-second .row .project .github-rate .gh-dets h4 {
     margin: auto;
@@ -1083,9 +1132,10 @@ a {
 ===================== */
 
 /* 5 columns */
-
-.wpsm_col-md-3 {
-    width: 20%;
+@media (min-width: 992px){
+  .wpsm_col-md-3 {
+      width: 20%;
+  }
 }
 
 /* underline decorator */
@@ -1107,18 +1157,21 @@ a {
 } */
 
 /* Counter 4-column layout */
-/* Add percentage to the first stat counter */
-.wpsm_col-md-3.wpsm_col-sm-6:first-of-type span:after {
-  content:'%'
+
+/* Add percentage to the Job Success stat counter */
+.wpsm_col-md-3.wpsm_col-sm-6:nth-of-type(2) span::after {
+    content: '%';
 }
-/* Add plus sign to the other stat counters */
-.wpsm_col-md-3.wpsm_col-sm-6:nth-of-type(2) span::after, .wpsm_col-md-3.wpsm_col-sm-6:nth-of-type(3) span::after {
+/* Add plus sign to the Total Hours and Total Jobs stat counters */
+.wpsm_col-md-3.wpsm_col-sm-6:nth-of-type(3) span::after, .wpsm_col-md-3.wpsm_col-sm-6:nth-of-type(4) span::after {
     content: '+';
 }
-.wpsm_col-md-3.wpsm_col-sm-6:nth-of-type(4) span::before {
+/* Add currency to the Jobs Income stat counter */
+.wpsm_col-md-3.wpsm_col-sm-6:nth-of-type(5) span::before {
     content: '$';
 }
-.wpsm_col-md-3.wpsm_col-sm-6:nth-of-type(4) span::after {
+/* Add */
+.wpsm_col-md-3.wpsm_col-sm-6:nth-of-type(5) span::after {
     content: 'K+';
 }
 @media (min-width: 1000px){
@@ -1130,12 +1183,16 @@ a {
 
 @media (max-width: 600px){
   #wpsm_counter_b_row_254 .wpsm_counterbox .wpsm_number {
-      font-size: 1.4em !important;
+      font-size: 2em !important;
   }
 }
 /* Apply theme font */
 #wpsm_counter_b_row_254 .wpsm_counterbox .wpsm_count-title {
     font-family: "roboto-regular", sans-serif !important;
+}
+
+#wpsm_counter_b_row_254 .wpsm_counterbox .wpsm_number {
+    letter-spacing: 0 !important;
 }
 
 /*=======================
@@ -1736,7 +1793,7 @@ a {
 .e-commerce-container {
   width: 90%;
   margin: auto;
-  max-width: 90em;
+  max-width: 95em;
   border: 1px solid #474b5e;
 }
 
@@ -1815,14 +1872,15 @@ a {
 @media screen and (min-width: 1000px){
     .h-fourth.col {
     width: 65%;
-    margin: 0 auto;
+    margin: 3em auto 0;
+    max-width: 70em;
     }
 }
 
 .h-fourth h5 {
   color: #fff;
   margin: auto;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .h-fourth .h-titles-w-b {
@@ -1856,7 +1914,6 @@ a {
 @media screen and (min-width: 600px) {
   .h-fourth .clients-feedback .feedback-txt {
     width: 48%;
-    margin: auto 0 auto;
   }
 }
 
@@ -1940,7 +1997,9 @@ a {
 .h-fifth {
   width: 90%;
   margin: auto;
-  max-width: 90em;
+  max-width: 95em;
+  border-top: 1px solid #474B5E;
+  padding-top: 3em
 }
 
 .h-fifth .h-titles-w-b {
@@ -2036,8 +2095,17 @@ a {
   color: #ffffff;
   background: transparent;
   width: 80%;
-  max-width: 90em;
-  margin: 5em auto;
+  max-width: 94em;
+  margin: 3em auto;
+  padding: 1em;
+}
+
+.home .tech-we-use {
+  border: 1px solid #474B5E;
+}
+
+.about.tech-we-use {
+  border-bottom: 1px solid #474B5E;
 }
 
 .tech-we-use .h-titles-w-b {
@@ -2067,6 +2135,9 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .tech-we-use {
+      padding: 3em;
   }
 }
 
@@ -2156,6 +2227,7 @@ a {
   .tech-we-use {
     width: 95%;
     margin: auto;
+    margin-top: -100px;
   }
   .tech-we-use .h-titles-w-b hr {
     width: 70%;
@@ -2167,7 +2239,7 @@ a {
     width: 35%;
   }
   .tech-we-use .tech-wrapper img {
-    margin: -5em auto 0;
+    margin: -1em auto 0;
     width: 88%;
   }
   .tech-we-use p {
@@ -2202,10 +2274,10 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 90%;
-  max-width: 90em;
-  margin: 5em auto;
-  padding: 1em;
-  border: 1px dashed rgba(142, 154, 178, 0.2);
+  max-width: 94em;
+  margin: 3em auto;
+  padding: 0em 2em 5em;
+  border-bottom: 1px solid #474B5E;
 }
 
 .core-values-container .core-values-txt-container {
@@ -2370,9 +2442,16 @@ a {
     font-size: 0px;
     padding-right: 10px;
 }
+
+.feedback-meta {
+    text-transform: uppercase;
+    font-size: .8em;
+}
 @media screen and (max-width: 600px){
   .icons.row {
     flex-flow: row;
+  }
+  .home .icons.row {
     justify-content: center;
   }
 }
@@ -2383,6 +2462,8 @@ a[href*="github"] .ever-meta::before {
 
 a[href*="linkedin"] .ever-meta::before {
     content: url('/wp-content/themes/ever/assets/icons/global-icons/linkedin-white.svg');
+    position: relative;
+    bottom: 2px;
 }
 
 a[href*="upwork"] .ever-meta::before {
@@ -2577,6 +2658,86 @@ a[href*="upwork"] .ever-meta::before {
         text-align:center;
     }
 }
+
+/* ===========================
+===TEAM MEMBERS SINGLE PAGE===
+============================*/
+    .single-teammembers .ever-wrapper {
+        width:95%;
+    }
+
+@media (min-width:1280px){
+    .single-teammembers .ever-wrapper {
+        max-width: 86em;
+    }
+}
+@media (min-width:1750px){
+    .single-teammembers .ever-wrapper {
+        max-width: 90em;
+    }
+}
+
+.team-members-meta-content {
+    margin: 0 2em;
+}
+
+.single-teammembers .ever-wrapper {
+    background: #23282d;
+}
+
+/* Display the title */
+.single-teammembers .entry-header, .site-branding {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 0px;
+}
+
+.single-teammembers .icons.row{
+    padding-top: 1em;
+    justify-content: center;
+}
+
+.single-teammembers p {
+  color: #fff;
+}
+
+.team-members-meta-wrapper .post-thumbnail {
+    padding: 1.5em 0 0 1.5em;
+}
+
+.team-members-meta-content h5 {
+    padding-bottom: 1em;
+}
+
+article .team-members-meta-wrapper {
+	min-width: 20%;
+}
+
+@media (max-width:600px){
+
+  .single-teammembers .content-area {
+      margin: 0 auto;
+  }
+  .single-teammembers .icons.row {
+      justify-content: center;
+  }
+
+  .single-teammembers .entry-content {
+      text-align: center;
+  }
+  .team-members-meta-content h5 {
+    padding-top: 1em;
+  }
+
+  .team-members-meta-wrapper .post-thumbnail {
+    padding: 1.5em 0 0 0;
+    justify-content: center;
+    display: flex;
+  }
+
+}
+
 
 /*==================
 ====Contact form====
@@ -2924,6 +3085,14 @@ footer .footer-menu .footer-menu-wrapper div a {
   text-transform: uppercase;
 }
 
+footer .footer-menu .footer-menu-wrapper div li a {
+  color: #a9aaaf;
+  letter-spacing: 0;
+  margin: 0 0 .4em;
+  font-size: 1rem;
+  text-transform: unset;
+}
+
 footer .footer-menu .footer-menu-wrapper div ul {
   padding: 0.5em;
   color: #a9aaaf;
@@ -3126,23 +3295,47 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
 ====WORKS PAGE=====
 ================- */
 
+
+
+/* Project thumbs slider */
+
+.post-type-archive-projects #tns1-mw{
+margin: auto 0 !important;
+}
+
+@media (min-width: 600px){
+  .post-type-archive-projects #tns1-ow {
+    width: 35% !important;
+    margin: 0 !important;
+  }
+  .post-type-archive-projects .projects-slider {
+    width: 35%;
+    height: auto;
+  }
+}
+
+.post-thumbnail img:hover{
+  opacity: .8;
+}
+
+
 header {
   color: #ffffff;
   width: 80%;
-  max-width: 100em;
   margin: auto;
   padding: 2em 0;
+  max-width: 85em;
 }
 
 header h1 {
-  font-weight: 100;
-  font-size: 3em;
   font-family: 'barow-regular';
   min-width: 4em;
+  font-weight: 700;
+  font-size: 4.5em;
 }
 
 header p {
-  margin: auto 1em;
+  margin: auto 1em .5em;
   font-size: 1.3em;
   text-transform: uppercase;
 }
@@ -3230,6 +3423,22 @@ header p {
   margin-right: .85em;
 }
 
+@media (max-width: 600px){
+	.projects-container article section .project-icons img {
+    	width: .75em;
+	}
+
+  .github-rate .gh-dets:nth-child(1) {
+    padding-right: 1em;
+    border-right: 2px solid 
+    #4c4c52;
+}
+
+  .github-rate .gh-dets {
+      margin: 1em;
+  }
+}
+
 .projects-container article .github-rate {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -3268,7 +3477,18 @@ header p {
     width: 80%;
   }
   .projects-container article .github-rate {
-    width: 70%;
+    flex-flow: row;
+    width: -moz-fit-content !important;
+    margin: 1em -1px auto;
+  }
+  .projects-container article .github-rate .gh-dets img {
+    width: auto;
+  }
+  .projects-container article {
+    margin: 2em 0 !important;
+  }
+  .projects-container article section .project-icons {
+    margin: 1em 0 1.5em;
   }
 }
 @media screen and (min-width: 600px){
@@ -3282,10 +3502,10 @@ header p {
         text-align: center;
         font-size: .95em;
     }
-    .projects-container article .post-thumbnail {
+    /*.projects-container article .post-thumbnail {
         width: 35%;
         height: auto;
-  }
+  } */
 }
 
 .archive .post-thumbnail {
@@ -3601,6 +3821,14 @@ header p {
 /*============
 ====ABOUT=====
 =============*/
+/* Fix tech we use on about page */
+@media screen and (max-width: 600px) {
+  .about.tech-we-use {
+    width: 95%;
+    margin: auto;
+    margin-top: 0px;
+  }
+}
 
 .h-sixth.about {
   border: none;
@@ -4580,6 +4808,15 @@ header p {
   border: 2px solid #329eff;
 }
 
+@media (max-width: 600px){
+	.background-container .services-icons-container .services-icon {
+    	padding: 1em;
+	}
+	.background-container .services-icons-container .services-icon .services-icon-title h3 {
+    	margin: .5em auto .1em;
+	}
+}
+
 .services-articles-container article section {
   width: 100%;
   font-size: 0.9em;
@@ -4765,8 +5002,8 @@ header p {
     font-size: 1em;
   }
   .services-articles-container article section button {
-    width: 2em;
     margin: 1em 0 2em;
+	width: 4em;
   }
   .services-articles-container article section img {
     width: 100%;
@@ -4790,6 +5027,24 @@ header p {
 /*========================
 ====Single project page===
 ========================*/
+
+/* Single project slider */
+
+.single-project-slider {
+    width: 100%;
+}
+
+.image-w-arrows #tns1-mw{
+  margin: 0
+}
+
+@media (min-width:600px){
+    .image-w-arrows #tns1-ow {
+        width: 100%;
+        margin: 0;
+    }    
+}
+
 .single-projects footer {
     display: table;
     width: 100%;  
@@ -4900,30 +5155,12 @@ header p {
 .works-descr-top-container .top-descr .image-w-arrows .client-feedback-arrows {
   background: #ffffff;
   width: 30%;
-  margin: -2em -10em;
+  margin: -4.5em -10em;
 }
 
 .works-descr-top-container .top-descr .image-w-arrows .client-feedback-arrows svg #arrow {
   fill: #0d1c2e;
 }
-/*
-.works-descr-top-container .gh-icon-top {
-  width: 80%;
-  margin: -4em auto 5em;
-}
-
-.works-descr-top-container .gh-icon-top svg {
-  width: 3em;
-}
-
-.works-descr-top-container .gh-icon-top a {
-  margin: 1em 0;
-}
-
-.works-descr-top-container .gh-icon-top a svg {
-  width: auto;
-}
-*/
 
 /* Github animation icon */
 
@@ -5137,6 +5374,14 @@ header p {
   #underline {
     margin: -2em 0 2em 8.5em;
   }
+}
+@media(max-width:600px){
+	.works-descr-top-container .gh-icon-top {
+		margin: -4em auto 4em;
+	}
+	.works-descr-top-container #underline {
+    margin: -6em auto 12.5em;
+	}	
 }
 
 media screen and (max-width: 600px) {
@@ -5626,6 +5871,13 @@ media screen and (max-width: 600px) {
   height: 20vh;
 }
 
+@media (min-width: 1580px) {
+    .team-and-time-container .more-projects .project-more img {
+    width: auto;
+    height: 15vh;
+    } 
+}
+
 .team-and-time-container .more-projects .project-more .project-descr {
   margin: auto 2em;
   text-align: left;
@@ -5890,6 +6142,13 @@ media screen and (max-width: 600px) {
 SINGLE JOB BOARD
 ===============*/
 
+.ever-wrapper .sjb-page .list-data .job-description {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+  float: none;
+}
+
 /* Remove default styles */
 .current-position-container.row {
     display: flex !important;
@@ -5898,6 +6157,10 @@ SINGLE JOB BOARD
 
 .sjb-page .row {
     margin: 0;
+}
+
+.sjb-page a:hover, .sjb-page a:focus {
+    color: #fff !important
 }
 
 .sjb-page, .sjb-page .list-data .job-description p {
@@ -6011,8 +6274,7 @@ width: 100%;
 .current-position-container section:nth-child(even) .location-descr h5 {
   font-weight: 100;
   border-left: 4px solid #66ded1;
-  padding: 0 0 0 1em;
-  margin: 1em;
+  padding: 1em;
 }
 
 .current-position-container section:nth-child(even) #pic {
@@ -6067,6 +6329,7 @@ width: 100%;
     width: 1.5em;
   }
   .current-position-container section:nth-child(even) {
+	background: #2a2c39;
     margin: 0;
     width: 100%;
   }
@@ -6091,6 +6354,14 @@ width: 100%;
 /*============
 ===APPROACH===
 ============*/
+
+.iterative-process .h-titles-w-b h2 {
+  color: #000;
+}
+
+.iterative-process .h-titles-w-b p {
+  width: 100%;
+}
 
 .border-container {
   width: 80%;

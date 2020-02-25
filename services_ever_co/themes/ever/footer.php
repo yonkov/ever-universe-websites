@@ -84,26 +84,26 @@
             <div>
                 <a href="/services">Services</a>
                 <ul>
-                    <li>Web Development</li>
-                    <li>Mobile Development</li>
-                    <li>Design & Creative</li>
-                    <li>Marketing</li>
-                    <li>QA</li>
-                    <li>Content</li>
+                    <li><a href="/services/#web-dev">Web Development</a></li>
+                    <li><a href="/services/#mob-dev">Mobile Development</a></li>
+                    <li><a href="/services/#design">Design & Creative</a></li>
+                    <li><a href="/services/#marketing">Marketing</a></li>
+                    <li><a href="/services/#qa">QA</a></li>
+                    <li><a href="/services/#content">Content</a></li>
                 </ul>
             </div>
             <div class="col">
                 <a href="/work">Our Works</a>
                 <ul>
-                    <li>Our Open-Source Projects</li>
-                    <li>Ever Platform</li>
-                    <li>Gauzy</li>
-                    <li>Customers Projects</li>
+                    <li><a href="/projects/#open-source">Open-Source Projects</a></li>
+                    <li><a href="/projects/ever-platform/">Ever Platform</a></li>
+                    <li><a href="/projects/gauzy/">Gauzy</a></li>
+                    <li><a href="/projects/#customers">Customers Projects</li>
                 </ul>
                 <a href="/about">ABOUT US</a>
             </div>
             <div class="col">
-                <a href="./approach">Approach</a>
+                <a href="/approach">Approach</a>
                 <ul>
                     <li>Discover</li>
                     <li>Build</li>
@@ -116,15 +116,15 @@
             <div>
                 <a href="/expertise">Expertise</a>
                 <ul>
-                    <li>E-Commerce</li>
-                    <li>Marketplaces</li>
-                    <li>Startups</li>
+                    <li><a href="/expertise/#e-commerce">E-Commerce</a></li>
+                    <li><a href="/expertise/#marketplaces">Marketplaces</a></li>
+                    <li><a href="/expertise/#startups">Startups</a></li>
                 </ul>
             </div>
 
             <div class="extra-logos">
-                <img src="/wp-content/themes/ever/assets/logos/ever-sub-logo.svg" alt="">
-                <img src="/wp-content/themes/ever/assets/logos/logo_gauzy.svg" alt="">
+                <a href="https://ever.dev"><img src="/wp-content/themes/ever/assets/logos/ever-sub-logo.svg" alt=""></a>
+                <a href="https://gauzy.co"><img src="/wp-content/themes/ever/assets/logos/logo_gauzy.svg" alt=""></a>
 
             </div>
         </div>

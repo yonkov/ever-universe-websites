@@ -16,21 +16,27 @@ $stats = json_decode(get_post_meta($post->ID, 'statistics', true));
 ?>
 
 <article class="row">
-    <?php scaffold_thumbnail(); ?>
+    <div class="projects-slider">
+        <?php scaffold_thumbnail(); //Default project thumbnail
+            
+        if (class_exists('MultiPostThumbnails')) : //Second project thumbnail ?>
+        
+        <div class="post-thumbnail">
+            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                <?php MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image'); ?>
+            </a>
+        </div>
+        
+        <?php endif; ?>
+    </div>   
         <section>
             <?php the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' ); ?>
                 <p>
                     <i><?php the_excerpt(); ?></i>
                 </p>
                 <div class="project-icons">
-                    <?php //Display other post meta
-                foreach($meta as $key=>$val){
-                    if ($key!=='statistics' && $key!=='_edit_lock'&& $key!=='_edit_last' && $key!=='_thumbnail_id' && $key!=='_wp_old_slug' && $key!=='_wp_old_slug_thumbnail_id'){
-                        foreach($val as $vals){
-                            echo '<img src="'.$vals.'">';
-                        }
-                    }  
-                }?>
+                    <?php //Get all techstack icons 
+					ever_get_techstack_project_icons() ?>
                 </div>
                 
                 <a href="<?php echo esc_url( get_permalink() )?>" class="yellow-link" rel="bookmark">
@@ -44,15 +50,6 @@ $stats = json_decode(get_post_meta($post->ID, 'statistics', true));
         </section>
         <div class="github-rate col">
             <?php //Display the statistics
-                if (isset($stats)) {
-                    foreach($stats as $stat) {?>
-                <div class="gh-dets">
-                    <?php echo '<img src="'.$stat->imgUrl.'">'; ?>
-                        <strong> <?php echo $stat->value; ?> </strong>
-                        <p> <?php echo $stat->name; ?> </p>
-                </div>
-                <?php
-                    } 
-                }?>
+                ever_get_project_stats() ?>
         </div>
 </article>

@@ -5,7 +5,7 @@
  * @link       https://codex.wordpress.org/Template_Hierarchy
  *
  * @package    scaffold
- * @copyright  Copyright (c) 2019, Danny Cooper
+ * @copyright  Copyright (c) 2019-2020, Ever Co
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
