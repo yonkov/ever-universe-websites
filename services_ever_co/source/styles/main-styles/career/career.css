@@ -890,7 +890,7 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
 }
 
 .core-values-container .core-values-svg {
-  width: 45%;
+  width: 50%;
 }
 
 .core-values-container ul {
@@ -1061,10 +1061,6 @@ header {
   .careers-container .picture-container .pic-4 {
     height: 40vh;
   }
-}
-
-.careers-container .picture-container .pic-3 {
-  height: auto;
 }
 
 .careers-container .picture-container .pic-4 {

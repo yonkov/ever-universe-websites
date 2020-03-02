@@ -1249,10 +1249,10 @@ main {
     margin: -3em 0 0;
   }
   .works-descr-top-container .gh-icon-top {
-    margin: -8em 4em 0em;
+    margin: -3em 1em 0em;
   }
   .works-descr-top-container .gh-icon-top svg {
-    width: 25em;
+    width: 60%;
   }
   .works-descr-top-container #underline {
     display: none;
