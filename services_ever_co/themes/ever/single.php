@@ -5,7 +5,7 @@
  * @link       https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package    scaffold
- * @copyright  Copyright (c) 2019, Danny Cooper
+ * @copyright  Copyright (c) 2019-2020, Ever Co
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
@@ -17,16 +17,21 @@ get_header(); ?>
 		while ( have_posts() ) :
 
 			the_post();
-
-			get_template_part( 'template-parts/content', get_post_format() );
+			if( get_post_type() === 'teammembers' ) :
+              get_template_part( 'template-parts/content', get_post_type() );
+        	else :
+              get_template_part( 'template-parts/content', get_post_format() );
+        	endif;
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
 
-			scaffold_the_post_navigation();
-
+			if( get_post_type() !== 'teammembers' ) :
+				scaffold_the_post_navigation();
+			endif;
+		
 		endwhile;
 		?>
 

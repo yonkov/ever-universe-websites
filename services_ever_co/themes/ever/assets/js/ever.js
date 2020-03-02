@@ -72,6 +72,30 @@ jQuery(function($){
 
 });
 
+/* Smooth scroll */
+
+jQuery(function($){
+    if (!/Edge/.test(navigator.userAgent)) {
+        let wLocation = window.location.href;
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                if(wLocation.includes('home')){
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }else{
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }
+            });
+        });
+    }
+})
+
 /* Execute animations on page scroll */
 jQuery(function($) {
     $(window).on('scroll', function() {
@@ -189,7 +213,7 @@ if(document.querySelector(".home .clients-feedback.row")){
     var testimonialsSlider = tns({
         container: document.querySelector(".home .clients-feedback.row"),
         nav: false,
-        autoplay: true,
+        autoplay: false,
         speed: 1000,
         autoplayTimeout: 8000,
         autoplayButton: false,
@@ -201,7 +225,6 @@ if(document.querySelector(".home .clients-feedback.row")){
         responsive: false
     });
 }
-
 
 /* Slider arrows */
 var prev =document.querySelector(".next");
@@ -217,6 +240,45 @@ if(next){
     testimonialsSlider.goTo("next");
 })
 }
+
+/* Project Thumbnails Slider */
+
+if(document.querySelector(".post-type-archive-projects article .projects-slider")){
+    var testimonialsSlider = tns({
+        container: document.querySelector(".post-type-archive-projects article .projects-slider"),
+        nav: true,
+        autoplay: true,
+        speed: 1000,
+        autoplayTimeout: 5000,
+        autoplayButton: false,
+        items: 1,
+        center: true,
+        gutter: 4,
+        controls: false,
+        mouseDrag: true,
+        responsive: false
+    });
+}
+
+/* Single Project Page Slider */
+
+if(document.querySelector(".single-project-slider")){
+    var testimonialsSlider = tns({
+        container: document.querySelector(".single-project-slider"),
+        nav: true,
+        autoplay: false,
+        speed: 1000,
+        autoplayTimeout: 5000,
+        autoplayButton: false,
+        items: 1,
+        center: true,
+        gutter: 4,
+        controls: false,
+        mouseDrag: true,
+        responsive: false
+    });
+}
+
 
 /* Counter decoration */
 jQuery(function($) {
@@ -286,3 +348,67 @@ function showHideMoreInfo(element, {
 
     });
 };
+
+/* SWITCH TO LIGHT or DARK MODE */
+
+jQuery(function($) {
+    
+    //Check if user has chosen light mode
+    var lightMode = localStorage.getItem('lightMode') || 0;
+    //Click on light mode icon. Store user preference through sessions
+    $('.switch-field input[value="day"]').click(function(){
+        $('body').addClass('light-mode');
+        //Save user preference
+        localStorage.setItem('lightMode', 1);
+    })
+
+    //Click on dark mode icon. Store user preference through sessions
+    $('.switch-field input[value="night"]').click(function(){
+        $('body').removeClass('light-mode');
+        //Save user preference
+        localStorage.setItem('lightMode', 0);
+        console.log(lightMode);
+    })
+    
+    // If user has set up light mode, display light theme  
+    if(localStorage.getItem("lightMode")==1){
+        console.log('light mode user preference');
+        $('body').addClass('light-mode');
+    }
+
+});
+
+/* APPEND COUNTER BOX */
+
+jQuery(function($){
+    $('.wpsm_row:first-child').prepend('<div class="wpsm_col-md-3 wpsm_col-sm-6"> \
+        <div class="wpsm_counterbox"> \
+            <div class="wpsm_number" style="#ffffff"> \
+            <span class="counter">2015</span> \
+            <div id="ever-line">line</div> \
+            </div> \
+            <h3 class="wpsm_count-title" #ffffff=""> Since</h3> \
+        </div> \
+    </div>'
+    )
+})
+
+/* Get the corresponding div id on the Services page to expand 
+* if the user has clicked on it from the footer link */
+jQuery(function($){
+
+//Check if we are on services page
+if (window.location.href.indexOf("services" > -1)) {
+    var full_url = window.location.href ; // Get current url
+
+    var service_id = full_url.split('/');
+    var id = service_id[service_id.length-1];
+
+    setTimeout(()=> {
+        $(id).find('.product-quality-container').removeClass('hide');
+        $(id).find('.product-quality-container').addClass('show');
+    }, 100)
+
+}
+
+});

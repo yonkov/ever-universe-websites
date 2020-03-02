@@ -7,7 +7,7 @@
  * @link       https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package    ever
- * @copyright  Copyright (c) 2019, Ever Co
+ * @copyright  Copyright (c) 2019-2020, Ever Co
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
@@ -20,19 +20,19 @@
     <h4 class="e-t">Ever technologies R&amp;D</h4>
     <div class="network-buttons ">
         <div class="network-buttons-wrapper row">
-            <a href="#" class="link-buttons github">
+            <a href="https://github.com/ever-co" class="link-buttons github">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="39" viewBox="0 0 40 39">
                     <path id="github-icon" data-name="github-icon" d="M20,0a19.994,19.994,0,0,0-6.321,38.965c1,.184,1.365-.433,1.365-.963,0-.475-.017-1.732-.027-3.4-5.563,1.208-6.737-2.681-6.737-2.681A5.3,5.3,0,0,0,6.058,29c-1.816-1.24.138-1.215.138-1.215a4.2,4.2,0,0,1,3.063,2.061C11.043,32.9,13.94,32.014,15.08,31.5a4.273,4.273,0,0,1,1.27-2.672c-4.441-.5-9.11-2.22-9.11-9.882A7.726,7.726,0,0,1,9.3,13.583a7.181,7.181,0,0,1,.2-5.291s1.678-.538,5.5,2.05a18.939,18.939,0,0,1,10.014,0c3.818-2.587,5.494-2.05,5.494-2.05a7.183,7.183,0,0,1,.2,5.291,7.712,7.712,0,0,1,2.055,5.365c0,7.681-4.677,9.371-9.131,9.866a4.774,4.774,0,0,1,1.357,3.7c0,2.673-.025,4.83-.025,5.485,0,.535.361,1.157,1.375.962A20,20,0,0,0,20,0" fill="#fffffe"></path>
                 </svg>
                 <p>Open source projects</p>
             </a>
-            <a href="#" class="link-buttons up">
+            <a href="https://www.upwork.com/ag/ever/" class="link-buttons up">
                 <svg id="upwork" xmlns="http://www.w3.org/2000/svg" width="40" height="29" viewBox="0 0 40 29">
                     <path id="upwork-icon" d="M22.77,29H18.107L20.9,15.582a28.664,28.664,0,0,1-3.29-5.489v2.03A8.934,8.934,0,0,1,8.8,21.16,8.933,8.933,0,0,1,0,12.122V0H4.56V12.122A4.307,4.307,0,0,0,8.8,16.464a4.307,4.307,0,0,0,4.244-4.342V0h4.56a38.428,38.428,0,0,0,4.478,10.041c1.341-4.659,4.65-7.441,8.85-7.441A9.179,9.179,0,0,1,40,11.869a9.19,9.19,0,0,1-9.065,9.291,11.085,11.085,0,0,1-6.142-1.892L22.77,29ZM31.335,7.457c-3.37,0-4.462,3.233-4.813,5.161l-.014.07L26.122,14.5a8.313,8.313,0,0,0,5.213,2.069,4.557,4.557,0,1,0,0-9.114Z" fill="#fff"></path>
                 </svg>
                 <p> Top rated agency</p>
             </a>
-            <a href="#" class="link-buttons facebook">
+            <a href="https://www.facebook.com/evertechhq" class="link-buttons facebook">
                 <svg id="f_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
                     <defs>
                         <clipPath id="clip-path">
@@ -46,7 +46,7 @@
                 </svg>
                 <p>Join our community</p>
             </a>
-            <a href="#" class="link-buttons twitter">
+            <a href="https://twitter.com/evertechhq" class="link-buttons twitter">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35.672" height="28.886" viewBox="0 0 35.672 28.886">
                     <g id="Twitter_Logo" transform="translate(-0.014 -0.057)">
                         <g id="twitter-logo">
@@ -56,7 +56,7 @@
                 </svg>
                 <p>Follow us</p>
             </a>
-            <a href="#" class="link-buttons linkedin">
+            <a href="https://www.linkedin.com/company/ever-technologies" class="link-buttons linkedin">
                 <svg version="1.1" id="linkedin" width="35.672" height="28.886" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45.959 45.959" style="enable-background:new 0 0 45.959 45.959; stroke: #ffffff; fill: #ffffff; ;" xml:space="preserve">
                     <g>
                         <g>
@@ -84,67 +84,59 @@
             <div>
                 <a href="/services">Services</a>
                 <ul>
-                    <li>Web Development</li>
-                    <li>Mobile Development</li>
-                    <li>Design & Creative</li>
-                    <li>Marketing</li>
-                    <li>QA</li>
-                    <li>Content</li>
+                    <li><a href="/services/#web-dev">Web Development</a></li>
+                    <li><a href="/services/#mob-dev">Mobile Development</a></li>
+                    <li><a href="/services/#design">Design & Creative</a></li>
+                    <li><a href="/services/#marketing">Marketing</a></li>
+                    <li><a href="/services/#qa">QA</a></li>
+                    <li><a href="/services/#content">Content</a></li>
                 </ul>
             </div>
             <div class="col">
-                <a href="/about">ABOUT US</a>
-
-                <a href="/projects">Our Works</a>
+                <a href="/work">Our Works</a>
                 <ul>
-                    <li> Our Open-Source Projects
-                    </li>
-                    <li>Ever Platform</li>
-                    <li>Gauzy</li>
-                    <li> Customers Projects</li>
+                    <li><a href="/projects/#open-source">Open-Source Projects</a></li>
+                    <li><a href="/projects/ever-platform/">Ever Platform</a></li>
+                    <li><a href="/projects/gauzy/">Gauzy</a></li>
+                    <li><a href="/projects/#customers">Customers Projects</li>
                 </ul>
+                <a href="/about">ABOUT US</a>
             </div>
             <div class="col">
-                <a href="/career">CAREERS</a>
                 <a href="/approach">Approach</a>
                 <ul>
-                    <li> Discover</li>
+                    <li>Discover</li>
                     <li>Build</li>
                     <li>Staff</li>
                     <li>Support</li>
                 </ul>
+                <a href="/career">CAREERS</a>
             </div>
 
             <div>
-                <a href="//expertise">Expertise</a>
+                <a href="/expertise">Expertise</a>
                 <ul>
-                    <li> E-Commerce
-                    </li>
-                    <li>Marketplaces</li>
-                    <li>Startups</li>
+                    <li><a href="/expertise/#e-commerce">E-Commerce</a></li>
+                    <li><a href="/expertise/#marketplaces">Marketplaces</a></li>
+                    <li><a href="/expertise/#startups">Startups</a></li>
                 </ul>
             </div>
 
             <div class="extra-logos">
-                <img src="/wp-content/themes/ever/assets/icons/global-icons/ever-sub-logo.svg" alt="">
-                <img src="/wp-content/themes/ever/assets/icons/global-icons/logo_gauzy.svg" alt="">
+                <a href="https://ever.dev"><img src="/wp-content/themes/ever/assets/logos/ever-sub-logo.svg" alt=""></a>
+                <a href="https://gauzy.co"><img src="/wp-content/themes/ever/assets/logos/logo_gauzy.svg" alt=""></a>
 
             </div>
         </div>
     </div>
     <div class="bottom ">
         <div class="bottom-wrapper row">
-            <svg xmlns="http://www.w3.org/2000/svg" width="132.727" height="30" viewBox="0 0 132.727 30">
-                <g id="ever-footer-logo" data-name="ever-footer-logo" opacity="0.5">
-                    <path id="ever_copy_4" data-name="ever copy 4" d="M79.771,30a16.192,16.192,0,0,1-5.757-.964,11.061,11.061,0,0,1-4.093-2.663,12.746,12.746,0,0,1-3.256-9.058A17.478,17.478,0,0,1,71.472,5.023,16.921,16.921,0,0,1,83.762,0c3.446,0,6.286.96,8.212,2.777A9.358,9.358,0,0,1,94.766,9.8a19.153,19.153,0,0,1-1.726,7.459H76.265a4.317,4.317,0,0,0,1.177,3.2,5.82,5.82,0,0,0,4.271,1.487,16.06,16.06,0,0,0,7.605-2.5l2.7,7.187A22.843,22.843,0,0,1,79.771,30Zm3.506-22.54A6.044,6.044,0,0,0,77.4,11.6h9.114a4.645,4.645,0,0,0,.27-1.416C86.783,8.5,85.439,7.459,83.277,7.459ZM13.107,30a16.2,16.2,0,0,1-5.757-.964,11.061,11.061,0,0,1-4.093-2.663A12.746,12.746,0,0,1,0,17.314,17.478,17.478,0,0,1,4.807,5.023,16.921,16.921,0,0,1,17.1,0c3.446,0,6.286.96,8.212,2.777A9.358,9.358,0,0,1,28.1,9.8a19.153,19.153,0,0,1-1.726,7.459H9.6a4.317,4.317,0,0,0,1.177,3.2,5.82,5.82,0,0,0,4.271,1.487,16.06,16.06,0,0,0,7.605-2.5l2.7,7.187A22.836,22.836,0,0,1,13.107,30Zm3.505-22.54A6.046,6.046,0,0,0,10.733,11.6h9.115a4.64,4.64,0,0,0,.269-1.416C20.118,8.5,18.774,7.459,16.612,7.459ZM45.845,29.782c-4.447,0-7.667-1.147-9.571-3.409-1.815-2.157-2.388-5.26-1.7-9.223l.971-5.717c.212-1.068.174-1.7-.122-2.065a1.027,1.027,0,0,0-.849-.331,6.632,6.632,0,0,0-2.642.6l1.132-8.276A18.466,18.466,0,0,1,39.75.272c2.484,0,4.291.652,5.369,1.939,1.194,1.425,1.529,3.667,1,6.664l-1.186,6.642c-.306,1.954-.142,3.269.5,4.021a2.27,2.27,0,0,0,1.818.717,3.956,3.956,0,0,0,3.661-2.069c.912-1.541,1.355-3.928,1.355-7.3A42.2,42.2,0,0,0,50.862.762H61.594A59.248,59.248,0,0,1,62.4,9.909C62.4,22.724,56.523,29.782,45.845,29.782Zm64.13-.544H99.889l3.074-17.8a2.859,2.859,0,0,0-.154-2.088,1.009,1.009,0,0,0-.817-.308,8.638,8.638,0,0,0-2.7.6l1.186-8.276A20.563,20.563,0,0,1,107.224.272a7.853,7.853,0,0,1,4.106.96,4.837,4.837,0,0,1,2.2,3.124c1.946-2.825,4.158-4.084,7.173-4.084a9.89,9.89,0,0,1,4.747,1.144L122.6,11a11.92,11.92,0,0,0-5.124-1.143c-3.275,0-4.481,2.831-4.909,4.519l-2.589,14.863Z" fill="#fff"></path>
-                    <g id="Group_4_Copy_2" data-name="Group 4 Copy 2" transform="translate(120 17.273)">
-                        <path id="Combined_Shape" data-name="Combined Shape" d="M0,6.364a6.363,6.363,0,1,1,6.364,6.363A6.371,6.371,0,0,1,0,6.364Zm.849,0A5.515,5.515,0,1,0,6.364.849,5.521,5.521,0,0,0,.849,6.364ZM4.333,9.546h-.88L4.631,2.759l2.042,0A2.288,2.288,0,0,1,8.3,3.3a1.7,1.7,0,0,1,.471,1.459,1.943,1.943,0,0,1-.464,1.123,2.559,2.559,0,0,1-1.1.732L8.262,9.485l0,.059H7.326L6.375,6.8H4.809L4.333,9.545h0Zm.6-3.478,1.286,0a1.807,1.807,0,0,0,1.133-.356,1.4,1.4,0,0,0,.54-.953,1.1,1.1,0,0,0-.233-.913,1.252,1.252,0,0,0-.922-.35l-1.356,0Z" fill="#fff"></path>
-                    </g>
-                </g>
-            </svg>
+            <a href="https://ever.co">
+                <img src="/wp-content/themes/ever/assets/logos/footer-ever-logo.svg" alt="" class="ever-bottom-logo">
+            </a>
 
             <div class="col">
-                <h5>Copyright © 2019 <a href="">Ever Co. LTD.</a> All Rights Reserved</h5>
+                <h5>Copyright © 2019-present <a href="https://ever.co">Ever Co. LTD.</a> All Rights Reserved</h5>
                 <p>
                     <i>
                             *All product names, logos, and brands are the property of their respective owners. All

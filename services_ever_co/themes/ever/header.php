@@ -7,7 +7,7 @@
  * @link       https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package    scaffold
- * @copyright  Copyright (c) 2019, Danny Cooper
+ * @copyright  Copyright (c) 2019-2020, Ever Co
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
@@ -34,4 +34,4 @@
 
 	<div class="site-content">
 
-		<div class="<?php echo ( is_front_page() || is_archive() || is_page() ) ?  '' : 'wrapper'; ?>">
+		<div class="<?php echo ( is_front_page() || is_archive() || is_page() ) ?  '' : 'ever-wrapper'; ?>">
