@@ -44,18 +44,19 @@ function ever_team_members(){
     $recent = new WP_Query(); 
     $query = array( 
         'post_type' => 'Team Members',
-        'orderby' => 'rand',
+        'orderby' => 'rand'
     );
     $recent->query( $query ); ?>
     <div class="people row">
-
     <?php while( $recent->have_posts() ) : $recent->the_post(); 
 		
 		//Get all custom fields
 		$linkedin = get_post_meta($post->ID, 'linkedin', true);
 		$github = get_post_meta($post->ID, 'github', true);
 		$upwork = get_post_meta($post->ID, 'upwork', true);
-		$position = get_post_meta($post->ID, 'position', true); ?>
+		$position = get_post_meta($post->ID, 'position', true);
+        $role = get_post_meta($post->ID, 'role', true); 
+        $projects = get_post_meta($post->ID, 'projects', true); ?>
 
         <div class="person-card col">  
             <a class="image" href="<?php the_permalink(); ?>">   

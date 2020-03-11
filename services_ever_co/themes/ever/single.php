@@ -19,7 +19,11 @@ get_header(); ?>
 			the_post();
 			if( get_post_type() === 'teammembers' ) :
               get_template_part( 'template-parts/content', get_post_type() );
-        	else :
+
+            elseif( get_post_type() === 'projects' ) :
+              get_template_part( 'template-parts/content', get_post_type() );
+        	
+            else :
               get_template_part( 'template-parts/content', get_post_format() );
         	endif;
 

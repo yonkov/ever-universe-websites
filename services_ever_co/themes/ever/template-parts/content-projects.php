@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying posts
+ * Template part for displaying single project
  *
  * @link       https://codex.wordpress.org/Template_Hierarchy
  *
@@ -10,6 +10,17 @@
  */
 
 ?>
+
+
+<h3 class="back">
+    <a href="/projects">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+            <path id="_Icon_Сolor" data-name="🎨 Icon Сolor" d="M14.979.993a1,1,0,0,0-1-.993h0a1,1,0,0,0-1,1L13,5.988a1,1,0,0,1-1,1l-8.924.037L5.766,3.649A1,1,0,0,0,4.2,2.41l-3.981,5A1,1,0,0,0,.222,8.659l4.022,4.97A1,1,0,0,0,5.8,12.376L3.086,9.021l8.924-.037a3,3,0,0,0,2.99-3Z" fill="#fff"></path>
+        </svg>
+    BACK TO WORKS
+    </a>
+</h3>
+<!-- Project Title and Description-->
 
 <article <?php post_class(); ?>>
 

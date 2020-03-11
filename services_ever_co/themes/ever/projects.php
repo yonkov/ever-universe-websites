@@ -45,17 +45,10 @@ add_action('init', 'ever_projects_custom_post_type', 0);
 
 /* Query the last two projects from categories open-source and customers */
 
-function ever_recent_projects($atts) {
+function ever_recent_projects() {
     global $post;
     // Instantate on object. We need this for the shortcode to work
     ob_start();
-    $atts = shortcode_atts(
-    array( /* Display the 4 latest posts */
-        'posts_per_page' => '4',
-),
-    $atts,
-    'ever_recent_projects'
-);
 
     // Get the categories with ids 2 and 3 from the Custom Post Type Projects
     // Include categories that correspond to the other languages
@@ -126,8 +119,8 @@ function ever_recent_projects($atts) {
             <?php
         } ?>
         </div>
-    </div> <?php
-        return ob_get_clean();
+    </div> 
+    <?php return ob_get_clean();
 }
 
 add_shortcode('ever_recent_projects', 'ever_recent_projects');

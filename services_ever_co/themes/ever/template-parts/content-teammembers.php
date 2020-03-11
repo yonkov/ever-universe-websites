@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying Team Members
+ * Template part for displaying single team member
  *
  * @link       https://codex.wordpress.org/Template_Hierarchy
  *
@@ -50,7 +50,7 @@
 		</header><!-- .entry-header -->
 		<!--Team Member content --> 
 		<div class="entry-content">
-		<h5><p><?php echo $position; ?></p></h5>
+		<h5 class="position"><p><?php echo $position; ?></p></h5>
 		<?php
         the_content(esc_html__('Continue reading &rarr;', 'scaffold'));
 
@@ -66,3 +66,6 @@
 	</div>
 
 </article><!-- #post-## -->
+
+<!-- Team members project list -->
+<?php echo do_shortcode('[ever_teammember_projects]'); ?>

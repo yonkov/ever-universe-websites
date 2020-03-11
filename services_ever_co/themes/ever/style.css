@@ -43,7 +43,7 @@
 .ever-wrapper {
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    display: table;
 }
 
 .entry-header, .site-branding {
@@ -86,7 +86,7 @@ body {
 }
 
 .archive .entry-title {
-  font-size: 16px;
+  font-size: 23px;
 }
 
 .menu-1 {
@@ -107,6 +107,14 @@ body {
 .site-content {
   padding-bottom: 30px;
 }
+
+/* Mobile padding */
+@media screen and (max-width: 1000px){
+    .site-content, .site-info {
+        padding: 0 0
+    }
+}
+
 /* Hide site title */
 .site-title {
     display: none;
@@ -141,8 +149,12 @@ body {
     padding: 0;
 }
 
-.home a {
-  color: #000;
+.join-btn {
+  color: rgb(0,0,0);
+}
+
+.join-btn:hover {
+  color: rgba(0,0,0, .9);
 }
 
 .gh-dets strong {
@@ -151,19 +163,313 @@ body {
   font-weight: 300;
 }
 
-/*=====================
-======Light mode=======
-===================== */
+/*=======================
+===START of Light mode===
+====================== */
 
-body.light-mode, .light-mode footer {
+/* Background color */
+body.light-mode{
     background-color: #fff;
 }
 
 /* Ever Title */
-.light-mode h1, .light-mode h2, .light-mode h3, .light-mode h4, .light-mode h5, .light-mode h6, 
-.light-mode .h-f-title h1, .light-mode .h-f-title h4, .light-mode .h-second a {
+.light-mode h1, .light-mode h2, .light-mode h3, .light-mode h4, .light-mode h5, .light-mode h6 {
+    color: #333;
+}
+
+/* Latest Projects */
+
+.light-mode .row.project-card {
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(176, 162, 176, .6);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(176, 162, 176, .6);
+    box-shadow: 7px 7px 5px 0px rgba(176, 162, 176, .6);
+    border: 1px solid rgba(176, 162, 176,.4);
+}
+
+/* Work */
+
+.light-mode .projects-container h5 {
     color: #000;
 }
+
+/* Github Stats */
+.light-mode .github-rate {
+  color: #000;
+  background: rgb(250, 250, 250);
+}
+
+.light-mode .h-second .row section .project .project-descr .project-type span {
+    background: rgb(250, 250, 250);
+}
+
+.light-mode .h-second {
+    color:#000;
+    margin: auto auto 2em;
+}
+
+.light-mode .h-second a {
+    color: #333;
+}
+
+/* STATS COUNTER and Core Values */
+.light-mode .light-wrapper{
+    background: rgb(250, 250, 250);
+}
+
+.light-mode .light-wrapper .core-values-container .core-values-txt-container {
+    color: #000;
+}
+
+.light-mode .tech-we-use {
+    margin: 0em auto;
+}
+
+.light-mode .light-wrapper .core-values-container {
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+/* E-COMMERCE CLOUDS TECH WE USE and TECH STACK*/
+.light-mode .dark-wrapper{
+    background: #2a2c39;
+}
+
+.light-mode .dark-wrapper h2 {
+ color: #fff;
+}
+
+.light-mode .dark-wrapper .e-commerce-container, .home.light-mode .dark-wrapper .tech-we-use {
+    border: none;
+}
+
+.light-mode .dark-wrapper {
+    padding: 1em;
+}
+
+.home .light-mode .dark-wrapper {
+    padding: 1em;
+}
+
+/* Software Contribution */
+
+.light-mode .h-fifth div {
+    color: #000;
+}
+
+/* Testimonial slider */
+
+.home.light-mode #tns2-ow .person-card.col.tns-item, .home.light-mode #tns2-ow .row {
+    background: rgb(250, 250, 250);
+}
+
+/* Team Members */
+.light-mode .parent-team-members {
+    background: #2a2c39;
+}
+
+.light-mode .team-and-time-container {
+	background: #2a2c39;
+}
+
+.light-mode .team-and-time-container h2, .light-mode .team-and-time-container h4, .light-mode .team-and-time-container h5 {
+  color: #fff;
+}
+
+.light-mode .parent-team-members h3, .light-mode .parent-team-members h4, .light-mode .parent-team-members h5 {
+    color: #fff;
+}
+
+.light-mode .team-members-meta-content p {
+    color:#333;
+}
+
+.light-mode .h-eight {
+	padding-bottom: 2em;
+}
+
+/* About title */
+
+.light-mode header {
+    color: #000;
+}
+
+/* Expertise */
+
+.light-mode .small-form .t-description h2 {
+    color: #000;
+}
+
+/* Approach */
+
+.light-mode .advantages .adv-title {
+    color: #000;
+}
+
+.light-mode .approach-articles article, .light-mode .border-container {
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+    box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+    border: 1px solid rgba(176, 162, 176,.4);
+}
+
+.light-mode .advantages div section {
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+    box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+    border: 1px solid rgba(176, 162, 176,.4);
+}
+
+/* Message us */
+
+.light-mode .message-us {
+    background: rgba(225, 225, 225, .4);
+    padding-top: 2em;
+    width: 100%;
+    color: #000;
+}
+
+.light-mode .message-us .message-us-container {
+    border: none;
+}
+
+.light-mode .message-us .message-us-container span {
+    color: #000;
+}
+
+.light-mode.single-projects .message-us {
+    margin: 0em auto;
+}
+
+.light-mode .site-content{
+    padding-bottom: 0;
+}
+
+.light-mode .hentry {
+    margin: 0;
+}
+
+.light-mode footer .e-t {
+    top: 1.5em;
+}
+
+/* Social media icons */
+
+.light-mode.single-teammembers a[href*="github"] .ever-meta::before {
+    content: url('/wp-content/themes/ever/assets/icons/global-icons/github-black.svg');
+}
+
+.light-mode.single-teammembers a[href*="linkedin"] .ever-meta::before {
+    content: url('/wp-content/themes/ever/assets/icons/global-icons/linkedin-black.svg');
+    position: relative;
+    bottom: 2px;
+}
+
+.light-mode.single-teammembers a[href*="upwork"] .ever-meta::before {
+    content: url('/wp-content/themes/ever/assets/icons/global-icons/UP-black.svg');
+}
+
+/* Projects list */
+
+.light-mode .projects-container article {
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+    box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+}
+
+/* Single projects */
+
+.light-mode .time-icons .num h3 {
+color: #fff;
+}
+
+.light-mode .works-details-articles {
+  padding-top: 2em;
+}
+
+.light-mode .time-descr-block h3 {
+	color: #fff;
+}
+
+/* project slider */
+
+.light-mode .team-and-time-container .more-projects {
+	background: #2a2c39;
+}
+
+.light-mode .team-and-time-container .more-projects .project-more .project-descr h4 {
+    color: #fff;
+}
+
+/* Services */
+
+.light-mode .background-container .services-icons-container .services-icon .services-icon-title h3 {
+  color: #000;
+}
+
+.light-mode .services-articles-container article section.row {
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+    box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+    border: 1px solid rgba(176, 162, 176,.4);
+}
+
+/* Careers */
+.light-mode .steps {
+  color: #000;
+}
+.light-mode .small-form {
+    margin: 0 auto;
+    background: transparent;
+    border: unset;
+}
+
+.light-mode .steps p {
+  color: #000;
+}
+
+.light-mode .message-us .small-form .t-description p, 
+.light-mode .single-jobpost .small-form .t-description p {
+    color: #000;
+}
+
+/* Single Job page */
+
+/* Remove job features wrapper */
+.sjb-page .sjb-detail .job-features{
+    display: none;
+}
+.light-mode .sjb-page .small-form {
+    margin: 0em auto;
+}
+
+.light-mode .back a {
+    color: rgb(0,0,0);
+}
+
+.light-mode .back a:hover {
+    color: rgba(0,0,0,.8) !important;
+}
+
+/* About */
+.light-mode .path-container h2 {
+  color: #000;
+}
+
+.light-mode .about.team-w-ninjas-container .btns, .light-mode .about.team-w-ninjas-container {
+    margin: 0em auto;
+}
+
+/* Footer */
+
+.home.light-mode footer .e-t {
+    bottom: 0;
+    top: 1.8em;
+}
+
+
+/*=======================
+====END of Light mode====
+======================= */
 
 /* Counter colors */
 
@@ -715,7 +1021,7 @@ a {
   transition: 1s linear;
 }
 
- .h-first a:hover .d-arr {
+ .h-first a:hover .d-arr,  .h-second a:hover .d-arr {
   -webkit-animation: pointing-on-hover 0.2s 1;
           animation: pointing-on-hover 0.2s 1;
 }
@@ -1036,8 +1342,14 @@ a {
 }
 
 .h-second .d-arr {
-  width: 3em;
-  margin: auto;
+    width: 3em;
+    margin: auto;
+    animation: pointing 0.8s infinite linear;
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
 }
 
 .h-second a {
@@ -1230,7 +1542,7 @@ a {
 @media (max-width:1000px){
  .e-commerce-container .hashtags {
     width: 100%;
-    margin: .5em;
+    padding: .5em;
   }
 }
 
@@ -1869,6 +2181,12 @@ a {
     flex-direction: row;
 }
 
+@media screen and (max-width: 1000px){
+    .h-fourth.col{
+        padding: 0 20px;
+    }
+}
+
 @media screen and (min-width: 1000px){
     .h-fourth.col {
     width: 65%;
@@ -2280,6 +2598,13 @@ a {
   border-bottom: 1px solid #474B5E;
 }
 
+@media (max-width:600px){
+  .core-values-container {
+    padding: 0em 0em 5em;
+    border-bottom: 0;
+  }
+}
+
 .core-values-container .core-values-txt-container {
   color: #ffffff;
   width: 35%;
@@ -2461,7 +2786,7 @@ a[href*="github"] .ever-meta::before {
 }
 
 a[href*="linkedin"] .ever-meta::before {
-    content: url('/wp-content/themes/ever/assets/icons/global-icons/linkedin-white.svg');
+    content: url('/wp-content/themes/ever/assets/icons/global-icons/linkedin.svg');
     position: relative;
     bottom: 2px;
 }
@@ -2681,9 +3006,10 @@ a[href*="upwork"] .ever-meta::before {
     margin: 0 2em;
 }
 
-.single-teammembers .ever-wrapper {
+/*.single-teammembers .ever-wrapper {
     background: #23282d;
-}
+    border-radius: 5px;
+} */
 
 /* Display the title */
 .single-teammembers .entry-header, .site-branding {
@@ -2695,19 +3021,21 @@ a[href*="upwork"] .ever-meta::before {
 
 .single-teammembers .icons.row{
     padding-top: 1em;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 1.5em;
 }
 
-.single-teammembers p {
-  color: #fff;
+.image img {
+	width: 252px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .team-members-meta-wrapper .post-thumbnail {
     padding: 1.5em 0 0 1.5em;
 }
-
-.team-members-meta-content h5 {
-    padding-bottom: 1em;
+.team-members-meta-content p {
+    color: #fff;
 }
 
 article .team-members-meta-wrapper {
@@ -2721,6 +3049,7 @@ article .team-members-meta-wrapper {
   }
   .single-teammembers .icons.row {
       justify-content: center;
+      padding-bottom: 1em;
   }
 
   .single-teammembers .entry-content {
@@ -2736,6 +3065,62 @@ article .team-members-meta-wrapper {
     display: flex;
   }
 
+}
+
+.position {
+    font-size: 18px;
+}
+
+.single-teammembers .projects-container {
+
+    width: 97%;
+    max-width: 95em;
+    margin: 2em auto;
+
+}
+
+/* Projects per employee */
+
+.single-teammembers h3.title {
+    font-size: 18px;
+    font-weight: 400;
+}
+@media (min-width: 601px){
+  .single-teammembers .projects-container .github-rate .gh-dets {
+      width: 80%;
+      margin: 0 auto;
+      padding: 1.65em 0;
+  }
+}
+
+@media (max-width: 600px){
+  padding: .5em;
+}
+
+.single-teammembers .projects-container .github-rate .gh-dets p {
+    text-align: center;
+    font-size: .95em;
+}
+
+.single-teammembers .gh-dets strong {
+    font-size: 19px;
+}
+
+
+/* Projects slider */
+.single-teammembers .post-thumbnail {
+    margin-bottom: 0 !important;
+}
+
+.single-teammembers #tns1-mw {
+    margin: auto 0 !important;
+}
+
+@media (min-width: 600px){
+  .single-teammembers #tns1-ow {
+    width: 35% !important;
+    margin: 0 !important;
+  }
 }
 
 
@@ -2772,9 +3157,7 @@ article .team-members-meta-wrapper {
 	  width: 90%;
   }
 }
-.message-us {
-    color: #ffffff;
-}
+
 .contact-form p {
   margin: 0;
 }
@@ -2802,6 +3185,10 @@ article .team-members-meta-wrapper {
   font-weight: 500;
 }
 
+.message-us-txt-container span{
+	padding-top: 1.5em
+}
+
 .message-us .message-us-txt-container .red-contact {
   color: #dd0d3d;
   font-size: 2em;
@@ -2818,6 +3205,12 @@ article .team-members-meta-wrapper {
   background: #ffffff;
   font-weight: bold;
   margin: 1em 3em -3em 0;
+}
+
+/* Contact forms response message */
+
+.message-us div.wpcf7-mail-sent-ok {
+    border: 2px solid #66ded1;;
 }
 
 .contact-form label {
@@ -2884,6 +3277,7 @@ article .team-members-meta-wrapper {
   .message-us {
     width: 95%;
     margin: auto;
+    padding: 0 20px;
   }
   .message-us .message-us-container {
     border: none;
@@ -2902,6 +3296,7 @@ article .team-members-meta-wrapper {
     margin: 0 auto;
     width: 100%;
     padding: 1em 0;
+    border: 1px solid rgba(176, 162, 176,.4);
   }
   .message-us .contact-form label {
     margin: 1em 1em 0.2em;
@@ -3208,7 +3603,6 @@ footer .bottom .bottom-wrapper .switch-field input[type="radio"]:checked + label
   }
   footer .network-buttons .network-buttons-wrapper .link-buttons {
     margin: .5em;
-    width: 12em;
   }
 }
 
@@ -3308,7 +3702,7 @@ margin: auto 0 !important;
     width: 35% !important;
     margin: 0 !important;
   }
-  .post-type-archive-projects .projects-slider {
+  .projects-slider {
     width: 35%;
     height: auto;
   }
@@ -3364,6 +3758,7 @@ header p {
   color: #fff;
   text-transform: uppercase;
   font-weight: 100;
+  padding-top: 3em;
 }
 
 .projects-container article {
@@ -3444,17 +3839,16 @@ header p {
   height: -moz-fit-content;
   height: fit-content;
   width: 5%;
-  margin: 2em 0;
+  margin: 2em 0 0;
+	border-top: 1px solid #979797;
+	border-left: 1px solid #979797;
+	border-bottom: 1px solid #979797;
 }
 
 @media screen and (max-width:1000px){
   .projects-container article .github-rate{
     width: auto !important; 
   }
-}
-
-.projects-container article .github-rate .gh-dets img {
-  width: 1.3em;
 }
 
 .archive .gh-dets strong {
@@ -3480,6 +3874,7 @@ header p {
     flex-flow: row;
     width: -moz-fit-content !important;
     margin: 1em -1px auto;
+    border-right: 1px solid #979797;
   }
   .projects-container article .github-rate .gh-dets img {
     width: auto;
@@ -3683,18 +4078,18 @@ header p {
 
 .small-form {
   background: #2a2c39;
-  margin: 5em auto;
+  margin: 3em auto;
   width: 90%;
   max-width: 100em;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   border: 1px solid #979797;
+  padding-top: 3em;
 }
 
 .small-form .t-description {
   width: 40%;
   color: #ffffff;
-  margin: auto auto 17em;
 }
 
 .small-form .t-description h2 {
@@ -4218,6 +4613,11 @@ header p {
 }
 
 @media screen and (max-width: 600px) {
+
+    .path-container .p-step:nth-child(2n+1) {
+        margin: auto;
+    }
+  
   .path-container {
     width: 85%;
   }
@@ -4253,8 +4653,8 @@ header p {
     padding: 2em 1em;
   }
   .path-container .p-step:nth-child(odd) .p-step-description {
-    padding: 0 0 1em;
-    margin: 1em -1em;
+    margin: 0 -2em;
+    padding: 1em;
     background: #2a2c39;
   }
   .path-container .p-step:nth-child(odd) .p-step-description p {
@@ -4266,6 +4666,10 @@ header p {
   }
 }
 /* CAREERS */
+
+.job-offers .h-titles-w-b p {
+	padding: 1em 0 0;
+}
 
 .careers-container {
   border: 1px solid #979797;
@@ -4591,15 +4995,19 @@ header p {
 /* Style job offers */
   .page .list-data {
     border-left: 7px solid #66ded1;
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
+    box-shadow: 3px 4px 5px 0px rgba(176, 162, 176, .6);
   }
 
 @media screen and (min-width: 600px) {
   .page .list-data {
-    width: 47%;
+    width: 45%;
     margin: 15px 2em;
   }
   .list-view {
     display: flex;
+    flex-wrap: wrap;
 }
   .page .list-data header {
     width: 100%;
@@ -4862,7 +5270,7 @@ header p {
 
 .services-articles-container article section img {
   width: 50%;
-  background-color: #329eff;
+  /*background-color: #329eff;*/
 }
 
 .services-articles-container article .show {
@@ -5032,6 +5440,28 @@ header p {
 
 .single-project-slider {
     width: 100%;
+}
+
+@media (max-width: 900px){
+  .single-projects #tns2-ow{
+    padding: 0 !important;
+    max-width: 750px;
+    margin: 0 auto;
+    }  
+}
+
+@media (max-width: 750px){
+  .single-projects #tns2-ow{
+    padding: 0 !important;
+    max-width: 580px;
+    margin: 0 auto;
+    }  
+}
+
+@media (max-width: 600px){
+  .single-projects #tns2-ow{
+    display:none;
+    }  
 }
 
 .image-w-arrows #tns1-mw{
@@ -5366,7 +5796,7 @@ header p {
     margin: auto 0;
   }
   .works-descr-top-container .top-descr .image-w-arrows .client-feedback-arrows {
-    margin: auto -5em 0;
+    margin: -4.5em -8em;
   }
   .gh-icon-top {
     margin: -2em 4em 0em;
@@ -5467,14 +5897,23 @@ media screen and (max-width: 600px) {
   .works-descr-top-container .top-descr .image-w-arrows img {
     margin: auto 0;
   }
-  .works-descr-top-container .top-descr .image-w-arrows .client-feedback-arrows {
-    margin: auto -5em 0;
-  }
 }
 
 @media screen and (max-width: 1000px) {
   .works-descr-top-container .top-descr .image-w-arrows .client-feedback-arrows {
-    margin: auto -5em 6em;
+    margin: auto -5em 3em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .works-descr-top-container .top-descr .image-w-arrows .client-feedback-arrows {
+    margin: auto -5em 9em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .works-descr-top-container .top-descr .image-w-arrows .client-feedback-arrows {
+    margin: auto -5em auto;
   }
 }
 
@@ -5536,7 +5975,7 @@ media screen and (max-width: 600px) {
   }
   .works-descr-top-container .top-descr .image-w-arrows .client-feedback-arrows {
     width: 35%;
-    margin: -3em 0 0;
+    margin: -.3em 0 0;
   }
   .gh-icon-top {
     width: 100%;
@@ -5552,13 +5991,18 @@ media screen and (max-width: 600px) {
     font-size: 1.5rem;
   }
 }
-
-.tech-stack {
+.single-projects .tech-stack {
   color: #ffffff;
   width: 80%;
   max-width: 80em;
-  margin: 8em auto;
+  margin: 3em auto;
   font-size: 1.1rem;
+}
+
+@media screen and (min-width: 1750px){
+  .tech-stack .h-titles-w-b.col {
+    margin: 0 6em;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -5597,7 +6041,13 @@ media screen and (max-width: 600px) {
 
 @media screen and (min-width: 1280px) {
   .tech-stack .list-wrapper img {
-    width: 40%;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1700px){
+  .tech-stack .list-wrapper {
+      margin: 1em 3em 0;
   }
 }
 
@@ -5794,8 +6244,32 @@ media screen and (max-width: 600px) {
   }
 }
 
+/* Gauzy visit project padding */
+@media (min-width: 1350px){
+  .works-descr-top-container #underline {
+    position: relative;
+    top: 6em;
+    margin: -10em 0 9em 12em;
+
+  }
+
+  .works-descr-top-container .gh-icon-top {
+      margin: -8em 8em 2em;
+  }
+}
+/*Fix single projects margins */
+.works-details-articles > .row {
+	padding-bottom: 3em !important;
+}
+
+.works-details-articles section div {
+    margin: 1em auto 1em;
+}
+
+
 .team-and-time-container {
   margin: 5em auto 0;
+  padding-top: 2em
 }
 
 .team-and-time-container .h-titles-w-b {
@@ -5829,6 +6303,10 @@ media screen and (max-width: 600px) {
   margin: 0 1em;
 }
 
+.single .team.col .person-card.col p, .single .team.col .person-card.col h4 {
+    text-align: left;
+}
+
 .team-and-time-container div .person-card .icons {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -5856,6 +6334,7 @@ media screen and (max-width: 600px) {
 .team-and-time-container a[href="/projects"] {
   font-size: 1.5em;
   font-weight: bold;
+  padding-bottom: 1em;
 }
 
 .team-and-time-container .more-projects {
@@ -5864,6 +6343,8 @@ media screen and (max-width: 600px) {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 3em;
+  /* Regulate more projects slider */
+  flex-direction: column;
 }
 
 .team-and-time-container .more-projects .project-more img {
@@ -5903,6 +6384,13 @@ media screen and (max-width: 600px) {
   .team-and-time-container .more-projects .project-more .project-descr .project-icons {
     width: 65%;  
   }  
+}
+
+.more-projects.row .other-projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .team-and-time-container .hire-us-btn {
@@ -6159,8 +6647,8 @@ SINGLE JOB BOARD
     margin: 0;
 }
 
-.sjb-page a:hover, .sjb-page a:focus {
-    color: #fff !important
+.single-jobpost .sjb-page a:hover {
+    color: #fff;
 }
 
 .sjb-page, .sjb-page .list-data .job-description p {
@@ -6186,8 +6674,8 @@ margin: 5em auto;
 width: 100%;
 }
 
-.small-form .t-description p {
-  color: #ffffff !important;
+.single-jobpost .small-form .t-description p {
+  color: #ffffff;
 	font-size: .9em !important;
 }
 #sjb-application-form {

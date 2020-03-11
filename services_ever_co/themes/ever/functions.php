@@ -18,8 +18,16 @@ add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 
 //Register ever theme's scripts
 function ever_enqueue_scripts(){
+	/**
+	* Enqueue Tiny Slider Vanilla js lightweight slider
+	* @link https://github.com/ganlanyuan/tiny-slider
+	* @license    https://opensource.org/licenses/mit-license.php MIT License
+	*/
     wp_enqueue_script( 'tiny-slider', 'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js', null, null, true );
-    wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/assets/js/ever.js', array( 'jquery' ),'',true);
+    //Enqueue theme's main js file
+	wp_enqueue_script( 'ever-main-script', get_stylesheet_directory_uri() . '/assets/js/ever.js', array( 'jquery' ), '1.01', true );
+	//Enqueue slider js file
+	wp_enqueue_script( 'ever-slider', get_stylesheet_directory_uri() . '/assets/js/ever-slider.js', array(),NULL,true);
     wp_enqueue_style( 'tiny-slider', 'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"' );
 }
 add_action( 'wp_enqueue_scripts', 'ever_enqueue_scripts');
@@ -82,6 +90,15 @@ require_once( get_stylesheet_directory() . '/testimonials.php');
 
 /* Create Custom Post Type Team Members */
 require_once( get_stylesheet_directory() . '/team-members.php');
+
+/* Add shortcode to display teammembers on single project page */
+require_once( get_stylesheet_directory() . '/shortcodes/single-project-team-members-shortcode.php');
+
+/* Add shortcode to display project stats on single project page */
+require_once( get_stylesheet_directory() . '/shortcodes/single-project-stats-shortcode.php');
+
+/* Add shortcode to display projects on single teammember page */
+require_once( get_stylesheet_directory() . '/shortcodes/single-team-member-projects-shortcode.php');
 
 //Allow Gutenberg Editor for custom post types
 add_action( 'init', 'ever_cpt_init' );

@@ -168,118 +168,6 @@ jQuery(function($) {
     secondList.append(secondListItems.get().reverse());
 });
 
-/*==============
-=====SLIDER=====
-===============*/
-
-/* Team slider */
-if(document.querySelector(".home .people.row")){
-    var teamSlider = tns({
-        container: document.querySelector(".home .people.row"),
-        nav: false,
-        autoplay: true,
-        speed: 500,
-        autoplayTimeout: 5000,
-        autoplayButton: false,
-        items: 5,
-        mouseDrag: true,
-        gutter: 40,
-        controls: false,
-        responsive: {
-            250: {
-                items: 1
-            },
-            480: {
-                items: 2
-            },
-            640: {
-                items: 3
-            },
-            820: {
-                items: 3
-            },
-            992: {
-                items: 4
-            },
-            1120: {
-                items: 5
-            }
-        }
-    });
-}
-
-/* Testimonials slider */
-if(document.querySelector(".home .clients-feedback.row")){
-    var testimonialsSlider = tns({
-        container: document.querySelector(".home .clients-feedback.row"),
-        nav: false,
-        autoplay: false,
-        speed: 1000,
-        autoplayTimeout: 8000,
-        autoplayButton: false,
-        items: 1,
-        center: true,
-        gutter: 4,
-        controls: false,
-        mouseDrag: true,
-        responsive: false
-    });
-}
-
-/* Slider arrows */
-var prev =document.querySelector(".next");
-var next =document.querySelector(".prev");
-
-if(prev){
-    document.querySelector(".prev").onclick = (() => {
-        testimonialsSlider.goTo("prev");
-    });
-}
-if(next){
-    document.querySelector(".next").onclick = (() => {
-    testimonialsSlider.goTo("next");
-})
-}
-
-/* Project Thumbnails Slider */
-
-if(document.querySelector(".post-type-archive-projects article .projects-slider")){
-    var testimonialsSlider = tns({
-        container: document.querySelector(".post-type-archive-projects article .projects-slider"),
-        nav: true,
-        autoplay: true,
-        speed: 1000,
-        autoplayTimeout: 5000,
-        autoplayButton: false,
-        items: 1,
-        center: true,
-        gutter: 4,
-        controls: false,
-        mouseDrag: true,
-        responsive: false
-    });
-}
-
-/* Single Project Page Slider */
-
-if(document.querySelector(".single-project-slider")){
-    var testimonialsSlider = tns({
-        container: document.querySelector(".single-project-slider"),
-        nav: true,
-        autoplay: false,
-        speed: 1000,
-        autoplayTimeout: 5000,
-        autoplayButton: false,
-        items: 1,
-        center: true,
-        gutter: 4,
-        controls: false,
-        mouseDrag: true,
-        responsive: false
-    });
-}
-
-
 /* Counter decoration */
 jQuery(function($) {
     $('.counter').after('<div id="ever-line">line</div>');
@@ -349,36 +237,140 @@ function showHideMoreInfo(element, {
     });
 };
 
-/* SWITCH TO LIGHT or DARK MODE */
 
-jQuery(function($) {
+jQuery(function($){
     
-    //Check if user has chosen light mode
-    var lightMode = localStorage.getItem('lightMode') || 0;
-    //Click on light mode icon. Store user preference through sessions
-    $('.switch-field input[value="day"]').click(function(){
-        $('body').addClass('light-mode');
-        //Save user preference
-        localStorage.setItem('lightMode', 1);
-    })
+    /* SWITCH TO LIGHT or DARK MODE */    
+    function toggleThemeMode (){
+        //Check if user has chosen light mode
+        var lightMode = localStorage.getItem('lightMode') || 0;
+        //Click on light mode icon. Add light mode classes and wrappers. Store user preference through sessions
+        $('.switch-field input[value="day"]').click(function(){
+            $('body').addClass('light-mode');
+            lightModeMagic();
+            changeIconsLightMode();
+            //Save user preference
+            localStorage.setItem('lightMode', 1);
+        })
 
-    //Click on dark mode icon. Store user preference through sessions
-    $('.switch-field input[value="night"]').click(function(){
-        $('body').removeClass('light-mode');
-        //Save user preference
-        localStorage.setItem('lightMode', 0);
-        console.log(lightMode);
-    })
-    
-    // If user has set up light mode, display light theme  
-    if(localStorage.getItem("lightMode")==1){
-        console.log('light mode user preference');
-        $('body').addClass('light-mode');
+        //DARK MODE Click on dark mode icon. Store user preference through sessions
+        $('.switch-field input[value="night"]').click(function(){
+            $('body').removeClass('light-mode');
+            //Save user preference
+            localStorage.setItem('lightMode', 0);
+            changeIconsDarkMode();
+        })
+        
+        //LIGHT MODE If user has set up light mode, display light theme  
+        if(localStorage.getItem("lightMode")==1){
+            $('body').addClass('light-mode');
+            /* Change input checked attribute to light mode */
+            $('#radio-one').prop('checked',false);
+            $('#radio-two').prop('checked',true);
+            lightModeMagic();
+            changeIconsLightMode();
+        }
+
+    }
+
+    toggleThemeMode ();
+
+    /* WRAP SECTIONS TO CUSTOMIZE LIGHT THEME MODE */
+
+    function lightModeMagic(){
+        //wrap stats counter
+        if($('body').hasClass('light-mode')){
+            //wrap stats counter
+            if($('.light-wrapper').length==0){
+                $('.wpsm_counter_b_row').wrap('<div class="light-wrapper">');
+                //Core Values
+                $('.core-values-container').wrap('<div class="light-wrapper">');
+            }
+            if($('.dark-wrapper').length==0){
+            //wrap e-commerce boxes
+                $('.e-commerce-container').wrap('<div class="dark-wrapper">');
+                //tech we use
+                $('.tech-we-use').wrap('<div class="dark-wrapper">');
+				$('.tech-stack').wrap('<div class="dark-wrapper">');
+            }
+            //wrap team members container
+            if($('body').hasClass('home')){
+                if($('.parent-team-members').length==0){
+                    $('.team-w-ninjas-container, #tns1-ow, .h-eight').wrapAll('<div class="parent-team-members" />');
+                }
+            }
+            else if ($('body').hasClass('page')){
+                if($('.parent-team-members').length==0){
+                    $('.team-w-ninjas-container').wrap('<div class="parent-team-members" />');
+                }
+            }
+            if($('.message-us').length==0){
+                $('.small-form').wrap('<div class="message-us">');
+            }
+        }
+    }
+
+    lightModeMagic();
+
+    //Append black icons on light mode
+    function changeIconsLightMode(){
+        /*
+         * Replace all project icons
+         *
+        */
+        $('.gh-dets img').each(function() {
+            //get old image url
+            var oldSrc = $(this).attr('src');
+            //get image name from old url
+            var lastString = oldSrc.split("/").pop();
+            
+            //check if it is old url. Replace with new url.
+            if(!lastString.includes("-black")){
+                // change image name to new one
+                var newImage = (lastString.split(".")[0]).concat('-black.png');
+                //costruct the whole new image url
+                var newSrc = oldSrc.split(lastString).join(newImage);
+                //replace the old image src with the new one
+                $(this).attr('src', newSrc);
+            }
+        });
+        /*
+         * Add black back arrow on signle projects page
+         * 
+        */
+        $('#_Icon_Сolor').css({ fill: "#000" });
+    }
+
+    //Restore light icons on dark mode
+    function changeIconsDarkMode(){
+        //replace all project icons
+        $('.gh-dets img').each(function() {
+            //get old image url
+            var oldSrc = $(this).attr('src');
+            //get image name from old url
+            var lastString = oldSrc.split("/").pop();
+            //check if it is old url. Replace with new url.
+            if(lastString.includes("-black")){
+                // change image name to new one
+                var newImage = lastString.split("-black").join('');
+                //costruct the whole new image url
+                var newSrc = oldSrc.split(lastString).join(newImage);
+                console.log(newSrc);
+                //replace the old image src with the new one
+                $(this).attr('src', newSrc);
+            }
+        });
+        /*
+         * Restore light back arrow on signle projects page
+         * 
+        */
+        $('#_Icon_Сolor').css({ fill: "#fff" });
     }
 
 });
 
-/* APPEND COUNTER BOX */
+
+/* APPEND BOX TO STATS COUNTER */
 
 jQuery(function($){
     $('.wpsm_row:first-child').prepend('<div class="wpsm_col-md-3 wpsm_col-sm-6"> \
@@ -397,18 +389,45 @@ jQuery(function($){
 * if the user has clicked on it from the footer link */
 jQuery(function($){
 
-//Check if we are on services page
-if (window.location.href.indexOf("services" > -1)) {
-    var full_url = window.location.href ; // Get current url
+    //Check if we are on services page
+    if (window.location.href.indexOf("services" > -1)) {
+        var full_url = window.location.href ; // Get current url
 
-    var service_id = full_url.split('/');
-    var id = service_id[service_id.length-1];
+        var service_id = full_url.split('/');
+        var id = service_id[service_id.length-1];
 
-    setTimeout(()=> {
-        $(id).find('.product-quality-container').removeClass('hide');
-        $(id).find('.product-quality-container').addClass('show');
-    }, 100)
+        setTimeout(()=> {
+            $(id).find('.product-quality-container').removeClass('hide');
+            $(id).find('.product-quality-container').addClass('show');
+        }, 100)
 
-}
+        $('.services-icon-title a img').click(function(){
+            var elem=$(this).parent().attr('href');
+            $(elem).find('.product-quality-container').removeClass('hide');
+            $(elem).find('.product-quality-container').addClass('show');
+        })
+
+    }
 
 });
+
+
+/* Hide open-source /customers projects 
+if there are no projects associated with a team member
+Used on single team-member page */
+
+jQuery(function($){
+
+    var openSourceProjects = $('.projects-container .title').first();
+    var customersProjects = $('.projects-container .title').last();
+    
+    if(customersProjects.siblings().length==0){
+        customersProjects.parent().hide();
+    }
+
+    if(openSourceProjects.siblings().length==0){
+        openSourceProjects.parent().hide();
+    }
+
+});
+
