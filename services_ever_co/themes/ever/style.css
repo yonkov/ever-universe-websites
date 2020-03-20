@@ -3843,13 +3843,12 @@ article .team-members-meta-wrapper {
 }
 
 .single-teammembers .entry-content a{
-	color: rgb(225, 225, 225, .8);
+	color: rgb(225, 225, 225, .9);
 }
 
 .single-teammembers .entry-content a:hover{
-	color: rgb(225, 225, 225, 1);
+	text-decoration: underline;
 }
-
 
 /*==================
 ====Contact form====
