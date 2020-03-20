@@ -19,14 +19,14 @@ The code that powers "Ever Universe" websites:
 
 ### Theme
 
-This website is powered by [WordPress](https://wordpress.org/download/) and uses the Ever theme. The Ever theme is a custom WordPress theme inspired by [ever theme](https://wordpress.org/themes/ever/), lightweight theme issued under the GPL License.
+This website is powered by [WordPress](https://wordpress.org/download/) and uses the Ever theme. The Ever theme is a custom WordPress theme inspired by [Scaffold](https://wordpress.org/themes/scaffold/), lightweight theme issued under the GPL License.
 The theme code is available under  `services_ever_co/themes` folder. The two main files in the Ever theme are functions.php and style.css (the way it is shown in the [WordPress documentation](https://developer.wordpress.org/themes/advanced-topics/child-themes/)). The theme supports the following custom post types: 
 * jobs 
 * projects 
 * testimonials
 * team members
   
-It uses shortcodes to display the custom post types on the homepage. The theme also supports the option to upload logo and to customize the primary menu from the WordPress dashboard. The theme templates can be found under the `source` folder. 
+It uses shortcodes to display the custom post types on the homepage. The theme also supports the option to upload logo and to customize the primary menu from the WordPress dashboard. The theme template files can be found under the `source` folder. 
 
 ### Plugins
 
