@@ -16,11 +16,11 @@
 				<rect id="Rectangle-2" data-name="Rectangle" width="26" height="2" transform="translate(0 10)" fill="#d8d8d8"></rect>
 				<rect id="Rectangle-3" data-name="Rectangle" width="26" height="2" transform="translate(0 20)" fill="#d8d8d8"></rect>
 			</svg>
-			<?php //esc_html_e( 'Site Navigation', 'scaffold' ); ?>
+			<?php //esc_html_e( 'Site Navigation', 'ever' ); ?>
 		</button>
 		<div class="left">
 			<?php // Insert logo through WP admin here
-			scaffold_the_custom_logo(); 
+			ever_the_custom_logo(); 
 			?>
 		</div>
 		<?php // Insert menu items through WP admin

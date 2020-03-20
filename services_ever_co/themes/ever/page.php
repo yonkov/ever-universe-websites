@@ -4,7 +4,7 @@
  *
  * @link       https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package    scaffold
+ * @package    ever
  * @copyright  Copyright (c) 2019-2020, Ever Co
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
@@ -22,7 +22,7 @@ get_header(); ?>
 
 			<article <?php post_class(); ?>>
 
-				<?php scaffold_thumbnail( 'scaffold-blog' ); ?>
+				<?php ever_thumbnail( 'ever-blog' ); ?>
 
 				<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -31,7 +31,7 @@ get_header(); ?>
 				<?php
 				if ( get_edit_post_link() ) :
 
-					edit_post_link( esc_html__( '(Edit)', 'scaffold' ), '<p class="edit-link">', '</p>' );
+					edit_post_link( esc_html__( '(Edit)', 'ever' ), '<p class="edit-link">', '</p>' );
 
 				endif;
 				?>
@@ -42,7 +42,7 @@ get_header(); ?>
 
 					wp_link_pages(
 						array(
-							'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'scaffold' ),
+							'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ever' ),
 							'after'  => '</div>',
 						)
 					);

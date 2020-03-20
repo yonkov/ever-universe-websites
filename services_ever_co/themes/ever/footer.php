@@ -105,10 +105,10 @@
             <div class="col">
                 <a href="/approach">Approach</a>
                 <ul>
-                    <li>Discover</li>
-                    <li>Build</li>
-                    <li>Staff</li>
-                    <li>Support</li>
+                    <li><a href="/approach/#workflow">Discover</a></li>
+                    <li><a href="/approach/#develop-solution">Build</a></li>
+                    <li><a href="/approach/#amplify-solutions">Staff</a></li>
+                    <li><a href="/approach/#allow-change">Support</a></li>
                 </ul>
                 <a href="/career">CAREERS</a>
             </div>

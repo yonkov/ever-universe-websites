@@ -31,50 +31,47 @@ document.addEventListener("click", function(e) {
 ====ANIMATIONS=====
 ==================*/
 
-//Clouds 
-
 jQuery(function($){
 
-  if (/Edge/.test(navigator.userAgent)) {
-      var clouds = Array.from(document.getElementsByClassName("cloud"));
-  } else {
-      clouds = [...document.getElementsByClassName("cloud")];
-  }
+  /* CLOUDS ANIMATIONS */
 
-  clouds.forEach(cloud => {
-      cloud.addEventListener("click", function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          if (/Edge/.test(navigator.userAgent)) {
-              var descriptionDiv = Array.from(this.children)[1].children;
-          } else {
-              descriptionDiv = [...this.children][1].children;
-          }
-          var close = descriptionDiv[0];
-          close.addEventListener("click", (e) => {
-              e.preventDefault();
-              e.stopPropagation();
+    if (/Edge/.test(navigator.userAgent)) {
+        var clouds = Array.from(document.getElementsByClassName("cloud"));
+    } else {
+        clouds = [...document.getElementsByClassName("cloud")];
+    }
 
-              this.classList.remove("show-info-cloud");
-              this.offsetWidth;
-              this.classList.add("hide-info-cloud");
-          })
-          this.classList.remove("hide-info-cloud");
-          this.offsetWidth;
-          this.classList.add("show-info-cloud");
+    clouds.forEach(cloud => {
+        cloud.addEventListener("click", function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (/Edge/.test(navigator.userAgent)) {
+                var descriptionDiv = Array.from(this.children)[1].children;
+            } else {
+                descriptionDiv = [...this.children][1].children;
+            }
+            var close = descriptionDiv[0];
+            close.addEventListener("click", (e) => {
+                e.preventDefault();
+                e.stopPropagation();
 
-          setTimeout(() => {
-              this.style.height = "fit-content";
+                this.classList.remove("show-info-cloud");
+                this.offsetWidth;
+                this.classList.add("hide-info-cloud");
+            })
+            this.classList.remove("hide-info-cloud");
+            this.offsetWidth;
+            this.classList.add("show-info-cloud");
 
-          }, 3000)
-      })
-  }); 
+            setTimeout(() => {
+                this.style.height = "fit-content";
 
-});
+            }, 3000)
+        })
+    }); 
 
-/* Smooth scroll */
+    /* GREEN POINTER ICON SMOOTH SCROLL */
 
-jQuery(function($){
     if (!/Edge/.test(navigator.userAgent)) {
         let wLocation = window.location.href;
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -94,10 +91,9 @@ jQuery(function($){
             });
         });
     }
-})
 
-/* Execute animations on page scroll */
-jQuery(function($) {
+    /* EXECUTE ANIMATIONS ON PAGE SCROLL */
+
     $(window).on('scroll', function() {
         scroll_pos = $(window).scrollTop() + $(window).height();
 
@@ -153,10 +149,12 @@ jQuery(function($) {
             };
         }
     })
-    /*==================
-    REVERSE HOMEPAGE HTML
-    ====ON PROJECTS====
-    ===================*/
+
+});
+
+/* REVERSE HOMEPAGE HTML ON PROJECTS */
+
+jQuery(function($) {
 
     //Reverse statistics html about latest projects on the left/right side of the panel
     var list = $('section.col:nth-of-type(2) div.project a').first();
@@ -166,12 +164,29 @@ jQuery(function($) {
     var secondList = $('section.col:nth-of-type(2) div.project a').last();
     var secondListItems = secondList.children();
     secondList.append(secondListItems.get().reverse());
+    
 });
 
-/* Counter decoration */
+/* STATS COUNTER */
+
 jQuery(function($) {
+    
+    /* Counter decoration */
     $('.counter').after('<div id="ever-line">line</div>');
-})
+
+    /* APPEND BOX TO STATS COUNTER HOMEPAGE*/
+
+    $('.wpsm_row:first-child').prepend('<div class="wpsm_col-md-3 wpsm_col-sm-6"> \
+        <div class="wpsm_counterbox"> \
+            <div class="wpsm_number" style="#ffffff"> \
+            <span class="counter">2015</span> \
+            <div id="ever-line">line</div> \
+            </div> \
+            <h3 class="wpsm_count-title" #ffffff=""> Since</h3> \
+        </div> \
+    </div>'
+    )
+});
 
 /* Services page text */
 
@@ -237,10 +252,10 @@ function showHideMoreInfo(element, {
     });
 };
 
+/* SWITCH TO LIGHT or DARK THEME MODE */    
 
 jQuery(function($){
     
-    /* SWITCH TO LIGHT or DARK MODE */    
     function toggleThemeMode (){
         //Check if user has chosen light mode
         var lightMode = localStorage.getItem('lightMode') || 0;
@@ -355,7 +370,6 @@ jQuery(function($){
                 var newImage = lastString.split("-black").join('');
                 //costruct the whole new image url
                 var newSrc = oldSrc.split(lastString).join(newImage);
-                console.log(newSrc);
                 //replace the old image src with the new one
                 $(this).attr('src', newSrc);
             }
@@ -370,23 +384,11 @@ jQuery(function($){
 });
 
 
-/* APPEND BOX TO STATS COUNTER */
+/* SERVICES PAGE 
+ * Get the corresponding div id on the Services page to expand 
+ * if the user has clicked on it from the footer link 
+ */
 
-jQuery(function($){
-    $('.wpsm_row:first-child').prepend('<div class="wpsm_col-md-3 wpsm_col-sm-6"> \
-        <div class="wpsm_counterbox"> \
-            <div class="wpsm_number" style="#ffffff"> \
-            <span class="counter">2015</span> \
-            <div id="ever-line">line</div> \
-            </div> \
-            <h3 class="wpsm_count-title" #ffffff=""> Since</h3> \
-        </div> \
-    </div>'
-    )
-})
-
-/* Get the corresponding div id on the Services page to expand 
-* if the user has clicked on it from the footer link */
 jQuery(function($){
 
     //Check if we are on services page
@@ -411,10 +413,10 @@ jQuery(function($){
 
 });
 
-
-/* Hide open-source /customers projects 
-if there are no projects associated with a team member
-Used on single team-member page */
+/* SINGLE TEAMMEMBERS PAGE
+ * Hide open-source /customers projects 
+ * if there are no projects associated with a team member
+ * */
 
 jQuery(function($){
 

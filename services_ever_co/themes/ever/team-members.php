@@ -63,13 +63,23 @@ function ever_team_members(){
             <?php /* If there is a featured image, display it */
             if ( has_post_thumbnail() ) {
                 the_post_thumbnail('small'); 
-            }?>
+            }?></a>
                 <h4><?php the_title(); ?></h4>
                 <h5><p><?php echo esc_attr($position); ?></p></h5>
-                <div class="icons row">
-                    <a href="<?php echo esc_url($linkedin); ?>"><span class="ever-meta">LinkedIn&nbsp;<span></а>
-                    <a href="<?php echo esc_url($github); ?>"><span class="ever-meta">GitHub&nbsp;</span></а>
-                    <a href="<?php echo esc_url($upwork); ?>"><span class="ever-meta">Upwork&nbsp;</span></а>
+                <div class="icons row"> <?php
+
+				if($linkedin) : ?>
+					<a href="<?php echo esc_url($linkedin); ?>"><span class="ever-meta">LinkedIn&nbsp;<span></a>
+				<?php endif;
+
+				if($github) : ?>
+                    <a href="<?php echo esc_url($github); ?>"><span class="ever-meta">GitHub&nbsp;</span></a>
+				<?php endif;
+
+				if($upwork) : ?>
+                    <a href="<?php echo esc_url($upwork); ?>"><span class="ever-meta">Upwork&nbsp;</span></a>
+				<?php endif; ?>
+
                 </div>
             </a>
         </div>

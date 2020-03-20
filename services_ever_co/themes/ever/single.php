@@ -4,7 +4,7 @@
  *
  * @link       https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package    scaffold
+ * @package    ever
  * @copyright  Copyright (c) 2019-2020, Ever Co
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
@@ -33,7 +33,7 @@ get_header(); ?>
 			endif;
 
 			if( get_post_type() !== 'teammembers' ) :
-				scaffold_the_post_navigation();
+				ever_the_post_navigation();
 			endif;
 		
 		endwhile;

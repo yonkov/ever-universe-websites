@@ -4,7 +4,7 @@
  *
  * @link       https://codex.wordpress.org/Template_Hierarchy
  *
- * @package    scaffold
+ * @package    ever
  * @copyright  Copyright (c) 2019, Danny Cooper
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
@@ -17,7 +17,7 @@ $stats = json_decode(get_post_meta($post->ID, 'statistics', true));
 
 <article class="row">
     <div class="projects-slider">
-        <?php scaffold_thumbnail(); //Default project thumbnail
+        <?php ever_thumbnail(); //Default project thumbnail
             
         if (class_exists('MultiPostThumbnails')) : //Second project thumbnail ?>
         

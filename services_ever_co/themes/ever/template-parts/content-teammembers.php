@@ -4,7 +4,7 @@
  *
  * @link       https://codex.wordpress.org/Template_Hierarchy
  *
- * @package    scaffold
+ * @package    ever
  * @copyright  Copyright (c) 2019-2020, Ever Co
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
@@ -13,7 +13,7 @@
 
 <article <?php post_class('row'); ?>>
 	<div class="team-members-meta-wrapper">
-	<?php scaffold_thumbnail('scaffold-blog'); ?>
+	<?php ever_thumbnail('ever-blog'); ?>
 
             <div class="icons row">
                 <?php $linkedin = get_post_meta($post->ID, 'linkedin', true);
@@ -42,7 +42,7 @@
             ?>
 
 			<div class="entry-meta">
-				<?php scaffold_posted_on(); ?>
+				<?php ever_posted_on(); ?>
 			</div><!-- .entry-meta -->
 
 		<?php endif; ?>
@@ -52,11 +52,11 @@
 		<div class="entry-content">
 		<h5 class="position"><p><?php echo $position; ?></p></h5>
 		<?php
-        the_content(esc_html__('Continue reading &rarr;', 'scaffold'));
+        the_content(esc_html__('Continue reading &rarr;', 'ever'));
 
         wp_link_pages(
             array(
-                'before' => '<div class="page-links">' . esc_html__('Pages:', 'scaffold'),
+                'before' => '<div class="page-links">' . esc_html__('Pages:', 'ever'),
                 'after'  => '</div>',
             )
         );

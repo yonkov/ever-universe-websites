@@ -4,7 +4,7 @@
  *
  * @link       https://codex.wordpress.org/Template_Hierarchy
  *
- * @package    scaffold
+ * @package    ever
  * @copyright  Copyright (c) 2019-2020, Ever Co
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
@@ -38,7 +38,7 @@ get_header(); ?>
                 get_template_part('template-parts/content', 'archive');
 
                 endwhile;
-                scaffold_the_posts_navigation();
+                ever_the_posts_navigation();
             }//end if
             else {
                 get_template_part('template-parts/content', 'none');

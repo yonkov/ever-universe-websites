@@ -60,7 +60,7 @@ function ever_teammember_projects() {
                 
                 <article class="row">
                     <div class="projects-slider">
-                        <?php scaffold_thumbnail(); //Default project thumbnail
+                        <?php ever_thumbnail(); //Default project thumbnail
                             
                         if (class_exists('MultiPostThumbnails')) : //Second project thumbnail ?>
                         
