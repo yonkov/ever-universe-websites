@@ -5,6 +5,17 @@ The code that powers "Ever Universe" websites:
 - https://services.ever.co
 - ...
 
+<strong>Table of Contents</strong>
+- [Ever Universe Websites](#ever-universe-websites)
+- [Services.ever.co](#serviceseverco)
+    - [Theme](#theme)
+    - [Plugins](#plugins)
+  - [Attribution](#attribution)
+  - [Contributors](#contributors)
+  - [Contact Us](#contact-us)
+  - [Trademarks](#trademarks)
+      - [Copyright © 2019-present, Ever Co. LTD. All rights reserved.](#copyright-%c2%a9-2019-present-ever-co-ltd-all-rights-reserved)
+
 # Services.ever.co
 
 ### Theme
@@ -25,7 +36,7 @@ The website uses the following plugins:
 * Contact Form 7 - The most popular and acknowledged free plugin for creating contact forms. To edit an existing contact form on the website, go to `dashboard->contact->contact forms`
   and click on the form you want to edit. It is fairly easy to use, however, if you need further assistance, they provide an awesome [documentation](https://contactform7.com/docs/) that you can always refer to.
 
-* Counter Number Showcase - A very simple plugin that animates the statistics tab on the home page. You can edit the options from `dashboard->counter numbers-> all counters`. Very intuitive and easy to use.
+* Counter Number Showcase - Very nice plugin that animates the statistics tab on the home page. You can edit the options from `dashboard->counter numbers-> all counters`. Very intuitive and easy to use.
 
 * Loco translate - It helps creating and maintaining .po and .mo translation files directly from the browser. You can use this plugin to translate plugins, themes or custom strings via the WordPress dashboard. To translate a plugin, e.g. simple job board, go to `dashboard -> loco translate -> plugins -> simple job board plugin`. Click on the desired translation (edit) and start translating! As simple as that.
 
@@ -36,6 +47,10 @@ The website uses the following plugins:
 * WP-Optimize - Clean, Compress, Cache - This is my favourite lightweight plugin. It empowers the user to clean up the database from unnecessary rows, expired transient options, etc., without having to write manual SQL queries. Safe, efficient and fast. With this plugin, you can also compress images that have already been uploaded to the WordPress `uploads` folder.
 
 * Multiple Post Thumbnails - Adds the ability to add multiple post thumbnails to a post type.
+
+* SG Optimize - Links WordPress with all the performance optimizations provided by SiteGround Hosting, e.g static resource minifications, defer render-blocking js, etc.
+
+* Duplicate Post - Clones posts, pages or any other post type to make content entry much faster and easier.
 
 ## Attribution
 
