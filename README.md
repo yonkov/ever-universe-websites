@@ -5,7 +5,9 @@ The code that powers "Ever Universe" websites:
 - https://services.ever.co
 - ...
 
-- [Ever Universe Websites](#ever-universe-websites)
+
+## Table of Contents
+
 - [Services.ever.co](#serviceseverco)
     + [Theme](#theme)
     + [Plugins](#plugins)
