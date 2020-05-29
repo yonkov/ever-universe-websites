@@ -1,36 +1,24 @@
-# Ever Universe Websites
+# Ever-co
 
-The code that powers "Ever Universe" websites:
-- https://ever.co
-- https://services.ever.co
-- ...
-
-<strong>Table of Contents</strong>
-- [Services.ever.co](#serviceseverco)
-    + [Theme](#theme)
-    + [Plugins](#plugins)
-  * [Attribution](#attribution)
-  * [Contributors](#contributors)
-  * [Contact Us](#contact-us)
-  * [Trademarks](#trademarks)
-      - [Copyright © 2019-present, Ever Co. LTD. All rights reserved.](#copyright---2019-present--ever-co-ltd-all-rights-reserved)
-
-# Services.ever.co
+The child theme that powers the "Ever-Co" website:
+- https://test.ever.co
 
 ### Theme
 
-This website is powered by [WordPress](https://wordpress.org/download/) and uses the Ever theme. The Ever theme is a custom WordPress theme inspired by [Scaffold](https://wordpress.org/themes/scaffold/), lightweight theme issued under the GPL License.
-The theme code is available under  `services_ever_co/themes` folder. The two main files in the Ever theme are functions.php and style.css (for more information, check the [official WordPress theme documentation](https://developer.wordpress.org/themes/advanced-topics/child-themes/)). The theme supports the following custom post types: 
+The Ever-co theme is a child theme of the Ever theme [Scaffold](https://wordpress.org/themes/scaffold/), WordPress open-source theme that powers [Services Ever Co](https://services.ever.co) website.
+The two main files in the Ever-co theme are functions.php and style.css (for more information, check the [official WordPress theme documentation](https://developer.wordpress.org/themes/advanced-topics/child-themes/)). The theme supports the following custom post types: 
+* business vertical
+* company types
 * jobs 
 * projects 
 * testimonials
 * team members
   
-It uses shortcodes to display the custom post types on the homepage. The theme ships with a lightweight vanilla js open-source slider called [Tiny JS](https://github.com/gfwilliams/tiny-js). The theme also supports the option to upload logo and to customize the primary menu from the WordPress dashboard. The theme template files can be found under the `source` folder. 
+It uses shortcodes to display the custom post types on many pages. The theme ships with a lightweight vanilla js open-source slider called [Tiny JS](https://github.com/gfwilliams/tiny-js). The theme also supports the option to upload logo and to customize the primary menu from the WordPress dashboard.
 
 ### Plugins
 
-The website uses the following plugins:
+The Ever-co theme is compatible with the following plugins:
 
 * Contact Form 7 - The most popular and acknowledged free plugin for creating contact forms. To edit an existing contact form on the website, go to `dashboard->contact->contact forms`
   and click on the form you want to edit. It is fairly easy to use, however, if you need further assistance, they provide an awesome [documentation](https://contactform7.com/docs/) that you can always refer to.
@@ -53,15 +41,17 @@ The website uses the following plugins:
 
 ## Attribution
 
-The Ever theme's code structure is based on the [Scaffold theme](https://wordpress.org/themes/scafold/) by Danny Cooper, lightweight WordPress theme issued under the GPL License.
+* The Ever-co theme uses code from the [Scaffold theme](https://wordpress.org/themes/scafold/) by Danny Cooper, lightweight WordPress theme issued under the GPL License.
+* The Ever-co theme uses  a lightweight vanilla js open-source slider called [Tiny JS](https://github.com/gfwilliams/tiny-js), issued under MIT License.
 
 View full list of our [contributors](https://github.com/ever-co/ever-website/graphs/contributors).
 
 ## Contributors
 
-- [Atanas Yonkov](https://github.com/yonkov) - Wordpress Themes
-- [Dimana Tsvetkova](https://github.com/DimanaTsvetkova) - HTML/CSS/JS
-- [Milena Dimova](https://www.linkedin.com/in/dimova-milena-31010414) (UI/UX Designer)
+- [Atanas Yonkov](https://github.com/yonkov) - Theme developer
+- [Dimana Tsvetkova](https://github.com/DimanaTsvetkova) - Theme developer
+- [Svetoslav Vichev](https://www.linkedin.com/in/vichevsvetoslav/) (UI/UX Designer)
+- [Yordan Genovski](https://www.linkedin.com/in/yordan-genovski/) (UI/UX Designer)
 - [Ruslan Konviser](https://github.com/evereq) - Idea / Business / Content
 
 ## Contact Us
