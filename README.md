@@ -7,7 +7,7 @@ The code that powers "Ever Universe" websites:
 
 ## Table of Contents
 
-- [ever.co website](#ever-co)
+- [Website ever.co](#website-everco)
     + [Theme](#theme-1)
     + [Plugins](#plugins-1)
   * [Attribution](#attribution-1)
@@ -15,7 +15,7 @@ The code that powers "Ever Universe" websites:
   * [Contact Us](#contact-us-1)
   * [Trademarks](#trademarks-1)
 
-- [services.ever.co website](#serviceseverco)
+- [Website services.ever.co](#website-serviceseverco)
     + [Theme](#theme)
     + [Plugins](#plugins)
   * [Attribution](#attribution)
