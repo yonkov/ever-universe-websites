@@ -7,7 +7,7 @@ The code that powers "Ever Universe" websites:
 
 ## Table of Contents
 
-- [ever.co](#ever-co)
+- [ever.co website](#ever-co)
     + [Theme](#theme-1)
     + [Plugins](#plugins-1)
   * [Attribution](#attribution-1)
@@ -15,7 +15,7 @@ The code that powers "Ever Universe" websites:
   * [Contact Us](#contact-us-1)
   * [Trademarks](#trademarks-1)
 
-- [services.ever.co](#serviceseverco)
+- [services.ever.co website](#serviceseverco)
     + [Theme](#theme)
     + [Plugins](#plugins)
   * [Attribution](#attribution)
@@ -23,7 +23,7 @@ The code that powers "Ever Universe" websites:
   * [Contact Us](#contact-us)
   * [Trademarks](#trademarks)
 
-# Ever-co
+# Website ever.co
 
 The child theme that powers the "Ever-Co" website:
 - https://test.ever.co
@@ -98,7 +98,7 @@ All other brand and product names are trademarks, registered trademarks or servi
 
 #### Copyright © 2019-present, Ever Co. LTD. All rights reserved.
 
-# Services.ever.co
+# Website services.ever.co
 
 ### Theme
 
