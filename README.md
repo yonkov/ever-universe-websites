@@ -1,10 +1,9 @@
 # Ever Universe Websites
 
 The code that powers "Ever Universe" websites:
-- https://ever.co
-- https://services.ever.co
-- ...
-
+- https://ever.co - our "Umbrella" website (like a hub for all our products & services)
+- https://services.ever.co - website related to services our company provides to other companies in custom software development
+- https://gauzy.co - website dedicated to our Business Management Platform offering
 
 ## Table of Contents
 
@@ -15,7 +14,7 @@ The code that powers "Ever Universe" websites:
   * [Contributors](#contributors)
   * [Contact Us](#contact-us)
   * [Trademarks](#trademarks)
-      - [Copyright © 2019-present, Ever Co. LTD. All rights reserved.](#copyright---2019-present--ever-co-ltd-all-rights-reserved)
+  
 - [Ever-co](#ever-co)
     + [Theme](#theme-1)
     + [Plugins](#plugins-1)
@@ -23,8 +22,6 @@ The code that powers "Ever Universe" websites:
   * [Contributors](#contributors-1)
   * [Contact Us](#contact-us-1)
   * [Trademarks](#trademarks-1)
-      - [Copyright © 2019-present, Ever Co. LTD. All rights reserved.](#copyright---2019-present--ever-co-ltd-all-rights-reserved-1)
-
 
 # Services.ever.co
 
