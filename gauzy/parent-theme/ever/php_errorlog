@@ -1,4 +1,0 @@
-[02-Jun-2020 07:25:02 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/customer/www/test.ever.co/public_html/wp-content/themes/ever/index.php:17
-Stack trace:
-#0 {main}
-  thrown in /home/customer/www/test.ever.co/public_html/wp-content/themes/ever/index.php on line 17
