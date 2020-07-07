@@ -30,7 +30,7 @@ The child theme that powers the "Ever-Co" website:
 
 ### Theme
 
-The [ever.co theme](https://github.com/ever-co/ever-universe-websites/tree/master/themes/child/ever.co) is a child theme of the [Ever Parent Theme] (https://github.com/ever-co/ever-universe-websites/tree/master/themes/parent/ever).
+The [ever.co theme](https://github.com/ever-co/ever-universe-websites/tree/master/themes/child/ever.co) is a child theme of the [Ever Parent Theme](https://github.com/ever-co/ever-universe-websites/tree/master/themes/parent/ever).
 
 The two main files in the Ever-co theme are functions.php and style.css (for more information, check the [official WordPress theme documentation](https://developer.wordpress.org/themes/advanced-topics/child-themes/)). The theme supports the following custom post types: 
 * business vertical
