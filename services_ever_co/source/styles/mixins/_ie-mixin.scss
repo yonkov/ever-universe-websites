@@ -1,5 +1,0 @@
-@mixin ie {
-  @supports (-ms-ime-align:auto) {
-    @content
-  };
-}

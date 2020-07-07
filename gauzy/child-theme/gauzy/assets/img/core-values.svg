@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="613.5" height="616.5" viewBox="0 0 613.5 616.5">
+  <defs>
+    <filter id="Rectangle" x="344" y="386" width="195.5" height="230.5" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.106"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle-2" x="76" y="386" width="195.5" height="230.5" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-opacity="0.106"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle-3" x="418" y="162" width="195.5" height="230.5" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-3"/>
+      <feFlood flood-opacity="0.106"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle-4" x="0" y="163" width="195.5" height="229.5" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-4"/>
+      <feFlood flood-opacity="0.106"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle-5" x="210" y="0" width="195.5" height="230.5" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-5"/>
+      <feFlood flood-opacity="0.106"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="OUR_CORE_VALUES" x="169.25" y="240.25" width="274" height="147" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-6"/>
+      <feFlood flood-color="#173a56" flood-opacity="0.224"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="VALUES_AND_PRINCIPLES" data-name="VALUES AND PRINCIPLES" transform="translate(29.25 26.25)">
+    <g id="VALUE_INFOGRAPHIC" data-name="VALUE INFOGRAPHIC">
+      <path id="Oval_2" data-name="Oval 2" d="M211,0C327.532,0,422,94.468,422,211S327.532,422,211,422,0,327.532,0,211,94.468,0,211,0Z" transform="translate(66 74)" fill="none" stroke="#d8dee2" stroke-miterlimit="10" stroke-width="2" stroke-dasharray="10"/>
+      <g id="VALUES_BOTTOM" data-name="VALUES BOTTOM" transform="translate(76 386)">
+        <g id="VALUE" transform="translate(268)">
+          <g transform="matrix(1, 0, 0, 1, -373.25, -412.25)" filter="url(#Rectangle)">
+            <rect id="Rectangle-6" data-name="Rectangle" width="135" height="170" rx="5" transform="translate(373.25 412.25)" fill="#fff" stroke="rgba(151,151,151,0.22)" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+          <g id="secure" transform="translate(47 26)">
+            <path id="Path" d="M20.934,0C13.067,8.266,0,6.4,0,6.4V28.8C0,42,20.934,51.2,20.934,51.2S41.867,42,41.867,28.8V6.4S28.8,8.266,20.934,0Z" transform="translate(0.066)" fill="#8b9caa"/>
+            <path id="Path-2" data-name="Path" d="M14.907,0C9.307,5.887,0,4.56,0,4.56V20.512c0,9.4,14.907,15.95,14.907,15.95S29.815,29.91,29.815,20.51V4.558S20.507,5.887,14.907,0Z" transform="translate(6.093 7.369)" fill="#415e72"/>
+            <path id="Path-3" data-name="Path" d="M7.731,16.45,0,9.991,2.051,7.535l5.066,4.233L15.417,0l2.616,1.844Z" transform="translate(11.803 17.306)" fill="#d8dee2"/>
+          </g>
+          <text id="TAKE_CARE_AND_LEAD" data-name="TAKE CARE AND LEAD" transform="translate(11 96)" fill="#647b8e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="23.2" y="15">TAKE CARE</tspan><tspan x="24.164" y="37">AND LEAD</tspan></text>
+        </g>
+        <g id="VALUE-2" data-name="VALUE">
+          <g transform="matrix(1, 0, 0, 1, -105.25, -412.25)" filter="url(#Rectangle-2)">
+            <rect id="Rectangle-7" data-name="Rectangle" width="135" height="170" rx="5" transform="translate(105.25 412.25)" fill="#fff" stroke="rgba(151,151,151,0.22)" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+          <g id="rocket_1_" data-name="rocket (1)" transform="translate(42 28)">
+            <circle id="Oval" cx="25.4" cy="25.4" r="25.4" transform="translate(0 0)" fill="#647b8e"/>
+            <path id="Path-4" data-name="Path" d="M0,0,.92,5.64l.64-3.72.6,3.72L2.8,1.92l.6,3.72L4,1.92l.64,3.72.6-3.72.64,3.72L6.8,0Z" transform="translate(22 41.76)" fill="#d8dee2"/>
+            <path id="Path-5" data-name="Path" d="M22.32,11.12A11.706,11.706,0,0,1,22,13.8a12.725,12.725,0,0,0-21.68.04A11.98,11.98,0,0,1,0,11.16a11.16,11.16,0,0,1,22.32-.04Z" transform="translate(14.24 27.48)" fill="#b1bdc6"/>
+            <path id="Path-6" data-name="Path" d="M10.84,34.4c2-3.28,3.32-13.16,3.32-19.84C14.16,4.28,7.08,0,7.08,0S0,4.28,0,14.56C0,21.24,1.32,31.08,3.32,34.4Z" transform="translate(18.32 5.6)" fill="#d8dee2"/>
+            <path id="Path-7" data-name="Path" d="M10.4,6.16A15.4,15.4,0,0,0,5.2,0,15.4,15.4,0,0,0,0,6.16Z" transform="translate(20.2 5.6)" fill="#b1bdc6"/>
+            <circle id="Oval-2" data-name="Oval" cx="3.52" cy="3.52" r="3.52" transform="translate(21.88 17.72)" fill="#3d5a72"/>
+            <g id="Group" transform="translate(22.4 18.2)">
+              <path id="Path-8" data-name="Path" d="M5.4.44A3.021,3.021,0,0,0,4.84,0L0,4.84a3.021,3.021,0,0,0,.44.56Z" transform="translate(0 0.04)" fill="#b1bdc6"/>
+              <path id="Path-9" data-name="Path" d="M4.88,0,0,4.92a4.216,4.216,0,0,0,.44.28L5.16.48A1.891,1.891,0,0,0,4.88,0Z" transform="translate(0.96 1)" fill="#b1bdc6"/>
+            </g>
+          </g>
+          <g id="Group_21" data-name="Group 21" transform="translate(26 108)">
+            <path id="Path-10" data-name="Path" d="M1.68,4.5,4.864,1.135A.5.5,0,0,0,5,.787.5.5,0,0,0,4.864.439L4.585.144a.449.449,0,0,0-.658,0L.136,4.153a.517.517,0,0,0,0,.7l3.787,4a.449.449,0,0,0,.658,0l.279-.295a.513.513,0,0,0,0-.7Z" transform="translate(41 18) rotate(-180)" fill="#173a56"/>
+            <text id="NO" fill="#647b8e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="2.486" y="15">NO</tspan></text>
+            <text id="YES" transform="translate(51)" fill="#647b8e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="5.371" y="15">YES</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g id="VALUES_MIDDLE" data-name="VALUES MIDDLE" transform="translate(0 162)">
+        <g id="VALUE-3" data-name="VALUE" transform="translate(418)">
+          <g transform="matrix(1, 0, 0, 1, -447.25, -188.25)" filter="url(#Rectangle-3)">
+            <rect id="Rectangle-8" data-name="Rectangle" width="135" height="170" rx="5" transform="translate(447.25 188.25)" fill="#fff" stroke="rgba(151,151,151,0.22)" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+          <g id="value_1_" data-name="value (1)" transform="translate(42 22)">
+            <path id="Path-11" data-name="Path" d="M30.164,30.3c.31-1.568,1.986-3.04,1.986-4.7s-1.676-3.131-1.986-4.7c-.319-1.615.66-3.615.044-5.1-.627-1.512-2.74-2.231-3.64-3.575S25.8,8.646,24.652,7.5s-3.374-1.009-4.728-1.916S17.861,2.57,16.35,1.943c-1.486-.616-3.486.363-5.1.044C9.681,1.676,8.209,0,6.55,0L0,25.6,6.55,51.2c1.659,0,3.131-1.676,4.7-1.986,1.615-.319,3.615.66,5.1.044,1.512-.627,2.231-2.74,3.575-3.64s3.58-.768,4.728-1.916,1.009-3.374,1.916-4.728,3.013-2.063,3.64-3.575C30.824,33.913,29.844,31.913,30.164,30.3Z" transform="translate(19.05)" fill="#3d5a72"/>
+            <g id="Group-2" data-name="Group">
+              <path id="Path-12" data-name="Path" d="M20.9,1.986c-1.615.32-3.615-.66-5.1-.044-1.512.627-2.231,2.74-3.575,3.64S8.646,6.35,7.5,7.5s-1.009,3.374-1.916,4.728S2.57,14.289,1.943,15.8c-.616,1.486.363,3.486.044,5.1C1.676,22.469,0,23.941,0,25.6s1.676,3.131,1.986,4.7c.32,1.615-.66,3.615-.044,5.1.627,1.512,2.74,2.231,3.64,3.575S6.35,42.554,7.5,43.7s3.374,1.009,4.728,1.916,2.063,3.013,3.575,3.64c1.486.616,3.486-.363,5.1-.044,1.568.31,3.04,1.986,4.7,1.986V0C23.941,0,22.469,1.676,20.9,1.986Z" fill="#d8dee2"/>
+              <path id="Path-13" data-name="Path" d="M8.066,0a20.742,20.742,0,0,1,0,41.484L0,20.742Z" transform="translate(17.534 4.858)" fill="#647b8e"/>
+            </g>
+            <path id="Path-14" data-name="Path" d="M0,20.742A20.742,20.742,0,0,0,20.742,41.484V0A20.742,20.742,0,0,0,0,20.742Z" transform="translate(4.858 4.858)" fill="#8b9caa"/>
+            <circle id="Oval-3" data-name="Oval" cx="17.467" cy="17.467" r="17.467" transform="translate(8.133 8.133)" fill="#d8dee2"/>
+            <path id="Path-15" data-name="Path" d="M20.8,4.048,12.849,0,8.566,4.048,4.283,0,0,8.552l10.4,4.367L20.8,8.552Z" transform="translate(12.773 16.51)" fill="#8b9caa"/>
+            <path id="Path-16" data-name="Path" d="M4.833,0V4.048H2.828L0,2.024,1.581,0Z" transform="translate(29.355 16.51)" fill="#3d5a72"/>
+            <g id="Group-3" data-name="Group" transform="translate(17 16.5)">
+              <path id="Path-17" data-name="Path" d="M8.566,0,4.284,8.552,0,0Z" transform="translate(0.055 0.009)" fill="#647b8e"/>
+              <path id="Path-18" data-name="Path" d="M6.561,4.048l-2.233,4.5L0,0H5.314Z" transform="translate(8.622 0.009)" fill="#647b8e"/>
+              <path id="Path-19" data-name="Path" d="M2.005,0,6.244,8.552,2.551,10.736,1.386,8.552,0,4.048Z" transform="translate(15.183 0.009)" fill="#647b8e"/>
+            </g>
+            <path id="Path-20" data-name="Path" d="M13.96,0,11.482,1.884,10.341,0H1.73L0,4.963l5.99,8.72L18.818,0Z" transform="translate(19.61 25.062)" fill="#3d5a72"/>
+            <g id="Group-4" data-name="Group" transform="translate(12.7 25)">
+              <path id="Path-21" data-name="Path" d="M8.566,0l4.261,13.682L0,0Z" transform="translate(0.073 0.062)" fill="#647b8e"/>
+              <path id="Path-22" data-name="Path" d="M7.969,0,0,13.682,4.35,0Z" transform="translate(12.9 0.062)" fill="#647b8e"/>
+            </g>
+          </g>
+          <text id="DELIVER_VALUE_ON_TIM" data-name="DELIVER VALUE ON TIM" transform="translate(9 92)" fill="#647b8e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="10.939" y="15">DELIVER VALUE</tspan><tspan x="8.389" y="37">ON TIME, BUILD</tspan><tspan x="38.45" y="59">TRUST</tspan></text>
+        </g>
+        <g id="VALUE-4" data-name="VALUE" transform="translate(0 1)">
+          <g transform="matrix(1, 0, 0, 1, -29.25, -189.25)" filter="url(#Rectangle-4)">
+            <rect id="Rectangle-9" data-name="Rectangle" width="135" height="169" rx="5" transform="translate(29.25 189.25)" fill="#fff" stroke="rgba(151,151,151,0.22)" stroke-miterlimit="10" stroke-width="0.5"/>
+          </g>
+          <g id="Group_14" data-name="Group 14" transform="translate(42 23)">
+            <circle id="Oval-4" data-name="Oval" cx="25.5" cy="25.5" r="25.5" fill="#647b8e"/>
+            <g id="thinking" transform="translate(11 11)">
+              <path id="Shape" d="M.7,17.869a3.506,3.506,0,0,0,.5.287c.207.106.553.282.577.407a.825.825,0,0,1-.056.484c-.071.153-.146.284-.21.4-.175.309-.468.826-.026,1.187.1.1.281.234.444.358a1.2,1.2,0,0,0-.156.69.69.69,0,0,0,.281.468c.108.076.223.143.335.208.281.16.391.235.43.382a1.319,1.319,0,0,1-.053.579c-.028.124-.055.248-.073.375a2.809,2.809,0,0,0,.162,1.287,1.791,1.791,0,0,0,1.693,1.3,1.944,1.944,0,0,0,.39-.041,36.229,36.229,0,0,0,4.029-1.206c1.076.632,1.757,2.553,1.934,3.274a.478.478,0,0,0,.464.362l11.994-.033a.478.478,0,0,0,.455-.621,3.692,3.692,0,0,0-.484-.908,4.435,4.435,0,0,1-.31-.516,9.1,9.1,0,0,1-.54-1.36,16.1,16.1,0,0,1-.565-2.827,8.09,8.09,0,0,1,.628-4.2,10.682,10.682,0,0,1,1.3-2.051c.287-.387.584-.788.852-1.209a7.391,7.391,0,0,0,.984-2.327.478.478,0,0,0-.931-.216,6.451,6.451,0,0,1-.86,2.031c-.248.392-.535.778-.812,1.152a11.548,11.548,0,0,0-1.406,2.239,9.04,9.04,0,0,0-.7,4.693,16.96,16.96,0,0,0,.6,3,9.966,9.966,0,0,0,.593,1.5,5.225,5.225,0,0,0,.37.621l.032.048-10.839.032a7.621,7.621,0,0,0-1.683-3.052l.43-.15c.321-.112.563-.2.689-.239,2.046-.652,3.07-1.584,3.042-2.772a.469.469,0,0,0-.488-.464.478.478,0,0,0-.466.489c.011.489-.391,1.2-2.378,1.837-.13.042-.382.129-.712.245-.355.124-.805.281-1.3.45h0a37.216,37.216,0,0,1-4.107,1.242.851.851,0,0,1-.984-.636,1.911,1.911,0,0,1-.118-.847c.014-.1.036-.2.058-.293A2.085,2.085,0,0,0,3.75,22.5a1.584,1.584,0,0,0-.882-.975l-.1-.059a1.758,1.758,0,0,1,.184-.3.478.478,0,0,0-.092-.68c-.114-.084-.382-.287-.583-.446.023-.042.048-.087.072-.129.075-.132.161-.287.244-.462a1.784,1.784,0,0,0,.127-1.069c-.114-.583-.673-.869-1.08-1.077a2.763,2.763,0,0,1-.394-.229,2.036,2.036,0,0,1-.287-.232c0-.073.078-.248.442-.691A19.28,19.28,0,0,0,3.585,12.6a1.42,1.42,0,0,0,.184-.646,1.673,1.673,0,0,0-.7-1.195c-.194-.178-.377-.345-.4-.486a.939.939,0,0,1,.077-.34c.078-.2.168-.405.258-.606a7.014,7.014,0,0,0,.478-1.3,12.817,12.817,0,0,1,.43-1.581,8.193,8.193,0,0,1,1.715-2.8A7.87,7.87,0,0,1,9.912,1.616,31.053,31.053,0,0,1,14.4.97,10.46,10.46,0,0,1,15.917,1a.479.479,0,1,0,.089-.954A11.624,11.624,0,0,0,14.345.016,31.9,31.9,0,0,0,9.723.679,8.688,8.688,0,0,0,4.934,2.994,9.14,9.14,0,0,0,3.017,6.121a13.97,13.97,0,0,0-.471,1.727,6.189,6.189,0,0,1-.41,1.09c-.1.217-.194.435-.28.661a1.67,1.67,0,0,0-.13.8,1.837,1.837,0,0,0,.7,1.064c.234.215.389.366.39.5a.809.809,0,0,1-.081.207,18.446,18.446,0,0,1-2.091,3.4A1.989,1.989,0,0,0,.01,16.973,1.464,1.464,0,0,0,.7,17.869Z" transform="translate(0.055 0.055)" fill="#d8dee2"/>
+              <path id="Shape-2" data-name="Shape" d="M1.289,4.573A6.3,6.3,0,0,1,2.6,2.423,6.112,6.112,0,0,1,5.875.947.478.478,0,0,0,5.689.009,7.01,7.01,0,0,0,1.906,1.765,7.244,7.244,0,0,0,.392,4.244,12.153,12.153,0,0,0,0,5.7l.933.207A11.421,11.421,0,0,1,1.289,4.573Z" transform="translate(4.471 2.598)" fill="#d8dee2"/>
+              <path id="Shape-3" data-name="Shape" d="M7.082,17.2a.957.957,0,0,1-.938-.768l-.286-1.427a5.671,5.671,0,0,1-.806-.335l-1.207.809a.96.96,0,0,1-1.211-.126l-.793-.793a.955.955,0,0,1-.125-1.2l.813-1.213a5.66,5.66,0,0,1-.335-.8L.765,11.058A.956.956,0,0,1,0,10.121V8.994a.956.956,0,0,1,.767-.938l1.427-.287a5.66,5.66,0,0,1,.335-.8L1.72,5.757a.955.955,0,0,1,.127-1.211l.793-.793a.955.955,0,0,1,1.2-.125l1.213.813a5.66,5.66,0,0,1,.8-.335l.287-1.43a.956.956,0,0,1,.937-.764H8.21a.948.948,0,0,1,.188.021l.429-.43A.865.865,0,0,1,9.9,1.382l.933.626a4.466,4.466,0,0,1,.555-.232L11.607.69A.859.859,0,0,1,12.453,0h.9A.86.86,0,0,1,14.2.695l.216,1.081a4.6,4.6,0,0,1,.555.231l.922-.616a.866.866,0,0,1,1.086.112l.635.635a.864.864,0,0,1,.12,1.075l-.626.933a4.219,4.219,0,0,1,.23.555l1.086.216a.861.861,0,0,1,.691.846v.9a.86.86,0,0,1-.695.847l-1.082.215a4.224,4.224,0,0,1-.231.555l.616.922a.869.869,0,0,1-.111,1.087l-.635.635a.865.865,0,0,1-1.075.12l-.72-.483a.954.954,0,0,1-.658.5l-1.428.286a5.66,5.66,0,0,1-.335.8l.809,1.208a.957.957,0,0,1-.126,1.211l-.793.793a.956.956,0,0,1-1.2.124l-1.213-.812a5.656,5.656,0,0,1-.8.334l-.287,1.43a.956.956,0,0,1-.937.765Z" transform="translate(9.613 0.056)" fill="#d8dee2"/>
+              <path id="Shape-4" data-name="Shape" d="M0,3.345A3.345,3.345,0,1,1,3.345,6.69,3.345,3.345,0,0,1,0,3.345Z" transform="translate(13.914 6.268)" fill="#d8dee2"/>
+              <circle id="Oval-5" data-name="Oval" cx="0.478" cy="0.478" r="0.478" transform="translate(16.781 9.135)" fill="#d8dee2"/>
+              <circle id="Oval-6" data-name="Oval" cx="0.478" cy="0.478" r="0.478" transform="translate(3.879 9.613)" fill="#d8dee2"/>
+            </g>
+          </g>
+          <text id="PRAGMATIC_PERFECTION" data-name="PRAGMATIC PERFECTION" transform="translate(10 94)" fill="#647b8e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="19.549" y="15">PRAGMATIC </tspan><tspan x="18.015" y="37">PERFECTION</tspan></text>
+        </g>
+      </g>
+      <g id="VALUE-5" data-name="VALUE" transform="translate(210)">
+        <g transform="matrix(1, 0, 0, 1, -239.25, -26.25)" filter="url(#Rectangle-5)">
+          <rect id="Rectangle-10" data-name="Rectangle" width="135" height="170" rx="5" transform="translate(239.25 26.25)" fill="#fff" stroke="rgba(151,151,151,0.22)" stroke-miterlimit="10" stroke-width="0.5"/>
+        </g>
+        <g id="earth-globe" transform="translate(42 22)">
+          <circle id="Oval-7" data-name="Oval" cx="25.6" cy="25.6" r="25.6" transform="translate(0 0)" fill="#647b8e"/>
+          <path id="Path-23" data-name="Path" d="M42.956,17.576,29.392,4.015C4.478-10.631-6.894,18.687,4.334,29.718L17.563,42.946A25.6,25.6,0,0,0,42.956,17.576Z" transform="translate(8.241 8.251)" fill="#3d5a72"/>
+          <path id="Shape-5" data-name="Shape" d="M5.262,30.663a17.957,17.957,0,1,1,12.7,5.262A17.906,17.906,0,0,1,5.262,30.663Z" transform="translate(7.637 7.637)" fill="#d8dee2"/>
+        </g>
+        <text id="DREAM_BIG_AND_ALWAYS" data-name="DREAM BIG AND ALWAYS" transform="translate(5 95)" fill="#647b8e" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="10.391" y="15">DREAM BIG AND </tspan><tspan x="21.273" y="37">ALWAYS GRIT</tspan></text>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -29.25, -26.25)" filter="url(#OUR_CORE_VALUES)">
+        <text id="OUR_CORE_VALUES-2" data-name="OUR CORE VALUES" transform="translate(199.25 265.25)" fill="#3d5a72" font-size="36" font-family="SegoeUI, Segoe UI" letter-spacing="0.083em"><tspan x="10.763" y="39">OUR CORE </tspan><tspan x="38.609" y="78">VALUES</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

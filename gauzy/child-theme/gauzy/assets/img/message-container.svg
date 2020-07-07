@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="482" height="146" viewBox="0 0 482 146">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="482" height="146" fill="none"/>
+    </clipPath>
+    <filter id="Combined_Shape" x="0" y="0" width="482" height="146" filterUnits="userSpaceOnUse">
+      <feOffset dx="-3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#d8dee2" flood-opacity="0.463"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Repeat_Grid_1" data-name="Repeat Grid 1" clip-path="url(#clip-path)">
+    <g transform="translate(25 22)">
+      <g transform="matrix(1, 0, 0, 1, -25, -22)" filter="url(#Combined_Shape)">
+        <path id="Combined_Shape-2" data-name="Combined Shape" d="M-2,437a2,2,0,0,0,2-2V16a2,2,0,0,0-2-2H-39L-50.5,0-62,14H-99a2,2,0,0,0-2,2V435a2,2,0,0,0,2,2Z" transform="translate(462.5 123.5) rotate(90)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
