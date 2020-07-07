@@ -15,6 +15,14 @@ The code that powers "Ever Universe" websites:
   * [Contact Us](#contact-us-1)
   * [Trademarks](#trademarks-1)
 
+- [Website gauzy.co](#website-gauzyco)
+    + [Theme](#theme-2)
+    + [Plugins](#plugins-2)
+  * [Attribution](#attribution-2)
+  * [Contributors](#contributors-2)
+  * [Contact Us](#contact-us-2)
+  * [Trademarks](#trademarks-2)
+
 - [Website services.ever.co](#website-serviceseverco)
     + [Theme](#theme)
     + [Plugins](#plugins)
@@ -25,7 +33,7 @@ The code that powers "Ever Universe" websites:
 
 # Website ever.co
 
-The child theme that powers the "Ever-Co" website:
+The child theme that powers the ever.co website:
 - https://test.ever.co
 
 ### Theme
@@ -83,6 +91,75 @@ View full list of our [contributors](https://github.com/ever-co/ever-website/gra
 ## Contact Us
 
 -   For business inquiries: <mailto:ever@ever.co>
+-   Please report security vulnerabilities to <mailto:security@ever.co>
+
+## Trademarks
+
+**Ever**® is a registered trademark of [Ever Co. LTD](https://ever.co).
+
+**Ever® Platform™**, **Ever® Platform Community™**, **Ever® Platform Small Business™** and **Ever® Platform Enterprise™** are all trademarks of [Ever Co. LTD](https://ever.co).
+
+**Gauzy™** is a trademark of [Ever Co. LTD](https://ever.co).
+
+The trademarks may only be used with the written permission of Ever Co. LTD. and may not be used to promote or otherwise market competitive products or services.
+
+All other brand and product names are trademarks, registered trademarks or service marks of their respective holders.
+
+#### Copyright © 2019-present, Ever Co. LTD. All rights reserved.
+
+# Website gauzy.co
+
+The child theme that powers the gauzy.co website:
+- https://test.gauzy.co
+
+### Theme
+
+The [gauzy.co theme](https://github.com/ever-co/ever-universe-websites/tree/master/themes/child/gauzy.co) is a child theme of the [Ever Parent Theme](https://github.com/ever-co/ever-universe-websites/tree/master/themes/parent/ever).
+
+The two main files in the `gauzy.co` theme are functions.php and style.css (for more information, check the [official WordPress theme documentation](https://developer.wordpress.org/themes/advanced-topics/child-themes/)). 
+
+The theme supports the following custom post types: 
+* business vertical
+* company types
+ 
+It uses shortcodes to display the custom post types on many pages. The theme ships with a lightweight vanilla js open-source slider called [Tiny JS](https://github.com/gfwilliams/tiny-js). The theme also supports the option to upload logo and to customize the primary menu from the WordPress dashboard.
+
+### Plugins
+
+The `gauzy.co` theme is compatible with the following plugins:
+
+* Contact Form 7 - The most popular and acknowledged free plugin for creating contact forms. To edit an existing contact form on the website, go to `dashboard->contact->contact forms`
+  and click on the form you want to edit. It is fairly easy to use, however, if you need further assistance, they provide an awesome [documentation](https://contactform7.com/docs/) that you can always refer to.
+
+* Loco translate - It helps creating and maintaining .po and .mo translation files directly from the browser. You can use this plugin to translate plugins, themes or custom strings via the WordPress dashboard. To translate a plugin, e.g. simple job board, go to `dashboard -> loco translate -> plugins -> simple job board plugin`. Click on the desired translation (edit) and start translating! As simple as that.
+
+* Polylang - the plugin that makes it possible to have pages on different languages. To set this plugin up, you need to assign a language to each page and then add translations to it. You basically have to create different page for each language and Polylang takes care for the rest. Check their extensive [docs](https://polylang.wordpress.com/documentation/) for further guidance.
+
+* WP-Optimize - Clean, Compress, Cache - This is my favourite lightweight plugin. It empowers the user to clean up the database from unnecessary rows, expired transient options, etc., without having to write manual SQL queries. Safe, efficient and fast. With this plugin, you can also compress images that have already been uploaded to the WordPress `uploads` folder.
+
+* Multiple Post Thumbnails - Adds the ability to add multiple post thumbnails to a post type.
+
+* SG Optimize - Links WordPress with all the performance optimizations provided by SiteGround Hosting, e.g static resource minifications, defer render-blocking js, etc.
+
+* Duplicate Post - Clones posts, pages or any other post type to make content entry much faster and easier.
+
+## Attribution
+
+* The `gauzy.co` theme uses code from the [Scaffold theme](https://wordpress.org/themes/scafold/) by Danny Cooper, lightweight WordPress theme issued under the GPL License.
+* The `gauzy.co` theme uses  a lightweight vanilla js open-source slider called [Tiny JS](https://github.com/gfwilliams/tiny-js), issued under MIT License.
+
+View full list of our [contributors](https://github.com/ever-co/ever-website/graphs/contributors).
+
+## Contributors
+
+- [Atanas Yonkov](https://github.com/yonkov) - Theme developer
+- [Dimana Tsvetkova](https://github.com/DimanaTsvetkova) - Theme developer
+- [Yordan Genovski](https://www.linkedin.com/in/yordan-genovski/) (UI/UX Designer)
+- [Ruslan Konviser](https://github.com/evereq) - Idea / Business / Content
+
+## Contact Us
+
+-   For business inquiries: <mailto:gauzy@ever.co>
 -   Please report security vulnerabilities to <mailto:security@ever.co>
 
 ## Trademarks
