@@ -8,20 +8,20 @@ The code that powers "Ever Universe" websites:
 ## Table of Contents
 
 - [Website ever.co](#website-everco)
-    + [Theme](#theme-1)
-    + [Plugins](#plugins-1)
-  * [Attribution](#attribution-1)
-  * [Contributors](#contributors-1)
-  * [Contact Us](#contact-us-1)
-  * [Trademarks](#trademarks-1)
-
-- [Website gauzy.co](#website-gauzyco)
     + [Theme](#theme-2)
     + [Plugins](#plugins-2)
   * [Attribution](#attribution-2)
   * [Contributors](#contributors-2)
   * [Contact Us](#contact-us-2)
   * [Trademarks](#trademarks-2)
+
+- [Website gauzy.co](#website-gauzyco)
+    + [Theme](#theme-1)
+    + [Plugins](#plugins-1)
+  * [Attribution](#attribution-1)
+  * [Contributors](#contributors-1)
+  * [Contact Us](#contact-us-1)
+  * [Trademarks](#trademarks-1)
 
 - [Website services.ever.co](#website-serviceseverco)
     + [Theme](#theme)
