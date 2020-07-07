@@ -30,7 +30,8 @@ The child theme that powers the "Ever-Co" website:
 
 ### Theme
 
-The Ever-co theme is a child theme of the [Ever theme] (https://github.com/ever-co/ever-website/tree/master/services_ever_co/themes/ever), WordPress open-source theme that powers the [Services Ever Co](https://services.ever.co) website.
+The [ever.co theme](https://github.com/ever-co/ever-universe-websites/tree/master/themes/child/ever.co) is a child theme of the [Ever Parent Theme] (https://github.com/ever-co/ever-universe-websites/tree/master/themes/parent/ever).
+
 The two main files in the Ever-co theme are functions.php and style.css (for more information, check the [official WordPress theme documentation](https://developer.wordpress.org/themes/advanced-topics/child-themes/)). The theme supports the following custom post types: 
 * business vertical
 * company types
@@ -102,8 +103,11 @@ All other brand and product names are trademarks, registered trademarks or servi
 
 ### Theme
 
-This website is powered by [WordPress](https://wordpress.org/download/) and uses the Ever theme. The Ever theme is a custom WordPress theme inspired by [Scaffold](https://wordpress.org/themes/scaffold/), lightweight theme issued under the GPL License.
-The theme code is available under  `services_ever_co/themes` folder. The two main files in the Ever theme are functions.php and style.css (for more information, check the [official WordPress theme documentation](https://developer.wordpress.org/themes/advanced-topics/child-themes/)). The theme supports the following custom post types: 
+This services.ever.co website is powered by [WordPress](https://wordpress.org/download/) and currently uses modified [Parent Ever Theme]. The Theme is a custom WordPress theme inspired by [Scaffold](https://wordpress.org/themes/scaffold/), lightweight theme issued under the GPL License.
+
+The theme code is available under [services.ever.co sub-folder](https://github.com/ever-co/ever-universe-websites/tree/master/themes/child/services.ever.co). The two main files in the Ever theme are functions.php and style.css (for more information, check the [official WordPress theme documentation](https://developer.wordpress.org/themes/advanced-topics/child-themes/)). 
+
+The theme supports the following custom post types: 
 * jobs 
 * projects 
 * testimonials
