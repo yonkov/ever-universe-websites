@@ -8,12 +8,12 @@ The code that powers "Ever Universe" websites:
 ## Table of Contents
 
 - [Website ever.co](#website-everco)
-    + [Theme](#theme-2)
-    + [Plugins](#plugins-2)
-  * [Attribution](#attribution-2)
-  * [Contributors](#contributors-2)
-  * [Contact Us](#contact-us-2)
-  * [Trademarks](#trademarks-2)
+    + [Theme](#theme)
+    + [Plugins](#plugins)
+  * [Attribution](#attribution)
+  * [Contributors](#contributors)
+  * [Contact Us](#contact-us)
+  * [Trademarks](#trademarks)
 
 - [Website gauzy.co](#website-gauzyco)
     + [Theme](#theme-1)
@@ -24,12 +24,12 @@ The code that powers "Ever Universe" websites:
   * [Trademarks](#trademarks-1)
 
 - [Website services.ever.co](#website-serviceseverco)
-    + [Theme](#theme)
-    + [Plugins](#plugins)
-  * [Attribution](#attribution)
-  * [Contributors](#contributors)
-  * [Contact Us](#contact-us)
-  * [Trademarks](#trademarks)
+    + [Theme](#theme-2)
+    + [Plugins](#plugins-2)
+  * [Attribution](#attribution-2)
+  * [Contributors](#contributors-2)
+  * [Contact Us](#contact-us-2)
+  * [Trademarks](#trademarks-2)
 
 # Website ever.co
 
