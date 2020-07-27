@@ -112,6 +112,7 @@ if(document.querySelector("article .projects-slider")){
                 gutter: 4,
                 controls: false,
                 mouseDrag: true,
+                loop: true,
                 responsive: false
             });
 

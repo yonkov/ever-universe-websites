@@ -156,7 +156,7 @@ function ever_enqueue_scripts(){
 	//Enqueue slider js file
 	wp_enqueue_script( 'ever-slider', get_stylesheet_directory_uri() . '/assets/js/ever-slider.js', array(),NULL,true);
     wp_enqueue_style( 'tiny-slider', 'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"' );
-	wp_enqueue_style( 'ever', get_stylesheet_directory_uri() . '/ever.min.css');
+	wp_enqueue_style( 'ever', get_stylesheet_directory_uri() . '/style.css');
 }
 add_action( 'wp_enqueue_scripts', 'ever_enqueue_scripts');
 

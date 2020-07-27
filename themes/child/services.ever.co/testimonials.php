@@ -49,22 +49,52 @@ function ever_testimonials() {
     <div class="clients-feedback row">
         <?php while ($recent->have_posts()) : $recent->the_post(); ?>
 
-        <div class="person-card col">
+        <div class="person-card row">
+        <div class="person-card-img-container col">
+          <?php //Get Testimonials custom fields
+                            $imgLink = get_post_meta($post->ID, 'imgLink', true);
+                             ?>
+                              <?php if (get_post_meta($post->ID, 'imgLink', true)) : ?>
+                                <a href=<?php echo $imgLink; ?> target="_blank"> 
+                                      <?php /* If there is a featured image, display it */
+                                        if (has_post_thumbnail()) {
+                                     the_post_thumbnail('small');
+                                            } ?>
+                                </a>
+                                <?php else: ?>
+
             <?php /* If there is a featured image, display it */
                     if (has_post_thumbnail()) {
                         the_post_thumbnail('small');
                     } ?>
-            <div class="feedback-txt">
+                            <?php endif;  ?>
+
+                    </div>
+            <div class="feedback-txt col">
+                <h2><?php the_title(); ?></h2>
+                  <?php $testimonialAuthor = get_post_meta($post->ID, 'testimonialAuthor', true); ?>
+                  <?php if (get_post_meta($post->ID, 'testimonialAuthor', true)) : ?>
+                        <h5> <?php echo $testimonialAuthor; ?> </h5>
+                   <?php endif;  ?>
                 <?php the_content(); ?>
                 <div class="row">
                     <div class="feedback-company-name">
-                        <h5><?php the_title(); ?></h5>
                         <?php //Get Testimonials custom fields
+                            $upworkLink = get_post_meta($post->ID, 'upworkLink', true);
                             $company = get_post_meta($post->ID, 'company', true);
                             $country = get_post_meta($post->ID, 'country', true); ?>
-                        <span class="feedback-meta">Company: <?php echo $company; ?></span>
+                            <?php if (get_post_meta($post->ID, 'country', true)) : ?>
+                                <span class="feedback-meta"> <?php echo $country; ?></span>
+                            <?php endif;  ?>
+                            <?php if (get_post_meta($post->ID, 'company', true)) : ?>
+                                <span class="feedback-meta"> <?php echo $company; ?></span>
+                            <?php endif;  ?>
+                                 <?php if (get_post_meta($post->ID, 'upworkLink', true)) : ?>
+                                 <a href=<?php echo $upworkLink; ?> target="_blank">
+                                <span class="feedback-meta">Source: Upwork</span>
+                                </a>
+                            <?php endif;  ?>
                         <br>
-                        <span class="feedback-meta">Country: <?php echo $country; ?></span>
                     </div>
                 </div>
             </div>

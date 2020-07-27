@@ -253,12 +253,13 @@ function ever_team_members_single_project(){
         
         </div>
 
-
+        <?php if ($contractors_query->have_posts()) : ?>
         <!--Contractors Team Members-->
         <div class="h-titles-w-b col">
             <h2>Contractors</h2>
             <hr>
         </div>
+       <?php endif;  ?>
         <div class="people row">
         
         <?php while( $contractors_query->have_posts() ) : $contractors_query->the_post(); 

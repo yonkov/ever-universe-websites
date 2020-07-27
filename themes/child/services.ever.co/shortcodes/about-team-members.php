@@ -102,11 +102,12 @@ function ever_team_members_about(){
         </div>
 
        <!--Contractors-->
+       <?php if ($contractors_query->have_posts()) : ?>
         <div class="h-titles-w-b col">
             <h2>Our Contractors</h2>
             <hr>
         </div>
-        
+        <?php endif;  ?>
         <div class="people row">
         
         <?php while( $contractors_query->have_posts() ) : $contractors_query->the_post(); 

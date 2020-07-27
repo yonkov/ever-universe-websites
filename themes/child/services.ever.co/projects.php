@@ -59,7 +59,7 @@ function ever_recent_projects() {
     'order' => 'ASC'
     ); ?>
 
-    <div id="h-second" class="h-second col">
+    <div id="h-second" class="h-second col ever-s-container-b">
         <div class="row">
             <?php $categories = get_categories($cat_args);
         // Loop through these two specific categories and deliver the projects

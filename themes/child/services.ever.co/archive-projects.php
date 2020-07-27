@@ -57,8 +57,7 @@ get_header(); ?>
             <h3 class="red-contact">
                 ever@ever.co
             </h3>
-            <span>Call us, it’s realy quick </span>
-            <h3 class="red-contact"> +359 879 000 000 </h3>
+           
         </div>
         <?php echo do_shortcode('[contact-form-7 id="1047" title="Contact Form Home" html_class="contact-form col"]'); ?>
     </div>

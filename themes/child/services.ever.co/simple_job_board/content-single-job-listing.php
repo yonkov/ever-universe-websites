@@ -103,7 +103,8 @@ do_action('sjb_single_job_listing_start');
                         Apply now!
                     </h2>
             <p>
-                Please send us your Resume / CV and leave your contact information. Note: only shortlisted candidates will be contacted.
+                Please send us your Resume / CV and leave your contact information.</br>
+                <i>Note: only shortlisted candidates will be contacted.</i>
             </p>
     </div>
     <?php echo do_shortcode('[contact-form-7 id="1282" title="Contact Form SJobBoard" html_class="contact-form col"]'); ?>

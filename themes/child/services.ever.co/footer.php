@@ -17,7 +17,7 @@
 	</div><!-- .site-content -->
 
 <footer>
-    <h4 class="e-t">Ever technologies R&amp;D</h4>
+    <h4 class="e-t">Ever Technologies R&amp;D</h4>
     <div class="network-buttons ">
         <div class="network-buttons-wrapper row">
             <a href="https://github.com/ever-co" class="link-buttons github">
@@ -33,17 +33,23 @@
                 <p> Top rated agency</p>
             </a>
             <a href="https://www.facebook.com/evertechhq" class="link-buttons facebook">
-                <svg id="f_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
-                    <defs>
-                        <clipPath id="clip-path">
-                            <path id="Clip_2" data-name="Clip 2" d="M0,0H40V40H0Z" fill="none"></path>
-                        </clipPath>
-                    </defs>
-                    <path id="Clip_2-2" data-name="Clip 2" d="M0,0H40V40H0Z" fill="none"></path>
-                    <g id="f_logo_RGB-White_1024-2" data-name="f_logo_RGB-White_1024" clip-path="url(#clip-path)">
-                        <path id="Fill_1" data-name="Fill 1" d="M40,20.122A20,20,0,1,0,16.875,40V25.939H11.8V20.122h5.078V15.689c0-5.043,2.986-7.829,7.554-7.829a30.575,30.575,0,0,1,4.477.393v4.952H26.384c-2.484,0-3.259,1.551-3.259,3.142v3.775h5.547l-.887,5.817h-4.66V40A20.09,20.09,0,0,0,40,20.122" fill="#fffffe"></path>
-                    </g>
+               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 227.656 227.656" style="enable-background:new 0 0 227.656 227.656;" xml:space="preserve">
+
+                    <path style="fill:#fff;" d="M172.52,4.759c1.467,0.321,2.704,1.375,2.613,3.392c-0.504,10.084-1.054,20.213-3.575,30.022
+                        c0.321,2.75-1.375,5.958-4.538,5.546c-22.551-2.979-30.755,17.326-33.689,40.197c10.725,0.642,21.359,1.467,31.718,2.383
+                        c1.925,0.183,2.979,1.513,3.208,2.979c0.55,0.367,1.054,0.917,1.283,1.742c1.833,5.959,1.879,12.65,2.017,18.884
+                        c0.092,4.904,0.688,10.45-2.613,14.346c0.413,2.292-0.825,4.95-3.896,5.042c-11,0.137-22.138,0.321-33.322,0.413
+                        c0,1.1,0,2.2-0.046,3.208c-0.779,29.93,0.504,59.768,0.183,89.652c-0.046,2.338-1.925,3.208-3.621,2.888
+                        c-0.229,0.137-0.458,0.321-0.733,0.412c-5.638,1.788-12.009,1.513-17.875,1.696c-5.821,0.137-11.55,0.275-17.326-0.733
+                        c-1.421,0.458-3.163,0-3.483-1.879c-5.179-29.609-4.308-60.868-4.171-90.844c0-1.879,0-3.758,0-5.638
+                        c-9.121-0.596-18.196-1.513-27.134-2.796c-1.375-0.229-2.063-1.146-2.154-2.2c-3.3-2.2-2.521-7.975-2.567-11.596
+                        c-0.138-7.792-1.008-16.821,1.237-24.338c0.229-0.779,0.779-1.283,1.467-1.65c0.412-0.458,1.008-0.779,1.833-0.871
+                        c9.121-1.1,18.517-1.742,28.005-2.063c0.458-8.617,1.238-17.234,2.567-25.667c6.279-40.243,40.793-64.673,81.54-55.277
+                        C171.145,2.421,172.107,3.521,172.52,4.759z"/>
+
                 </svg>
+
                 <p>Join our community</p>
             </a>
             <a href="https://twitter.com/evertechhq" class="link-buttons twitter">
@@ -81,6 +87,7 @@
     </div>
     <div class="footer-menu ">
         <div class="footer-menu-wrapper row">
+
             <div>
                 <a href="/services">Services</a>
                 <ul>
@@ -98,9 +105,8 @@
                     <li><a href="/projects/#open-source">Open-Source Projects</a></li>
                     <li><a href="/projects/ever-platform/">Ever Platform</a></li>
                     <li><a href="/projects/gauzy/">Gauzy</a></li>
-                    <li><a href="/projects/#customers">Customers Projects</li>
+                   <li><a href="/projects/#customers">Customers Projects </a></li>
                 </ul>
-                <a href="/about">ABOUT US</a>
             </div>
             <div class="col">
                 <a href="/approach">Approach</a>
@@ -110,7 +116,7 @@
                     <li><a href="/approach/#amplify-solutions">Staff</a></li>
                     <li><a href="/approach/#allow-change">Support</a></li>
                 </ul>
-                <a href="/career">CAREERS</a>
+             
             </div>
 
             <div>
@@ -121,12 +127,38 @@
                     <li><a href="/expertise/#startups">Startups</a></li>
                 </ul>
             </div>
-
-            <div class="extra-logos">
-                <a href="https://ever.dev"><img src="/wp-content/themes/ever/assets/logos/ever-sub-logo.svg" alt=""></a>
-                <a href="https://gauzy.co"><img src="/wp-content/themes/ever/assets/logos/logo_gauzy.svg" alt=""></a>
-
+          
+              <div class="col">
+                 <a href="/career">CAREERS</a>
+                 </div>
+                   <div class="col">
+              <a href="/about">ABOUT US</a>
+              </div>
+            
+            <div class="extra-logos row">
+                <a id="award" target="_blank" href="https://www.goodfirms.co/company/ever-technologies"><img id="award-img"  src="https://goodfirms.s3.amazonaws.com/badges/color-badge/top-software-development-companies.svg"></a>
+                <div class="col">
+                    <a href="https://ever.dev"><img src="/wp-content/themes/ever/assets/logos/ever-sub-logo.svg" alt=""></a>
+                    <a href="https://gauzy.co"><img src="/wp-content/themes/ever/assets/logos/logo_gauzy.svg" alt=""></a>
+                </div>
             </div>
+
+            <!--Clutch widget wrapper here-->
+            <div class="widget-wrappers col">
+                <div class="col ever-co-clutch-widget-wrapper">
+                    <!--Light Mode Clutch widget -->
+                    <div class="ever-co-clutch-widget-light">
+                        <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script> <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="50" data-clutchcompany-id="1381275"></div>
+                    </div>
+                    <!--Dark Mode Clutch widget -->
+                    <div class="ever-co-clutch-widget-dark">
+                        <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script> <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="50" data-darkbg="1" data-clutchcompany-id="1381275"></div>
+                    </div>
+                </div>
+                <div class="col ever-co-goodbox-widget-wrapper">
+                    <div class="goodfirm-widget" data-widget-type="goodfirms-widget-t1" data-height="198" data-company-id="49617"></div>
+                </div>
+             </div>
         </div>
     </div>
     <div class="bottom ">
@@ -136,7 +168,10 @@
             </a>
 
             <div class="col">
+              <div class="row">
                 <h5>Copyright © 2019-present <a href="https://ever.co">Ever Co. LTD.</a> All Rights Reserved</h5>
+                <h5><a href="/tos">Terms of Service</a> | <a href="/privacy">Privacy Policy</a></h5>
+                </div>
                 <p>
                     <i>
                             *All product names, logos, and brands are the property of their respective owners. All
@@ -150,7 +185,7 @@
                 </p>
             </div>
             <div class="switch-field">
-                <input type="radio" id="radio-one" name="switch-one" value="night" checked />
+                <input type="radio" id="radio-one" name="switch-one" class="night-theme-input" value="night"  />
                 <label for="radio-one">
                     <svg width="35" height="39" viewBox="0 0 35 39">
                         <g id="night" transform="translate(10 10)">
@@ -158,7 +193,7 @@
                         </g>
                     </svg>
                 </label>
-                <input type="radio" id="radio-two" name="switch-one" value="day" />
+                <input type="radio" id="radio-two" name="switch-one" class="day-theme-input" value="day" />
                 <label for="radio-two">
                     <svg width="35" height="39" viewBox="40 0 35 39">
                         <g id="sunny-day" transform="translate(44 6)">
