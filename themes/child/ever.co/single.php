@@ -97,22 +97,22 @@ get_header(); ?>
                </g>
             </svg>
      <div class="swiper-wrapper">
-        <!--Columns-->
        
         <?php while( $recent->have_posts() ) : $recent->the_post(); ?>
         <div class="swiper-slide">
           <div class="slider-content">
            
+            <a href="<?php the_permalink();?>" >
             <?php $postNavigationImage = get_post_meta( get_the_ID(), 'single-post-navigation-image', true ); ?>
             <?php	if($postNavigationImage) : ?>
             <img src="<?php echo esc_url($postNavigationImage);?>" />
             <?php endif; ?>
-            <a href="<?php the_permalink();?>" class="slider-link">
+            <h5 class="slider-link bold" >
 				<?php $postNavigationDescription = get_post_meta( get_the_ID(), 'single-post-navigation-description', true ); ?>		
 		 			<?php	if($postNavigationDescription) : ?>
             		<?php echo $postNavigationDescription ?>
 					<?php else : ?>
-               <?php the_title(); ?>
+              <?php the_title(); ?> </h5>
             	<?php endif; ?>
 
             </a>

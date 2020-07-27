@@ -10,9 +10,10 @@ jQuery(function ($) {
         //    Single business verticals light mode navbar background colors
                 $('.massage.light-mode .navbar').css('background', 'linear-gradient(90deg, rgba(248,151,169,1) 0%, rgba(250,130,154,1) 38%, rgba(253,146,151,1) 61%, rgba(254,164,150,1) 100%)');
                 $('.cleaning.light-mode .navbar').css('background', 'transparent linear-gradient(270deg, rgba(	233, 233, 255,.9) 0%, rgba(	35, 37, 95,.9) 100%) 0% 0% no-repeat padding-box');
-                $('.restaurants.light-mode .navbar').css('background', 'linear-gradient(to right, rgba(210,	79,	69, .9), rgba(237,	75,	73, .9) )');
+                $('.restaurants.light-mode .navbar').css('background', 'linear-gradient(to right, rgba(210,	79,	69, .9), rgba(237,	75,	73, .9))');
                 $('.beauty.light-mode .navbar').css('background', 'transparent linear-gradient(91deg, #644E1E 0%, #AD8D47CC 49%, #D2C699 100%) 0% 0% no-repeat padding-box');
                 $('.grocery-delivery.light-mode .navbar').css('background',  'transparent linear-gradient(90deg, #D2933E 0%, #FED092 100%) 0% 0% no-repeat padding-box');
+                $('.handyman.light-mode .navbar').css('background',  'transparent linear-gradient(90deg, #79766FE6 0%, #308FE8E6 100%) 0% 0% no-repeat padding-box');
            
             $('.dark-mode .navbar').css('background', '#071627');
             $('.single-businessverticals.dark-mode .navbar').css('background', '#020508');
@@ -384,3 +385,35 @@ addCommingSoonAnimation("learn-more-gauzy-cloud", ".comming-soon-banner.gauzy-cl
 arr(document.querySelectorAll('.job-description .btn.btn-primary')).forEach(btn => {
     btn.innerText = "Apply Now";
 })
+
+// Toggle all switch theme buttons
+
+var allMoonBtns = getArrayOfClassElements("night-theme-input");
+var allSunBtns = getArrayOfClassElements("day-theme-input");
+var e = document.querySelector("body");
+
+var observer = new MutationObserver(function (event) {
+    changeAllThemeBtns();
+})
+
+observer.observe(e, {
+  attributes: true, 
+  attributeFilter: ['class'],
+  childList: false, 
+  characterData: false
+})
+
+function changeAllThemeBtns(){
+    if(e.classList.contains("dark-mode")){
+        allMoonBtns.forEach(moonBtn=>{
+            moonBtn.checked = true;
+        })
+     
+    }else if(e.classList.contains("light-mode")){
+        allSunBtns.forEach(sunBtn=>{
+            sunBtn.checked = true;
+        })
+    }
+}
+
+changeAllThemeBtns();

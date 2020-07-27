@@ -26,6 +26,7 @@ body.light-mode{
     --footer-switch-icon: #C2CED9;
     --massage-main-color: #F78299;
      --massage-main-color-s: #F78299;
+     
     --massage-details-color: #585858;
     --cleaning-color: #E77700;
     --restaurants-main-color: #ED4B49;
@@ -36,6 +37,8 @@ body.light-mode{
     --beauty-main-color-s: #AD8D47;
     --beauty-color-b:#6199FF;
     --grocery-main-color: #9C7441;
+    --grocery-main-color-s:#9C7441;
+    --bv-details-color:  #585858;
 }
 body.dark-mode{
     --main-color: var(--white);
@@ -68,13 +71,22 @@ body.dark-mode{
     --beauty-main-color-s: #AD8D47;
     --beauty-color-b:#6199FF;
     --grocery-main-color: #fff;
+   --grocery-main-color-s:#9C7441;
+    --bv-details-color: #fff;
 }
-
+/* massage colors */
 .massage{
     --svg-fill-1: #FE9A8B;
     --svg-fill-2: #FD868C;
     --svg-fill-3: #F9748F;
     --svg-fill-4: #F78CA0;
+
+    --bv-main-color: #F78299;
+    --bv-main-color-s:  #F78299;
+}
+.massage.dark-mode{
+    --bv-main-color: #FFF;
+    --bv-main-color-s: #D87F6B;
 }
 .cleaning, .single-business-verticlas{
     --svg-fill-t-1: #e77700;
@@ -84,4 +96,53 @@ body.dark-mode{
     --svg-fill-t-1: #e9e9ff;
     --svg-fill-t-2: #23255f;
 }
+/* cleaning colors */
+.cleaning{
+    --bv-main-color: #23255F;
+    --bv-main-color-reverse: #fff;
+    --bv-secondary-color: #E77700;
+    --bv-secondary-color-s: #E77700;
+}
+.cleaning.dark-mode{
+    --bv-main-color: #fff;
+    --bv-main-color-reverse: #23255F;
+}
 
+/* restaurants colors/ food delivery */
+.restaurants{
+    --bv-main-color:#ED4B49;
+    --bv-main-color-s: #ED4B49;
+}
+/* .restaurants.dark-mode{
+    --bv-main-color:#fff;
+} */
+/* Beauty */
+.beauty{
+    --bv-main-color: #AD8D47;
+    --bv-main-color-s: #AD8D47;
+    --bv-main-color-reverse: #fff;
+    --bv-secondary-color: #6199FF;
+}
+.beauty.dark-mode{
+    /* --bv-main-color: #fff; */
+    --bv-main-color-reverse: #AD8D47;
+}
+/* Grocery */
+.grocery{
+    --bv-main-color: #9C7441;
+    --bv-main-color-s: #9C7441
+}
+/* .grocery.dark-mode{
+    --bv-main-color: #fff;
+} */
+.single-business-verticlas.dark-mode{
+    --bv-main-color: #fff !important;
+}
+
+.handyman{
+  --bv-main-color: #173A56;
+  --bv-main-color-s: #308FE8;
+}
+.handyman.dark-mode{
+  --bv-main-color: #fff;
+}
