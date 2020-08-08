@@ -1,0 +1,148 @@
+
+
+body{
+    --main-blue: #173A56;
+    --dark-blue: #071627;
+    --white: #fff;
+}
+body.light-mode{
+    --main-color: var(--main-blue);
+    --main-color-rgb: 23,58,86;
+    --main-color-reverse: var(--white);
+    --container-background: #f9fbfd;
+    --container-btns-background: var(--white);
+    --secondary-brand-color:#BCD0E5;
+    --tertiary-color: #140C8E;
+    --main-header-color: #3d5a72;
+    --main-descr-color: rgb(139, 156, 170);
+    --warning-color:#CF5D34;
+    --hidden-menu-color: var(--white);
+    --details-color: #647b8e;
+    --footer-bold-color: #173A56;
+    --footer-color: var(--main-blue);
+    --white-transparent: var(--white);
+    --footer-svgs-color: #6F8699;
+    --footer-switch-field: #C2CED9;
+    --footer-switch-icon: #C2CED9;
+    --massage-main-color: #F78299;
+     --massage-main-color-s: #F78299;
+     
+    --massage-details-color: #585858;
+    --cleaning-color: #E77700;
+    --restaurants-main-color: #ED4B49;
+    --restaurants-main-c-s: #ED4B49;
+    --s-v-footer-color: #020508;
+    --beauty-main-color: #AD8D47;
+    --beauty-main-color-reverse: #fff;
+    --beauty-main-color-s: #AD8D47;
+    --beauty-color-b:#6199FF;
+    --grocery-main-color: #9C7441;
+    --grocery-main-color-s:#9C7441;
+    --bv-details-color:  #585858;
+}
+body.dark-mode{
+    --main-color: var(--white);
+    --main-color-rgb: 255,255,255;
+    --main-color-reverse: var(--main-blue);
+    --container-background: #051223;
+    --container-btns-background: #051223;
+    --secondary-brand-color:var(--white);
+	--tertiary-color: var(--white);
+	--main-header-color: var(--white);
+	--main-descr-color: rgba(255, 255, 255, .5);
+	--warning-color: var(--white);
+    --hidden-menu-color: #071627;
+    --details-color: var(--white);
+    --footer-bold-color:#d4d4d7;
+    --footer-color: #A9AAAF;
+    --white-transparent: transparent;
+    --footer-svgs-color: #9DA6B2;
+    --footer-switch-field: #6A7C90;
+    --footer-switch-icon: #C2CED9;
+    --massage-main-color: #FFF;
+     --massage-main-color-s: #D87F6B;
+    --massage-details-color: #FFF;
+    --cleaning-color: #FFDD00;
+    --restaurants-main-color: #fff;
+    --restaurants-main-c-s: #ED4B49;
+    --s-v-footer-color: #fff;
+    --beauty-main-color: #fff;
+    --beauty-main-color-reverse: #AD8D47;
+    --beauty-main-color-s: #AD8D47;
+    --beauty-color-b:#6199FF;
+    --grocery-main-color: #fff;
+   --grocery-main-color-s:#9C7441;
+    --bv-details-color: #fff;
+}
+/* massage colors */
+.massage{
+    --svg-fill-1: #FE9A8B;
+    --svg-fill-2: #FD868C;
+    --svg-fill-3: #F9748F;
+    --svg-fill-4: #F78CA0;
+
+    --bv-main-color: #F78299;
+    --bv-main-color-s:  #F78299;
+}
+.massage.dark-mode{
+    --bv-main-color: #FFF;
+    --bv-main-color-s: #D87F6B;
+}
+.cleaning, .single-business-verticlas{
+    --svg-fill-t-1: #e77700;
+    --svg-fill-t-2: #fd0;
+}
+.cleaning.dark-mode, .single-business-verticlas.dark-mode{
+    --svg-fill-t-1: #e9e9ff;
+    --svg-fill-t-2: #23255f;
+}
+/* cleaning colors */
+.cleaning{
+    --bv-main-color: #23255F;
+    --bv-main-color-reverse: #fff;
+    --bv-secondary-color: #E77700;
+    --bv-secondary-color-s: #E77700;
+}
+.cleaning.dark-mode{
+    --bv-main-color: #fff;
+    --bv-main-color-reverse: #23255F;
+}
+
+/* restaurants colors/ food delivery */
+.restaurants{
+    --bv-main-color:#ED4B49;
+    --bv-main-color-s: #ED4B49;
+}
+/* .restaurants.dark-mode{
+    --bv-main-color:#fff;
+} */
+/* Beauty */
+.beauty{
+    --bv-main-color: #AD8D47;
+    --bv-main-color-s: #AD8D47;
+    --bv-main-color-reverse: #fff;
+    --bv-secondary-color: #6199FF;
+}
+.beauty.dark-mode{
+    /* --bv-main-color: #fff; */
+    --bv-main-color-reverse: #AD8D47;
+}
+/* Grocery */
+.grocery{
+    --bv-main-color: #9C7441;
+    --bv-main-color-s: #9C7441
+}
+/* .grocery.dark-mode{
+    --bv-main-color: #fff;
+} */
+.single-business-verticlas.dark-mode{
+    --bv-main-color: #fff !important;
+}
+
+.handyman{
+  --bv-main-color: #173A56;
+  --bv-main-color-s: #308FE8;
+}
+.handyman.dark-mode{
+  --bv-main-color: #fff;
+}
