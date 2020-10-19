@@ -1,0 +1,16 @@
+@keyframes subscribeBtnPulse {
+    0%,
+    14%,
+    28%,
+    80% {
+      transform: scale(1);
+      color: var(--gauzy-main-color);
+      background: transparent;
+    }
+    7%,
+    21% {
+      transform: scale(1.06);
+      color: var(--gauzy-main-color-reverse);
+      background: var(--gauzy-main-color);
+    }
+  }

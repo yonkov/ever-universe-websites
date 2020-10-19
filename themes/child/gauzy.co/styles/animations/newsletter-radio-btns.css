@@ -1,0 +1,70 @@
+/* Subscribe button animation */
+
+footer .newsletter-container input[type="radio"]:checked + label,
+footer .newsletter-container input[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 2rem;
+  display: inline-block;
+  color: var(--main-color);
+}
+
+footer .newsletter-container input[type="radio"]:not(:checked) + label {
+  color: #979797;
+}
+
+footer .newsletter-container input[type="radio"]:checked + label:before,
+footer .newsletter-container input[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background: transparent;
+}
+
+footer .newsletter-container input[type="radio"]:not(:checked) + label:before {
+  border: 2px solid #979797;
+}
+
+footer .newsletter-container input[type="radio"]:checked + label:before {
+  border: 2px solid var(--main-color) !important;
+}
+
+footer .newsletter-container input[type="radio"]:checked + label:after,
+footer .newsletter-container input[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--main-color);
+  position: absolute;
+  top: 13px;
+  left: 5.05px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+footer .newsletter-container input[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+footer .newsletter-container input[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+footer .newsletter-container input[type="radio"] {
+  display: none;
+}
+
+footer .newsletter-container label {
+  color: #979797;
+  margin: 0 1rem 0 0.2rem;
+}

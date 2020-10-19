@@ -48,6 +48,11 @@ require_once( get_stylesheet_directory() . '/shortcodes/customer-business-vertic
 
 require_once( get_stylesheet_directory() . '/shortcodes/team-members.php');
 
+require_once( get_stylesheet_directory() . '/shortcodes/gauzy-features.php');
+
+
+// Disable gutenberg
+// add_filter('use_block_editor_for_post', '__return_false', 10);
 /* Enable core custom fields */
 
  add_filter('acf/settings/remove_wp_meta_box', '__return_false');
@@ -121,3 +126,5 @@ function gauzy_save_post_meta_box( $post_id, $post ) {
     elseif ( '' == $new_meta_value && $meta_value )
         delete_post_meta( $post_id, 'Second Excerpt', $meta_value );
 }
+
+

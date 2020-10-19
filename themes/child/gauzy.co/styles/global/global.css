@@ -1,0 +1,37 @@
+.b-n-card .bottom-b-n-card ul li::before,
+.article-w-num-descr ul li::before {
+  content: url("/wp-content/themes/gauzy/assets/img/rectangle.svg");
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  margin: 0 -17px;
+  padding-right: 18px;
+}
+
+.dark-mode .b-n-card .bottom-b-n-card ul li::before,
+.dark-mode .article-w-num-descr ul li::before {
+  content: url("/wp-content/themes/gauzy/assets/img/rectangle-dark-mode.svg");
+}
+
+/* Link with arrow */
+
+.w-arrow {
+  line-height: 38px;
+  position: relative;
+  width: fit-content;
+}
+
+.w-arrow:hover a {
+  color: var(--gauzy-main-color);
+}
+
+.w-arrow::after {
+  content: "\01F826";
+  position: absolute;
+  top: 5%;
+  right: -1.5rem;
+  transition: all 0.5s ease-out;
+}
+.w-arrow:hover::after {
+  right: -2rem;
+}

@@ -1,0 +1,35 @@
+.close{
+    opacity: 1;
+}
+.close * {
+  transform-origin: center;
+  transition: transform 0.5s ease-in;
+}
+
+.open * {
+  transition: transform 0.3s ease-out;
+  transform-origin: center;
+}
+
+.open #oval {
+  transform: translate(60px, 0);
+}
+
+.open #second-line {
+  transform: translate(-30px, 0);
+}
+
+.open #first-line {
+  transition-delay: 0.4s;
+  transform: translate(-10px, 0px) rotate(90deg);
+}
+
+.open #third-line {
+  transition-delay: 0.4s;
+  transform: translate(0, 10px);
+}
+
+.open #ex {
+  transition-delay: 0.4s;
+  transform: rotate(45deg);
+}

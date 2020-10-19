@@ -1,0 +1,35 @@
+/* Card width */ 
+.products-sub{
+    width: 50%;
+}
+
+/* Icons */
+.products-sub-menu-container .menu-icon-container {
+    width: 9rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent linear-gradient(218deg, #140C8EAC 0%, #140C8E 100%) 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    margin: 0 auto 1.8rem;
+}
+.dark-mode .products-sub-menu-container .menu-icon-container{
+    background: transparent linear-gradient(131deg, #5F2C82 0%, #49A09D 100%) 0% 0% no-repeat padding-box;
+}
+
+.products-sub-menu-descr h6{
+    color: var(--gauzy-main-color);
+}
+.products-sub-menu-descr  p{
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--details-color);
+}
+.products-sub-menu-container .sub-menu-btns button{
+    padding: .8rem 0;
+}
+
+.self-hosted-sub-content{
+    border-right: 1px solid #D8DEE24D;
+}

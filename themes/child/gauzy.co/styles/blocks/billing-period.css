@@ -1,0 +1,105 @@
+.billing-period{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    position: relative;
+    margin: 0 auto 2rem;
+}
+.billing-period-container h6{
+    text-align: center;
+    letter-spacing: .33px;
+    font-size: 1rem;
+    margin: 2rem 0 1rem;
+    color: var(--details-color);
+    opacity: .7;
+}
+.billing-period *:hover{
+    cursor: pointer;
+}
+.billing-period label{
+    color: var(--main-color);
+    font-size: 1rem;
+    letter-spacing: .33px;
+}
+.billing-period .subscription-toggle{
+    position: relative;
+    display: flex;
+    width: 2.2rem;
+    height: .9rem;
+    background: var(--details-secondary);
+    border-radius: 50px;
+    margin: .1rem 1rem;
+}
+.billing-period .toggle-pill{
+    width: 1.35rem;
+    height: 1.35rem;
+    position: absolute;
+    background: var(--gauzy-secondary-color);
+    border-radius: 50%;
+    left:0;
+    top: -3px;
+    transition: all .25s ease-out;
+}
+
+.billing-period input[type="radio"]{
+    opacity: 0;
+    width: 50%;
+}
+.billing-period input#monthlyAll[type="radio"]:checked ~ .toggle-pill,
+.billing-period input#monthlyEver[type="radio"]:checked ~ .toggle-pill,
+.billing-period input#monthlyGauzy[type="radio"]:checked ~ .toggle-pill{
+    left: 0;
+}
+.billing-period input#annualAll[type="radio"]:checked ~ .toggle-pill,
+.billing-period input#annualEver[type="radio"]:checked ~ .toggle-pill,
+.billing-period input#annualGauzy[type="radio"]:checked ~ .toggle-pill{
+    left: 15px;
+}
+
+
+.hosted-filter-btns{
+    display: flex;
+    margin: 6rem 0 1rem;
+    justify-content: center;
+  }
+  .hosted-filter-btns input[type="radio"]{
+    display: none;
+  }
+  .hosted-filter-btns label{
+    font-size: 18px;
+    color: var(--details-color);
+    letter-spacing: 0.38px;
+    line-height: 1.6;
+    opacity: .65;
+    border-bottom: 2px solid var(--details-color);
+    width: 100%;
+    padding-bottom: .75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.4rem;
+  }
+  .hosted-filter-btns input[type="radio"]:checked + label{
+    color: var(--gauzy-secondary-color);
+    font-weight: bold;
+    opacity: 1;
+    border-bottom: 2px solid var(--gauzy-secondary-color);
+  
+  }
+  .hosted-filter-btns input[type="radio"]:checked ~ .solution-filter-btn{
+    border-bottom: 2px solid var(--main-color);
+  }
+  
+  .hosted-filter-btns label:hover{
+    cursor: pointer;
+    color: var(--main-color);
+  }
+  .hosted-filter-btns .solution-filter-btn{
+    width: 15%;
+    text-align: center;
+  }
+  @media(max-width:769px){
+      .hosted-filter-btns .solution-filter-btn{
+          width: 40%;
+      }
+  }

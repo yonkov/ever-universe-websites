@@ -1,0 +1,40 @@
+@media (min-width: 1280px) {
+  .d-w-100 {
+    width: 100%;
+  }
+  .d-w-90 {
+    width: 90%;
+  }
+  .d-w-80 {
+    width: 80%;
+  }
+  .d-w-70 {
+    width: 70%;
+  }
+  .d-w-60 {
+    width: 60%;
+  }
+  .d-w-55 {
+    width: 55%;
+  }
+  .d-w-50 {
+    width: 50%;
+  }
+  .d-w-40 {
+    width: 40%;
+  }
+  .d-w-30 {
+    width: 30%;
+  }
+  .d-w-60,
+  .d-w-55,
+  .d-w-50,
+  .d-w-40,
+  .d-w-30 {
+    margin: auto;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}

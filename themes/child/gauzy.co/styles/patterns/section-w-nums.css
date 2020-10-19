@@ -1,0 +1,172 @@
+.section-w-nums {
+  padding: 5rem 0;
+}
+@media (max-width: 600px) {
+  .section-w-nums {
+    padding: 0 0 3.5rem;
+  }
+}
+
+.section-w-nums .article-w-num:nth-child(2n + 1) .ever-container-b {
+  flex-flow: row-reverse;
+}
+@media (max-width: 1024px) {
+  .section-w-nums .article-w-num:nth-child(2n + 1) .ever-container-b {
+    flex-flow: column;
+  }
+}
+
+.article-w-num {
+  padding: 6rem 0;
+}
+
+.article-w-num .ever-container-b {
+  display: flex;
+  flex-wrap: wrap;
+}
+.article-w-num .ever-container-b div {
+  width: 65%;
+}
+@media (max-width: 1024px) {
+  .article-w-num .ever-container-b div {
+    width: 90%;
+  }
+}
+.article-w-num .ever-container-b .article-w-num-descr {
+  width: 20rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .article-w-num {
+    padding: 3rem 0 0;
+  }
+  .article-w-num .ever-container-b .article-w-num-descr {
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 600px) {
+  .article-w-num .ever-container-b .article-w-num-descr {
+    background-size: 55% !important;
+    padding-top: 4rem;
+  }
+}
+/* Article image */
+.article-w-num .article-w-num-img {
+  text-align: center;
+  /* filter: drop-shadow(25px 25px 85px #D6D6D6); */
+  filter: drop-shadow(20px 53px 80px rgba(0, 0, 0, 0.3));
+}
+.dark-mode .article-w-num .article-w-num-img {
+  filter: drop-shadow(20px 53px 61px rgba(255, 255, 255, 0.15));
+}
+.article-w-num .article-w-num-img img {
+  width: 100%;
+  max-width: 45rem;
+}
+/* Article description and uls */
+.section-w-nums .article-w-num-descr h5 {
+  color: var(--main-color);
+}
+.article-w-num-descr ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.article-w-num-descr ul li {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--details-color);
+  margin: 0.5rem 0;
+}
+
+/* First article */
+.article-w-num.first-article {
+  padding: 2rem 0 0;
+}
+
+.light-mode .article-w-num.first-article{
+  background: no-repeat  url("/wp-content/themes/gauzy/assets/img/home/first-num-background-shape.png") -40% 13rem, 
+  no-repeat 140% 13rem url("/wp-content/themes/gauzy/assets/img/home/first-num-background-shape.png");
+  background-size: 40%;
+}
+
+.article-w-num.first-article.article-w-num
+  .ever-container-b
+  .article-w-num-descr,
+.article-w-num.first-article.article-w-num
+  .ever-container-b
+  .article-w-num-img {
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 1024px) {
+  .article-w-num.first-article.article-w-num
+    .ever-container-b
+    .article-w-num-descr,
+  .article-w-num.first-article.article-w-num
+    .ever-container-b
+    .article-w-num-img {
+    width: 100%;
+    margin: auto;
+  }
+}
+.article-w-num.first-article.article-w-num
+  .ever-container-b
+  .article-w-num-descr {
+  padding-top: 4rem;
+}
+.article-w-num.first-article.article-w-num
+  .ever-container-b
+  .article-w-num-descr
+  .e-row {
+  width: 100%;
+}
+.first-article.article-w-num .article-w-num-img img {
+  width: 100%;
+  max-width: 50rem;
+}
+
+/* Description background numbers */
+
+.section-w-nums .article-w-num:nth-child(2) .article-w-num-descr {
+  background: no-repeat left top url("/wp-content/themes/gauzy/assets/img/numbers/01.png");
+}
+.section-w-nums .article-w-num:nth-child(3) .article-w-num-descr {
+  background: no-repeat left -10% url("/wp-content/themes/gauzy/assets/img/numbers/02.png");
+}
+.section-w-nums .article-w-num:nth-child(4) .article-w-num-descr {
+  background: no-repeat left -10% url("/wp-content/themes/gauzy/assets/img/numbers/03.png");
+}
+.section-w-nums .article-w-num:nth-child(5) .article-w-num-descr {
+  background: no-repeat left -10% url("/wp-content/themes/gauzy/assets/img/numbers/04.png");
+}
+.section-w-nums .article-w-num:nth-child(6) .article-w-num-descr {
+  background: no-repeat left 0
+    url("/wp-content/themes/gauzy/assets/img/numbers/05.png");
+}
+.section-w-nums .article-w-num:nth-child(7) .article-w-num-descr {
+  background: no-repeat left -15% url("/wp-content/themes/gauzy/assets/img/numbers/06.png");
+}
+
+/* Dark mode */
+.section-w-nums .article-w-num:nth-child(2) .article-w-num-descr {
+  background: no-repeat left top url("/wp-content/themes/gauzy/assets/img/numbers/01-dark.png");
+}
+.section-w-nums .article-w-num:nth-child(3) .article-w-num-descr {
+  background: no-repeat left -10% url("/wp-content/themes/gauzy/assets/img/numbers/02-dark.png");
+}
+.section-w-nums .article-w-num:nth-child(4) .article-w-num-descr {
+  background: no-repeat left -10% url("/wp-content/themes/gauzy/assets/img/numbers/03-dark.png");
+}
+.section-w-nums .article-w-num:nth-child(5) .article-w-num-descr {
+  background: no-repeat left -10% url("/wp-content/themes/gauzy/assets/img/numbers/04-dark.png");
+}
+.section-w-nums .article-w-num:nth-child(6) .article-w-num-descr {
+  background: no-repeat left 0
+    url("/wp-content/themes/gauzy/assets/img/numbers/05-dark.png");
+}
+.section-w-nums .article-w-num:nth-child(7) .article-w-num-descr {
+  background: no-repeat left -15% url("/wp-content/themes/gauzy/assets/img/numbers/06-dark.png");
+}

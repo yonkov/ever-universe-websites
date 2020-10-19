@@ -1,16 +1,39 @@
-@import url("./variables/colors.css");
 
-/* 
 
 body{
     --main-blue: #173A56;
     --dark-blue: #071627;
-    --white: #fff;
+    /* --white: #fff; */
+    --red-color: #CA002D;
 }
 body.light-mode{
+    /* used */
+    --gauzy-main-color: #1B005D;
+    --gauzy-main-color-reverse: #fff;
+    --gauzy-main-color-s: #1B005D;
+    --gauzy-secondary-color: #140C8E;
+    --gauzy-secondary-color-s: #140C8E;
+    --gauzy-secondary-color-reverse: #fff;
+    --gauzy-details-color: #071627;
+    --gauzy-opacity-details-color: rgba(7, 22, 39, .8);
+
+    --warning-color: var(--red-color);
+
+    --details-color: #647b8e;
+    --details-color-s: #647b8e;
+    --details-secondary: #a4a2a2;
+
     --main-color: var(--main-blue);
-    --main-color-rgb: 23,58,86;
     --main-color-reverse: var(--white);
+
+    /* --footer-bold-color: #173A56; */
+    /* --footer-color: var(--main-blue); */
+    --footer-svgs-color: #6F8699;
+    --footer-switch-field: #C2CED9;
+    --footer-switch-icon: #C2CED9;
+
+    /* unused */
+    /* --main-color-rgb: 23,58,86;
     --container-background: #f9fbfd;
     --container-btns-background: var(--white);
     --secondary-brand-color:#BCD0E5;
@@ -19,13 +42,7 @@ body.light-mode{
     --main-descr-color: rgb(139, 156, 170);
     --warning-color:#CF5D34;
     --hidden-menu-color: var(--white);
-    --details-color: #647b8e;
-    --footer-bold-color: #173A56;
-    --footer-color: var(--main-blue);
     --white-transparent: var(--white);
-    --footer-svgs-color: #6F8699;
-    --footer-switch-field: #C2CED9;
-    --footer-switch-icon: #C2CED9;
     --massage-main-color: #F78299;
      --massage-main-color-s: #F78299;
     --massage-details-color: #585858;
@@ -37,17 +54,38 @@ body.light-mode{
     --beauty-main-color-reverse: #fff;
     --beauty-main-color-s: #AD8D47;
     --beauty-color-b:#6199FF;
-    --grocery-main-color: #9C7441;
+    --grocery-main-color: #9C7441; */
 
-    --gauzy-main-color: #1B005D;
-    --gauzy-main-color-reverse: #fff;
-    --gauzy-main-color-s: #1B005D;
+   
     
 }
 body.dark-mode{
+    /* used */
+    --gauzy-main-color: #fff;
+    --gauzy-main-color-reverse: #1B005D;
+    --gauzy-main-color-s: #1B005D;
+    --gauzy-secondary-color: #ffffff;
+    --gauzy-secondary-color-s: #140C8E;
+    --gauzy-secondary-color-reverse: #140C8E;
+    --gauzy-details-color: #ffffff;
+    --gauzy-opacity-details-color: rgba(255,255,255,.8);
+
+    --warning-color: #fff;
+
+    --details-color: #fff;
+    --details-color-s: #647b8e;
+    --details-secondary: #ffffff;
+
     --main-color: var(--white);
-    --main-color-rgb: 255,255,255;
     --main-color-reverse: var(--main-blue);
+
+    /* --footer-bold-color:#d4d4d7; */
+    /* --footer-color: #A9AAAF; */
+    --footer-svgs-color: #D8DEE2;
+    --footer-switch-field: #6A7C90;
+    --footer-switch-icon: #C2CED9;
+    /* unused */
+    /* --main-color-rgb: 255,255,255;
     --container-background: #051223;
     --container-btns-background: #051223;
     --secondary-brand-color:var(--white);
@@ -56,13 +94,9 @@ body.dark-mode{
 	--main-descr-color: rgba(255, 255, 255, .5);
 	--warning-color: var(--white);
     --hidden-menu-color: #071627;
-    --details-color: var(--white);
-    --footer-bold-color:#d4d4d7;
-    --footer-color: #A9AAAF;
+   
     --white-transparent: transparent;
-    --footer-svgs-color: #D8DEE2;
-    --footer-switch-field: #6A7C90;
-    --footer-switch-icon: #C2CED9;
+   
     --massage-main-color: #FFF;
      --massage-main-color-s: #D87F6B;
     --massage-details-color: #FFF;
@@ -74,14 +108,12 @@ body.dark-mode{
     --beauty-main-color-reverse: #AD8D47;
     --beauty-main-color-s: #AD8D47;
     --beauty-color-b:#6199FF;
-    --grocery-main-color: #fff;
+    --grocery-main-color: #fff; */
 
-    --gauzy-main-color: #fff;
-    --gauzy-main-color-reverse: #1B005D;
-    --gauzy-main-color-s: #1B005D;
+   
 }
 
-.massage{
+/* .massage{
     --svg-fill-1: #FE9A8B;
     --svg-fill-2: #FD868C;
     --svg-fill-3: #F9748F;
@@ -94,5 +126,5 @@ body.dark-mode{
 .cleaning.dark-mode, .single-business-verticlas.dark-mode{
     --svg-fill-t-1: #e9e9ff;
     --svg-fill-t-2: #23255f;
-}
- */
+} */
+

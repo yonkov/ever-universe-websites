@@ -1,0 +1,45 @@
+.text-with-btn {
+  padding: 5rem 0;
+  background-size: cover !important;
+}
+@media (min-width: 1280px) {
+  .text-with-btn {
+    margin: 7rem 0;
+  }
+}
+@media (max-width: 1280px) {
+  .text-with-btn {
+    margin: 7rem 0 2rem;
+  }
+}
+@media(max-width:600px){
+  .text-with-btn {
+    margin: 2rem 0;
+  }
+}
+.text-with-btn .text-wrapper h2 {
+  color: var(--gauzy-secondary-color);
+  font-size: 42px;
+  line-height: 60px;
+  letter-spacing: 1.62px;
+}
+.text-with-btn .text-wrapper p {
+  color: var(--details-color);
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.39px;
+  width: 30rem;
+  margin: 1rem auto 2.2rem;
+}
+@media (max-width: 600px) {
+  .text-with-btn .text-wrapper h2 {
+    font-size: 24px;
+  }
+  .text-with-btn .text-wrapper p {
+    font-size: 18px;
+    width: 90%;
+  }
+}
+.text-with-btn button {
+  width: 14.5rem;
+}

@@ -1,0 +1,49 @@
+/* Billing period toggle block */
+/* @import url("../blocks/billing-period.css");
+
+/* Pricing cards */
+/* @import url("../blocks/pricing-cards.css"); */ 
+
+.pricing .ever-co-header {
+  background: url("/wp-content/themes/gauzy/assets/img/pricing/gauzy-pricing-top.svg")
+    100% -10vw no-repeat;
+}
+@media (min-width: 1100px) {
+  .b-n-offer-cards-container-cloud .b-n-offer-wrap {
+    max-width: 20%;
+  }
+}
+.pricing-cards-container {
+  margin: 8.5rem auto 5rem !important;
+}
+@media(max-width:600px){
+  .pricing-cards-container{
+    margin: 3rem auto 1rem !important;
+  }
+}
+.b-n-offer-cards-container {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .b-n-offer-cards-container .swiper-wrapper {
+    justify-content: center;
+  }
+}
+
+.extra-txt p {
+  color: var(--details-secondary);
+  line-height: 24px;
+}
+.extra-txt a {
+  color: var(--gauzy-secondary-color);
+}
+
+.pricing .text-with-btn {
+  background: no-repeat
+    url("/wp-content/themes/gauzy/assets/img/pricing/crave-for-more-gauzy.svg");
+}
+.dark-mode.pricing .text-with-btn {
+  background: no-repeat
+    url("/wp-content/themes/gauzy/assets/img/pricing/crave-for-more-gauzy-dark.svg");
+}

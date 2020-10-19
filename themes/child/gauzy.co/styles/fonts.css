@@ -1,0 +1,143 @@
+/* Font facces */
+@font-face {
+  font-family: "Black";
+  src: url("/wp-content/themes/gauzy/assets/fonts/Black/Black.ttf")
+      format("truetype"),
+    url("/wp-content/themes/gauzy/assets/fonts/Black/Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("/wp-content/themes/gauzy/assets/fonts/Bold/Bold.ttf")
+      format("truetype"),
+    url("/wp-content/themes/gauzy/assets/fonts/Bold/Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Heavy";
+  src: url("/wp-content/themes/gauzy/assets/fonts/Heavy/Heavy.ttf")
+      format("truetype"),
+    url("/wp-content/themes/gauzy/assets/fonts/Heavy/Heavy.woff") format("woff");
+}
+@font-face {
+  font-family: "Light";
+  src: url("/wp-content/themes/gauzy/assets/fonts/Light/Light.ttf")
+      format("truetype"),
+    url("/wp-content/themes/gauzy/assets/fonts/Light/Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Medium";
+  src: url("/wp-content/themes/gauzy/assets/fonts/Medium/Medium.ttf")
+      format("truetype"),
+    url("/wp-content/themes/gauzy/assets/fonts/Medium/Medium.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Regular";
+  src: url("/wp-content/themes/gauzy/assets/fonts/Regular/Regular.ttf")
+      format("truetype"),
+    url("/wp-content/themes/gauzy/assets/fonts/Regular/Regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "SemiBold";
+  src: url("/wp-content/themes/gauzy/assets/fonts/SemiBold/SemiBold.ttf")
+      format("truetype"),
+    url("/wp-content/themes/gauzy/assets/fonts/SemiBold/SemiBold.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Thin";
+  src: url("/wp-content/themes/gauzy/assets/fonts/Thin/Thin.ttf")
+      format("truetype"),
+    url("/wp-content/themes/gauzy/assets/fonts/Thin/Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "UltraLight";
+  src: url("/wp-content/themes/gauzy/assets/fonts/UltraLight/UltraLight.ttf")
+      format("truetype"),
+    url("/wp-content/themes/gauzy/assets/fonts/UltraLight/UltraLight.woff")
+      format("woff");
+}
+
+*,
+nav,
+label,
+input,
+textarea,
+.project-offers-container h4 {
+  font-family: "Regular", serif;
+}
+.regular,
+.b-n-card .top-b-n-card h6,
+.billing-period-container h6 {
+  font-family: "Regular", serif !important;
+}
+
+/* Heavy */
+.heavy {
+  font-family: "Heavy", roboto !important;
+}
+
+/* BOLD */
+button,
+.before-title,
+.after-title,
+h3,
+h4,
+.top-b-n-card span,
+.b-n-card .b-n-card-banner p,
+.c-m-b a,
+b,
+.benefits section .benefits-descr h5,
+footer .footer-menus .f-menu > a,
+footer .bottom .bottom-wrapper div h5,
+.contact-us .wpcf7-form label,
+.features-gauzy-dropdown ul li.dropdown-feature a,
+.bold {
+  font-family: "Bold", roboto !important;
+}
+
+/* Medium */
+.header-description p,
+.top-b-n-card p,
+li,
+.app-filter-btns label,
+.feature-slide p,
+.medium {
+  font-family: "Medium", roboto !important;
+}
+
+/* Black */
+h1,
+h2,
+.b-n-card .bottom-b-n-card h4,
+.section-w-nums h5,
+.black {
+  font-family: "Black", roboto !important;
+}
+
+
+/* SemiBold */
+.w-arrow, .w-arrow a,
+.semi-bold{
+  font-family: "SemiBold";
+}
+
+/* ///////////////// */
+/* Main font sizes */   
+/* /////////////// */
+
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 22px;
+}
+h6 {
+  font-size: 1rem;
+}

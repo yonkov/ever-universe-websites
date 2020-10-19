@@ -42,7 +42,7 @@
 		if ( empty( get_the_content() ) ) : ?>
 		<div class ="ever-container-b">
 		<?php else /* Show full width template */ : ?>
-		<div class="ever-wrapper">
+		<div >
 		<?php endif;
 	
 		rewind_posts(); //set the post pointer back to the beginning

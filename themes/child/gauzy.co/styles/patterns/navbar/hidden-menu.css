@@ -1,0 +1,65 @@
+/* Mini menu toggle icon */
+/* @import url("../../blocks/navbar/nav-mini-menu.css"); */
+
+/* Show hide menu */
+@import url("../../animations/hidden-menu-open-close.css");
+
+@media (min-width: 1025px) {
+  #mobile-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  #mobile-menu {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  #mobile-menu .menu-item {
+    font-size: 26px;
+    line-height: 35px;
+    letter-spacing: 0.81px;
+    margin: auto;
+    width: 50%;
+    position: relative;
+    color: var(--main-color);
+    margin: 1rem auto;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    min-width: max-content;
+  }
+  #mobile-menu .menu-item a {
+    color: var(--main-color);
+    font-size: 22px;
+  }
+  #mobile-menu .transparent-btn-red,
+  #mobile-menu .transparent-btn-gauzy-main {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+  }
+  #mobile-menu .transparent-btn-red a,
+  #mobile-menu .transparent-btn-gauzy-main a {
+    font-size: 1rem;
+  }
+  .hidden-menu {
+    background: #fff;
+    overflow: hidden;
+  }
+  .dark-mode .hidden-menu {
+    background-color: #313456;
+  }
+  .hidden-menu *{
+      transition: all .5s ease-in-out;
+  }
+
+  /* Open close dropdown submenus */
+  .hidden-menu .solutions-main.menu-item-has-children > ul,
+  .hidden-menu .products-sub-menu > ul,
+  .hidden-menu .company-sub-menu > ul {
+    display: none;
+    list-style-type: none;
+  }
+}

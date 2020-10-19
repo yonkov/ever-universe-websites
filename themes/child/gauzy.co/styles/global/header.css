@@ -1,0 +1,149 @@
+/* Sub menus */
+      /* @import url("../patterns/navbar/sub-menus.css");
+      @import url("../patterns/navbar/hidden-menu.css"); */
+/* Toggle theme switch */
+      /* @import url("../blocks/toggle-theme.css"); */
+
+
+.navbar {
+  background: transparent;
+  width: 100%;
+  padding: 0rem 2rem;
+}
+@media (max-width:1280px){
+  .navbar{
+    position: initial;
+  }
+}
+#site-navigation {
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.dark-mode .navbar {
+  background: #3c3e5b;
+}
+.navbar .left {
+  margin: 0.15em 0.3em;
+}
+.navbar .left svg {
+  transform: scale(1.25);
+}
+.navbar .left #gauzy-logo .a,
+.navbar .left #gauzy-logo .c {
+  fill: var(--gauzy-main-color);
+}
+.navbar .right .links {
+  margin: 1rem 0 !important;
+  text-transform: unset;
+  cursor: pointer;
+}
+.navbar .right .links a {
+  z-index: 5555;
+  text-align: center;
+  color: var(--main-color) !important;
+  letter-spacing: 0.5px;
+  min-width: max-content;
+  border: none;
+}
+/* Dropdown  */
+/* overwriting styles */
+.menu-1 li,
+.menu-1 li:hover,
+.menu-1 li:focus,
+.menu-1 ul ul li,
+.menu-1 .sub-menu li:hover,
+.menu-1 .sub-menu li {
+  background-color: transparent;
+}
+.menu-1 ul ul a {
+  width: 100%;
+}
+.menu-1 ul ul {
+  box-shadow: unset;
+}
+/* Nav buttons */
+.c-m-b {
+  margin: 0 0.5rem;
+  width: 10rem;
+  border-radius: 4px;
+  border-width: 1.5px;
+}
+.navbar .right .c-m-b a {
+  letter-spacing: 0;
+}
+.navbar .right .transparent-btn-gauzy-main a, #mobile-menu .transparent-btn-gauzy-main a {
+  color: var(--gauzy-main-color) !important;
+}
+.navbar .right .transparent-btn-gauzy-main:hover {
+  background: var(--gauzy-main-color) !important;
+}
+.navbar .right .transparent-btn-gauzy-main:hover a {
+  color: var(--gauzy-main-color-reverse) !important;
+}
+.navbar .right .transparent-btn-red a , #mobile-menu .transparent-btn-red a {
+  color: var(--red-color) !important;
+}
+.dark-mode .navbar .right .transparent-btn-red a{
+  color: var(--main-blue) !important;
+}
+.navbar .right .transparent-btn-red:hover a {
+  color: #fff !important;
+}
+@media (min-width: 1280px) {
+  .navbar .right {
+    margin-right: 7rem;
+  }
+}
+/* Toggle theme (navbar) */
+.navbar .switch-field {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  transform: scale(0.7);
+}
+
+@media (max-width: 1280px) {
+  .navbar .switch-field {
+    right: -8%;
+  }
+}
+@media (max-width: 1100px) {
+  .navbar .switch-field {
+    display: none;
+  }
+}
+/* Navbar menu responsive queries (min-width) */
+@media (max-width: 1024px) {
+  
+  .navbar-container {
+    flex-flow: row-reverse;
+    width: 90%;
+  }
+  #site-navigation {
+    flex-flow: row-reverse;
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+    z-index: 5556;
+  }
+
+  #site-navigation .left {
+    width: 100%;
+    margin: 0.15em -0.9rem;
+  }
+
+  #site-navigation .left svg {
+    transform: scale(.8);
+  }
+  .menu-1 li {
+    display: none;
+  }
+ 
+}
+
+@media (max-width: 600px) {
+  .navbar-container .left svg {
+    height: 2rem;
+    width: 6rem;
+  }
+} 
+

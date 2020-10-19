@@ -1,0 +1,117 @@
+/* Buttons */
+button {
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: all .25s ease-out;
+  padding: 1rem 0;
+}
+button:focus, button:active{
+  outline: none;
+}
+
+.dark-btn-gauzy {
+  background: var(--gauzy-main-color);
+  border-color: var(--gauzy-main-color);
+  color: var(--gauzy-main-color-reverse);
+}
+.lighter-btn-gauzy {
+  background: var(--gauzy-secondary-color);
+  border-color: var(--gauzy-secondary-color);
+  color: var(--gauzy-secondary-color-reverse);
+}
+
+.transparent-btn-gauzy-main{
+  background: transparent;
+  color: var(--gauzy-main-color);
+  border: 1px solid var(--gauzy-main-color);
+}
+.transparent-btn-gauzy-main:hover{
+  background: var(--gauzy-main-color);
+  color: var(--gauzy-main-color-reverse);
+  border: 1px solid var(--gauzy-main-color);
+}
+
+.transparent-btn-gauzy-lighter{
+  background: transparent;
+  color: var(--gauzy-secondary-color);
+  border: 1px solid var(--gauzy-secondary-color);
+}
+.transparent-btn-gauzy-lighter:hover{
+  background: var(--gauzy-secondary-color);
+  color: var(--gauzy-secondary-color-reverse);
+  border: 1px solid var(--gauzy-secondary-color);
+}
+
+.transparent-btn-red{
+  background: transparent;
+  color: var(--red-color);
+  border: 1px solid var(--red-color);
+}
+.dark-mode .transparent-btn-red{
+  background: #BCD0E5;
+  color: var(--main-blue);
+  border: 1px solid #BCD0E5;
+}
+
+/* .btn-ever {
+    box-shadow: 0 2px 20px 0 rgba(23, 58, 86, 0.51);
+    width: 12em;
+    height: 3em;
+  }
+  .ever-button {
+    margin: 1.5em 0;
+  }
+  .dark-btn-ever {
+    background: var(--gauzy-main-color);
+    border-color: var(--gauzy-main-color);
+    color: var(--gauzy-main-color-reverse);
+  }
+  
+  .stay-dark-btn-ever {
+    background: var(--main-blue);
+    color: var(--white);
+    border-color: var(--main-blue);
+  }
+  
+  .stay-light-btn-ever {
+    color: var(--main-blue);
+    background: var(--white);
+    border-color: #c7d2db;
+  }
+  
+  .light-btn-ever {
+    background: var(--main-color-reverse);
+    border-color: #bcd0e5;
+    color: var(--main-color);
+  }
+  
+  .btn-light.ever-button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--main-color);
+  }
+  
+  .btn-light.ever-button:hover {
+    background: var(--main-color);
+    color: var(--main-color-reverse);
+  }
+  
+  .transparent-btn-ever {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--secondary-brand-color);
+  }
+  
+  .container-btn-ever {
+    background: var(--container-btns-background);
+    color: var(--main-color);
+    border-color: var(--main-color);
+  }
+  
+  body.dark-mode .container-btn-ever {
+    border-color: var(--main-blue);
+  }
+   */

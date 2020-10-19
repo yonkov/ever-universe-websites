@@ -1,0 +1,13 @@
+
+/* Open/close animation */
+@import url("../../animations/mini-menu-open-close-transitions.css");
+
+@media (max-width: 1024px) {
+  #mini-menu {
+    display: block;
+    margin: 1rem auto;
+    fill: var(--gauzy-main-color);
+    z-index: 5555;
+    transform: scale(.75);
+  }
+}

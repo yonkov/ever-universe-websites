@@ -1,0 +1,8 @@
+.scroll-btn-container{
+    position: relative;
+    height: 15rem;
+    background: #f8f7fa;
+}
+.dark-mode .scroll-btn-container{
+    background: #3c3e5b;
+}

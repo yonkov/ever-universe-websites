@@ -1,0 +1,22 @@
+/* Main title with text */
+@import url("./patterns/main-title-container.css");
+/* Landing (top) sections */
+@import url("./patterns/top-section.css");
+/* Button with text */
+@import url("./patterns/text-with-btn.css");
+/* FAQ section */
+@import url("./patterns/faq-section.css");
+
+/* Main contact form*/
+@import url("./patterns/main-contact-form.css");
+
+/* Header */
+@import url("./patterns/navbar/sub-menus.css");
+@import url("./patterns/navbar/hidden-menu.css");
+
+/* Section with reversed articles with numbers */
+@import url("./patterns/section-w-nums.css");
+
+
+/* Features */
+@import url("./patterns/features/features-slider.css");

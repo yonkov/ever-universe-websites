@@ -1,0 +1,35 @@
+.home .ever-co-header {
+  background: url(/wp-content/themes/gauzy/assets/img/home/gauzy-home-top.png)
+    100% no-repeat;
+  background-color: #f8f7fa;
+}
+.dark-mode.home .ever-co-header {
+  background-color: #3c3e5b;
+  background: url(/wp-content/themes/gauzy/assets/img/home/gauzy-home-top-dark.png)
+    100% no-repeat;
+  background-size: 60%;
+}
+.home .main-title-container h2 {
+  color: var(--gauzy-main-color);
+}
+.home .section-w-nums {
+  background: #f8f7fa;
+}
+.dark-mode .section-w-nums {
+  background: #3c3e5b;
+}
+.dark-mode .contact-us-colored {
+  background: #3d405b;
+}
+
+
+.main-features-section{
+  padding: 8rem 0;
+}
+.main-features-section .main-title-container{
+  margin-bottom: 2rem;
+}
+.main-features-section .transparent-btn-gauzy-main{
+  padding: 1rem 3rem;
+  margin-top: 6.5rem;
+}

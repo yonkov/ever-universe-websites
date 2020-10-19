@@ -1,0 +1,44 @@
+.switch-field {
+  padding: 0 !important;
+  border: 2px solid var(--footer-switch-field);
+  border-radius: 25px;
+  height: fit-content;
+}
+.switch-field,
+.switch-field * {
+  cursor: pointer;
+}
+.switch-field svg {
+  fill: var(--footer-switch-icon);
+  border-radius: 50%;
+}
+.switch-field input[type="radio"] {
+  display: none;
+}
+.switch-field label {
+  margin: 0 !important;
+}
+@media(max-width:1024px){
+  .switch-field label{
+    width: 50%;
+  }
+}
+.switch-field input[type="radio"]:checked + label svg path {
+  fill: #f8fafd !important;
+}
+body.dark-mode .switch-field input[type="radio"]:checked + label svg path {
+  fill: #a0a8b4;
+}
+
+body.dark-mode .switch-field input[type="radio"]:checked + label svg {
+  background: #6a7c90;
+}
+.light-mode .switch-field input[type="radio"]:checked + label svg {
+  background: #73639c !important;
+  width: 103%;
+  max-width: 2.5rem;
+}
+
+
+
+

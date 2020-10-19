@@ -1,0 +1,23 @@
+@import url("./blocks/buttons.css");
+
+/* Used in header/footer - switch theme */
+@import url("./blocks/toggle-theme.css");
+
+/* Used in pricing */
+@import url("./blocks/billing-period.css");
+@import url("./blocks/cards/pricing-cards.css");
+
+/* Used in navbar */
+@import url("./blocks/navbar/nav-mini-menu.css");
+@import url("./blocks/navbar/products-sub-menu-cards.css");
+@import url("./blocks/navbar/features-sub-menu.css");
+
+/* Used in benefits section */
+@import url("./blocks/benefits-section/filter-buttons.css");
+@import url("./blocks/cards/benefits-card.css");
+
+/* Used in features */
+@import url("./blocks/cards/features-section-cards.css");
+
+/* Scroll button */
+@import url("./blocks/scroll-btn.css");
