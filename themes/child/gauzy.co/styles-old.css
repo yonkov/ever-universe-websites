@@ -30,6 +30,8 @@
 /* Variables */
 @import url("./styles/variables.css");
 
+
+
 html {
   scroll-behavior: smooth;
 }
